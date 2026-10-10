@@ -7,10 +7,11 @@ Built from reading the actual repo (see audit_ncd_guideline_tutor.md). Replaces 
 
 ## 0:00-0:10 — Gate Check
 
-SAY: "Hey Sudhir, before anything else, quick gate check. Did you get the citation filter built?"
+**CONFIRMED pre-call (5:43 PM message): Sudhir said "Not yet." The fix is not built.** Default straight to the build-together path below, don't spend time asking, go straight into it to protect the 10-minute window.
 
-**If yes:** have him show the code, then test it live.
-**If no:** build it together. The exact fix, since we now know the code: after the answer streams fully in `pipeline.py`, pull every `[n]` from the text with a regex, compare `n` against `len(contexts)` from `retrieve_contexts()`, strip or flag anything higher.
+SAY: "No worries, let's build it together right now, ten minutes, then we test it live."
+
+Build it together. The exact fix, since we now know the code: after the answer streams fully in `pipeline.py`, pull every `[n]` from the text with a regex, compare `n` against `len(contexts)` from `retrieve_contexts()`, strip or flag anything higher.
 
 TYPE INTO APP (baseline, using the app's own example question):
 "When should pharmacological treatment for adult hypertension start?"
