@@ -1,7 +1,9 @@
-# Tonight's 60-Minute Script, Fitted to the Real NCD Guideline Tutor Code
+# 60-Minute Script, Fitted to the Real NCD Guideline Tutor Code
 Built from reading the actual repo (see audit_ncd_guideline_tutor.md). Replaces the generic placeholders in consultation_call_script_60min.md with exact prompts, exact model names, and exact findings this specific app will produce.
 
-**Before the call starts:** confirm with Sudhir which provider key is working. If Anthropic is still out of credits, tell him to switch the provider dropdown to Gemini (`gemini-3.5-flash-lite`) before 6 PM so you don't lose live-testing time a second night in a row.
+**RESCHEDULED (confirmed Oct 10, 6:33 PM message):** Original Oct 10 1 PM session did not happen. Sudhir asked to move to **Oct 11, 3:00 PM Eastern (8:00 PM Lagos/WAT time)**, pending resolution of the Upwork offer's Fixed-Price-vs-Hourly discrepancy. Reason given tied to sorting the Upwork offer first. Confirm the new time still holds before relying on this script.
+
+**Before the call starts:** confirm with Sudhir which provider key is working. If Anthropic is still out of credits, tell him to switch the provider dropdown to Gemini (`gemini-3.5-flash-lite`) beforehand so you don't lose live-testing time a third time in a row. Also confirm the Upwork offer has been corrected to Fixed-Price $65 (or clarify if it's intentionally staying Hourly for future sessions) before the call starts.
 
 ---
 
