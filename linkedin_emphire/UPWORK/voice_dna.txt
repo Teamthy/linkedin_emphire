@@ -7,9 +7,17 @@ and "never corporate, never fake" still applies. This file
 only covers what's DIFFERENT about writing for Upwork.
 
 ═══════════════════════════════════════════════════
+PUNCTUATION OVERRIDE (applies everywhere, Upwork included)
+═══════════════════════════════════════════════════
+DO NOT use em dashes (—) in any Upwork copy: profile text,
+proposals, consultation descriptions, FAQs, gallery captions,
+anything client-facing. User explicitly banned them. Use a
+comma, a period, or a colon instead.
+
+═══════════════════════════════════════════════════
 WHAT CARRIES OVER UNCHANGED
 ═══════════════════════════════════════════════════
-→ Formality level 6/10 — professional enough for a CTO reading
+→ Formality level 6/10, professional enough for a CTO reading
   proposals, human enough to not sound like a template
 → Contractions always: I'm, don't, can't, it's, here's
 → Honest admissions over fake authority ("I built that thing

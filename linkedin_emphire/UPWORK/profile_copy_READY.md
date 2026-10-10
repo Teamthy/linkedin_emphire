@@ -122,7 +122,7 @@ Led backend development in Go and Node.js across client-facing products, owning 
 
 ## 7. EDUCATION (unchanged — completeness)
 ```
-BSc Computer Science — National Open University of Nigeria — Expected April 2028
+BSc Computer Science, National Open University of Nigeria (Expected April 2028)
 ```
 
 ## 8. PROFILE PHOTO

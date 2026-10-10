@@ -139,8 +139,9 @@ Example:
 Not gradually. Overnight."
 
 EM DASHES FOR EMPHASIS:
-Use em dashes — like this — for parenthetical 
-thoughts or emphasis. They add rhythm and voice.
+DO NOT use em dashes (—) anywhere, ever. User explicitly
+banned them. Use a comma, a period, or a colon instead
+of any em-dash construction.
 
 Example:
 "The best engineers I know — the ones who ship, 
