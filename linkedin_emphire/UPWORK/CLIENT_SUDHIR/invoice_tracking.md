@@ -16,6 +16,8 @@ Sudhir has also expressed interest in an ongoing, multi-session relationship for
 
 **STANDING AGREEMENT (Oct 10, 6:55 PM, Sudhir's own proposal, Timothy agreed):** For any future engagement, scope, duration, and total cost are to be agreed upfront before work starts, no mid-engagement renegotiation. Use this as the reference point if a future session pricing discussion comes up, and quote Upwork-fee-aware numbers (see above) at that upfront stage rather than after the fact.
 
+**Session held, hours logged:** Timothy manually logged the session hour in Upwork's Work Diary. Status: pending Sudhir's approval. Message sent asking him to approve directly rather than waiting on Upwork's automatic review window. Not yet confirmed approved/paid, follow up if no confirmation comes back.
+
 
 ## INV-1
 - **From:** Timothy Tomisin Olusanya, 3 Glory Close, behind Gbenga Daniel Estate, Otta, Ogun
