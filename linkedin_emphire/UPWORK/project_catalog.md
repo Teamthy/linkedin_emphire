@@ -1,12 +1,26 @@
-# PROJECT CATALOG — 3 fixed-price listings
+# PROJECT CATALOG — 3 fixed-price listings (SEO-checked against Upwork's own docs)
 The catalog is the client ladder from `STRATEGY/2026-10-02_90-day-10k-client-positioning.md` productized for search. Same three-tier logic, Upwork-priced to win the first reviews before raising toward the LinkedIn-side $1.5k-$3.5k engagement pricing.
 
-Each listing below is ready to paste into Upwork's Project Catalog fields: title, tagline/hook, price, timeline, full description (paragraph + deliverables + confidentiality line).
+Each listing below is ready to paste into Upwork's Project Catalog fields: title, category, search tags, tagline/hook, price, timeline, full description (paragraph + deliverables + confidentiality line).
+
+## CATALOG SEO NOTES (confirmed via support.upwork.com and upwork.com/resources — read before publishing)
+- **Title field is 75 characters max, and Upwork auto-prepends "You will get…" to every title — that prefix counts toward the 75.** The titles below already include the prefix and are measured against the real limit.
+- **Don't write the title as an instruction ("You will get a scan")** — Upwork's own guidance says say what you offer in a few words, don't repeat "You will get," use normal capitalization, and push extra keywords into search tags instead of cramming the title.
+- **The project URL is generated from the FIRST title you publish and does not change even if you edit the title later.** Get each title close to final before you hit publish the first time — this is a one-shot SEO decision per listing, unlike the profile title which you can freely A/B test.
+- **Search tags: up to 5 per listing, pulled from Upwork's standardized/autocompleted tag list** (same mechanic as profile skills). These are a separate discoverability lever from the title — use them for keywords that didn't fit in the 75 characters.
+- **Category: choose the single closest match** (Upwork suggests categories based on your title as you type) — avoid "Other." This determines which category browse-pages and category-filtered searches the listing appears in.
+- **Boosting (paid placement) exists but isn't worth using yet.** Boosting only pays off once JSS, Top Rated status, and 5+ recent reviews are in place — per `content_strategy.txt` Part 2, that's after the first 3-5 jobs, not at launch.
 
 ---
 
 ## TIER 1 — AI QUICK SCAN
-**Title:** AI Quick Scan — 15 Injection Tests + One-Page Findings
+**Catalog title (exact, 69/75 chars incl. "You will get…"):**
+```
+You will get a 15-point AI prompt injection scan with findings report
+```
+**Category:** AI Services (or closest Upwork-suggested match — likely nested under Cybersecurity & Data Protection)
+**Search tags (5):** AI Security, Prompt Injection, Chatbot, Security Testing, LLM
+**Listing nickname (internal use only):** AI Quick Scan
 **Price:** $150
 **Timeline:** 3 days
 **Hook line:** Know if your bot is soft before you spend on a full audit.
@@ -27,7 +41,13 @@ Your findings never leave our workspace. Nothing about your system, prompts, or 
 ---
 
 ## TIER 2 — AI RED TEAM REVIEW
-**Title:** AI Red Team Review — 4-Layer Attack Testing + Fix Roadmap
+**Catalog title (exact, 72/75 chars incl. "You will get…"):**
+```
+You will get an AI red team test: prompt injection, RAG, and agent abuse
+```
+**Category:** AI Services (or closest Upwork-suggested match)
+**Search tags (5):** AI Security, Prompt Injection, RAG, AI Agents, Penetration Testing
+**Listing nickname (internal use only):** AI Red Team Review
 **Price:** $600
 **Timeline:** 1 week
 **Hook line:** The full test most teams skip until something breaks in production.
@@ -49,7 +69,13 @@ Your findings never leave our workspace. Nothing about your system, prompts, or 
 ---
 
 ## TIER 3 — PRE-LAUNCH HARDENING
-**Title:** Pre-Launch Hardening — Red Team + Code-Level Gates + Regression Suite
+**Catalog title (exact, 74/75 chars incl. "You will get…"):**
+```
+You will get full AI red team testing with code fixes and regression suite
+```
+**Category:** AI Services (or closest Upwork-suggested match)
+**Search tags (5):** AI Security, Red Teaming, Regression Testing, LLM, Risk Assessment
+**Listing nickname (internal use only):** Pre-Launch Hardening
 **Price:** $1,500
 **Timeline:** 2 weeks
 **Hook line:** Ship once, stay fixed. The full loop, not just a one-time test.
