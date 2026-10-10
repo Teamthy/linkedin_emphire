@@ -1,7 +1,9 @@
 # UPWORK EMPIRE — sibling system to LinkedIn
 
 This folder is the Upwork counterpart to the LinkedIn empire. Same man, same
-thesis ("I break AI before your users do"), same brand palette and headshot —
+identity (**software engineer, full-stack developer, who specializes in AI
+red teaming**), same thesis ("I build AI features, and I'm the one who
+breaks them before your users do"), same brand palette and headshot —
 different *function*. Read `master_prompt.txt` first if you're dropping this
 into an AI tool to get help running it.
 
@@ -10,8 +12,9 @@ story, builds authority, earns inbound DMs and referral-quality leads.
 
 **Upwork:** upwork.com/freelancers/~01a65712b8b0954fd2 — the counter.
 Search-matched, package-first, review-fed. Buyers who are already typing
-"prompt injection testing" into a search box and want to hire *today*, not
-follow a thought leader.
+"AI red teaming," "prompt injection testing," or "full-stack developer"
+into a search box and want to hire *today*, not follow a thought leader.
+
 
 ## Why both exist
 LinkedIn leads are warm but slow (90-day arc to the first $10k, per

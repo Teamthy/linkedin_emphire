@@ -10,10 +10,24 @@ tiers adjusted). Don't edit the PLANS file after the fact.
 ═══════════════════════════════════════════════════
 PART 1: THE OFFER (what Upwork sells, in one line)
 ═══════════════════════════════════════════════════
-AI red teaming / LLM & RAG security testing for teams shipping
-AI features. Same thesis as LinkedIn ("I break AI before your
-users do"), productized into 3 fixed-price catalog tiers (see
-project_catalog.md) instead of a custom-quote conversation.
+Identity: full-stack software engineer (Go, Node.js, TypeScript,
+Next.js) who specializes in AI red teaming. Same identity
+structure as LinkedIn ("Software Engineer | AI Red Teaming... Web
+· Computer Vision · AI Integration") — engineer first, specialist
+second, not a dedicated security freelancer.
+
+Productized offer: AI red teaming / LLM & RAG security testing
+for teams shipping AI features, sold as 3 fixed-price catalog
+tiers (see project_catalog.md) instead of a custom-quote
+conversation. The engineering identity is what makes the offer
+credible ("I build this stuff, which is how I know where it
+breaks"); the catalog is what makes it purchasable.
+
+Proposal targeting still prioritizes AI/chatbot/RAG/agent job
+posts first (see proposal_templates.txt) — the dual identity
+widens profile discovery and credibility, it doesn't change which
+jobs you chase by default. Generic full-stack-only gigs stay
+opportunistic, per STRATEGY/2026-10-02_90-day-10k-client-positioning.md.
 
 ═══════════════════════════════════════════════════
 PART 2: PRICING LADDER + REVIEW-FIRST PHILOSOPHY
