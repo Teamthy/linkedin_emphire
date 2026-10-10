@@ -14,6 +14,8 @@ Session originally set for Oct 10, 1 PM, did not happen. Rescheduled by Sudhir t
 
 Sudhir has also expressed interest in an ongoing, multi-session relationship for future AI security/RAG work, and asked for "flexibility and reasonable pricing." Not yet decided how future sessions will be priced or structured beyond the Upwork-fee-aware quoting approach above; flag if/when that becomes concrete.
 
+**STANDING AGREEMENT (Oct 10, 6:55 PM, Sudhir's own proposal, Timothy agreed):** For any future engagement, scope, duration, and total cost are to be agreed upfront before work starts, no mid-engagement renegotiation. Use this as the reference point if a future session pricing discussion comes up, and quote Upwork-fee-aware numbers (see above) at that upfront stage rather than after the fact.
+
 
 ## INV-1
 - **From:** Timothy Tomisin Olusanya, 3 Glory Close, behind Gbenga Daniel Estate, Otta, Ogun
