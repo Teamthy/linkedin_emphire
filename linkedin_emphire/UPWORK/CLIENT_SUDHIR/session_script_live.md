@@ -3,6 +3,8 @@ Built from reading the actual repo (see audit_ncd_guideline_tutor.md) and mapped
 
 **RESCHEDULED:** Session moved to Oct 11, 3:00 PM Eastern (8:00 PM Lagos/WAT), pending resolution of the Upwork offer's Fixed-Price-vs-Hourly mismatch. Confirm before the call: (1) offer corrected to Fixed-Price $65 or intentionally left Hourly, accepted either way before you start, (2) Sudhir has a working provider key, if Anthropic is still out of credits, switch to Gemini (`gemini-3.5-flash-lite`) beforehand.
 
+**PACING REQUEST (confirmed Oct 10, 7:05 PM):** Sudhir asked for a moderate pace, screen share with practical examples throughout (already how this script is built), and key technical terms/references dropped in the call chat as they come up, for him to review afterward. Use `glossary_reference.md`, it's ordered to match this script's phases, paste the relevant block into chat right as each phase starts. Don't rush the TYPE/WATCH FOR demonstrations, let him see the actual output before moving on.
+
 ---
 
 ## 0:00–0:07 — Architecture & Security Controls Review
