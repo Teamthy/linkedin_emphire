@@ -1,0 +1,29 @@
+{
+  "post_number": 5,
+  "date": "2026-09-23",
+  "scheduled_time_WAT": "12:00-12:15 PM",
+  "slug": "clever-code-tax",
+  "pillar": "Software Engineering (SE)",
+  "style": "Observational Insights (Bolaji-short)",
+  "char_count": 1105,
+  "structure": {
+    "confession": "Worst code I wrote was the code I was proud of",
+    "cost": "Beautiful weekend abstraction — nobody could extend it 3 months later",
+    "mistake": "Valuing cleverness over readability",
+    "truth": "Clever code is a tax; boring code is the superpower",
+    "one_rule": "If I'm proud of how clever a piece is, I probably need to rewrite it",
+    "ps_question": "What's your clever-code horror story? Screenshot gets a reply"
+  },
+  "voice_check": {
+    "opener": "Funny enough… (DNA match)",
+    "natural_phrases": ["Here's the thing", "One rule I ship by now"],
+    "closer": "That's it." — substituted with in-flow close "The code that survives isn't the smartest…"
+  },
+  "screenshot_line_present": true,
+  "banned_words_check": "PASS — no leverage/cutting-edge/deep dive/game-changer/comprehensive/hustle/crush/hot take",
+  "formality_score": 6,
+  "hashtags": ["#SoftwareEngineering", "#CodeQuality", "#BuildInPublic", "#DevLife"],
+  "engagement_window": "12:00-1:30 PM WAT (90 minutes post-post)",
+  "seed_comment": "Forgot to mention — the function was called `processThings`. It did nine things. None of them were called `processThings`.\n\nEvery time someone new joined the team, that function was the first thing they asked about.\n\nNaming things is hard. Naming a nine-headed monster honestly is even harder.\n\nWho's got a worse one? 👇",
+  "status": "VERIFIED — ready to post 12:00 PM WAT Wed Sep 23"
+}

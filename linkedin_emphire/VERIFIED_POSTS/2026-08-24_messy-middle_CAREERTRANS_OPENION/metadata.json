@@ -1,0 +1,41 @@
+{
+  "post_number": 3,
+  "date": "2026-08-24",
+  "day_of_week": "Monday",
+  "slug": "messy-middle",
+  "title": "The messy middle of career switches nobody posts about",
+  "pillar": "Career Transitions",
+  "pillar_code": "TRANSITION",
+  "style": "Opinion Piece",
+  "style_code": "OPENION",
+  "char_count": 1197,
+  "recommended_posting_time": "Tuesday Aug 25, 12:00-12:15 PM WAT (lunch scroll, workweek mode)",
+  "backup_posting_time": "Monday Aug 24, 8:00-8:30 PM WAT (evening reflection scroll)",
+  "engagement_window": "Be online replying to comments for 90 minutes after posting. Reply to EVERY commenter individually — career-switch posts build your core audience.",
+  "hook_used": "A (quiet truth / messy middle)",
+  "hashtags": ["#CareerTransition", "#SoftwareEngineering", "#BuildInPublic"],
+  "primary_cta": "Who's in the middle of a switch right now? What's the thing nobody warned you about?",
+  "alt_ctas": [
+    "Tag someone in your network who's mid-switch and needs to read this today.",
+    "If you've already made the jump — what's the one thing that finally made you feel like you belonged in the room?"
+  ],
+  "performance_prediction": "HIGH",
+  "predicted_engagement": {
+    "comments": "Very high — emotional mirror for career switchers (a huge demographic on Nigerian LinkedIn). People share their own in-between stories. Switchers reply with relief. People who made it reply with encouragement.",
+    "saves": "High — people save the 'you don't cross a line' line for bad days.",
+    "shares": "Medium-High — people tag friends who are mid-switch.",
+    "profile_visits": "High — people finding you for the first time from a relatable career post will click through.",
+    "follows": "Strong — this is the post people follow after."
+  },
+  "rotation_check": {
+    "different_pillar_from_post_2": true,
+    "different_style_from_post_2": true,
+    "positions_software_engineer_primary": true,
+    "banned_words_clean": true,
+    "voice_dna_match": true,
+    "does_not_retell_post1_origin_story": true,
+    "addresses_audience_not_self": true
+  },
+  "voice_dna_phrases_used": ["Here's what nobody tells you"],
+  "notes": "Intentionally does NOT reuse the curiosity/clarity/purpose framework from Post #1. Universal tone — uses med-lab as one example among several, not centering self. Old-career-as-edge framing is the standout line that resonates."
+}

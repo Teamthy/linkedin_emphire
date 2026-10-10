@@ -1,0 +1,61 @@
+{
+  "article_number": 1,
+  "publish_date": "2026-10-09",
+  "publish_time_WAT": "10:00 AM",
+  "title": "Why every team shipping AI needs someone whose job is to break it",
+  "series": "Breaking AI: A Builder's Field Guide to Shipping AI That Survives Users (21 articles)",
+  "hashtag": "#BreakingAI",
+  "word_count": 1780,
+  "four_goals_check": {
+    "positioning": "PASS \u2014 opens with counter-consensus thesis, names the seam (build AND break), states the offer softly, Lagos grounded, 'I help teams find the holes before their customers do' as the positioning line",
+    "audience": "PASS \u2014 speaks to (A) CTOs/eng leaders: 'your team won't find their own holes', (B) founders: 'if you are shipping AI next quarter', (C) peers: starter checklist, war story, (D) security community: references real attack types without cosplay",
+    "thought_leadership": "PASS \u2014 introduces owned frames: 'The demo is not the product', 'the happy path lie', 'the prompt is not a wall', 'red teaming is an engineering job not a security job', 'the boring Tuesday afternoon incident'",
+    "client_acquisition": "PASS \u2014 soft CTA ('that is the work I do... DM me'), positioned around prevention not rescue, enough proof-of-work to demonstrate credibility without giving away everything"
+  },
+  "shareable_one_liner_for_pull_quote": "\"Most AI security failures are not security problems. They are engineering problems. And the team that built the system is the last team on earth that will find them.\"",
+  "quotable_secondary_lines": [
+    "\"The demo is not the product.\"",
+    "\"The prompt is not a wall.\"",
+    "\"Builders test that their code works. Red teams test that it breaks. You need both.\"",
+    "\"Red teaming is not about stopping the singularity. It is about stopping the boring, avoidable, career-ending Tuesday afternoon incident.\""
+  ],
+  "structure_notes": [
+    "Lead opens with counter-consensus thesis (shareable standalone)",
+    "War story: own bot, 4/6 breaks, specific costs (refund/policy leak)",
+    "Define red teaming plainly, demystify (no gatekeeping)",
+    "4 warnings with named frameworks (thought-leadership moves)",
+    "30-minute starter test (10 attacks) \u2014 actionable",
+    "Series roadmap + soft CTA for clients",
+    "PS engagement question"
+  ],
+  "voice_check": [
+    "Real talk cadence",
+    "No self-effacement ('I'm a software engineer in Lagos', not 'just an engineer')",
+    "Zero em-dash overuse (cap: 2 in whole article)",
+    "No banned words",
+    "No 'I'm not a security person' undermining line \u2014 replaced with 'you don't need to be a security person to do this'"
+  ],
+  "banned_words_check": "PASS",
+  "hero_visual_needs_update": false,
+  "visual_concept": "visual_concept.md \u2014 full asset system: hero, 3 inline diagrams, checklist card, test log card, optional incident timeline",
+  "visual_assets": {
+    "A1_hero_1200x627": "DONE (hero_generated.png)",
+    "A2_pullquote_1080x1080": "DONE (pullquote_generated.png)",
+    "B1_card_testlog_1080x1350": "DONE (cards/art1_card1_testlog_1080x1350.png) \u2014 Tue teaser",
+    "B2_card_checklist_1080x1350": "DONE (cards/art1_card2_checklist_1080x1350.png) \u2014 save asset, article end + Thu post",
+    "B3_card_headline_1080x1350": "DONE (cards/art1_card3_headline_1080x1350.png) \u2014 Wed quote post",
+    "B4_template_photocard": "DONE (cards/art1_template_photocard_1080x1350.png) \u2014 waits on portrait photo",
+    "A3_testlog_card_1080x1350": "TO BUILD \u2014 Tuesday teaser",
+    "A4_happy_path_1600x900": "TO BUILD \u2014 inline",
+    "A5_prompt_is_not_a_wall_1600x900": "TO BUILD \u2014 inline",
+    "A6_confirmation_trap_1600x900": "TO BUILD \u2014 inline",
+    "A7_checklist_card_1080x1350": "TO BUILD \u2014 save-bait + article end"
+  },
+  "status": "SCHEDULED Fri Oct 9, 10am WAT",
+  "launch_assets": {
+    "article_LINKEDIN_READY.txt": "plain-text, zero asterisks, image markers, 1881 words",
+    "launch_posts.md": "9am teaser + article seed comment + 90-min window + Wed/Thu previews",
+    "teaser_card": "cards/art1_card1_testlog_1080x1350.png"
+  },
+  "schedule_note": "Moved from Oct 6 to Oct 9 (decision Oct 6). 3-day launch arc: Wed Oct 7 confession post, Thu Oct 8 checklist save-bait, Fri Oct 9 article."
+}

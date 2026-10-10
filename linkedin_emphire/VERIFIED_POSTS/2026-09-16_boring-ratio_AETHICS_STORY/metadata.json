@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-16",
+  "slug": "boring-ratio",
+  "pillar": "AI Ethics / Responsible AI",
+  "style": "Personal Story (Bolaji-short: confession -> cost -> truth -> one rule -> PS)",
+  "status": "VERIFIED - ready to post 2026-09-16 12:00 PM WAT",
+  "verified_date": "2026-09-15",
+  "posting_time": "2026-09-16 12:00-12:15 PM WAT (lunch scroll)",
+  "char_count": 1202,
+  "word_count": 202,
+  "hashtags": ["#AIethics", "#SoftwareEngineering", "#BuildInPublic"],
+  "rotation_check": {
+    "previous_post_pillar": "AI Ethics (repost/comment yesterday)",
+    "previous_post_style": "Opinion/Hot-take",
+    "current_style": "Personal Story",
+    "style_rotation_ok": true,
+    "note": "Back-to-back AI Ethics but different angle (personal ship story vs debate framing); 4.4K impressions prove theme is resonating now"
+  },
+  "performance_prediction": "HIGH - personal story, concrete 2h/22h ratio, Nigerian English line is uniquely Timothy, builder-focused question pulls replies",
+  "banned_words_checked": true,
+  "voice_dna_check": {
+    "natural_phrases": ["Let me tell you", "Here's the thing", "Truth is"],
+    "contractions": true,
+    "sentence_fragments": true,
+    "one_word_paragraphs": true,
+    "formality_level": "6/10",
+    "se_primary_positioning": true
+  }
+}

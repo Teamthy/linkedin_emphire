@@ -1,0 +1,67 @@
+FULL CALL SCRIPT - SUDHIR INTRO - FRI OCT 9, 6:30 PM WAT / 1:30 PM ET - 20 MIN HARD STOP
+
+=== WHAT WE OBSERVED FROM HIS APP (know it, reveal none of it tonight) ===
+1. Stack: Gradio 6.28 public space + FastAPI. RAG pipeline files: chunking, embeddings, index/ingest, retrieve, rerank, generate. Routes: chat.py, eval.py, filters.py. Gold set + provider demos in evals/. Three real WHO PDFs in data/. Five unit tests. Last push Sept 25. Free CPU.
+2. KNOWLEDGE BASE IS PUBLIC: indexes/ (chunks.jsonl, chroma binaries, bm25.pkl) committed in the repo. Anyone can read what the bot knows and target chunks.
+3. API KEYS PER REQUEST in a SHARED public Gradio space: users paste private keys into one common box. Request-scoped is not session-isolated on a shared process.
+4. filters.py EXISTS - contradicts his written claim "all guardrails live in the system prompt." Find out which is true.
+5. /api/eval/run reachable on the public space domain - eval harness on the internet next to the index.
+6. Tone rule: his portfolio piece is polished. "This is strong, AND here is what strong means." Never "this is broken."
+RULE: every observation becomes a QUESTION tonight. His answers. Your findings are Saturday's product.
+
+=== THE SCRIPT ===
+
+0:00 OPEN
+"Sudhir, good to see you. Twenty minutes, three outcomes: one gate fix you can build tonight, your dread question on the table, and Saturday's agenda locked. I'll keep us to the clock - that's how tomorrow runs too. Fair?"
+
+1:00 FRAME THE PREP
+"I went through your space properly before this call - pipeline, evals, the gold set. I have questions, not announcements, because your answers tell me where Saturday's hour goes. Ready?"
+
+2:00 CHECKPOINT 1: CITATION FORMAT
+"First: show me your system prompt's citation instruction - the exact words you force the model to cite with."
+RIGHT (structured, [[c:id]] or numbered sources): "You've already done step zero - most people never demand a parseable format. The gate slots straight behind it."
+MISMATCH (prose, "please cite the source"): "Then you've found the real dependency: you can't parse what you never required. Saturday's first fifteen minutes fix that - force the format, then enforce it. Better you hear it from me than a panel hears it Tuesday."
+
+3:30 CHECKPOINT 2: FILTERS
+"Your message said every guardrail lives in the prompt. But there's a filters.py in your routes. What does it enforce, and what happens to a request that fails it?"
+RIGHT (he knows, drops/flags): "Good. Interview version: is the filter decision logged with the request ID, and can a caller reach your endpoints without passing the UI? That second one matters more than the first."
+MISMATCH (fuzzy): "Write it down - Saturday minute one we trace it together. Where a request enters, where the filter runs, what bypasses it. A guardrail you can't point to on a diagram is a rumor. The day you can draw it, it becomes a hiring story."
+
+5:30 CHECKPOINT 3: THE INDEX
+"Your retrieval index - chroma, bm25, the chunks file. Where does it live at runtime, and who can read it?"
+(Then silence. Let him find it himself.)
+RIGHT ("it's packaged with the app... the repo is public"): "And that's a decision, not a mistake - make it on purpose: assume the corpus is readable, and your threat model includes attackers who know exactly which chunks to write against. Saturday we write what changes, and what doesn't, under that assumption. Interviewers will love that sentence."
+MISMATCH ("server-side, private"): "Ten seconds - open the space's file list with me. The indexes folder looks versioned with the app. If I'm right: classic secrets-in-repo pattern, five-minute fix, huge story. If I'm wrong, you just watched a consultant verify before he sells you anything. Either way: Saturday, minute five."
+
+8:00 CHECKPOINT 4: THE KEYS
+"You said API keys come per request and the app never stores them - in a shared public space. Walk me through the life of one key. The user types it... then what?"
+RIGHT (he sees it in five seconds): "That's why you'll tell this story well. A public demo where strangers paste secrets into one shared box needs an answer: isolated sessions, or no user keys at all - proxy it server-side with your own budget cap. We draw that wall Saturday. Put this finding at the top of your portfolio. It's the one that gets you the second interview."
+MISMATCH (defends, "learning POC, nobody would"): "On a POC, fair. One reframe to bank tonight: every portfolio demo is also a live deployment. Attackers don't read the POC label. The POC boundary IS the app boundary - that's the governance question with no textbook answer, and Tuesday you'll have your own."
+
+10:30 CHECKPOINT 5: THE FREE TEACH
+"My two minutes of value. Your judge scores citation quality. It cannot see citation existence. A fluent WHO citation to a chunk that was never retrieved reads like skill to Gemini. The fix is boring, which is why it's good: before the answer leaves the server, parse every cited chunk ID out of the response, compare against THIS request's retrieval trace. Subset passes. Anything else strips the citation or rejects the answer, and the verdict gets logged. Twenty lines of middleware. Code, not prompt. And run the gate BEFORE the judge - failures never spend judge tokens. Judges for semantics, sets for syntax. The judge is a spell-checker, not a door lock.
+One check, your voice not mine: does the gate compare against what was retrieved for this request, or a fresh re-retrieval at check time?"
+RIGHT (same request / the trace): "Correct - and notice you just explained why request IDs stop being plumbing and become evidence."
+MISMATCH (fresh retrieval): "Then you're auditing what you WOULD have shown the model, not what you DID. The gate matches the crime scene. It doesn't rebuild the room."
+
+13:00 CHECKPOINT 6: THE DREAD QUESTION
+"Your turn, honestly. Panel Tuesday - which question are you dreading? Give me the exact one."
+(Him talking. Do not interrupt a man confessing. Then match:)
+IF testing/validation: "Everyone answers with process - more testing, monitoring. The architecture answer, in your words now: deterministic gates first, model judging second, human review last, every request replayable. Request ID, chunk IDs with corpus version, prompt template version, filter verdicts, permission state at the moment of action. Every piece is already in your app. Saturday is sequencing."
+IF incident/audit: "Your trace gap is today's weakest answer and the fastest fix. We design the schema tomorrow so you sketch it on their whiteboard. 'More logging' gets a nod. 'Requests carry the permission state at action time' gets the offer."
+IF anything else: "That's tomorrow's last ten minutes. We rehearse it twice, out loud, and you leave able to answer it in one breath."
+
+15:30 CHECKPOINT 7: LOCK SATURDAY
+"Agenda, one PM your time, your app open. Map the pipeline properly - index visibility, filter placement, the key path. Fifteen. Then break it: my three framings, then yours. Twenty. Then every finding gets a code-level gate, placed together. Fifteen. The trace schema. Ten. Then you write two findings in the four-part format, I red-pen. Ten. You walk out with a portfolio-grade security write-up, a schema you can draw, and five findings you found. Not findings I found - that distinction survives an interviewer's follow-up. Anything missing?"
+(Small add = "first five minutes." Big add = "that's a second hour - you'll know by Wednesday.")
+
+17:30 FREE GOLD + CLOSE
+"Two things tonight, before you sleep. Build the existence gate - you know exactly where it sits. And write the key question we just did as a four-part finding, top of your README: what happened, which layer failed, the fix, how you verify it holds. When they ask how you document findings, don't describe it. Read them that. Most candidates bring opinions. You bring evidence.
+Session link and payment page land in your DM in the morning - settle before noon Lagos and we're green.
+Twenty on the nose. Same clock tomorrow. One PM. Good luck tonight, Sudhir."
+
+=== HARD RULES ===
+1. NO live probing tonight. If asked: "That's Saturday minute fifteen, with your repo open - testing a live space on a rushed call is how good findings get missed."
+2. Timer visible. End at 20:00 even mid-sentence: "Write that down - first five minutes Saturday are yours."
+3. Report after: his citation format, his filters/index answers, his exact dread question.
+4. If frozen, any minute: "Let me see your screen." / "That's a Saturday question." / "What do YOU think breaks first?"

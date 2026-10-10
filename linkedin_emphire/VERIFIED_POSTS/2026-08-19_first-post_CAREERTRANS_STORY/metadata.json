@@ -1,0 +1,26 @@
+{
+  "date": "2026-08-19",
+  "day_of_week": "Wednesday",
+  "slug": "first-post",
+  "title": "I've rewritten this first post 11 times (debut post)",
+  "pillar": "Pillar 7 — Career Transitions",
+  "secondary_pillars": ["Pillar 1 — Software Engineering", "Pillar 5 — Multi-Domain", "Pillar 14 — Cultural Perspectives"],
+  "style": "Style 2 — Personal Story",
+  "hook_used": "Vulnerable meta confession ('I've rewritten this first post 11 times')",
+  "narrative_arc": "curiosity → clarity → purpose (3-act pivot)",
+  "character_count": 1620,
+  "banned_words_check": "PASSED",
+  "voice_check": "PASSED",
+  "predicted_performance": "HIGH",
+  "predicted_engagement_type": ["comments (primary)", "profile visits", "follower conversion"],
+  "best_posting_time_wat": "12:00 PM WAT (noon, Lagos)",
+  "backup_posting_time_wat": "7:00 PM WAT",
+  "hashtags": ["#SoftwareEngineering", "#CareerTransition", "#BuildInPublic"],
+  "cta": "PS: What's a career pivot you've made that people thought was crazy?",
+  "alt_ctas": [
+    "PS: What was the first thing you ever built that actually made you think 'OK, I can do this'? Mine was a janky to-do app that kept losing state in the browser. Yours?",
+    "PS: If you're also building in public, self-taught, or on your own weird multi-domain path, drop a 👋 in the comments. I want to meet you."
+  ],
+  "visual": null,
+  "notes": "Debut post. No visual recommended — text-only first post feels authentic. Profile photo + headline must be strong because click-through will be high."
+}

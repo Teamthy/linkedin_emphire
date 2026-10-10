@@ -1,0 +1,38 @@
+{
+  "post_number": 2,
+  "date": "2026-08-21",
+  "day_of_week": "Friday",
+  "slug": "bug-not-in-code",
+  "title": "The bug that wasn't in my code",
+  "pillar": "Software Engineering (SE)",
+  "pillar_code": "SE",
+  "style": "Observational Insights",
+  "style_code": "OBSERVE",
+  "char_count": 976,
+  "recommended_posting_time": "Friday 7:00-7:30 PM WAT (weekend wind-down scroll) or Saturday 10:00-10:30 AM WAT",
+  "backup_posting_time": "Saturday 10:00-10:30 AM WAT",
+  "engagement_window": "Be online replying to comments for 90 minutes after posting; war-story posts live or die on fast early replies",
+  "hook_used": "A (story/curiosity gap)",
+  "hashtags": ["#SoftwareEngineering", "#Debugging", "#BuildInPublic"],
+  "primary_cta": "What's the dumbest place you've ever found a bug? Genuinely want to read these.",
+  "alt_ctas": [
+    "Drop your most embarrassing debugging war story in the comments. I'll start — I once spent a day chasing a bug caused by a semicolon in a .env file.",
+    "If you've been there, drop a 🔧 in the comments so I know I'm not alone. And if you haven't — your day is coming."
+  ],
+  "performance_prediction": "HIGH",
+  "predicted_engagement": {
+    "comments": "High — war stories are the single most comment-generating topic for engineers on LinkedIn",
+    "saves": "Medium — people save relatable SE posts for the next time they need to remind themselves",
+    "shares": "Medium-Low",
+    "profile_visits": "High — people who laugh + relate click through after the debut post"
+  },
+  "follows_debut_post": true,
+  "rotation_check": {
+    "different_pillar_from_post_1": true,
+    "different_style_from_post_1": true,
+    "positions_software_engineer_primary": true,
+    "banned_words_clean": true,
+    "voice_dna_match": true
+  },
+  "status": "VERIFIED — ready to post"
+}

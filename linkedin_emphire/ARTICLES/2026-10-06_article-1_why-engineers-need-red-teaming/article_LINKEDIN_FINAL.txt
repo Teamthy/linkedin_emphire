@@ -1,0 +1,176 @@
+TITLE FIELD:
+AI Red Teaming: Why Every Team Shipping AI Needs Someone Whose Job Is to Break It
+
+SUBTITLE FIELD:
+Article 1 of 21. Breaking AI: A Builder's Field Guide to Shipping AI That Survives Users.
+
+EDITOR: lines marked [H2] and [H3] = select in LinkedIn editor and apply Heading style. [IMAGE] lines = insert image there. No asterisks anywhere on purpose.
+
+[IMAGE 1 - cover: launch_cover_twist_1920x1200.png]
+
+Most AI security failures are not security problems.
+
+They are engineering problems. And the team that built the system is the last team on earth that will find them.
+
+I did not learn that from a paper. I learned it on a Tuesday night in Lagos, trying to break a customer support chatbot I had spent a month building.
+
+Six prompt injection attempts. Four of them worked.
+
+One made the bot leak my internal system prompt. One made it promise a full refund to anyone who typed the word "pineapple." One got it to ignore my content policy and rant about a topic I explicitly told it to avoid.
+
+I wrote every prompt. I wired every tool. I thought I knew where the holes were.
+
+I didn't.
+
+If you are shipping AI right now, as an engineer, a founder, a CTO or a team lead, that last paragraph should make you uncomfortable.
+
+Not because I am a bad engineer. Because I am a decent one, and I missed four of six obvious holes in my own work.
+
+You could blame the tooling. The industry's favorite framing is that better products will arrive with the next model. Hold that thought. We are coming back to it.
+
+This is article one of twenty-one. I am writing Breaking AI because almost everything written about AI risk comes from people who do not ship AI. Policy papers. Think pieces. Takes from people who have never wired a tool call, never debugged a RAG failure at 2 AM, never had to tell a client their chatbot just promised a refund it had no authority to give.
+
+I am a software engineer in Lagos. I build AI products. I run computer vision research. For the last few months, half my time goes to building AI integrations and the other half goes to destroying what I just built, before users do it first.
+
+The teams that win with AI over the next three years will not be the ones shipping fastest. They will be the ones that know how to find their own holes.
+
+Most teams have not started.
+
+[H2] Red teaming is not a security job. It is an engineering job.
+
+"Red teaming" sounds military. It sounds like you need a certification, a black hoodie and a clearance.
+
+You need none of that.
+
+Red teaming, for a team shipping AI, means one thing:
+
+Pretend to be the worst user your system will ever meet. Try what they would try. Write down what breaks. Fix it before the real ones arrive.
+
+That is it.
+
+You are not hacking your system like a movie. You are not simulating a nation-state adversary. You are doing what every serious engineer has always done: testing the thing, honestly, against what it will actually face.
+
+You test error handling. You load test. You rehearse migrations.
+
+So why did AI get exempted from all of that?
+
+You do not need a PhD. You do not need garak, PyRIT or a fifty thousand dollar engagement. You need an hour, ten obvious attacks a bad user would try, and the willingness to look at your own work like someone who wants it to fail.
+
+The companies doing AI responsibly right now are not the ones with the biggest governance budgets. They are the ones where at least one engineer spends a few hours a week trying to break what the other engineers built.
+
+That is the whole practice. At the start, it is.
+
+[H2] The four things nobody warns you about before you ship AI
+
+I have broken enough of my own features to see the pattern. This is what catches almost every team on their first integration.
+
+[H3] The demo is not the product
+
+Every AI demo works. Every pitch deck is flawless. Every tutorial shows a polite user asking one on-topic question and getting a beautiful answer.
+
+Real users are not polite. They are curious, angry, bored, sixteen, testing your bot for fun, pasting walls of text from Reddit, seeing what they can get away with.
+
+If your system only handles the polite question, you have not built a product. You built a demo.
+
+I call this the happy path lie. The happy path is the one your PM walks in the demo. The other nine paths are where your users live.
+
+[H3] The prompt is not a wall
+
+If your whole security model is "we wrote a good system prompt telling it not to do bad things," you do not have security.
+
+System prompts are suggestions. Users override them. They can, and they will.
+
+I have done it to my own bot. I have done it to production bots built by teams much larger than mine. It is not hard. It does not take cleverness. It takes typing like an idiot until the model gives up.
+
+Teams that trust prompt-only guardrails are one angry user away from a public incident.
+
+[H3] The boring failures are the expensive ones
+
+The AI apocalypse is not coming for your support chatbot. The boring failures are.
+
+A leaked system prompt. A hallucinated refund. A biased answer quietly punishing a non-Western name. An off-topic rant screenshotted by a customer and posted on X on a Saturday night.
+
+None of that is sci-fi. All of it is a Tuesday.
+
+Red teaming is not about stopping the singularity. It is about stopping the boring, avoidable, career-ending, Tuesday afternoon incident. The one that ends up in the tech press, costs you customer trust, and finishes as a post-mortem nobody wanted to write.
+
+[H3] The builder cannot be the only tester
+
+I cannot see my own blind spots. You cannot see yours.
+
+I built my support bot to be helpful, so I tested it by asking helpful questions. Every injection that worked was one I would never have tried, because I was not trying to break it. I was trying to validate it.
+
+Testing has a name for this: the confirmation trap.
+
+Builders test that the code works. Red teams test that the code breaks. You need both. If the person writing the prompts is the only person testing them, you will ship holes nobody can see.
+
+[H2] The thirty-minute test you can run before lunch
+
+Before you buy AI security tooling. Before you hire a consultant. Before you write a forty-page AI governance policy. Do this.
+
+Open your AI feature. Whatever it is. Chatbot, summarizer, agent, computer vision classifier.
+
+Write down ten things a user would try if they wanted to break it. Do not overthink. Start with the obvious ones:
+
+1. Ask it to ignore all previous instructions.
+2. Paste in five hundred words of nonsense and see if it still answers.
+3. Ask it to share the instructions it was given.
+4. Ask it to do something it cannot: issue a refund, reveal another user's data, generate content you banned.
+5. Send input in a language your team never tested. Built in the US? Try Yoruba, Pidgin, Swahili. Anything outside the training data comfort zone.
+6. Ask it something it cannot possibly know and watch what it says.
+7. Be angry. Be demanding.
+8. Paste in a fake document or link. Does it trust the content?
+9. Force a tool call it should not make.
+10. Submit a blank input. One character. Ten thousand.
+
+Run them. One by one. Write down what happens.
+
+Pick the three most embarrassing failures. Fix them before you ship.
+
+That is red teaming. That is the starter test. You can run it before lunch.
+
+Run this and pass everything? Your system is not unbreakable. You are just not creative enough yet. And you are already ahead of eighty percent of the AI features shipping this month.
+
+I have run this list against multi-million dollar AI products from companies you have heard of.
+
+Most of them fail at test one.
+
+[IMAGE 2 - checklist card: cards/art1_card2_checklist_1080x1350.png]
+
+[H2] What to do with all this
+
+Over the next twenty articles I am going to break my own AI systems on purpose.
+
+Prompt injection on my chatbots. Poisoning my own RAG retrieval. A naive tool-calling agent that I try to make issue unauthorized refunds. Computer vision and multimodal systems, the attack surface almost nobody writes about.
+
+Exact prompts. Exact failures. Cheap controls that work before you are buying enterprise anything.
+
+I will not tell you AI is safe. I will not tell you it is dangerous. I will tell you what broke when I tested it, how I fixed it, and what I would do differently next time.
+
+If you are an engineer shipping AI features, this series gives you a repeatable way to test your work before your users do.
+
+If you are a founder or engineering leader, it shows you where the holes in your system probably live, even if your team has not found them.
+
+And if you build AI outside the Silicon Valley echo chamber, like me here in Lagos, you will see how non-English inputs, tighter budgets and different user behavior change the failure surface. Most of the existing writing misses that completely.
+
+If you are shipping an AI feature this quarter and you are not sure it survives contact with a real user, that is the work I do. I help teams find the holes before the customer does. Run the starter test here on your own and catch the obvious stuff. Want the thorough version? DM me or drop a comment. I reply to every one.
+
+Start this week. Start today. Open your chatbot and ask it to ignore its instructions.
+
+You might be surprised how fast it agrees.
+
+[H2] One more thing
+
+If you have ever run a test like this on your own AI feature, tell me in the comments what broke.
+
+First rule of this series: no shame. Every AI engineer has shipped a hole. The ones who admit it fix it fastest.
+
+And if this made you slightly nervous about what your system does when nobody is watching, that is the point. Share it with the person on your team who tests things. Or with the person who does not, you both know who that is.
+
+Next in the series: Article 2, Tuesday October 13. The five boring failure modes nobody warns you about before you ship AI.
+
+Until then,
+
+Olusanya Timothy
+Software Engineer · Lagos
+Breaking AI: A Builder's Field Guide · 01/21

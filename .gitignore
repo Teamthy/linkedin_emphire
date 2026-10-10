@@ -2,3 +2,11 @@
 *.zip
 *.bundle
 .history/
+
+node_modules/
+dist/
+build/
+.next/
+venv/
+__pycache__/
+.env

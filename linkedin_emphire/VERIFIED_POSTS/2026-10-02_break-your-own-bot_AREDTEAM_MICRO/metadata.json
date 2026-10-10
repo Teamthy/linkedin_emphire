@@ -1,0 +1,16 @@
+{
+  "post_number": 6,
+  "date": "2026-10-02",
+  "scheduled_time_WAT": "5:00-6:00 PM",
+  "slug": "break-your-own-bot",
+  "pillar": "AI Red Teaming",
+  "style": "Micro (call-to-action / proof-of-work teaser)",
+  "char_count": 470,
+  "structure": "teaser for article 1, proof-of-work signal (I broke my own bot, 4/6 attacks worked), low-friction call-to-action",
+  "screenshot_line_present": false,
+  "banned_words_check": "PASS",
+  "voice_check": ["Quick one", "Nobody has to tell you", "Start there"],
+  "hashtags": ["#AIRedTeaming", "#AISecurity", "#BuildInPublic"],
+  "status": "POSTED — Oct 2, ~5-6 PM WAT (confirmed by user)",
+  "posted_time_WAT": "~5-6 PM"
+}

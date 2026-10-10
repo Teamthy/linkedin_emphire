@@ -1,0 +1,23 @@
+{
+  "post_number": 7,
+  "date": "2026-10-03",
+  "scheduled_time_WAT": "10:00 AM (posting ~11:15 AM)",
+  "slug": "boring-attacks-worked",
+  "pillar": "AI Red Teaming",
+  "style": "Micro (reflection / week 1 field notes)",
+  "char_count": 494,
+  "structure": "week-1 reflection, contrast expectation vs reality, one truth line, quote-bait closer, PS question",
+  "screenshot_line_present": false,
+  "banned_words_check": "PASS",
+  "em_dash_count": 0,
+  "voice_check": [
+    "One week of",
+    "Doors look fine until someone tries the handle",
+    "no corporate speak"
+  ],
+  "hashtags_suggested": [
+    "#AIRedTeaming",
+    "#AISecurity"
+  ],
+  "status": "POSTED \u2014 Sat Oct 3 (confirmed by user)"
+}

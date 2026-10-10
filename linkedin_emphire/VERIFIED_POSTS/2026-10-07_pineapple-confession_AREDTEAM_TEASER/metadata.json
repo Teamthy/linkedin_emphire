@@ -1,0 +1,16 @@
+{
+  "post_number": 10,
+  "date": "2026-10-07",
+  "scheduled_time_WAT": "10:00 AM (posted ~2:10 PM — US East morning scroll)",
+  "slug": "pineapple-confession",
+  "pillar": "AI Red Teaming",
+  "style": "Story teaser for Article 1",
+  "char_count": 476,
+  "structure": "confession opening (6 attempts, 4 breaks), specific failure (pineapple refund), credibility beat (I built it), promise of the article, Friday CTA",
+  "attach_image": "cards/art1_card1_testlog_1080x1350.png",
+  "screenshot_line_present": false,
+  "banned_words_check": "PASS",
+  "em_dash_count": 0,
+  "voice_check": ["Last week I tried", "I built that thing", "no corporate speak"],
+  "status": "READY TO POST — Wed Oct 7, attach test log card, seed comment 60s after"
+}

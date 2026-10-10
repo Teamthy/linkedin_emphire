@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-18",
+  "slug": "friday-cutoff",
+  "pillar": "Software Engineering (SE)",
+  "style": "Observational Insights (Bolaji-short: confession -> pattern -> the truth -> one rule -> PS)",
+  "status": "VERIFIED - ready to post 2026-09-18 12:00 PM WAT",
+  "verified_date": "2026-09-18",
+  "posting_time": "2026-09-18 12:00-12:15 PM WAT (Friday lunch scroll)",
+  "char_count": 1167,
+  "word_count": 221,
+  "hashtags": ["#SoftwareEngineering", "#DevLife", "#BuildInPublic"],
+  "rotation_check": {
+    "previous_verified_post": "2026-08-24 messy-middle (Career Transitions / Opinion)",
+    "previous_SE_pillar_post": "2026-08-21 bug-not-in-code (SE / Observational) — ~4 weeks ago, good gap",
+    "recent_ai_ethics_run": "Sep 15 (comment/repost day) + Sep 16 draft if posted — deliberately shifting back to SE for rotation",
+    "style_check": "Observational Insights, different from recent (Personal Story, Opinion, Repost-with-comment)",
+    "friday_context": "Casual/relatable SE culture post perfect for Friday lunch scroll; engineers relate to merge-on-Friday trauma"
+  },
+  "performance_prediction": "HIGH — universal engineer truth, bullet format scannable, relatable personal anecdotes (without being fake-vulnerable), PS question triggers engineer war stories in comments",
+  "banned_words_checked": true,
+  "voice_dna_check": {
+    "natural_phrases": ["Real talk", "Here's the thing"],
+    "closers": ["The weekend you save will be your own"],
+    "contractions": true,
+    "sentence_fragments": true,
+    "one_word_paragraphs": false,
+    "em_dashes": false,
+    "formality_level": "6/10",
+    "se_primary_positioning": true,
+    "notes": "Kept anecdotes general/believable — I've been on every side of that call. No fake 'I once shipped something I regret' TED-talk story."
+  },
+  "authenticity_check": {
+    "fake_anecdotes": false,
+    "forced_vulnerability": false,
+    "corporate_speak": false,
+    "fabricated_regret_story": false,
+    "notes": "Uses general engineer experience instead of a single dramatic 'I broke production' story, because user dislikes fake 'I shipped something I regret' anecdotes."
+  },
+  "engagement_plan": {
+    "author_online_window": "12:00-1:30 PM WAT post-launch",
+    "reply_strategy": "Reply to every serious comment with a question back or a short story; like funny war-story comments; don't argue with 'real engineers ship 24/7' types",
+    "amplification": "Friday = amplification day per pipeline; if this gets >30 comments in first 2h, pin it on profile, share to X thread format"
+  }
+}

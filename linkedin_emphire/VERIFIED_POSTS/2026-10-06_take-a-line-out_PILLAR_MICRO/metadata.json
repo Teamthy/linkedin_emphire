@@ -1,0 +1,19 @@
+{
+  "post_number": 9,
+  "date": "2026-10-06",
+  "scheduled_time_WAT": "10:00 AM (posting evening per user request)",
+  "slug": "take-a-line-out",
+  "pillar": "AI Red Teaming",
+  "style": "Micro (proof-of-work observation + save driving)",
+  "char_count": 540,
+  "structure": "concrete experiment tonight, one-line-removal proof, the prompt-is-unreviewed-code insight, PS question",
+  "screenshot_line_present": false,
+  "banned_words_check": "PASS",
+  "em_dash_count": 0,
+  "voice_check": [
+    "try this tonight",
+    "That is the part that keeps me up",
+    "no corporate speak"
+  ],
+  "status": "READY \u2014 post Tue Oct 6 (evening)"
+}

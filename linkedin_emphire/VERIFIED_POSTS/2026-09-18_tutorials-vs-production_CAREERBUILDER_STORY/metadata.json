@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-18",
+  "slug": "tutorials-vs-production",
+  "pillar": "Career Builder / Teaching (with SE + AI pillars underlying)",
+  "style": "Opinionated advice / Bolaji-short (confession -> pattern -> the truth -> one rule -> PS)",
+  "status": "DRAFT — optional second post for ~5:30 PM WAT Friday wind-down",
+  "posting_time": "2026-09-18 5:30 PM WAT (after-work Friday scroll) — optional second post",
+  "char_count": 1231,
+  "word_count": 228,
+  "hashtags": ["#SoftwareEngineering", "#AIforEngineers", "#LearnInPublic"],
+  "rotation_check": {
+    "post_1_today": "friday-cutoff (SE / Observational, 12pm WAT)",
+    "post_2_rationale": "Career Builder pillar, different angle; short punchy personal advice; Friday evening audience is more relaxed/reflective",
+    "notes": "Second posts on Fridays work because people are signing off and scrolling casually. Don't overdo 2-a-day often — reserve for high-energy days."
+  },
+  "performance_prediction": "HIGH with your Layer 1 (engineers + career switchers learning AI) — the 'tutorial hell' pain point is universal; Nigerian-engineer examples (non-Western names, red teaming) make it specific; PS question invites story replies",
+  "banned_words_checked": true,
+  "voice_dna_check": {
+    "natural_phrases": ["Here's the thing"],
+    "closers": ["You've just read about it"],
+    "contractions": true,
+    "sentence_fragments": true,
+    "se_primary_positioning": true,
+    "red_teaming_natural": true
+  },
+  "tie_ins_to_your_work": {
+    "red_teaming": "natural mention as you prep Tarique outreach — shows you practice what you preach",
+    "bias": "echoes the hiring-bias point from your Endrit post and Sally thread — consistent theme",
+    "production_over_courses": "directly maps to 'teaching engineers to ship real things' tagline"
+  }
+}
