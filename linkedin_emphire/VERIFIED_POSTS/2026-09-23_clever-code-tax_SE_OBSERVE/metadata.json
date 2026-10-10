@@ -17,7 +17,7 @@
   "voice_check": {
     "opener": "Funny enough… (DNA match)",
     "natural_phrases": ["Here's the thing", "One rule I ship by now"],
-    "closer": "That's it." — substituted with in-flow close "The code that survives isn't the smartest…"
+    "closer": "That's it. — substituted with in-flow close: The code that survives isn't the smartest…"
   },
   "screenshot_line_present": true,
   "banned_words_check": "PASS — no leverage/cutting-edge/deep dive/game-changer/comprehensive/hustle/crush/hot take",
