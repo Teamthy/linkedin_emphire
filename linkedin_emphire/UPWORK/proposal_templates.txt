@@ -1,0 +1,77 @@
+═══════════════════════════════════════════════════
+PROPOSAL FORMULA + READY TEMPLATES
+═══════════════════════════════════════════════════
+Every proposal gets a custom first line. Nothing below is a
+copy-paste script — it's a formula with examples. Log every
+send in PROPOSALS/YYYY-MM-DD_client-or-jobtitle.md (mirrors
+the OUTREACH/ convention on the LinkedIn side).
+
+═══════════════════════════════════════════════════
+THE OPENER FORMULA (3 sentences, then stop)
+═══════════════════════════════════════════════════
+1. THEIR problem — name their exact product/feature and the
+   one failure class most likely in it. Read the job post
+   closely enough to be specific (chatbot? RAG? agent? which
+   model/stack did they mention?).
+2. YOUR receipts — the 6-attempts/4-breaks story, or a
+   specific finding type relevant to their stack. One
+   sentence, not the whole war story.
+3. THE OFFER — point at the Quick Scan ($150) as the
+   low-risk entry, or go straight to the Red Team Review if
+   the job post signals budget/urgency.
+
+Target length: 120-180 words. Longer reads as desperate.
+Shorter reads as low-effort. No greeting line, no "I hope
+this finds you well," no re-stating their whole job post back
+to them.
+
+═══════════════════════════════════════════════════
+TEMPLATE A — chatbot / customer support AI job posts
+═══════════════════════════════════════════════════
+```
+If [their bot] handles refunds, account info, or anything a user could manipulate by rephrasing a request, it almost certainly has at least one prompt injection hole nobody's tested for yet. I ran six injection attempts against my own production chatbot last month. Four worked, including one that got it to promise a full refund to anyone who typed a single trigger word.
+
+I'd run a focused test against [their bot] specifically: injection attempts, instruction-override attempts, and a check for whether it leaks its own system prompt. You'd get a findings report with exact repro steps and fixes, not just a pass/fail.
+
+Happy to start with the $150 Quick Scan (15 tests, one-page findings, 3 days) if you want a low-commitment first look before anything bigger. Can scope either this week.
+```
+
+═══════════════════════════════════════════════════
+TEMPLATE B — RAG / document-retrieval AI job posts
+═══════════════════════════════════════════════════
+```
+RAG systems have a failure mode most teams don't test for: does [their system] trust instructions planted inside the documents it retrieves, not just the user's direct input? That's a different attack surface than prompt injection, and it's the one I see skipped most often.
+
+I test this specifically, alongside standard prompt injection and jailbreak attempts, as part of a structured red team pass. Deliverable is a findings report in four parts: exact repro, which layer failed, the fix, and how to verify it holds.
+
+Given what you've described, the $600 Red Team Review (4-layer testing, prioritized report, debrief call, 1 week) is probably the right scope. Can start once I have read access to a staging environment.
+```
+
+═══════════════════════════════════════════════════
+TEMPLATE C — AI agent / tool-calling job posts
+═══════════════════════════════════════════════════
+```
+Agents that can call tools (send emails, hit APIs, move money, modify records) carry a risk class most teams haven't pressure-tested: forged tool calls, tampered arguments, or a user talking the agent into skipping a confirmation step. That's the layer I'd focus on for [their agent].
+
+My baseline: six injection attempts against my own chatbot, four succeeded, every fix became a permanent regression test. I'd run the same discipline against your tool-calling flow specifically.
+
+The $600 Red Team Review covers this (4-layer testing including agent/tool-call abuse, prioritized findings, debrief call, 1 week). If budget is tighter, the $150 Quick Scan is a focused first pass on just the highest-risk flow.
+```
+
+═══════════════════════════════════════════════════
+SAVED SEARCHES (set these up once, check daily)
+═══════════════════════════════════════════════════
+"chatbot" + "security" filter
+"RAG" + "testing" filter
+"GPT" + "security" filter
+"LLM app" + "testing" filter
+"AI agent" + "security" filter
+
+═══════════════════════════════════════════════════
+DAILY OPERATING RULE
+═══════════════════════════════════════════════════
+5 proposals max per day. Custom first line every time — the
+formula above is a structure, not a fill-in-the-blank script.
+If a job post doesn't give you enough to write a specific
+first line, skip it; a generic proposal on a vague job post
+wastes a connect for low odds either way.

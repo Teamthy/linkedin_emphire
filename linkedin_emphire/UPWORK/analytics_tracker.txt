@@ -1,0 +1,55 @@
+═══════════════════════════════════════════════════
+UPWORK ANALYTICS TRACKING SYSTEM
+═══════════════════════════════════════════════════
+Mirror this as a spreadsheet (Google Sheets/Notion) once rows
+exist. Keep a plain-text copy here so the vault stays the
+single source of truth.
+═══════════════════════════════════════════════════
+
+╔═══════════════════════════════════════════════╗
+║ TABLE 1: PROFILE STATE LOG                     ║
+╚═══════════════════════════════════════════════╝
+Update after every profile edit.
+
+| Date | Title | Rate | % Complete | Skills Focus | Notes |
+|---|---|---|---|---|---|
+| 2026-10-10 | Shopify & TikTok Shop Strategist VA | $20/hr | 33% | Shopify/TikTok/WordPress | BASELINE — pre-rebrand, live-checked |
+
+╔═══════════════════════════════════════════════╗
+║ TABLE 2: PROPOSAL LOG                          ║
+╚═══════════════════════════════════════════════╝
+Log every send. Cross-reference the dated file in PROPOSALS/.
+
+| Date | Job title (short) | Tier pitched | Template used | Status | Outcome |
+|---|---|---|---|---|---|
+| — | — | — | — | — | awaiting first proposal |
+
+Weekly rollup to compute:
+- Proposals sent / week (target: up to 25, 5/day)
+- Response rate = replies / proposals sent
+- Hire rate = hires / proposals sent
+
+╔═══════════════════════════════════════════════╗
+║ TABLE 3: JOB + REVIEW TRACKER                  ║
+╚═══════════════════════════════════════════════╝
+This table is the one that matters most in weeks 1-3.
+
+| # | Date hired | Client (anon ok) | Tier | Price | Delivered | Review requested | Review received | Stars | JSS after |
+|---|---|---|---|---|---|---|---|---|---|
+| — | — | — | — | — | — | — | — | — | awaiting first job |
+
+RATE-RAISE TRIGGER: on review #5, update Table 1 with the new
+rate and new catalog prices per content_strategy.txt Part 2.
+Do not raise early. Do not stay cheap after review #5 either —
+Upwork never lets you recover from being cheap forever.
+
+╔═══════════════════════════════════════════════╗
+║ TABLE 4: MONTHLY ROLLUP                        ║
+╚═══════════════════════════════════════════════╝
+
+| Month | Proposals sent | Jobs won | Reviews earned | JSS | Revenue booked | Rate at month end |
+|---|---|---|---|---|---|---|
+| Oct 2026 | — | — | — | — | — | $65/hr (target) |
+
+TARGET (from content_strategy.txt): 3-5 reviews, 100% JSS,
+$800-1,500 booked via catalog by Nov 30, 2026.

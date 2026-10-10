@@ -1,0 +1,112 @@
+═══════════════════════════════════════════════════
+WORDS I NEVER USE IN UPWORK PROFILE COPY OR PROPOSALS
+═══════════════════════════════════════════════════
+Different list from ../banned_words.txt (the LinkedIn one).
+LinkedIn banned words are about sounding corporate/AI-generated.
+This list is about sounding like every other freelancer a
+buyer has already scrolled past. Same root rule either way:
+if it could have been copy-pasted by 10,000 other profiles,
+cut it.
+
+═══════════════════════════════════════════════════
+CATEGORY 1: GENERIC FREELANCER OPENERS (instant skip signal)
+═══════════════════════════════════════════════════
+
+❌ "Hi there! I'm a hard worker and fast learner"
+❌ "I am a dedicated and detail-oriented professional"
+❌ "Hello, I hope this finds you well"
+❌ "Dear Sir/Madam" / "Dear Hiring Manager"
+   Why banned: Upwork clients skim 20+ proposals. Generic
+   openers get skipped in under 3 seconds.
+   ✅ Use instead: open with their actual product or problem,
+      first sentence, no greeting at all.
+
+❌ "I have read your job description and I am a perfect fit"
+❌ "I can do this job perfectly"
+❌ "I am confident I can exceed your expectations"
+   Why banned: Unverifiable claims before any proof is shown.
+   ✅ Use instead: state the specific thing you'd test/build
+      and the result class (e.g. "6 attempts, 4 breaks").
+
+❌ "Hire me and you won't regret it"
+❌ "I guarantee 100% satisfaction"
+❌ "Available 24/7"
+   Why banned: Sounds desperate, overpromises, invites
+   disputes when "guarantee" isn't literal.
+
+═══════════════════════════════════════════════════
+CATEGORY 2: VAGUE SKILL CLAIMS
+═══════════════════════════════════════════════════
+
+❌ "Expert in AI" / "AI expert" / "AI guru" / "AI wizard"
+   Why banned: Meaningless on a platform flooded with these
+   claims since 2023. Signals zero specificity.
+   ✅ Use instead: the exact test type — "prompt injection
+      testing," "RAG poisoning testing," "LLM red teaming"
+
+❌ "Results-driven" / "Detail-oriented" / "Team player"
+❌ "Passionate about technology"
+❌ "Jack of all trades"
+   Why banned: Resume filler. Says nothing a buyer can
+   search for or verify.
+
+❌ "Cutting-edge AI solutions"
+❌ "Leveraging the latest AI technology"
+   Why banned: Same corporate-AI-speak banned on LinkedIn
+   (see ../banned_words.txt Category 1). Doubly bad here
+   because it reads like it was written by the AI being
+   tested, not the person testing it.
+
+═══════════════════════════════════════════════════
+CATEGORY 3: PRICE/VALUE DESPERATION SIGNALS
+═══════════════════════════════════════════════════
+
+❌ "Will work for cheap" / "Negotiable, name your price"
+❌ "I need this job badly"
+❌ "New to Upwork but very skilled" (as a leading line)
+   Why banned: Anchors the buyer on price or pity instead
+   of the work. Zero reviews is a fact, not an apology.
+   ✅ Use instead: let the catalog price anchor the
+      conversation. If asked about being new, answer plainly:
+      "This account is new to AI security specifically — the
+      e-commerce work above is the platform history."
+
+❌ "Final price" overused in every message
+❌ Excessive emoji in proposals (🔥💯🚀 stacked)
+   Why banned: Reads as low-effort mass-send, not a tailored
+   pitch to this specific job post.
+
+═══════════════════════════════════════════════════
+CATEGORY 4: TOS-RISK PHRASES (never write these, period)
+═══════════════════════════════════════════════════
+
+❌ "Contact me on LinkedIn / WhatsApp / email for the real rate"
+❌ "Let's take this off Upwork to save the fee"
+❌ "Pay me directly and I'll give you a discount"
+   Why banned: Violates Upwork ToS (off-platform payment
+   circumvention). Can get the account suspended or banned.
+   This is not a style preference, it's a hard account-safety
+   rule — see UPWORK/README.md hard rule #2.
+
+═══════════════════════════════════════════════════
+CATEGORY 5: OVER-HEDGING (undermines credibility)
+═══════════════════════════════════════════════════
+
+❌ "I'm not really a security person, but..."
+❌ "I'm still learning this, so..."
+❌ "Just a beginner at red teaming"
+   Why banned: Same rule as the LinkedIn voice DNA — state
+   what you did and what it found. Let the work speak. Don't
+   pre-apologize for a skill you're charging for.
+   ✅ Use instead: "You don't need to be a security
+      specialist to need this tested" (buyer-facing framing,
+      not self-deprecating).
+
+═══════════════════════════════════════════════════
+WHAT TO SAY INSTEAD — THE HOUSE STYLE
+═══════════════════════════════════════════════════
+Open with their problem. State the exact test type. Give one
+concrete proof point (the 6-attempts-4-breaks story, or a
+specific finding). State the deliverable in plain terms (a
+findings report with repro steps and fixes). Price it. Stop.
+No flattery, no filler, no apology.
