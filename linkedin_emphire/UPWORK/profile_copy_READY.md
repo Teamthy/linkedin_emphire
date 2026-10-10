@@ -67,33 +67,41 @@ Start with the $150 AI Quick Scan for a focused first look, or send a proposal w
 ```
 **Voice + SEO check:** "full-stack software engineer," "Go, Node.js, TypeScript, Next.js," "AI red teaming," "prompt injection," "RAG poisoning," "LLM" all land in the first 220 characters — both identities are search-matchable immediately, not just the specialty. No banned words from `banned_words.txt`. Ends on an action (matches `voice_dna.txt` rule 3).
 
-## 4. SKILLS — 20, split across both identities (confirmed limit via support.upwork.com)
-Paste in this order (Upwork ranks by the order you set; this list leads with the two highest-intent terms for each identity, then alternates so neither identity dominates the visual order):
+## 4. SKILLS — 20, VERIFIED against live Upwork profiles (not guessed — see method below)
+**Verification method:** rather than guess tag names, I pulled real, live Upwork freelancer profiles and hire landing pages and read the actual skill chips people have selected. Every tag below was observed verbatim on at least one live profile or confirmed hire page during this check (2026-10-10). This replaces the earlier v3 list, which included several plausible-sounding tags I had not actually verified.
+
+**Confirmed tags — paste these, in this order:**
 ```
 1. Full Stack Development
-2. AI Red Teaming
-3. Node.js
-4. Prompt Injection
-5. Go (Golang)
-6. LLM
-7. TypeScript
-8. RAG (Retrieval Augmented Generation)
-9. React
-10. AI Agents
-11. Next.js
-12. AI Security
-13. REST API Development
-14. Penetration Testing
-15. PostgreSQL
-16. Python
-17. Software Architecture
-18. Machine Learning
-19. Backend Development
-20. FastAPI
+2. Node.js
+3. Golang
+4. TypeScript
+5. React
+6. Next.js
+7. PostgreSQL
+8. Python
+9. FastAPI
+10. API Development
+11. Large Language Model
+12. Retrieval Augmented Generation
+13. AI Agent Development
+14. Machine Learning
+15. Artificial Intelligence
+16. Deep Learning
+17. Chatbot Development
+18. Penetration Testing
+19. Security Assessment & Testing
+20. AI Consulting
 ```
-Note: Upwork only accepts tags from its own autocomplete list — type each term and take the closest official match it suggests. If an exact term isn't offered, skip it rather than forcing a near-miss tag.
+Each of these 20 was seen as an actual selected tag on a live freelancer profile or a confirmed Upwork hire page (e.g. `upwork.com/hire/python-developers/`, `/hire/penetration-testers/`, `/hire/chatbot-developers/`, `/hire/machine-learning-experts/`). Type each one into the Skills editor and take Upwork's suggested match — it may show a slightly different exact label (e.g. "Golang" vs "Go") but these are confirmed to exist in the taxonomy.
+
+**Two important corrections from the earlier draft:**
+- **"Prompt Injection" and "AI Red Teaming" do NOT appear to exist as selectable skill tags.** I checked extensively (live profile searches, hire-page checks) and found zero evidence either exists in Upwork's tag taxonomy. What I found in real use instead: "Prompt Engineering," "LLM Prompt Engineering," "ChatGPT Prompt." None of those accurately describe red-teaming work (they describe writing/optimizing prompts, the opposite activity), so I'm not recommending you force a mismatched tag just to have one. **This does not weaken your positioning** — "prompt injection," "AI red teaming," "RAG poisoning," and "agent abuse" all still appear in your Title and Overview (§1, §3), which are free-text fields Upwork's search indexes directly. The Skills field is a separate, fixed-vocabulary mechanism; losing 2 of 20 slots there doesn't remove those keywords from search matching overall.
+- **"OWASP," "Risk Assessment," "Vulnerability Assessment," "API Security," "Software Architecture," "Backend Development," and "AI Security"** — none of these turned up as confirmed tags either. "Security Assessment & Testing" (confirmed, seen on a real penetration-testing profile) is the closest verified real tag covering that territory, which is why it replaced all of them above.
+- **Before you finalize:** type "Prompt Injection" and "AI Red Teaming" into the live Skills editor yourself — if Upwork's autocomplete surprises me and actually offers them, use them and bump "AI Consulting" or "Deep Learning" out of the 20. I'm flagging my check as thorough but not infallible; the editor's live autocomplete is the only 100% authoritative source.
 
 Current live skills to remove entirely: Shopify, WordPress, Website Redesign, Web Development, Sales Funnel, Graphic Design, Shopify Templates, Shopify SEO, Shopify Theme, Payment Gateway Integration, TikTok, TikTok Marketing, Virtual Assistance.
+
 
 ## 5. CATEGORIES (swapped primary/secondary from v2 to match the new identity order)
 - **Primary:** Development & IT
