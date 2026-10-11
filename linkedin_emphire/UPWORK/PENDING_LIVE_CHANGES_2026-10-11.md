@@ -1,8 +1,8 @@
 # Pending live Upwork changes (2026-10-11)
 
-Status: **drafted, not applied.** Nothing on the live Upwork listings has changed. Each change needs your go before it goes live. Decisions are recorded in `STRATEGY/2026-10-11_book-frameworks_upwork-listings-linkedin-strategy.md`, section 9.
+Status: **approved by owner 2026-10-11 ("go"). Workspace catalog updated. LIVE UPWORK LISTINGS NOT YET CHANGED**: no Upwork connector is available in this session, so the owner or someone with Upwork access must apply items 1 to 3 on the live screens. Each change needs your go before it goes live. Decisions are recorded in `STRATEGY/2026-10-11_book-frameworks_upwork-listings-linkedin-strategy.md`, section 9.
 
-## 1. Listing 2 pricing: switch to company-size (awaiting go)
+## 1. Listing 2 pricing: switch to company-size (approved; apply live)
 
 | Tier | Small | Medium | Large |
 |---|---|---|---|
@@ -12,13 +12,13 @@ Status: **drafted, not applied.** Nothing on the live Upwork listings has change
 
 Check on the live pricing screen: the catalog still says "pending confirmation" for this field.
 
-## 2. Listing 2 search tags: swap one tag (awaiting go)
+## 2. Listing 2 search tags: swap one tag (approved; apply live)
 
 - Current: ai chatbot development, ai agent development, rag development, full stack development, llm integration
 - Proposed: ai chatbot development, ai agent development, rag development, full stack development, **ai integration**
 - Confirm "ai integration" autocompletes on Upwork before saving.
 
-## 3. Guarantee line for both listings (awaiting go)
+## 3. Guarantee line for both listings (approved; apply live)
 
 Add to the Standard and Advanced tier descriptions (wording may be trimmed to fit the 80-character description field):
 

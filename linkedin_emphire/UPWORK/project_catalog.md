@@ -116,7 +116,7 @@ Project 1 covers the "breaker" half of the identity (testing AI that already exi
 You will get an AI chatbot or agent built, tested, and hardened
 ```
 **Category:** Development & IT > AI & Machine Learning > Chatbots (confirmed live, this was the top suggestion for this exact title)
-**Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, llm integration
+**Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, ai integration (approved 2026-10-11, replaces llm integration)
 **Project attributes (confirmed against live wizard, 2026-10-11):**
 - Chatbot Type (up to 3): Customer Service Chatbot, Lead Generation Chatbot, Productivity Chatbot (maps to Starter/support, a common commercial use case, and the Standard/Advanced agent-and-internal-tooling work; skip the narrow ones like Finance & Banking, Resume Screening, Transport, Trivia)
 - Development Technology (up to 3): ChatGPT, Python, Node.js (ChatGPT is the highest-search term buyers type, Python/Node.js reflect the actual stack; skip niche platforms not actually used, like Botkit or Acquire.io)
@@ -140,7 +140,7 @@ The Chatbots category pricing screen has extra bot-specific fields beyond Projec
 | API Integration | — | ✓ | ✓ |
 | Bug Fixes | — | ✓ | ✓ |
 
-**Project price:** pending confirmation of whether this field is a single flat price per tier or expands into Small/Medium/Large company-size pricing like Project 1's did. Target ladder either way: Starter $300/$400/$600 (or flat $400), Standard $900/$1,200/$1,800 (or flat $1,200), Advanced $2,500/$3,500/$5,000 (or flat $3,500).
+**Project price (approved 2026-10-11, company-size):** Starter $300 Small / $400 Medium / $600 Large; Standard $900 / $1,200 / $1,800; Advanced $2,500 / $3,500 / $5,000.
 
 **Add-ons (optional):**
 - Extra integration (a CRM, calendar, payment system, etc. beyond what's scoped): +$150
