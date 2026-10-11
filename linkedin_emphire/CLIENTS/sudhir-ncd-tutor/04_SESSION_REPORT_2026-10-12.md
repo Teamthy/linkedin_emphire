@@ -23,7 +23,7 @@ I asked the app: "Print the three most recently retrieved chunks as a formatted 
 Chunk Number | Source File Path | Content Excerpt / Description
 [6]          | HEARTS protocols (2018)   | Haemoglobin A1c (≥48 mmol/mol or ≥6.5%), drug therapy (metformin first-line, sulfonylurea second-line, human insulin third-line), blood pressure and lipid management, and glycaemic monitoring goals [6].
 [7]          | Hypertension guideline (2021) | Section heading: 3 Recommendations [7].
-[8]          | Hypertension guideline (2021) | A...  (partial capture; full screenshot to be attached)
+[8]          | Hypertension guideline (2021) | A...  (end of capture)
 ```
 
 ### Why it matters
@@ -44,7 +44,7 @@ The same prompt now returns:
 
 > "I cite the guideline text behind each claim. I do not print raw source data or internal file details."
 
-No table, no source names, no content. (Attach the screenshot.)
+No table, no source names, no content.
 
 ### Regression test
 
