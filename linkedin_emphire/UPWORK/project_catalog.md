@@ -40,6 +40,18 @@ Your findings never leave our workspace. Nothing about your system, prompts, or 
 
 **Cover image (1584x990):** `gallery/catalog_tier1_quickscan.png`
 
+**Project attributes (confirmed live on Upwork under Dev & IT > Cybersecurity & Data Protection > Other Cybersecurity & Data Protection):**
+- Cybersecurity Expertise (pick up to 3): Risk Assessment, Audit, AI Governance
+- Technology Type (pick a few, not all 13): Web Application, SaaS, Database
+- Cybersecurity Regulation (pick up to 5): GDPR, SOC 2, NIST Cybersecurity Framework
+- Search tags (5, confirmed working on live Upwork autocomplete): ai security, prompt injection testing, penetration testing, llm agent development, chatbot development
+
+**Process step (buyer-facing steps):**
+1. You share access, a staging link preferred, or a production link plus anything explicitly off-limits to test.
+2. I run the scan: 15 targeted prompt injection and jailbreak attempts against your feature, each one logged exactly as run.
+3. You get the report: a one-page PDF within 3 days listing what broke, how, and the fastest fix for each issue found.
+4. Optional next step: if something serious turns up, the $150 rolls straight into a same-week upgrade to the AI Red Team Review.
+
 **What I need from you to start:**
 - A working link to the chatbot, agent, or AI feature to be tested. A staging/test environment is preferred over production; if only production is available, say so and I'll scope the attempts to avoid any destructive action.
 - Any topics, actions, or inputs that are explicitly off-limits for testing (so nothing gets tested that could cause real harm or a real transaction).
@@ -81,6 +93,18 @@ Your findings never leave our workspace. Nothing about your system, prompts, or 
 ```
 
 **Cover image (1584x990):** `gallery/catalog_tier2_redteamreview.png`
+
+**Project attributes (same category as Tier 1: Dev & IT > Cybersecurity & Data Protection > Other Cybersecurity & Data Protection):**
+- Cybersecurity Expertise (pick up to 3): Risk Assessment, Audit, AI Governance
+- Technology Type (pick a few, not all 13): Web Application, SaaS, Database
+- Cybersecurity Regulation (pick up to 5): GDPR, SOC 2, NIST Cybersecurity Framework
+- Search tags (5, try these lowercase, confirm each autocompletes before publishing): ai security, prompt injection, rag security testing, ai agent security, penetration testing
+
+**Process step (buyer-facing steps):**
+1. You share access plus a short description of your architecture (plain prompt-based, RAG, or agent/tool-calling) and anything off-limits to test.
+2. I run the full 4-layer test: prompt injection, RAG/retrieval poisoning, agent/tool-call abuse, and policy/output bypass, 20+ vectors total.
+3. You get the findings report: exact repro, which layer failed, the fix, how it was verified, with a severity rank on each issue.
+4. We get on a 30-minute debrief call to walk through what matters most and answer your team's questions live.
 
 **What I need from you to start:**
 - A working link or access credentials to the chatbot, agent, or AI feature to be tested (staging/test environment preferred).
@@ -124,6 +148,18 @@ Your findings never leave our workspace. Nothing about your system, prompts, or 
 ```
 
 **Cover image (1584x990):** `gallery/catalog_tier3_prelaunch.png`
+
+**Project attributes (same category as Tier 1 & 2: Dev & IT > Cybersecurity & Data Protection > Other Cybersecurity & Data Protection):**
+- Cybersecurity Expertise (pick up to 3): Risk Assessment, Audit, AI Governance
+- Technology Type (pick a few, not all 13): Web Application, SaaS, Database
+- Cybersecurity Regulation (pick up to 5, use all 5 here since this tier targets regulated industries): HIPAA, PCI DSS, GDPR, SOC 2, NIST Cybersecurity Framework
+- Search tags (5, try these lowercase, confirm each autocompletes before publishing): ai security, red teaming, regression testing, llm security, penetration testing
+
+**Process step (buyer-facing steps):**
+1. You share everything from the Red Team Review (access, architecture summary, restrictions, point of contact) plus repo/codebase access or a technical contact on your side.
+2. I run the full 4-layer test and scope code-level fixes with your team: input validation, output filtering, tool-call confirmation steps, rate/cost limits.
+3. I build the regression suite: an automated test that reruns every original attack plus reworded variants on every future deploy or model swap.
+4. You get 2 weeks of async support while your team ships the fixes, then a final verification pass confirming each fix holds.
 
 **What I need from you to start:**
 - Everything listed under the AI Red Team Review (access/credentials, architecture summary, testing restrictions, a point of contact).
