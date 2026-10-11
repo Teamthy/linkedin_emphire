@@ -108,17 +108,19 @@ Current live skills to remove entirely: Shopify, WordPress, Website Redesign, We
 - **Secondary:** AI Services
 - **Subcategories:** Full Stack Development (or Web Development if that's the closest offered match), AI Application Development, Cybersecurity & Data Protection
 
-## 6. EMPLOYMENT HISTORY (unchanged from v2 — already led with the right identity)
-Add these two entries under Upwork's Employment History section (separate from on-platform Work History, which is currently empty — that's fine, everyone starts at zero there):
+## 6. EMPLOYMENT HISTORY (retitled to cover more search angles, still 2 real employers, nothing invented)
+Add these two entries under Upwork's Employment History section (separate from on-platform Work History, which is currently empty, that's fine, everyone starts at zero there). Only "Full-Stack" is not covered here, see the note below on why that's intentional, not a gap.
 ```
 Software Engineer – AI Integration & Red Teaming
 Teamart.inc · Lagos, Nigeria · July 2025 – Present
 Build and ship AI features for client products: LLM chatbots, retrieval pipelines, and tool-calling workflows. Develop the backend APIs behind those products in Go and Node.js, owning design through deployment. Run pre-launch red teaming on AI features (prompt injection, unauthorized actions, policy bypass) and deliver prioritized findings with fix recommendations.
 
-Senior Developer
+Senior Backend Developer & Technical Consultant
 YKAY ConsultingHub · Lagos, Nigeria · Nov 2024 – June 2025
-Led backend development in Go and Node.js across client-facing products, owning API design through deployment. Designed REST APIs and multi-role authentication used by client systems with distinct permission levels.
+Led backend development in Go and Node.js across client-facing products for a technical consulting firm, owning API design through deployment for each client engagement. Designed REST APIs and multi-role authentication used by client systems with distinct permission levels. Raised code maintainability by setting modular architecture standards and running Git-based review workflows.
 ```
+**Why only 2 entries covering 3 of the 4 requested angles (Software Engineer, AI Red Teaming, Consultant):** your verified work history only has these 2 real employers, and both are documented as backend-only (Go/Node.js, APIs), with no frontend duties on record. Retitling YKAY to foreground "Consultant" is accurate, it's literally a consulting firm. Inventing a third employer or calling either role "Full-Stack" without documented frontend work would be false on a public profile, real risk if a client or Upwork checks consistency against your resume or LinkedIn. **"Full-Stack" is already honestly covered elsewhere**: Nigeria LandSecure, EDUos, and KwikPOS (portfolio items 5-6 and the Projects section) all document real frontend-plus-backend work (Next.js + Go/Node.js), so the full-stack claim rests on verifiable projects, not an embellished job title.
+
 
 ## 7. EDUCATION (unchanged — completeness)
 ```
