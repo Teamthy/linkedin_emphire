@@ -179,7 +179,7 @@ These are the leading indicators. Replace the "target" column with real numbers 
 - Start the Core Four daily habit (30 min/day). Comments first.
 - Send 5 Upwork proposals/day. Lead with Quick Scan at $200 (not $150, per the catalog's own note), and pitch Standard in the second paragraph.
 - Warm outreach: message the 10 people most likely to refer (past clients, former colleagues, Sudhir and Saiful's networks).
-- **Decision needed by Day 7:** start LinkedIn Premium trial now or on Oct 20 (see `STRATEGY/2026-10-03_linkedin-free-limits_and-note-allocation.md`).
+- **Decided:** start LinkedIn Premium trial now (see strategy section 9). Original question was: start now or on Oct 20 (see `STRATEGY/2026-10-03_linkedin-free-limits_and-note-allocation.md`).
 
 ### Phase 2 — First paid work + reviews (Days 15–35, Oct 25 – Nov 14)
 **Goal:** $1,000 booked. First 2 Upwork reviews. First speaking pitch sent.
@@ -227,6 +227,8 @@ These are the leading indicators. Replace the "target" column with real numbers 
 ---
 
 ## 7. OPEN DECISIONS (needed from owner)
+
+**Decided 2026-10-11.** See `STRATEGY/2026-10-11_book-frameworks_upwork-listings-linkedin-strategy.md` section 9. Summary: Listing 2 company-size pricing; guarantee approved with scope; Quick Scan launch price held until 5 reviews; LinkedIn Premium trial now (not Oct 20); three talks approved. Live changes wait in `UPWORK/PENDING_LIVE_CHANGES_2026-10-11.md`.
 
 1. **Project 2 pricing:** flat per tier or company-size pricing?
 2. **Listing structure:** the catalog doc describes one Upwork listing with 3 built-in tiers. You described two listings. Which is live? (Affects URLs, proposal links, and what this plan points to.)

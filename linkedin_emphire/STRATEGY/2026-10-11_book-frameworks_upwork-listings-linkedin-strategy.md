@@ -252,3 +252,34 @@ For us, we are at level 1 to 2. Our referral target (ask 3 past clients per the 
 
 ### 8.7 Opt-in page (Sell Like Crazy, Phase 3)
 The book lists the required elements of an opt-in page: a headline, a subheadline restating the offer, short bullets on what the reader gets, a visual of the deliverable, and a basic name-and-email form. Our HVCO page for the free test should follow this structure exactly. The "free 30-minute test" is the deliverable, and the findings report is the proof that makes it believable.
+
+---
+
+## 9. Decisions applied (2026-10-11)
+
+The owner asked for the open items in section 7 to be decided and applied to the workspace. Live Upwork listings and LinkedIn posts are not changed here. Each item below is marked **applied** (workspace only) or **awaiting go** (needs your approval before it goes live).
+
+| # | Item (section 7) | Decision | Why | Status |
+|---|---|---|---|---|
+| 1 | Quick Scan price | Launch at **$150 Small / $200 Medium / $300 Large** (catalog). Keep these until 5 Upwork reviews, then raise per the catalog's "After 5 reviews" note to $200 to $300. Proposals lead with Quick Scan for the first 5 reviews, then lead with Standard. | The catalog's own note says the $150 is a launch price. The 10-10 plan misreads that and leads at $200 now. Reviews are the goal of the first phase, so the entry price stays low. Never below $150. | Applied in this file. Live price unchanged. |
+| 2 | Listing 2 pricing structure | **Company-size** (Small / Medium / Large), matching Listing 1. Starter $300 / $400 / $600; Standard $900 / $1,200 / $1,800; Advanced $2,500 / $3,500 / $5,000. | Same structure across both listings keeps copy consistent. Ranges sit inside the Upwork chatbot bands (research tracker entry 9). | Applied here. **Awaiting go** to set on the live Listing 2 pricing screen. |
+| 3 | Guarantee | **Approve, with scope.** Wording: "If a fix I delivered fails the agreed re-test within 14 days, I re-test it at no charge. This covers the agreed scope only. New features and changed requirements are quoted separately." | A re-test is cheap to deliver and answers the book's risk-reversal need. The scope line stops it becoming open-ended work. The 14-day window is my choice; change it if you prefer. | Drafted in `UPWORK/PENDING_LIVE_CHANGES_2026-10-11.md`. **Awaiting go** before it goes public. |
+| 4 | Listing 2 search tag | Replace "llm integration" with **"ai integration"**. Confirm it autocompletes on Upwork before saving. | Upwork's July 2026 search data shows "AI integration" rising (research tracker). | Drafted in the pending file. **Awaiting go**. |
+| 5 | LinkedIn Premium | **Start the ₦0 trial now**, not Oct 20. Use it for personalized notes, InMail, and the profile-viewer list. Cancel before the trial ends if the three features go unused. | The limits doc names these three features as the case for Premium, and outreach is blocked without them. The trial costs nothing to start. | **Awaiting your action** (you start the trial; I cannot). |
+| 6 | Speaking topics | **Approve the three talks** in the 70-day plan, in this order: (a) "How to break your own AI chatbot before your users do" for the Lagos meetup, (b) "Prompt injection in 15 minutes: what a Quick Scan actually finds" for the online session, (c) "What your red team report should say" for the leadership audience. Every talk ends with the free 30-minute test link. | Matches the plan's one-per-month cadence and the Lagos-first network order. | Applied. Pitching starts week 3 per the plan. |
+
+### Decisions on the extract open items
+
+| Item | Decision |
+|---|---|
+| Cold-outreach lead magnet (extract 03) | The **free 30-minute test** with the sample findings report. It is a real deliverable, not a sales call in disguise, which the lead book says underperforms. |
+| Quick Scan first finding (extract 04) | The **single most serious reproducible defect** found in the buyer's feature, shown with steps to reproduce in the free test. Real value first, then the paid Quick Scan. |
+| Conversion tracking before ads (extracts 03 and 04) | Track before any spend. **No paid ads in this 70-day plan** (the lead book's gate requires referrals and tracked conversions first). The gate stands. |
+| LinkedIn comment target (extract 03) | **5 substantive comments per weekday** on buyer posts (matches the plan's 5/day line). Manual only, no automation. Personalized notes stay within the October quota from the limits doc until Premium is active. |
+| Owned list (extract 04) | **Yes, build it in week 2**: a neutral landing page with an email capture for the free test. Linked from LinkedIn only, never from Upwork (Upwork forbids off-platform contact). **Your call** on the email tool. |
+| Two avatars (extract 02) | **Confirmed.** Listing 1 buyer is the product or ops lead with an AI feature in review. Listing 2 buyer is the business owner who needs a working AI feature with no surprises. |
+
+### What changes in the workspace now
+- This section (decisions record).
+- `UPWORK/PENDING_LIVE_CHANGES_2026-10-11.md`: the exact live changes waiting for your go (Listing 2 pricing, guarantee text, tag swap, Quick Scan review-count rule). Nothing live has been edited.
+- `PLANS/2026-10-11_empire-engine_book-synthesis_70-day-5k-plan.md`: the open decision block is marked decided, with a pointer to this section.
