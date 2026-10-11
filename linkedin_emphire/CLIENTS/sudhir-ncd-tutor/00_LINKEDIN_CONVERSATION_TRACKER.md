@@ -152,7 +152,7 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 7. CREDITS / RUNTIME. Per the session script, confirm before the call that Sudhir has a working provider key; if Anthropic is out of credits, switch to Gemini (gemini-3.5-flash-lite) beforehand so the session does not fail on credits.
 
 ## Next steps
-- [ ] Resolve the payment mechanism (Risks item 1) with Sudhir, before or at the start of the session.
+- [ ] Set the $65 to milestone / payment approval (Sun Oct 11 decision), confirm it on the Upwork dashboard before the session, and make sure the logged time entry does not double-bill.
 - [ ] Run the 60-minute session per `session_script_live.md` (Sun Oct 11, 3 PM ET / 8 PM Lagos), moderate pace, terms in chat.
 - [ ] Immediately after, record the actual findings and session outcome in the placeholder below and in the client deliverables.
 - [ ] Confirm how the $65 is billed on the fixed-price contract (milestone vs time entry) and update `invoice_tracking.md`.
@@ -163,6 +163,13 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 ## Placeholder, session outcomes (fill after the Oct 11 session)
 - Session actually held on: [PENDING, scheduled Sun Oct 11, 3 PM ET / 8 PM Lagos]
 - Citation gate, built or pre-existing: [PENDING]
+- Findings produced (the [5] replay, disclaimer echo, rule laundering, retrieval poisoning, exfiltration): [PENDING, use 02_FINDINGS_TEMPLATE.md]
+- Trace schema agreed: [PENDING, see 03_TRACE_SCHEMA_ONEPAGER.md]
+- $65 billed via: [PENDING, milestone or time entry]
+- Follow-ups Sudhir committed to (README findings, practice before Tuesday): [PENDING]
+]
+- Follow-ups Sudhir committed to (README findings, practice before Tuesday): [PENDING]
+xisting: [PENDING]
 - Findings produced (the [5] replay, disclaimer echo, rule laundering, retrieval poisoning, exfiltration): [PENDING, use 02_FINDINGS_TEMPLATE.md]
 - Trace schema agreed: [PENDING, see 03_TRACE_SCHEMA_ONEPAGER.md]
 - $65 billed via: [PENDING, milestone or time entry]
