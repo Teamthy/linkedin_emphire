@@ -45,3 +45,4 @@
 | Date | What was checked | Changes made |
 |---|---|---|
 | 2026-10-11 | upwork.com/research index; In-Demand Skills 2026 (primary); AI-generated work report (primary); June 2026 hiring report (primary); AI chatbot specialists page (primary); July 2026 and Future Workforce Index (secondary coverage) | Initial tracker created. Fed the book-frameworks strategy file. |
+| 2026-10-11 (evening) | Owner pasted the live dashboard (Projects and Consultations tab) | Baseline logged: 0 views (30 days) and 0 orders on both projects and the consultation. Expected at 0 reviews and a new account; treat as the trend baseline, not a red flag. Consultation card shows a generic title and skills vs. the specialist positioning; retitle drafted as `PENDING_LIVE_CHANGES_2026-10-11.md` item 5 (awaiting owner approval). |
