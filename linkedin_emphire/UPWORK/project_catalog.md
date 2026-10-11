@@ -122,13 +122,25 @@ You will get an AI chatbot or agent built, tested, and hardened
 - Development Technology (up to 3): ChatGPT, Python, Node.js (ChatGPT is the highest-search term buyers type, Python/Node.js reflect the actual stack; skip niche platforms not actually used, like Botkit or Acquire.io)
 - Messaging Platform (pick a realistic handful, not all 28 available): Website, WhatsApp, Slack, Telegram, Facebook Messenger, Email (realistic delivery channels without exotic platform SDK work; don't claim Alexa/Discord/Kik unless actually built)
 
-### Pricing step — 3 tiers, priced by company size
+### Pricing step — 3 tiers
+The Chatbots category pricing screen has extra bot-specific fields beyond Project 1's (Cybersecurity) version: Number of Revisions, Number of Conversation Steps, Number of Messaging Platforms, and Service Tier Options checkboxes. Confirmed live, 2026-10-11.
 
-| Tier | Custom title (≤30 chars) | Custom description (≤80 chars) | Delivery days | Small co. | Medium co. | Large co. |
+| Tier | Custom title (≤30 chars) | Custom description (≤80 chars) | Delivery days | Revisions | Conversation Steps | Messaging Platforms |
 |---|---|---|---|---|---|---|
-| Starter | `Chatbot MVP` | `A working prompt-based chatbot for FAQs or support, deployed and ready to use` | 5 | $300 | $400 | $600 |
-| Standard | `RAG / Agent Build` | `A chatbot or agent connected to your data via RAG, plus tool/API integrations` | 10 | $900 | $1,200 | $1,800 |
-| Advanced | `Full-Stack AI Feature` | `A complete full-stack AI feature, backend, frontend, database, red-team pass` | 21 | $2,500 | $3,500 | $5,000 |
+| Starter | `Chatbot MVP` | `A working prompt-based chatbot for FAQs or support, deployed and ready to use` | 5 | 1 | 10 | 1 |
+| Standard | `RAG / Agent Build` | `A chatbot or agent connected to your data via RAG, plus tool/API integrations` | 10 | 2 | 25 | 2 |
+| Advanced | `Full-Stack AI Feature` | `A complete full-stack AI feature, backend, frontend, database, red-team pass` | 21 | 3 | 50 | 3 |
+
+**Service Tier Options (checkboxes per tier):**
+| Option | Starter | Standard | Advanced |
+|---|---|---|---|
+| Chatbot Flow Design | ✓ | ✓ | ✓ |
+| Conversation Script | ✓ | ✓ | ✓ |
+| Action Plan | — | ✓ | ✓ |
+| API Integration | — | ✓ | ✓ |
+| Bug Fixes | — | ✓ | ✓ |
+
+**Project price:** pending confirmation of whether this field is a single flat price per tier or expands into Small/Medium/Large company-size pricing like Project 1's did. Target ladder either way: Starter $300/$400/$600 (or flat $400), Standard $900/$1,200/$1,800 (or flat $1,200), Advanced $2,500/$3,500/$5,000 (or flat $3,500).
 
 **Add-ons (optional):**
 - Extra integration (a CRM, calendar, payment system, etc. beyond what's scoped): +$150
