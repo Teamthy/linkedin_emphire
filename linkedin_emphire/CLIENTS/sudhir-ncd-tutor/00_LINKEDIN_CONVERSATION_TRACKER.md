@@ -17,6 +17,8 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 - Remaining $65 to be paid via Upwork.
 - Grey invoice INV-1 ($75) is VOID and superseded by the Upwork contract. Sudhir was told not to pay it.
 - OPEN and time-sensitive: payment mechanism mismatch, see Risks item 1.
+- Reschedule (Sun Oct 11): an urgency came up on Timothy's side, so 8 PM Lagos (3 PM ET) is no longer certain. Proposed moving the session to 11 PM Lagos (6 PM ET) tonight, same 60 minutes, same agenda. Awaiting Sudhir's confirmation. Meet link to be re-sent shortly before the session.
+- Payment decision (Sun Oct 11): the $65 will be billed via the fixed-price milestone / payment approval, not the hourly time entry. The time entry logged Sat 7:12 PM is not the billing path for this fixed-price contract. Before the session, confirm on the Upwork dashboard that the $65 is set up for milestone approval and make sure the logged time entry does not double-bill. The owner chose to leave `invoice_tracking.md` unchanged for now.
 
 ## Related files
 - Session script, mapped to the 6 Upwork scope items: `UPWORK/CLIENT_SUDHIR/session_script_live.md`
@@ -118,6 +120,9 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 - [Sat 11:27 PM] Sudhir: "I changed the contract to fixed-price as we discussed. Upwork clearly shows the project price as $65. Since this is a fixed-price contract, I believe the payment should be processed through the contract's milestone or payment approval rather than an hourly time entry. Please let me know if you're seeing something different on your end."
 - [Sat 11:30 PM] Sudhir: (message deleted, content unknown.)
 
+### Sunday, Oct 11, 2026
+- [Sun] Timothy: an urgency came up, 8 PM Lagos (3 PM ET) is no longer certain. Proposes moving the session to 11 PM Lagos (6 PM ET) tonight, same 60 minutes, same agenda. Drafting the DM to Sudhir, awaiting his confirmation. Meet link to be re-sent shortly before the session.
+
 ---
 
 ## What was agreed in the conversation
@@ -143,7 +148,7 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 - For full invoice mechanics see `UPWORK/CLIENT_SUDHIR/invoice_tracking.md`.
 
 ## Open items and risks
-1. PAYMENT MECHANISM MISMATCH, time-sensitive. The Upwork contract is now Fixed-Price $65 (Sudhir changed it, Sat 11:27 PM). But Timothy logged an hourly time entry (Sat 7:12 PM) and asked Sudhir to approve the time entry. For a fixed-price contract, payment normally goes through the milestone or payment approval, not an hourly time entry approval. This needs to be resolved before or at the start of the session so the $65 actually flows. Decide with Sudhir which mechanism to use and act accordingly. (Unverified: exactly how this specific Upwork contract is configured for billing, confirm on the Upwork dashboard.)
+1. PAYMENT MECHANISM MISMATCH, time-sensitive. The Upwork contract is now Fixed-Price $65 (Sudhir changed it, Sat 11:27 PM). But Timothy logged an hourly time entry (Sat 7:12 PM) and asked Sudhir to approve the time entry. For a fixed-price contract, payment normally goes through the milestone or payment approval, not an hourly time entry approval. This needs to be resolved before or at the start of the session so the $65 actually flows. Decided (Sun Oct 11): bill via the fixed-price milestone / payment approval, not the time entry. Action: confirm the milestone setup on the Upwork dashboard before the session, and make sure the logged time entry does not double-bill. (Unverified: exactly how this specific Upwork contract is configured for billing, confirm on the Upwork dashboard.)
 2. DELETED MESSAGE. Sudhir's last message (Sat 11:30 PM) was deleted and its content is unknown. If it contained a decision or a correction, it is not in this record.
 3. UPWORK POLICY VIOLATION NOTICE. Sudhir received an Upwork policy violation notice (Sat 5:22 PM). Cause is not established in the conversation, but the same hour involved an Upwork direct contract, a public job post proposal, a Grey off-platform invoice, and a quidhive payment link, a mix that can trip Upwork's off-platform-payment and messaging rules. This is a real account risk for both parties. Keep all communication and payment on-platform going forward. (Root cause unverified, do not assert a specific cause.)
 4. STALE NOTE in `UPWORK/CLIENT_SUDHIR/invoice_tracking.md`. Its first line says the decision was to move OFF Upwork and pay via Grey, with platform-circumvention risk "knowingly accepted." That was an intermediate state and was reversed: the Upwork contract is the active channel and the Grey invoice is void. That line should be corrected or annotated so the record does not mislead. (Flagged, not yet edited.)
@@ -163,13 +168,6 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 ## Placeholder, session outcomes (fill after the Oct 11 session)
 - Session actually held on: [PENDING, scheduled Sun Oct 11, 3 PM ET / 8 PM Lagos]
 - Citation gate, built or pre-existing: [PENDING]
-- Findings produced (the [5] replay, disclaimer echo, rule laundering, retrieval poisoning, exfiltration): [PENDING, use 02_FINDINGS_TEMPLATE.md]
-- Trace schema agreed: [PENDING, see 03_TRACE_SCHEMA_ONEPAGER.md]
-- $65 billed via: [PENDING, milestone or time entry]
-- Follow-ups Sudhir committed to (README findings, practice before Tuesday): [PENDING]
-]
-- Follow-ups Sudhir committed to (README findings, practice before Tuesday): [PENDING]
-xisting: [PENDING]
 - Findings produced (the [5] replay, disclaimer echo, rule laundering, retrieval poisoning, exfiltration): [PENDING, use 02_FINDINGS_TEMPLATE.md]
 - Trace schema agreed: [PENDING, see 03_TRACE_SCHEMA_ONEPAGER.md]
 - $65 billed via: [PENDING, milestone or time entry]
