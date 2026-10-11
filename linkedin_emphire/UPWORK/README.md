@@ -37,6 +37,8 @@ other without duplicating effort — one thesis, two acquisition channels.
 | `analytics_tracker.txt` | JSS, reviews, rate-raise log — update after every completed job |
 | `sample_findings_report.md` | Ready-to-paste text for portfolio item 3, built from your own chatbot's already-public story |
 | `portfolio_item5_fullstack.md` | Ready-to-paste text for portfolio item 5, the Nigeria LandSecure full-stack project |
+| `PORTFOLIO/` | The portfolio engine: all 6 portfolio items with title/role/description/tags/image ready to paste, one file per item, plus an index |
+| `gallery/` | All portfolio and profile cover images |
 | `PROPOSALS/` | One dated file per proposal sent, mirrors the `OUTREACH/` convention |
 | `CLIENT_SUDHIR/` | First Upwork client engagement materials: audit, session script, glossary, invoice/payment tracking |
 
