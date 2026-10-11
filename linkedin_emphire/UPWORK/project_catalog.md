@@ -61,12 +61,30 @@ Upwork's own gallery guidelines explicitly list "text-heavy images" as something
 4. **Debrief call for Standard and Advanced** — We get on a short call to walk through the findings together and answer your team's questions live.
 5. **Fix, verify, and support on Advanced** — I scope and help implement code-level fixes, build a regression suite your team owns, then do a final pass confirming each fix holds, with 2 weeks of async support.
 
-### Description step (shared across all three tiers, tier differences live in the pricing table above)
+### Description step (confirmed live field names: "Project summary" = the main pitch, max 1,200 chars min 120, plus up to 5 FAQ)
+
+**Project summary (1,198/1,200 chars):**
 ```
-I red team AI features, chatbots, RAG systems, and tool-calling agents, before your users find the holes. Pick the depth that fits where you are: a fast scan to know if there's an obvious problem, a full structured review across all four layers that break shipped AI (prompt injection, RAG poisoning, agent/tool-call abuse, policy bypass), or the complete loop with code-level fixes and a regression suite that keeps a closed hole from quietly reopening.
+I'm a software engineer who ships AI products, not a security theorist who has never wired up a tool call. I red team AI features, chatbots, RAG systems, and tool-calling agents, the same way I test my own work: by trying to break it before real users do.
+
+I ran this exact process on my own production chatbot. Six attempts, four worked: a leaked system prompt, a fabricated refund from a single trigger word, and a content-policy bypass via fictional framing. I can show you that full findings report as a sample before you buy, since it's my own project, not a client's confidential work.
+
+Pick the depth that fits where you are. A fast scan tells you if there's an obvious problem. A full review tests all four layers that break shipped AI: prompt injection, RAG poisoning, agent/tool-call abuse, and policy bypass. The complete loop adds code-level fixes and a regression suite, so a closed hole cannot quietly reopen later.
 
 Every tier uses the same four-part findings format: exact repro, which layer failed, the fix, how it was verified. Your findings never leave our workspace. Nothing about your system, prompts, or results is shared, published, or reused without your written permission.
 ```
+
+**FAQ (pick these 5, the field caps at 5 total so this set was chosen to span all three tiers):**
+1. **Q: What if you don't find anything?**
+   A: You still get the full report documenting every attempt and its outcome, proof of due diligence either way, not just a blank result.
+2. **Q: Will testing affect my live system or users?**
+   A: No code changes happen in the Starter or Standard tiers. I only send test inputs and record results. Code changes only happen in Advanced, and only after being scoped with your team first.
+3. **Q: Can I start at Standard or Advanced without buying Starter first?**
+   A: Yes. Every tier stands on its own. Starter is just the cheapest way to test the waters first, it's not a prerequisite.
+4. **Q: Is this suitable for regulated industries like health or finance?**
+   A: Yes, especially the Advanced tier. Flag any specific compliance requirements, like HIPAA or SOC 2, during scoping so testing and fixes account for them.
+5. **Q: What do you need from me to start?**
+   A: Access to your feature (a staging environment is preferred), any topics or actions that are off-limits for testing, and confirmation you have authority to request the test.
 
 ### Review step
 Confirm title, category, attributes, all three tiers' pricing/delivery/custom copy, gallery images, and the shared description match the above before publishing. Double-check the title one more time here, it's the last checkpoint before the URL locks in.
