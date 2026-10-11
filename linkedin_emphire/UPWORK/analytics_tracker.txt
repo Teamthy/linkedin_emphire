@@ -36,7 +36,9 @@ This table is the one that matters most in weeks 1-3.
 
 | # | Date hired | Client (anon ok) | Tier | Price | Delivered | Review requested | Review received | Stars | JSS after |
 |---|---|---|---|---|---|---|---|---|---|
-| — | — | — | — | — | — | — | — | — | awaiting first job |
+| 1 | 2026-10-10 | Sudhir Shivaram | Custom (not catalog) — AI Security & RAG Red Team Mentoring, Hourly | $65/hr | Not yet (session held 2026-10-11) | Not yet | — | — | — |
+
+Note: job #1 came through a direct Upwork offer from an existing LinkedIn connection, not through the search-optimized profile below, so it's real revenue/review potential but doesn't validate the SEO work yet. Request the review within 24h of session completion per the daily operating rule in `content_strategy.txt`.
 
 RATE-RAISE TRIGGER: on review #5, update Table 1 with the new
 rate and new catalog prices per content_strategy.txt Part 2.

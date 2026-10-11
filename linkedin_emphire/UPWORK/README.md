@@ -35,12 +35,17 @@ other without duplicating effort — one thesis, two acquisition channels.
 | `banned_words.txt` | Upwork/freelance-platform phrases that kill credibility — different list from the LinkedIn one |
 | `voice_dna.txt` | How the Upwork voice differs from the LinkedIn voice (same person, tighter copy) |
 | `analytics_tracker.txt` | JSS, reviews, rate-raise log — update after every completed job |
+| `sample_findings_report.md` | Ready-to-paste text for portfolio item 3, built from your own chatbot's already-public story |
+| `portfolio_item5_fullstack.md` | Ready-to-paste text for portfolio item 5, the Nigeria LandSecure full-stack project |
 | `PROPOSALS/` | One dated file per proposal sent, mirrors the `OUTREACH/` convention |
+| `CLIENT_SUDHIR/` | First Upwork client engagement materials: audit, session script, glossary, invoice/payment tracking |
 
 ## Hard rules (do not violate — see `PLANS/2026-10-10_upwork-rebrand-empire.md` for full detail)
 1. **Never open a second account.** Pivot this one. Duplicate accounts = permanent ban, and the Shopify/TikTok history is proof of platform trust, not a liability to hide.
 2. **No contact info, no "find me on LinkedIn," no off-platform payment — ever, anywhere on Upwork.** First clients stay inside escrow. The 10% fee buys buyer protection, and it protects you too.
 3. **Reviews don't transfer.** Upwork starts at zero. Price the first 3-5 jobs to win 100% JSS and reviews, not to win money. Raise the rate after review 5, not before.
 
-## Status as of 2026-10-10
-Live profile confirmed unchanged: "Timothy O. - Shopify & TikTok Shop Strategist VA," $20/hr, 33% complete, 0 completed jobs, 5 e-commerce portfolio items, skills still 100% Shopify/TikTok/WordPress. The rebrand below has not been executed yet. `profile_copy_READY.md` is the exact paste-in content for the next edit session.
+## Status as of 2026-10-11
+Live profile still unchanged as of last check: "Timothy O. - Shopify & TikTok Shop Strategist VA," $20/hr, 33% complete, skills still 100% Shopify/TikTok/WordPress. The rebrand itself has not been executed yet, `profile_copy_READY.md` is the exact paste-in content for that session. All portfolio text (items 1-6) is now ready to paste, no remaining placeholders.
+
+**One real change on the ground:** the first paid job already landed, Sudhir Shivaram, $65/hr Hourly contract, accepted 2026-10-10, before the profile rebrand happened. It came through a direct Upwork offer from a LinkedIn connection, not through search, so it doesn't yet validate the SEO work below, but it's the first real Upwork job and the first shot at a review. See `CLIENT_SUDHIR/` and `analytics_tracker.txt` Table 3.

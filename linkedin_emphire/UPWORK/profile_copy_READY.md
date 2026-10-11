@@ -131,9 +131,9 @@ Match the LinkedIn headshot exactly (same brand test: a buyer who finds both pro
 ## 9. PORTFOLIO — 6 items, now split across both identities
 1. **Breaking AI, Article 1** — paste the LinkedIn Pulse link. Title: "Why Every Team Shipping AI Needs Someone Whose Job Is to Break It"
 2. **redteam-lab repo** — findings-folder screenshot: "6 attempts, 4 breaks"
-3. **Sample findings report** — sanitized example using the four-part template, built from your own bot's test
+3. **Sample findings report** — ready to use as-is, see `sample_findings_report.md`. Built from your own chatbot's already-public story (Breaking AI Article 1), reformatted into the exact four-part format your catalog sells.
 4. **The 30-minute starter test checklist card** — reuse `../ARTICLES/2026-10-06_article-1_why-engineers-need-red-teaming/cards/art1_card2_checklist_1080x1350.png`
-5. **A full-stack project** — new in v3, not in v2. Add one of your real builds (e.g. Nigeria LandSecure — Go, Next.js, PostgreSQL, from `RESUME/Timothy_Olusanya_AI_ML_Engineer.pdf`) with role + outcome stated. This is the single biggest gap v2 had: zero proof of the "full-stack" half of the title without it.
+5. **A full-stack project** — ready to use as-is, see `portfolio_item5_fullstack.md`. Nigeria LandSecure (Go, Next.js, PostgreSQL), role + outcome stated, no invented numbers. This closes the single biggest gap v2 had: zero proof of the "full-stack" half of the title without it.
 6. **One strongest existing Shopify/TikTok item** — keep exactly one as platform-history proof, drop the rest (v2 kept 2; v3 trades the second slot for the full-stack project above since that now carries more positioning weight).
 
 ## 10. PROFESSIONAL POLISH CHECKLIST (unchanged from v2 — still the controllable ranking factors beyond copy text)
