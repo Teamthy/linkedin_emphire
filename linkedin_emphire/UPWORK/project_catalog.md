@@ -33,10 +33,17 @@ Upwork lets you set a different price per tier per buyer company size. Use this 
 - Executive summary written for non-technical leadership/stakeholders: +$100
 
 ### Gallery step
-Use one image per tier if Upwork allows multiple gallery images on one listing, otherwise lead with the Standard-tier image since that's the primary service:
-- `gallery/catalog_tier1_quickscan.png` (Starter)
-- `gallery/catalog_tier2_redteamreview.png` (Standard)
-- `gallery/catalog_tier3_prelaunch.png` (Advanced)
+Upwork's own gallery guidelines explicitly list "text-heavy images" as something to avoid, so don't rely on marketing-style covers alone. Use this mix:
+
+**Project Images** (brand covers, now with tier-specific background concepts instead of a generic office photo):
+- `gallery/catalog_tier1_quickscan.png` (Starter) — background is a cyan radar scan sweeping an abstract chat interface, flagging a couple of hits
+- `gallery/catalog_tier2_redteamreview.png` (Standard) — background is 4 stacked translucent layers being probed by red attack-lines converging on a central AI chip
+- `gallery/catalog_tier3_prelaunch.png` (Advanced) — background is a circuit-pattern padlock closing over a shield with a checkmark
+
+**Sample Documents** (new Upwork feature, clients see the first 3 pages, use this for the least "marketing," most "real work" proof in the whole gallery):
+- `gallery/sample_findings_report.pdf` — a clean 3-page PDF version of the real findings report (system prompt leak, fake refund trigger word, content-policy bypass), branded header/footer, ends with the 3-tier summary and the confidentiality line. This is the strongest trust-building asset in the gallery because it's an actual work sample, not a graphic.
+
+**Project video:** skipped. No AI-generated video was produced for this (stock-style AI video reads as generic and is a weaker trust signal than real footage). If you want one later, the strongest option is a real 45-60 second screen recording: your terminal running a couple of the actual test prompts, the bot's broken response, the fix landing, then the regression suite passing green, closing on the one-page report. I can write a voiceover script and generate narration audio for you to lay under your own screen capture whenever you're ready to record it.
 
 ### Process step
 1. You tell me which tier fits, then share access (staging link preferred) plus anything explicitly off-limits to test.
