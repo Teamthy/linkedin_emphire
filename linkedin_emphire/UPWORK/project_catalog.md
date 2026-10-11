@@ -45,11 +45,21 @@ Upwork's own gallery guidelines explicitly list "text-heavy images" as something
 
 **Project video:** skipped. No AI-generated video was produced for this (stock-style AI video reads as generic and is a weaker trust signal than real footage). If you want one later, the strongest option is a real 45-60 second screen recording: your terminal running a couple of the actual test prompts, the bot's broken response, the fix landing, then the regression suite passing green, closing on the one-page report. I can write a voiceover script and generate narration audio for you to lay under your own screen capture whenever you're ready to record it.
 
-### Process step
-1. You tell me which tier fits, then share access (staging link preferred) plus anything explicitly off-limits to test.
-2. I run the testing scoped to your tier: 15 attempts (Starter), the full 4-layer/20+ vector test (Standard), or the full test plus code-level fixes (Advanced).
-3. You get the findings report in the four-part format: exact repro, which layer failed, the fix, how it was verified.
-4. Standard and Advanced buyers get a live debrief call; Advanced buyers also get 2 weeks of async support and a final verification pass.
+### Process step (confirmed live field names: "Info you'll need from the client" = Requirements, "Steps you'll take to get the project done" = Steps)
+
+**Requirements (client must answer before work starts, add all 5):**
+1. "A working link to the chatbot, agent, or AI feature to test. A staging/test environment is strongly preferred over production."
+2. "Any topics, actions, or inputs that are explicitly off-limits for testing, so nothing gets tested that could cause real harm or a real transaction."
+3. "Confirm you have authority to request this test: it's your own product, or you have your employer or client's written permission."
+4. "A short description of how your system is built: a plain prompt-based chatbot, a RAG/retrieval-based system, or an agent with tool-calling."
+5. "If ordering Pre-Launch Hardening: share repo or codebase access, or a technical contact who can help implement fixes, plus CI/CD details if you want the regression suite wired in."
+
+**Steps (your delivery process, add all 5, title then optional description):**
+1. **Confirm scope and access** — I review your answers, confirm the right tier for your system, and confirm access or credentials before any testing starts.
+2. **Run the red team testing** — I run the testing scoped to your tier: a 15-point scan, the full 4-layer test, or the full test plus fix scoping, each attempt logged exactly as run.
+3. **Deliver the findings report** — You get a report in the same four-part format every time: exact repro, which layer failed, the fix, and how it was verified.
+4. **Debrief call for Standard and Advanced** — We get on a short call to walk through the findings together and answer your team's questions live.
+5. **Fix, verify, and support on Advanced** — I scope and help implement code-level fixes, build a regression suite your team owns, then do a final pass confirming each fix holds, with 2 weeks of async support.
 
 ### Description step (shared across all three tiers, tier differences live in the pricing table above)
 ```
