@@ -1,0 +1,81 @@
+═══════════════════════════════════════════════════
+UPWORK VOICE — same person, compressed for search + buyers
+═══════════════════════════════════════════════════
+Base voice is ../voice_dna.txt (the full LinkedIn voice DNA).
+Everything there about tone, formality (6/10), contractions,
+and "never corporate, never fake" still applies. This file
+only covers what's DIFFERENT about writing for Upwork.
+
+═══════════════════════════════════════════════════
+PUNCTUATION OVERRIDE (applies everywhere, Upwork included)
+═══════════════════════════════════════════════════
+DO NOT use em dashes (—) in any Upwork copy: profile text,
+proposals, consultation descriptions, FAQs, gallery captions,
+anything client-facing. User explicitly banned them. Use a
+comma, a period, or a colon instead.
+
+═══════════════════════════════════════════════════
+WHAT CARRIES OVER UNCHANGED
+═══════════════════════════════════════════════════
+→ Formality level 6/10, professional enough for a CTO reading
+  proposals, human enough to not sound like a template
+→ Contractions always: I'm, don't, can't, it's, here's
+→ Honest admissions over fake authority ("I built that thing
+  and still found four ways in" beats "I'm an AI security
+  expert")
+→ Concrete numbers over adjectives (6 attempts, 4 breaks —
+  not "thorough testing")
+→ Zero corporate jargon (../banned_words.txt still applies on
+  top of ./banned_words.txt)
+
+═══════════════════════════════════════════════════
+WHAT'S DIFFERENT HERE
+═══════════════════════════════════════════════════
+
+1. NO STORYTELLING ARC.
+   LinkedIn posts build to an insight over 800-1500 characters.
+   Upwork buyers skim. Lead with the service and the proof in
+   the first two sentences. Save story for the "why me" portion
+   only, after the offer is already clear.
+
+2. SEARCH KEYWORDS ARE NOT OPTIONAL STYLE CHOICES.
+   On LinkedIn, repeating "prompt injection" three times would
+   read stiff. On Upwork, the title and first lines of the
+   overview need the literal phrases buyers search: "prompt
+   injection," "LLM," "RAG," "AI red teaming," "jailbreak
+   testing." Natural voice still applies to the SENTENCES around
+   those phrases, but don't paraphrase the keywords away.
+
+3. THE CTA IS TRANSACTIONAL, NOT RELATIONAL.
+   LinkedIn CTA: "DM me, tell me what you're building, I reply
+   to every note" (relationship-first).
+   Upwork CTA: "Check the catalog for the $150 Quick Scan" or
+   "Send a proposal with your stack and I'll scope it in a day"
+   (action-first — buyers want a next step, not a conversation
+   starter).
+
+4. PROOF REPLACES PERSONALITY.
+   Upwork overview should spend fewer words on who you are and
+   more on what you tested and what it found. The "funny
+   enough..." / "honestly..." conversational openers from the
+   core voice DNA are too soft for a 6-second skim. Keep them
+   for proposal body text (once they're already reading), not
+   the headline or opening line of the overview.
+
+5. NO EM-DASH, NO HASHTAGS, NO QUESTION-BAIT CLOSERS.
+   LinkedIn posts end on an engagement question ("What's the
+   dumbest input that ever broke something you built? 👇").
+   Upwork overview/proposals end on a clear next step instead:
+   what to click, what to send, or what happens after they hire.
+
+═══════════════════════════════════════════════════
+QUICK TEST BEFORE PUBLISHING ANY UPWORK COPY
+═══════════════════════════════════════════════════
+1. Does a buyer searching "prompt injection testing" find the
+   exact phrase in the first 2 lines? If no, rewrite.
+2. Could this paragraph have been written by any of the 50
+   other AI-security profiles on Upwork? If yes, add the
+   specific number/detail that only this account has.
+3. Is there a clear next action in the last line? If it ends
+   on vibes instead of an action, cut the last line and add one
+   that isn't.

@@ -123,8 +123,9 @@ SENTENCE FRAGMENTS:
 Use fragments strategically. Like this.
 
 EM DASHES:
-Use em dashes — like this — for parenthetical
-thoughts or emphasis.
+DO NOT use em dashes (—) anywhere, ever. User explicitly
+banned them. Use a comma, a period, or a colon instead
+of any em-dash construction.
 
 RHETORICAL QUESTIONS:
 Ask questions that make people think.
