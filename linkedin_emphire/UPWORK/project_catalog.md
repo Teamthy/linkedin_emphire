@@ -107,6 +107,81 @@ Raise Starter to $200-300 across sizes, Standard to $800-1,200, Advanced to $2,0
 
 ---
 
+# PROJECT 2 — AI chatbot / agent / full-stack development (one listing, 3 built-in tiers)
+Project 1 covers the "breaker" half of the identity (testing AI that already exists). Project 2 covers the "builder" half: building the chatbot, agent, or full-stack feature in the first place, using Nigeria LandSecure as the full-stack proof point. Same single-listing, 3-tier mechanic as Project 1.
+
+### Overview step
+**Catalog title (exact, 63/75 chars incl. "You will get…"):**
+```
+You will get an AI chatbot or agent built, tested, and hardened
+```
+**Category:** Development & IT > AI & Machine Learning > Chatbots (confirmed real Upwork subcategory; if the live wizard suggests something narrower or broader when you type this title, compare against this before picking)
+**Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, llm integration
+**Project attributes:** this category shows different attribute facets than Cybersecurity did. Paste me whatever the live wizard shows once you pick this category and I'll tell you exactly which to select, same as we did for Project 1.
+
+### Pricing step — 3 tiers, priced by company size
+
+| Tier | Custom title (≤30 chars) | Custom description (≤80 chars) | Delivery days | Small co. | Medium co. | Large co. |
+|---|---|---|---|---|---|---|
+| Starter | `Chatbot MVP` | `A working prompt-based chatbot for FAQs or support, deployed and ready to use` | 5 | $300 | $400 | $600 |
+| Standard | `RAG / Agent Build` | `A chatbot or agent connected to your data via RAG, plus tool/API integrations` | 10 | $900 | $1,200 | $1,800 |
+| Advanced | `Full-Stack AI Feature` | `A complete full-stack AI feature, backend, frontend, database, red-team pass` | 21 | $2,500 | $3,500 | $5,000 |
+
+**Add-ons (optional):**
+- Extra integration (a CRM, calendar, payment system, etc. beyond what's scoped): +$150
+- Rush delivery (cuts the stated timeline by roughly a third): +$200
+- 30 days of post-launch support and bug fixes: +$250
+
+### Gallery step
+**Project Images:**
+- `gallery/catalog2_tier1_chatbotmvp.png` (Starter) — glowing blueprint/wireframe of a chat interface taking shape
+- `gallery/catalog2_tier2_ragagent.png` (Standard) — a central AI agent node connected to database, document, and calendar icons
+- `gallery/catalog2_tier3_fullstack.png` (Advanced) — three stacked layers (frontend/backend/database) with a shield and checkmark on top, signaling the built-in red team pass
+
+**Sample Documents:** none built yet for this project. If useful, I can build a short PDF one-pager on the Nigeria LandSecure architecture and delivery approach, the same way the findings report PDF backs Project 1, say the word.
+
+### Process step
+**Requirements (add all 4):**
+1. "A clear description of what you want the chatbot, agent, or feature to do for your users, and who will be using it."
+2. "Access to any existing systems, databases, or documents you want the AI feature connected to, or confirmation it's a clean build."
+3. "Your preferred AI provider (OpenAI, Anthropic, etc.) if you have one, otherwise I'll recommend one based on your needs and budget."
+4. "If ordering the Full-Stack AI Feature: your current tech stack (if any), hosting preferences, and any compliance requirements to design around."
+
+**Steps (add all 4, title then description):**
+1. **Scope the build** — I confirm what you need, which tier fits, and the exact features, integrations, and data sources involved before any code is written.
+2. **Build the feature** — I build the chatbot, agent, or full-stack feature against the agreed scope, with regular check-ins so there are no surprises at delivery.
+3. **Red team it (Advanced tier)** — Before handoff, I run the same red team testing I sell as a standalone service against your new feature and fix anything it finds.
+4. **Deploy and hand off** — I deploy the feature, hand off the code and documentation, and you own everything outright with no ongoing license.
+
+### Description step
+**Project summary (939/1,200 chars):**
+```
+I build the AI features other developers are afraid to ship, and I'm also the engineer who red teams them, so what you get is already hardened against the obvious failure modes before it reaches your users.
+
+Pick the depth you need. A straightforward chatbot for FAQs or support, live in days. A chatbot or agent connected to your real data through RAG, plus the tool calls and integrations that make it actually useful, not just a demo. Or a complete full-stack AI feature, backend, frontend, and database, built the same way I built Nigeria LandSecure: with the real engineering problems (concurrency, permissions, data integrity) solved, not glossed over.
+
+Every build on the top tier ships with a red team pass before handoff, the same testing I sell as a standalone service, so you're not finding your chatbot's first prompt injection hole in production.
+
+Clear scope, a fixed price, and code you own outright when the project closes.
+```
+
+**FAQ (5):**
+1. **Q: Do I own the code when the project is done?**
+   A: Yes, full source code and any custom assets are yours outright at project close, no ongoing license or lock-in.
+2. **Q: What AI models or providers do you work with?**
+   A: OpenAI, Anthropic, and most major LLM APIs, plus open-source models if you have infrastructure preferences or data residency needs.
+3. **Q: Can you work with my existing codebase instead of starting from scratch?**
+   A: Yes, share your repo and current stack during scoping and I'll confirm whether the integration fits the Starter, Standard, or Advanced tier.
+4. **Q: What makes this different from a typical chatbot developer?**
+   A: The Advanced tier includes a red team pass before handoff, the same testing I sell as a standalone service, so security isn't an afterthought bolted on later.
+5. **Q: What do you need from me to start?**
+   A: Access to any existing systems or data you want connected, your preferred AI provider if you have one, and a clear description of what the feature should do for your users.
+
+### Review step
+Confirm title, category, attributes, all three tiers' pricing/delivery/custom copy, gallery images, and the description/FAQ above before publishing. Same rule as Project 1: double-check the title here, it locks the URL on first publish.
+
+---
+
 ## APPENDIX — original 3-separate-listing drafts (kept for reference, not the recommended structure)
 Everything below was drafted before confirming Upwork's real 3-tier-in-one-listing mechanic above. The content (descriptions, FAQs, requirements, process steps) is still accurate and was reused in the single-listing version above; keep this section only if you ever want to split these into standalone listings later (for example, once Starter alone has enough reviews to stand on its own).
 
@@ -292,87 +367,3 @@ Your findings never leave our workspace. Nothing about your system, prompts, or 
 
 ## AFTER 5 REVIEWS
 Raise Tier 1 to $200-250, Tier 2 to $800-1,000, Tier 3 to $2,000+, and stop selling Tier 1 as the default entry point in proposals — lead with Tier 2.
-
----
-
-# PROJECT 2 — AI Development (the "builder" half, complements Project 1's "breaker" half)
-One listing, 3 built-in tiers, same mechanic as Project 1. This is the counterpart service: instead of testing AI features, this one builds them, and the Advanced tier deliberately crosses over into Project 1's red-teaming to sell the dual identity (engineer who builds AND independently verifies) in a single order.
-
-### Overview step
-**Catalog title (exact, 69/75 chars incl. "You will get…"):**
-```
-You will get a full-stack AI chatbot or web feature, built and tested
-```
-**Category:** Development & IT > AI & Machine Learning > Chatbots (best live match; if Upwork suggests "Full Stack Development" instead under Web, Mobile & Software Dev, compare both and pick whichever shows a closer live suggestion list to this title, same approach as Project 1)
-**Search tags (5, lowercase):** ai chatbot development, full stack development, next.js, postgresql, ai integration
-**Project attributes:** unknown until the category is locked in live, paste me what the attribute panel shows (same as we did for Project 1's Cybersecurity Expertise/Technology Type/Regulation fields) and I'll fill it in.
-
-### Pricing step — 3 tiers, priced by company size
-| Tier | Custom title (≤30 chars) | Custom description (≤80 chars) | Delivery days | Small co. | Medium co. | Large co. |
-|---|---|---|---|---|---|---|
-| Starter | `AI Chatbot MVP` | `A working chatbot connected to one data source, with a widget ready to embed` | 5 | $400 | $550 | $750 |
-| Standard | `Full-Stack AI Feature Build` | `Frontend, backend, database, and one AI capability, built as a complete feature` | 14 | $1,200 | $1,600 | $2,200 |
-| Advanced | `Build Plus Red Team` | `Everything in Standard, then I red team my own build before you ship it` | 21 | $2,000 | $2,800 | $4,000 |
-
-**Add-ons (optional):**
-- Extra integration channel beyond the one included (WhatsApp, Slack, mobile app, etc.): +$150
-- Rush delivery (cuts the stated timeline by roughly 30%): +$150
-- 30 days of post-launch bug-fix support: +$200
-
-### Gallery step
-**Project Images** (same brand system as Project 1, backgrounds tailored to building rather than testing):
-- `gallery/catalog2_tier1_chatbotmvp.png` (Starter) — a chat-widget UI being assembled from glowing circuit blocks
-- `gallery/catalog2_tier2_fullstackbuild.png` (Standard) — three architecture layers (frontend/backend/database) wired together
-- `gallery/catalog2_tier3_buildredteam.png` (Advanced) — a structure being built on one side, enclosed in a checked shield on the other
-
-**Sample Documents:** reuse `gallery/sample_findings_report.pdf` if Upwork allows attaching the same document to a second listing (shows the self-testing process the Advanced tier includes). If not, this listing's strongest proof is the portfolio: point to `UPWORK/PORTFOLIO/05_fullstack-landsecure.md` (Nigeria LandSecure) in the project description or your profile portfolio, not a generated graphic.
-
-### Process step
-**Requirements (add all 5):**
-1. "A description of what the chatbot or feature should do, and any specific user flows or screens you already have in mind."
-2. "Your data source(s): docs, FAQs, a database, or an existing API the AI feature should pull from."
-3. "Design preferences or existing brand guidelines/mockups, if you have them. If not, I will design a clean, functional default."
-4. "Hosting and infrastructure details: where this will live (your own server, Vercel, AWS, etc.), or confirm you'd like me to recommend one."
-5. "If integrating into an existing codebase: repo access or a technical contact who can grant it."
-
-**Steps (add all 5):**
-1. **Scope and confirm requirements** — I review your answers, confirm the exact feature scope, and flag anything that needs clarifying before coding starts.
-2. **Build the feature** — I build the frontend, backend, database, and AI integration according to the confirmed scope, with progress updates along the way.
-3. **Test and fix** — I test the feature end-to-end, including, on the Advanced tier, running my own red-team pass on it before handoff.
-4. **Deliver and walk through** — You get the finished feature, deployed or ready to deploy, with a short walkthrough of how it works and how to maintain it.
-5. **Post-launch support window** — Any quick bugs found in the agreed support window get fixed at no extra charge.
-
-### Description step
-**Project summary (1,137/1,200 chars):**
-```
-I build full-stack AI features, chatbots, RAG systems, and the web apps around them, then test what I build the same way I test everything else: by trying to break it before your users do.
-
-My background is full-stack engineering (Go, Next.js, PostgreSQL) plus hands-on AI integration work. On Nigeria LandSecure, a digital land-records platform, I built the document storage and verification layer, including the concurrency handling that kept simultaneous verification requests from corrupting state, real production engineering, not a tutorial project.
-
-Pick the depth that fits what you need. A chatbot MVP gets you a working, embeddable bot connected to one data source. A full-stack feature build gets you the complete frontend, backend, database, and AI integration for a real product feature. The top tier adds something most developers don't offer: I red team my own build using the same process from my AI security testing catalog, so you get a findings report and fixes before you ever ship, not after.
-
-Your code and data stay yours. Nothing about your project is shared, published, or reused without your written permission.
-```
-
-**FAQ (5):**
-1. **Q: What if I don't have a data source ready yet?**
-   A: I can scope the MVP around a simple FAQ list or document set you provide, there's no need for a finished knowledge base before we start.
-2. **Q: Can you integrate into my existing codebase, or does this have to be a new build?**
-   A: Both work. Tell me which one in the requirements and I'll scope accordingly, a fresh build or a feature added to what you already have.
-3. **Q: What does the built-in red team pass on the top tier actually check?**
-   A: The same four layers from my AI security catalog: prompt injection, RAG poisoning, agent/tool-call abuse, and policy bypass, scoped to whatever AI capability is in your build.
-4. **Q: Do I own the code after delivery?**
-   A: Yes. Full ownership transfers to you on delivery. Nothing from your project is reused elsewhere without your written permission.
-5. **Q: What tech stack do you use?**
-   A: Go or Node for the backend, Next.js for the frontend, and PostgreSQL for the database by default, happy to match your existing stack if you already have one.
-
-### Review step
-Confirm title, category, attributes, all three tiers' pricing/delivery/custom copy, gallery images, and the description/FAQ match the above before publishing.
-
-## WHY PROJECT 2 WORKS WITH PROJECT 1
-- Project 1 sells testing; Project 2 sells building. Together they cover both halves of the "software engineer AND AI red teamer" identity from the profile.
-- Advanced tier of Project 2 cross-sells Project 1's methodology without requiring a second purchase, the red-team pass is bundled in, which demonstrates the value of Project 1 to a buyer who might not have known to ask for it.
-- A buyer who orders Project 2 Advanced and is happy with the self-testing is a natural upsell for ongoing Project 1 engagements on future features.
-
-## AFTER 5 REVIEWS (Project 2)
-Raise Starter to $500-700, Standard to $1,600-2,200, Advanced to $2,800-4,500+, same logic as Project 1: price goes up once JSS and reviews are established, not before.
