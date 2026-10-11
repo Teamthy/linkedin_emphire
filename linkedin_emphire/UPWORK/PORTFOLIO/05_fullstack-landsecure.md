@@ -9,4 +9,4 @@ Nigeria LandSecure: Digital Land Vault and Verification
 **Skills/tags:** Full Stack Development, Golang, Next.js, PostgreSQL, API Development
 
 **Description:** full text in `../portfolio_item5_fullstack.md`, paste directly, no changes needed.
-**Image:** `../gallery/06_landsecure_cover.png`
+**Image:** `../gallery/05_photoreal_landsecure.png` (new photoreal brand cover — matches Article 1 style)

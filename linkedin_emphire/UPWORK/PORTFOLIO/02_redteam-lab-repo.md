@@ -12,4 +12,4 @@ redteam-lab: 6 Attempts, 4 Breaks (Personal AI Red Team Lab)
 ```
 A personal lab documenting real prompt injection testing against my own chatbot: six attempts, four succeeded. System prompt leakage, a fabricated refund triggered by a single word, and a content-policy bypass. The repo holds the exact test inputs, what broke, the fixes shipped, and the regression tests that keep each fix from quietly reopening. Built by me, broken by me, fixed by me.
 ```
-**Image:** `ARTICLES/2026-10-06_article-1_why-engineers-need-red-teaming/cards/art1_card1_testlog_1080x1350.png`
+**Image:** `../gallery/02_photoreal_testlog.png` (new photoreal brand cover — matches Article 1 style)

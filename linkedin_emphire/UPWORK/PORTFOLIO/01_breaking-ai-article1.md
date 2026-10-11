@@ -12,4 +12,4 @@ Breaking AI, Article 1: Why Every Team Shipping AI Needs Someone Whose Job Is to
 ```
 Article 1 of Breaking AI, a 21-part public field guide on shipping AI that survives real users. I ran six prompt injection attempts against my own production chatbot. Four worked: a leaked system prompt, a fabricated refund promise triggered by a single word, and a content-policy bypass. This piece breaks down why that happens and why the people who build AI features are the ones best positioned to break them first.
 ```
-**Image:** `ARTICLES/2026-10-06_article-1_why-engineers-need-red-teaming/hero_cover_A_1920x1200.png`
+**Image:** `ARTICLES/2026-10-06_article-1_why-engineers-need-red-teaming/hero_cover_C_photoreal_1584x990.png` (new photoreal brand cover — AI brain motif, nameplate, cyan-highlight headline)
