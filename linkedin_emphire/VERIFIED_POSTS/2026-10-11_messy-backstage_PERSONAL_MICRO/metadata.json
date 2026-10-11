@@ -1,0 +1,20 @@
+{
+  "post_number": 11,
+  "date": "2026-10-11",
+  "scheduled_time_WAT": "10:00 AM",
+  "slug": "messy-backstage",
+  "pillar": "Personal / Reflection",
+  "style": "Micro (Sunday week recap)",
+  "char_count": 540,
+  "structure": "week-1 recap, real-client-win reveal, behind-the-scenes honesty, rest line, soft question",
+  "screenshot_line_present": false,
+  "banned_words_check": "PASS",
+  "em_dash_count": 0,
+  "voice_check": [
+    "Small Sunday thought",
+    "short fragment lines",
+    "contractions throughout",
+    "closing question"
+  ],
+  "status": "READY \u2014 scheduled per plan for Sun Oct 11, 10am WAT, per PLANS/2026-10-02_reset-plan_real-dates.md (WEEK 1 recap slot), not yet confirmed posted"
+}

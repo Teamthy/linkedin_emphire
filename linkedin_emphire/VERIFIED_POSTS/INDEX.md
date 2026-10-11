@@ -16,3 +16,4 @@
 | 8 | 2026-10-04 | quiet-work-compounds | Personal / Reflection | Micro — Sunday (481 chars) | ✅ VERIFIED — post Sun Oct 4, 10am WAT |
 | 9 | 2026-10-06 | take-a-line-out | AI Red Teaming | Micro (481 chars) | ✅ VERIFIED — post Tue Oct 6 evening |
 | 10 | 2026-10-07 | pineapple-confession | AI Red Teaming | Story teaser (476 chars) | ✅ VERIFIED — post Wed Oct 7, test log card attached |
+| 11 | 2026-10-11 | messy-backstage | Personal / Reflection | Micro — Sunday week recap (540 chars) | 🟡 READY — scheduled 10am WAT, awaiting posting confirmation |
