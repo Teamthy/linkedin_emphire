@@ -115,9 +115,12 @@ Project 1 covers the "breaker" half of the identity (testing AI that already exi
 ```
 You will get an AI chatbot or agent built, tested, and hardened
 ```
-**Category:** Development & IT > AI & Machine Learning > Chatbots (confirmed real Upwork subcategory; if the live wizard suggests something narrower or broader when you type this title, compare against this before picking)
+**Category:** Development & IT > AI & Machine Learning > Chatbots (confirmed live, this was the top suggestion for this exact title)
 **Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, llm integration
-**Project attributes:** this category shows different attribute facets than Cybersecurity did. Paste me whatever the live wizard shows once you pick this category and I'll tell you exactly which to select, same as we did for Project 1.
+**Project attributes (confirmed against live wizard, 2026-10-11):**
+- Chatbot Type (up to 3): Customer Service Chatbot, Lead Generation Chatbot, Productivity Chatbot (maps to Starter/support, a common commercial use case, and the Standard/Advanced agent-and-internal-tooling work; skip the narrow ones like Finance & Banking, Resume Screening, Transport, Trivia)
+- Development Technology (up to 3): ChatGPT, Python, Node.js (ChatGPT is the highest-search term buyers type, Python/Node.js reflect the actual stack; skip niche platforms not actually used, like Botkit or Acquire.io)
+- Messaging Platform (pick a realistic handful, not all 28 available): Website, WhatsApp, Slack, Telegram, Facebook Messenger, Email (realistic delivery channels without exotic platform SDK work; don't claim Alexa/Discord/Kik unless actually built)
 
 ### Pricing step — 3 tiers, priced by company size
 
