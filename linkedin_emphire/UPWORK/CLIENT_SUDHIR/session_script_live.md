@@ -17,6 +17,15 @@ v3, the complete talkable version. Replaces v2 of this file (commit 9e0d6b1), wh
 3. A trace schema he can redraw from memory.
 4. A practiced answer to the hardest question his panel will ask Tuesday.
 5. Tonight: README findings committed with a screenshot to you. Monday EOD: the portfolio-clean package.
+6. The repeatable red-teaming loop itself, stated out loud by him, not just shown to him. That is his real goal; see Part 1.5.
+
+### His stated goals, and where each one is covered (he sent these; confirm them up front)
+1. Reproducing a real security vulnerability: the [5] fabricated citation replay at 0:05, then the five break-the-app tests at 0:15.
+2. Understanding its root cause: every test names the layer that failed, and the fixes table at 0:50 has root cause as a named column.
+3. Implementing a deterministic, code-level mitigation: the five-line citation gate built live at 0:05, plus a code-level fix for every finding at 0:50. Deterministic means the code enforces the rule on every request; it does not ask the model to comply.
+4. Verifying the fix through regression testing: we re-run the attack after each fix and watch it fail, and every fix gets a named regression test that reruns automatically on the next prompt, model, or corpus change.
+5. Understanding the essential logging and auditability requirements: the trace schema at 0:40, which he redraws from memory.
+6. A repeatable red-teaming methodology for future RAG and agentic apps: Part 1.5, framed at 0:00 and recapped in the wrap.
 
 Scope note: every phase maps to an item in his Upwork offer, so the hour is defensible if scope is ever questioned.
 
@@ -81,11 +90,33 @@ Phase 4 (remediation):
 - Regression test: an automated re-check that a fix holds as the system changes.
 - Ingest-time sanitization: cleaning or trust-tagging content when it enters the corpus.
 
+## Part 1.5, The repeatable red-teaming loop (the methodology he takes home)
+This is his actual goal (his point 6). Everything else in this hour is one instance of this loop, run on his app. Say the loop once when you set the frame (0:00), and close by having him state it back (wrap). He should leave able to state it without notes.
+
+The loop (five steps, in order, every time, any RAG or agentic system):
+1. REPRODUCE. Find a real failure in the running system, not a hypothetical one. Capture the exact input and the exact broken output. If you cannot reproduce it, you do not have a finding yet.
+2. ROOT CAUSE. Name which layer failed and why. Not "the model did a bad thing." It is "no code checks X, so Y is possible."
+3. DETERMINISTIC FIX. Put the control in code, not in the prompt. A prompt instruction is a request the model may or may not honor, that is probabilistic. A code gate enforces the rule mechanically on every request, that is deterministic. If the only fix is a better prompt, you have a suggestion, not a fix.
+4. REGRESSION TEST. Write an automated test that re-runs the original attack and fails if the hole reopens. It runs automatically on every change to prompt, model, or corpus.
+5. LOG AND AUDIT. Record enough per request (query, retrieved chunks plus corpus version, model version, gate verdicts) that any answer, three months later, can be reconstructed from the log, not described from memory.
+
+The four attack layers (the surface you always test, in any RAG or agentic system):
+1. Prompt injection: the input tries to override or manipulate the system instructions. Live example today: test 3, rule laundering.
+2. Retrieval poisoning: bad content planted in the corpus is treated as trusted fact. Live example today: test 4.
+3. Policy and output bypass: the model is framed into leaking protected instructions or internal data, often in a disguised format. Live examples today: tests 1, 2, and 5.
+4. Agent and tool-call abuse: the model is talked into calling a tool with harmful arguments, or into exfiltrating data through a tool. Not runnable today: his app is a RAG chatbot with no tools. Name it anyway. The moment he adds a tool call, this is the first layer to test. This is the layer that makes the methodology fit agentic apps, not just chatbots.
+
+PASTE TO CHAT (the methodology):
+- The loop: reproduce, root cause, deterministic code-level fix, regression test, audit log.
+- Deterministic vs probabilistic: code enforces the rule on every request; a prompt only asks the model to comply.
+- The four layers: prompt injection, retrieval poisoning, policy and output bypass, agent and tool-call abuse.
+
 ## Part 2, The 60 minutes
 
 ### 0:00-0:05, Reset and frame
 SAY: "Good to see you, Sudhir. Quick reset: last week the payment side got tangled between a few channels. Sorry about that. It is sorted, the Upwork contract is the only thing that matters, and the balance lives on the contract, not a surprise. Let's leave that here and focus on the actual reason you booked me."
 SAY: "Your goal is Tuesday's interview. So today is not a lecture. It is two things: we get real findings out of your own app, and we get you able to say them well under pressure. Moderate pace, everything on screen, and I'll drop the key terms in the chat as we go so you have them after. The timer is visible and we stop at sixty. Fair?"
+SAY: "And there is a bigger shape underneath all of it, because that is what you told me you are really here for. What we do today is a repeatable loop: reproduce a real failure, find the root cause, put a deterministic fix in code, lock it with a regression test, and log enough to audit it later. That loop is not specific to this app. You will be able to run it on any RAG or agentic system, and by the end of the hour you can state it without notes. That is the thing worth more than any single bug we find. We will close by your stating it back to me."
 DO: confirm his provider key works. Switch to Gemini if needed.
 ASK HIM: "Before we start, one question. In one sentence, what do you want the panel to believe about your project by the end of the interview?" (Hold his answer. You return to it in the wrap.)
 
@@ -156,7 +187,7 @@ SAY (have him say it, this is the interview line): "Requests carry the state at 
 PASTE TO CHAT: the Phase 3 block.
 
 ### 0:50-0:55, The fixes table
-SAY: "Last working section. Every finding today gets three things: a root cause, a fix that lives in code, and a regression test name. If the fix lives only in the prompt, it is not a fix yet. It is a suggestion."
+SAY: "Last working section. Every finding today gets three things: a root cause, a deterministic fix that lives in code, and a regression test name. Here is the word that matters: a prompt-level fix is probabilistic, the model may or may not comply. A code-level fix is deterministic, it enforces the rule on every single request, every time. If the fix lives only in the prompt, it is not a fix yet. It is a suggestion."
 BUILD THE TABLE LIVE (columns: Finding | Root Cause | Code-Level Fix | Regression Test Name):
 1. Fabricated citation number | no server-side validation of cited ids | citation gate, `pipeline.py` (built this session) | `test_citation_ids_match_retrieved_set`
 2. Disclaimer / instruction echo | model paraphrases protected text when asked indirectly | output filter on instruction-like phrasing, `generate/chat.py` | `test_system_prompt_not_echoed_any_format`
@@ -176,7 +207,11 @@ SAY (closing): "That is the answer you give Tuesday. You did not memorize it. Yo
 Return to his opening answer (from 0:05): "You asked at the top what you wanted the panel to believe. That is it. That is the belief, and you have the receipts."
 
 ### Wrap (under a minute)
-SAY: "That's the hour. You now have a real gate you built, four documented findings with fixes, a trace schema you can redraw from memory, and a practiced answer to the hardest question they will ask. Commit the README findings tonight and send me the screenshot in chat, while it is fresh, not Monday. Tomorrow I'll send the Monday EOD package: your three findings made portfolio-clean with the before and after evidence, the gate placement list, and the schema one-pager. Good luck Tuesday. And if this was useful, a short review on the Upwork contract would genuinely help me out. Either way, tell me how it goes."
+SAY: "Before I close, the thing that proves you own it. State the loop back to me: the five steps, in order, out loud, no notes."
+ASK HIM (let him state it): reproduce, root cause, deterministic code-level fix, regression test, audit log. If he stumbles, give one word per step, not the full line. He should land it himself.
+SAY: "Now the four layers you test against, in any RAG or agentic system."
+ASK HIM (let him state it): prompt injection, retrieval poisoning, policy and output bypass, agent and tool-call abuse.
+SAY: "That's the hour. You now have a real gate you built, four documented findings with fixes, a trace schema you can redraw from memory, a practiced answer to the hardest question they will ask, and a red-teaming loop you can take to any RAG or agentic app. Commit the README findings tonight and send me the screenshot in chat, while it is fresh, not Monday. Tomorrow I'll send the Monday EOD package: your three findings made portfolio-clean with the before and after evidence, the gate placement list, and the schema one-pager. Good luck Tuesday. And if this was useful, a short review on the Upwork contract would genuinely help me out. Either way, tell me how it goes."
 
 ## Part 3, If the clock gets tight (cut in this order)
 1. Cut test 5 (exfiltration) first. It is the easiest to explain after the call, and the fix is the same shape as test 1.
