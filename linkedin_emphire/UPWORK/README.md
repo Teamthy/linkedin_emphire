@@ -29,7 +29,9 @@ other without duplicating effort — one thesis, two acquisition channels.
 |---|---|
 | `master_prompt.txt` | Drop into an AI assistant to get help running/optimizing this profile |
 | `profile_copy_READY.md` | Exact text to paste into Upwork today: title, rate, overview, categories, skills |
-| `project_catalog.md` | The 3 fixed-price catalog listings (Quick Scan / Red Team Review / Pre-Launch Hardening) |
+| `project_catalog.md` | The live structure: 2 catalog listings, each with 3 built-in pricing tiers. Listing 1 (AI red team): Quick Scan / Red Team Review / Pre-Launch Hardening. Listing 2 (AI chatbot, agent, full-stack): Chatbot MVP / RAG-Agent Build / Full-Stack AI Feature |
+| `RESEARCH_TRACKER.md` | Living log of upwork.com/research findings. Refresh it every time Upwork strategy changes (standing rule) |
+| `../STRATEGY/2026-10-11_book-frameworks_upwork-listings-linkedin-strategy.md` | Book frameworks (Hormozi, Suby) mapped onto both listings and the LinkedIn Core Four |
 | `proposal_templates.txt` | Opener formula + ready proposal templates for daily sends |
 | `content_strategy.txt` | Operating cadence: saved searches, daily proposal quota, pricing ladder, Weeks 1-3 plan |
 | `banned_words.txt` | Upwork/freelance-platform phrases that kill credibility — different list from the LinkedIn one |
