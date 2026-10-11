@@ -1,0 +1,47 @@
+# Upwork research tracker (living file)
+
+**Standing rule:** every time Upwork-related strategy is touched (listings, tiers, pricing, tags, proposals, profile, or Upwork-linked LinkedIn copy), first pull current research from **upwork.com/research** and its linked reports, then add a dated entry below. Remove or mark stale any entry that no longer holds. Do not rely on trained-in assumptions about rates or demand.
+
+**Companion files:** `STRATEGY/2026-10-11_book-frameworks_upwork-listings-linkedin-strategy.md` (strategy that uses these findings) and `UPWORK/project_catalog.md` (the live listing structure).
+
+**Last refreshed:** 2026-10-11
+
+---
+
+## How to read the confidence column
+- **Primary:** read directly from an upwork.com page.
+- **Secondary:** reported by a third party that cites Upwork. Verify on upwork.com before quoting externally.
+- **Third-party:** vendor or aggregator data. Context only, never used as a price anchor on its own.
+
+---
+
+## Findings log
+
+| # | Date pulled | Date of source | Source | Confidence | Finding | Applies to | Action / status |
+|---|---|---|---|---|---|---|---|
+| 1 | 2026-10-11 | Feb 4, 2026 | [In-Demand Skills 2026](https://www.upwork.com/research/in-demand-skills-2026) | Primary | Skills that explicitly reference AI grew 109% year over year, versus 23% for other skills. AI video generation and editing +329%. AI integration +178%. AI image generation and editing +95%. Data annotation and labeling +154%. **AI chatbot development +71%.** | L2 (chatbot and agent), profile | Applicable. Supports Listing 2 as its own listing. |
+| 2 | 2026-10-11 | Feb 4, 2026 | In-Demand Skills 2026 (same page) | Primary | Upwork's guidance to freelancers: upskill on the models and tools that improve the work you already do, not generic AI training. Show uniquely human skills (judgment, creativity, adaptability). | L1, L2, profile, LinkedIn | Applicable. Frame every tier as judgment and testing on top of the model. |
+| 3 | 2026-10-11 | Feb 4, 2026 | In-Demand Skills 2026 (same page) | Primary | Survey data: 47% of business leaders would pay a premium for innovative independent talent, and 45% for creative talent. 77% say AI is increasing demand for fractional, specialized talent. 92% plan to expand use of AI agents in the coming year. | L1 Advanced, L2 Advanced, LinkedIn | Applicable. Supports the premium Advanced tiers and the "specialist, not generalist" positioning. |
+| 4 | 2026-10-11 | June 2026 | [Upwork Monthly Hiring Insights: June 2026](https://www.upwork.com/research/upwork-monthly-hiring-report-june-2026) | Primary | Quality Assurance (QA) Testing rose 20% month over month. Data Entry and Transcription grew 19%. Clients are moving "from AI experimentation to implementation" and asking for specific outputs. | L1 (testing), profile | Applicable. Supports the testing listing. Keep demand-side language specific (outputs, not "AI expertise"). |
+| 5 | 2026-10-11 | Aug 20, 2026 | [AI-generated work is creating more work for humans](https://upwork.com/research/ai-generated-work-is-creating-more-work-for-humans) | Primary | Job posts asking people to fix, refine or finish AI-generated work are up 70% year over year (trailing 12-month average). Since 2023 they grew 8.3x in Software and Web Development and 7.9x in Design and Creative. Clients say AI output "feels generic" and "needs a human touch." | L1 Advanced, L2 Advanced, LinkedIn angle | Applicable. Core angle for Advanced tiers: "the AI draft exists, make it production-ready." Used as a LinkedIn post angle. |
+| 6 | 2026-10-11 | Sep 15, 2026 (report headline) | [Upwork Research index](https://www.upwork.com/research) (Monthly Hiring Insights: August 2026) | Primary (headline only) | Headline: "AI automation leads client searches as AI video hiring accelerates." Full report not retrieved (the guessed URL returned 404). | L2, profile tags | Watch. Retrieve the full report on the next refresh before using numbers from it. |
+| 7 | 2026-10-11 | Jul 2026 | Monthly Hiring Insights, July 2026 (via secondary coverage: beingguru.com) | Secondary | Three of the top ten searched AI terms were job roles, not tasks: "AI video creator," "AI developer," "AI engineer." "AI integration" and "full stack AI developer" were among the fastest-growing search terms. | L2 search tags, profile headline | Applicable as a test. Confirm on upwork.com before changing tags (open decision 4 in the strategy file). |
+| 8 | 2026-10-11 | Jul 14, 2026 | Future Workforce Index 2026 (via secondary coverage: selfemployed.com, outsourceaccelerator.com, enterprisedna.co) | Secondary | Freelancers who use AI in their work earn 34% more per hour. Generic gen-AI contract volume grew 90% while per-contract pay fell 13%. Complex AI-augmented projects saw earnings rise 22% to 45%. Upwork's term for the emerging high-value role: "AI Orchestrator." Skilled freelancers are 38% of US knowledge workers (up from 28%). | L1, L2, pricing positioning, profile | Applicable as positioning guidance. Primary report URL not found (guessed URL returned 404). Verify before quoting numbers externally. |
+| 9 | 2026-10-11 | Undated on fetch (page header says Oct 2026) | [Upwork: Hire AI Chatbot Specialists](https://www.upwork.com/hire/ai-chatbot-specialists/) | Primary (pricing bands) | Upwork's own project cost bands: rule-based FAQ or support bot about $300 to $1,200. Conversational NLP chatbot about $1,000 to $3,000. Custom LLM or RAG assistant about $1,500 to $5,000. Multichannel integration about $1,200 to $4,500. Ongoing optimization about $500 to $2,500 per project. | L2 pricing (all tiers) | Applicable. Listing 2 targets sit inside these bands. Starter at $300 Small is the floor of the FAQ band. Re-check the page date before relying on the bands. |
+| 10 | 2026-10-11 | n/a | Third-party aggregators (adsnipper.com, metageeks.tech, secondtalent.com, upwatcher.io) | Third-party | Marketplace AI and chatbot hourly ranges vary widely, for example about $25 to $100+/hr for AI engineers and about $25 to $60/hr for junior chatbot builders. Upwatcher counts about 4,089 AI-family postings in 30 days (May 2026), with "AI automation" at about a $30/hr median. Fee figures quoted vary (5% to 20%). | Context only | Not used as price anchors. Vendor sites sell competing services, so treat them as biased. Verify Upwork's fee schedule at upwork.com/pricing before modeling net payout. |
+
+---
+
+## Open verification items (carry to next refresh)
+- [ ] Retrieve the full **Monthly Hiring Insights: August 2026** report from upwork.com/research and update entry 6.
+- [ ] Find the primary **Future Workforce Index 2026** page on upwork.com and replace secondary citations in entry 8.
+- [ ] Confirm the date of the **AI chatbot specialists** pricing page (entry 9) and re-check its bands.
+- [ ] Check upwork.com/pricing for the current freelancer and client fee schedule (entry 10 conflicts across sources).
+- [ ] Re-check **QA testing** demand (entry 4) in the next monthly report, since one month's jump can reflect a launch rather than a trend.
+
+---
+
+## Refresh log
+| Date | What was checked | Changes made |
+|---|---|---|
+| 2026-10-11 | upwork.com/research index; In-Demand Skills 2026 (primary); AI-generated work report (primary); June 2026 hiring report (primary); AI chatbot specialists page (primary); July 2026 and Future Workforce Index (secondary coverage) | Initial tracker created. Fed the book-frameworks strategy file. |
