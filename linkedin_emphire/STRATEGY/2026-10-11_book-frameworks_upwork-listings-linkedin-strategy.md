@@ -14,11 +14,11 @@ Structure source of truth: `UPWORK/project_catalog.md` (2 listings, each with 3 
 | File | How it was read |
 |---|---|
 | `100m-branding.md` (Hormozi, *How to Start, Grow, then Pivot Your Own Brand*, 16 KB) | Read in full. |
-| `$100m-offer.md` (Hormozi, *$100M Offers*, ~258 KB) | Table of contents, plus the full Value Equation, Problems & Solutions, Trim & Stack, Guarantees, Naming, Scarcity and Urgency sections. Bonus and pricing chapters were sampled, not read line by line. |
-| `100m-lead.md` (Hormozi, *$100M Leads*, ~377 KB) | Table of contents, plus the Core Four, Warm Outreach, Free Content Parts I and II, Cold Outreach, Lead Getters, and Open To Goal sections. The paid-ads chapters were sampled. |
-| `sell-like-crazy.md` (Sabri Suby, ~364 KB) | Table of contents, plus Phase 1 (dream buyer and market pyramid), Phase 2 (HVCO), Phase 3 (opt-in), Phase 4 (Godfather offer), Phase 6 (Magic Lantern), Phase 7 (sales conversion). Phases 5 and 8 were sampled. |
+| `$100m-offer.md` (Hormozi, *$100M Offers*, ~258 KB) | Pass 1: table of contents, Value Equation, Problems & Solutions, Trim & Stack, Guarantees, Naming, Scarcity and Urgency. Pass 2: Commodity Problem, Starving Crowd, Charge What It's Worth (including the virtuous cycle of price), Bonuses (presentation and rules), and the urgency-via-promotion section. |
+| `100m-lead.md` (Hormozi, *$100M Leads*, ~377 KB) | Pass 1: table of contents, Core Four, Warm Outreach, Free Content Parts I and II, Cold Outreach, Lead Getters, Open To Goal. Pass 2: Roadmap (seven levels), Rule of 100 (defined), Paid Ads Part II (three phases of scaling spend), cold-outreach list-building steps, and the Decade in a Page summary. |
+| `sell-like-crazy.md` (Sabri Suby, ~364 KB) | Pass 1: table of contents, Phase 1 (dream buyer, market pyramid), Phase 2 (HVCO), Phase 3 (opt-in), Phase 4 (Godfather offer), Phase 6 (Magic Lantern), Phase 7 (sales conversion). Pass 2: Phase 5 (unit economics, single-channel risk), Phase 8 (email ownership, deliverability), Phase 7 (diagnosis-first selling). |
 
-The four books together are about 1 MB, so this was a targeted read, not a verbatim one. Any framework below that is marked "sampled" should be re-checked against the full text before it becomes a published claim.
+The four books together are about 1 MB. Two passes have covered every chapter's framework sections and most of the key explanatory text, but not every anecdote or example. Frameworks marked "sampled" in the tables are the ones with the least coverage. Re-check their exact wording before publishing any claim that quotes them.
 
 **Corrections to the 2026-10-11 plan (`PLANS/2026-10-11_empire-engine_book-synthesis_70-day-5k-plan.md`):**
 - Its sources section says the book summaries came from web summaries, not the `books/` files. This document replaces that with direct reads.
@@ -206,3 +206,49 @@ Use roughly 3 value posts (angles 1 to 6 and 8) to 1 offer post (7), in that ord
 4. **Listing 2 search tags:** the catalog uses "llm integration". Upwork's July 2026 search data points to "AI integration" as rising faster. Recommendation: test "AI integration" in place of "llm integration" on the next tag review. Confirm before changing the live listing.
 5. **LinkedIn Premium:** start now or on 2026-10-20 (per the plan).
 6. **Speaking topics:** approve the three talk ideas in the plan, or name your own.
+
+---
+
+## 8. Second-pass additions (full read of the books)
+
+These points came from the second pass. Each one is either new to this document or corrects something above.
+
+### 8.1 Corrections and gaps to act on
+- **Cold outreach list-building (lead book) conflicts with our rules.** The book recommends scraping software and contact-list brokers to build cold lists. For LinkedIn, do not scrape or automate contact extraction. That breaks LinkedIn's user agreement and risks the account. Build the cold list by hand from public profiles, comments, and posts, and keep sends within the limits in `STRATEGY/2026-10-03_linkedin-free-limits_and-note-allocation.md`. Also, the Rule of 100 (100 primary actions per day, for 100 days) is not something to copy onto LinkedIn. It would breach invite and message limits. Use it as a *mindset* (a fixed daily count you commit to), with the number set by the limits file.
+- **Track money before spending on ads (lead book, Paid Ads Part II).** The three phases are: track, lose money deliberately, then scale. Tracking must be set up before any ad spend. Add to the plan's Phase 3 ad test: "no spend until conversion tracking is verified end to end."
+- **Own your list (Sell Like Crazy, Phase 8).** Upwork and LinkedIn are rented audiences that can change rules overnight. Build an owned email list through an opt-in page hosted off-platform. Upwork forbids contact details on Upwork assets, so the opt-in lives on your own site or a neutral landing page, linked only from LinkedIn and not from Upwork. The author calls email the top revenue channel in his business. That is his experience, not independently verified.
+- **Do not depend on one traffic source (Sell Like Crazy, Phase 5).** The book's example is a business whose sole channel (Google Ads) changed overnight. Our Upwork-plus-LinkedIn setup is still two channels that both depend on platforms. The owned list in the point above is the hedge.
+
+### 8.2 Scaling stages (lead book, roadmap)
+The book describes seven levels. Use them to decide what to do next, not to chase a number:
+1. Friends know what you sell: warm outreach is the primary action.
+2. You consistently reach everyone you know and post content.
+3. You hire or delegate to add capacity (for us: a future subcontractor, not yet).
+4. Consistent referrals: the book's threshold is about 25% of customers from referrals. At this level, fix the product before scaling ads.
+5. Multiple methods on multiple platforms.
+
+For us, we are at level 1 to 2. Our referral target (ask 3 past clients per the plan) is the first step toward level 4. Do not start paid ads before we have consistent referrals and tracked conversions.
+
+### 8.3 Pricing (offer book, Charge What It's Worth)
+- **Do not price at the market average.** The book describes the usual pattern: take the average, go slightly below it, then offer "a little more for less". Its argument is that this produces thin margins and weak clients.
+- **Apply to our listings:** the Quick Scan at $150 Small is the lowest tier in Listing 1. The Upwork benchmark band for simple, single-channel bots is $300 to $1,200 (research tracker, entry 9), and security testing isn't in that band at all. Do not discount Quick Scan below $150 to win a first review. If pricing is ever cut, cut it through a time-limited bonus, not a permanent price drop (section 8.4).
+- **Virtuous cycle of price (book's argument):** lower prices lower the buyer's investment and perceived value, which lowers results and attracts the least satisfied clients. Higher prices do the reverse. Use this as the reason to hold Standard and Advanced prices at the upper half of the bands.
+
+### 8.4 Bonuses instead of discounts (offer book, Enhancing: Bonuses)
+- **Never discount the core offer.** Add bonuses instead. The book's reason: discounts teach buyers the price is negotiable.
+- **Present bonuses after the first ask (one-to-one).** On a discovery call, ask for the sale first. If the buyer hesitates, add a bonus that matches the specific objection, then ask again.
+- **Price every bonus and justify the price.** Each add-on should carry a stated value.
+- **Prefer tools and checklists to extra training calls.** Checklists have lower time cost for the buyer and feel more valuable per unit of your effort.
+- **Applied:** the starter checklist card (`UPWORK/PORTFOLIO/04_starter-checklist-card.md`) is a ready-made bonus. Add it as a free deliverable in Standard and Advanced, and price it on the checklist. The executive summary add-on (+$100) is already the book's pattern: a tool for a specific buyer, priced.
+
+### 8.5 Unit economics and the paid-ads gate (Sell Like Crazy, Phase 5)
+- **Track CPA, LTV, and CPL.** Cost per acquisition is the number that decides whether a channel is profitable. Lifetime value is the net profit a client generates over their relationship with you.
+- **Gate rule:** the most you should spend to acquire a client is the profit you keep from that client. Before the $100 ad test, write the number: target profit per Standard job times the expected close rate, minus the cost of delivery.
+- **Example (illustrative, not verified against your costs):** a $600 Standard job with delivery time and any platform fees subtracted leaves a margin per job. The ad test passes only if the cost per booked call stays under the share of that margin you can afford to lose during the test.
+
+### 8.6 Sales conversation (Sell Like Crazy, Phase 7)
+- **Survey before the call.** The book makes the prospect fill in a short survey before booking. That filters poor fits and changes the psychology of the call, because the prospect is asking for help. For us: the Upwork intake form and the LinkedIn booking page should both collect the problem, the system type, and the timeline.
+- **Diagnose first, prescribe second.** Ask "where is the pain?" before describing any tier. Tell a poor-fit prospect plainly that you cannot help. The book says this builds goodwill that comes back as referrals.
+
+### 8.7 Opt-in page (Sell Like Crazy, Phase 3)
+The book lists the required elements of an opt-in page: a headline, a subheadline restating the offer, short bullets on what the reader gets, a visual of the deliverable, and a basic name-and-email form. Our HVCO page for the free test should follow this structure exactly. The "free 30-minute test" is the deliverable, and the findings report is the proof that makes it believable.
