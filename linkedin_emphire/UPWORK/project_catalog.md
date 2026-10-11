@@ -1,9 +1,82 @@
-# PROJECT CATALOG — 3 fixed-price listings (SEO-checked against Upwork's own docs)
+# PROJECT CATALOG — one listing, 3 built-in pricing tiers (SEO-checked against Upwork's own docs)
 The catalog is the client ladder from `STRATEGY/2026-10-02_90-day-10k-client-positioning.md` productized for search. Same three-tier logic, Upwork-priced to win the first reviews before raising toward the LinkedIn-side $1.5k-$3.5k engagement pricing.
 
-Each listing below is ready to paste into Upwork's Project Catalog fields: title, category, search tags, tagline/hook, price, timeline, full description (paragraph + deliverables + confidentiality line).
+## HOW THIS ACTUALLY WORKS ON UPWORK (confirmed live, 2026-10-11)
+Upwork's Project Catalog does not create three separate listings for a three-tier ladder. One project supports **1 or 3 pricing tiers (Starter / Standard / Advanced) inside a single listing**, each with its own custom title (30 chars), custom description (80 chars), delivery days, and its own price per buyer company size (Small / Medium / Large). There's also an optional add-ons section. This is the structure to use, it gives one SEO'd title and URL instead of splitting search juice across three listings, and it puts the upsell path (Starter to Advanced) in front of every buyer automatically.
+
+### Overview step (one listing covering all three tiers)
+**Catalog title (exact, 59/75 chars incl. "You will get…"):**
+```
+You will get an AI red team test and prompt injection audit
+```
+**Category:** Development & IT > Cybersecurity & Data Protection > Other Cybersecurity & Data Protection (confirmed live suggestion; check "Not seeing the right fit?" for "Assessments & Penetration Testing" first, use it instead if it appears)
+**Search tags (5, lowercase, same pattern confirmed working live):** ai security, prompt injection, red teaming, penetration testing, llm security
+**Project attributes:**
+- Cybersecurity Expertise (up to 3): Risk Assessment, Audit, AI Governance
+- Technology Type (pick a few, not all 13): Web Application, SaaS, Database
+- Cybersecurity Regulation (up to 5): GDPR, SOC 2, NIST Cybersecurity Framework, HIPAA, PCI DSS (use all 5 since the Advanced tier serves regulated buyers too)
+
+**If you already completed the Overview step with the narrower "15-point AI prompt injection scan" title:** go back and change it now, before you publish. The project URL locks to whatever title is live the first time you hit publish, not the first time you save a step, so editing it now costs nothing.
+
+### Pricing step — 3 tiers, priced by company size
+Upwork lets you set a different price per tier per buyer company size. Use this table (base prices from the original single-price plan, scaled up for Medium/Large since bigger companies carry more budget and more risk exposure):
+
+| Tier | Custom title (≤30 chars) | Custom description (≤80 chars) | Delivery days | Small co. | Medium co. | Large co. |
+|---|---|---|---|---|---|---|
+| Starter | `AI Quick Scan` | `15 injection attempts plus a one-page findings report in 3 days` | 3 | $150 | $200 | $300 |
+| Standard | `AI Red Team Review` | `20+ vector red team test, findings report, and a live debrief call` | 7 | $600 | $800 | $1,200 |
+| Advanced | `Pre-Launch Hardening` | `Full red team test, code fixes, a regression suite, 2 weeks of support` | 14 | $1,500 | $2,000 | $3,000 |
+
+**Add-ons (optional, shown under all three tiers):**
+- Rush delivery (cuts the stated timeline roughly in half): +$75
+- Extra live debrief/walkthrough call (30 minutes): +$75
+- Executive summary written for non-technical leadership/stakeholders: +$100
+
+### Gallery step
+Use one image per tier if Upwork allows multiple gallery images on one listing, otherwise lead with the Standard-tier image since that's the primary service:
+- `gallery/catalog_tier1_quickscan.png` (Starter)
+- `gallery/catalog_tier2_redteamreview.png` (Standard)
+- `gallery/catalog_tier3_prelaunch.png` (Advanced)
+
+### Process step
+1. You tell me which tier fits, then share access (staging link preferred) plus anything explicitly off-limits to test.
+2. I run the testing scoped to your tier: 15 attempts (Starter), the full 4-layer/20+ vector test (Standard), or the full test plus code-level fixes (Advanced).
+3. You get the findings report in the four-part format: exact repro, which layer failed, the fix, how it was verified.
+4. Standard and Advanced buyers get a live debrief call; Advanced buyers also get 2 weeks of async support and a final verification pass.
+
+### Description step (shared across all three tiers, tier differences live in the pricing table above)
+```
+I red team AI features, chatbots, RAG systems, and tool-calling agents, before your users find the holes. Pick the depth that fits where you are: a fast scan to know if there's an obvious problem, a full structured review across all four layers that break shipped AI (prompt injection, RAG poisoning, agent/tool-call abuse, policy bypass), or the complete loop with code-level fixes and a regression suite that keeps a closed hole from quietly reopening.
+
+Every tier uses the same four-part findings format: exact repro, which layer failed, the fix, how it was verified. Your findings never leave our workspace. Nothing about your system, prompts, or results is shared, published, or reused without your written permission.
+```
+
+### Review step
+Confirm title, category, attributes, all three tiers' pricing/delivery/custom copy, gallery images, and the shared description match the above before publishing. Double-check the title one more time here, it's the last checkpoint before the URL locks in.
+
+### FAQ (applies across tiers, use in whichever step asks for it)
+- **What if you don't find anything?** You still get the full report documenting every attempt and its outcome, proof of due diligence either way.
+- **Will testing affect my live system or users?** No code changes happen in Starter or Standard. I only send test inputs and record results. Code changes only happen in Advanced, scoped with your team first.
+- **Can I start at Standard or Advanced without buying Starter first?** Yes, every tier stands on its own. Starter is just the cheapest way to test the waters first.
+- **Is this suitable for regulated industries like health or finance?** Yes, especially Advanced. Flag any specific compliance requirements (HIPAA, SOC 2, etc.) during scoping so testing and fixes account for them.
+- **What do you need from me to start?** Access to the feature (staging preferred), any off-limits topics/actions, and confirmation you have authority to request testing (your own product, or your employer/client's permission).
+
+## WHY THIS LADDER WORKS
+- Starter is priced low enough to be an impulse "yes" for a buyer who just wants to know if there's a problem, the review-generation engine for weeks 1-3.
+- Standard is the real service, same shape as the LinkedIn-side $3.5k starter engagement, priced for Upwork's colder/price-sensitive search traffic.
+- Advanced upsells the buyers who want the full loop, without ever discounting Standard to get there.
+- Company-size pricing captures more from larger buyers without changing the scope language, same deliverable, different price point based on who's asking.
+
+## AFTER 5 REVIEWS
+Raise Starter to $200-300 across sizes, Standard to $800-1,200, Advanced to $2,000-3,500+, and stop leading with Starter in proposals, lead with Standard.
+
+---
+
+## APPENDIX — original 3-separate-listing drafts (kept for reference, not the recommended structure)
+Everything below was drafted before confirming Upwork's real 3-tier-in-one-listing mechanic above. The content (descriptions, FAQs, requirements, process steps) is still accurate and was reused in the single-listing version above; keep this section only if you ever want to split these into standalone listings later (for example, once Starter alone has enough reviews to stand on its own).
 
 ## CATALOG SEO NOTES (confirmed via support.upwork.com and upwork.com/resources — read before publishing)
+
 - **Title field is 75 characters max, and Upwork auto-prepends "You will get…" to every title — that prefix counts toward the 75.** The titles below already include the prefix and are measured against the real limit.
 - **Don't write the title as an instruction ("You will get a scan")** — Upwork's own guidance says say what you offer in a few words, don't repeat "You will get," use normal capitalization, and push extra keywords into search tags instead of cramming the title.
 - **The project URL is generated from the FIRST title you publish and does not change even if you edit the title later.** Get each title close to final before you hit publish the first time — this is a one-shot SEO decision per listing, unlike the profile title which you can freely A/B test.
