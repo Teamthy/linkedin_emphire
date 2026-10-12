@@ -17,6 +17,7 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 - Not delivered on the call: citation gate build/verify, retrieval poisoning demo, JSON disguise variant, gap-fill dose test, [5] before/after replay with `len(contexts)` proof, trace schema redraw, fixes table, dread-question drill, methodology recitation.
 - Client said "I will make the payment" ($65, Upwork fixed-price, milestone/payment approval per the Sun decision). Not yet actioned. Review/recommendation: not coming now, do not push. He said he may come back but expects much better preparation.
 - IMMEDIATE ACTION (Mon Oct 12): send the written session report (`CLIENTS/sudhir-ncd-tutor/04_SESSION_REPORT_2026-10-12.md`) and the recovery DM (`CLIENTS/sudhir-ncd-tutor/05_RECOVERY_DM_DRAFT.md`) to shivaram.sudhir@live.com BEFORE his interview, Tue Oct 13, 3:00 PM ET.
+- UPDATED (Mon Oct 12, evening): Sudhir replied at 2:59 AM (LinkedIn). He is conditioning the $65 payment approval on a review of the report against the original scope. Review request, not refund request. Both his claims (agenda short, live code broke the app) are supported by our own records, so neither is contested. Reply drafted in `06_SUDHIR_REPLY_2026-10-12.md` with the honest scope mapping `07_SCOPE_MAPPING.md` attached; awaiting owner send.
 
 
 ## Related files
@@ -148,6 +149,13 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 
 ---
 
+### Mon Oct 12 (post-session, LinkedIn)
+- [Owner] Sent the written session report (04, with the PDF) and the recovery messages v2 (05) per the plan.
+- [Mon 2:59 AM] Sudhir (verbatim): "Hi Timothy, Thank you for acknowledging the issues during our session. Unfortunately, the session fell significantly short of the agreed agenda. We were unable to complete several planned exercises, and the live code changes introduced issues into my application. I appreciate the written report, but I need to review it against the original scope before considering approval of the pending $65 payment. Regards, Sudhir"
+- Assessment: the $65 is now explicitly conditioned on his scope review of the report. He wrote directly on LinkedIn, rational tone, no dispute filing, no refund demand. Both claims are factually supported by our own records (see 07_SCOPE_MAPPING.md); the reply concedes both specifically, attaches the mapping, and offers a no-charge make-good session. No payment language in the reply on purpose.
+- [Evening] Reply drafted in `06_SUDHIR_REPLY_2026-10-12.md`; scope mapping `07_SCOPE_MAPPING.md` to attach as PDF. Awaiting owner send (LinkedIn only, not mirrored to Upwork).
+- Timing note: 2:59 AM Lagos = Sun 9:59 PM his time, minutes after the session ended. His reply most likely predates the recovery messages v2; the draft does not assume he read them.
+
 ## What was agreed in the conversation
 - Two distinct calls. (1) A free 20-minute scoping call, held Fri Oct 9, 6:30 PM Lagos / 1:30 PM ET, scope only. (2) A paid 60-minute working session, originally Sat Oct 10 1 PM ET, rescheduled to Sun Oct 11 3 PM ET / 8 PM Lagos.
 - The paid session is a $100/hr learning session shaped as one 60-minute working session (Timothy attacked the $200 two-session package down to a single session because it better fits Sudhir's goal of doing this himself).
@@ -182,6 +190,7 @@ Internal record of the LinkedIn DM conversation with this client. Do not quote f
 9. LIVE CODE EDITS BROKE THE CLIENT APP MID-SESSION. Partial edits over screen share (applied by the client through his AI assistant, "I did vibe coding") left every query stuck on "Retrieving WHO sources" from 12:07 AM; a full revert at 12:18 AM recovered the app and removed the working exfil fix. Standing rule going forward: never live-edit a client's code over screen share; ship complete, tested code with written instructions.
 10. EXPECTATION GAP. Sudhir's stated goal: "break it, find the root cause, fix it, tell me how to explain it in the interview" for one or two issues. The session delivered a prompt marathon plus a debugging battle. The written report (`04_SESSION_REPORT_2026-10-12.md`) is structured to close exactly that gap: one confirmed finding end to end, plus the defenses that held, in his voice, interview-ready.
 11. COMPETITIVE COMPARISON. Sudhir named a $20/hr PhD mentor on Upwork as the standard he is comparing against ("better and professional"). Future pricing and positioning must beat "cheap mentor," not "red team price." The standing fee-aware quoting covers the cost side; the delivery standard (written, prepared, no live code edits) covers the quality side.
+12. PAYMENT NOW CONDITIONED ON SCOPE REVIEW (Mon Oct 12, 2:59 AM). His words: he needs to review the report against the original scope before considering approval of the $65. Risks if the review lands badly: milestone rejection, an Upwork dispute, or a negative review; the $65 is then at risk ($25 Wise already received). Mitigation in flight: the reply (06) concedes both factual claims, attaches the honest scope mapping (07), and offers a no-charge make-good session (owner decision point: billing the make-good session instead would be possible but not recommended). If he accepts, the make-good must follow the non-negotiable structure (complete tested code in writing, no live edits, before/after evidence, hard stop). Watch for: milestone rejection on the dashboard, a dispute, any message wording that escalates from "review" to "refund/dispute".
 
 ## Next steps (post-session, Mon Oct 12)
 - [Owner] Send the written session report (`CLIENTS/sudhir-ncd-tutor/04_SESSION_REPORT_2026-10-12.md`) to shivaram.sudhir@live.com TODAY, before his Tue Oct 13, 3:00 PM ET interview. It carries the one confirmed break with before/after evidence, the root cause, the exact fix code, the regression tests, the defenses that held, the trace schema one-pager, the methodology loop, and the one-breath interview language for each finding.
