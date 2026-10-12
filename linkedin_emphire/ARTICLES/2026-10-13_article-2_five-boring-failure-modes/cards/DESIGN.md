@@ -19,13 +19,23 @@ them for every article from `ARTICLE_N` config values:
   `#9DBFE0`, numbered rows (numerals `#A9C7E4`, text `#1A2530`, dividers
   `#E3E9EF`), dark navy footer bar `#0F1722` with white CTA left and
   `#BreakingAI` in `#4D9FDB` right.
-- Hero portrait `1080x1350`: dark scene photo (cover-cropped, left
-  legibility gradient), cyan banner top-left `#03A9D6` with black letter-spaced
-  text and two diagonal slashes, white headline with one line boxed in cyan
-  (black text on the box), white sub line plus cyan sub line.
-- Hero landscape `1600x900`: same treatment, plus a white name tag
-  (black text, "Olusanya Timothy") top-left and `BREAKING AI · #NN/21` white
-  letter-spaced top-right, sub lines with a thin white left rule.
+- Hero portrait `1122x1402` (exact size of the published article 1 asset):
+  dark scene photo (cover-cropped, left legibility gradient), cyan banner
+  polygon `#08B7E1` at y 68-140 (right edge slants from x 586 to 534) with
+  black letter-spaced text and two diagonal slashes, white headline lines at
+  x 57 (ink tops 215/334/445, font 108), cyan boxes `#04AAD4` from x 46
+  (text x 69, top pad 27, box h 126, boxes touching), white sub lines at x 65
+  with 60px ink-top pitch starting 51px below the last box.
+- Hero landscape `1586x992` (exact size of the published article 1 asset):
+  white name tag `#FAFBFD` box (55,192,510,281) with black text (76,219),
+  `BREAKING AI · #NN/21` white top-right (ink top 49, right margin 60),
+  headline line 1 white at x 57 ink top 352, cyan band `#05C6E0`
+  (54,447,1272,562) with black line 2 at ink top 475, sub block with a 7px
+  white rule at x 54-60 and text at x 84, 73px ink-top pitch from 626.
+  Headline font 74 for both lines (matches the reference line widths exactly).
+- All positions and colors above were measured pixel-by-pixel from the
+  published article 1 visuals (in `uploads/`), so each hero reproduces the
+  template geometry at the pixel.
 - Scene photos are generated per article (no real faces) and cover-cropped to
   size by the engine, so the exact photo dimensions do not matter.
 
@@ -50,8 +60,8 @@ them for every article from `ARTICLE_N` config values:
 |---|---|---|
 | `art2_card1_modes_1080x1350.png` | 1080x1350 | Teaser card, already used in the live teaser post |
 | `art2_share_post_1200x675.png` | 1200x675 | Tuesday 10:00 WAT link post image ("Article 2 is live.") |
-| `art2_hero_landscape_1600x900.png` | 1600x900 | Article 1 style photo hero for the link post (landscape) |
-| `art2_hero_portrait_1080x1350.png` | 1080x1350 | Article 1 style photo hero for the post carousel (portrait) |
+| `art2_hero_landscape_1586x992.png` | 1586x992 | Article 1 style photo hero for the link post (landscape, exact article 1 size) |
+| `art2_hero_portrait_1122x1402.png` | 1122x1402 | Article 1 style photo hero for the post carousel (portrait, exact article 1 size) |
 | `art2_save_card_1080x1350.png` | 1080x1350 | Saveable "SAVE THIS CARD" post, Thursday or Friday. Checklists earn saves; saves are the distribution lever for the 1k-follower goal |
 | `art2_cover_1200x628.png` | 1200x628 | Article cover image |
 | `art2_fig1_five_modes_1200x675.png` | 1200x675 | In-article, after the intro line "Here they are, in the order I now check them." |

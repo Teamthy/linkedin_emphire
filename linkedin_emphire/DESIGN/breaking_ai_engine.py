@@ -65,7 +65,9 @@ L_FOOTER = (15, 23, 34)
 L_HASHTAG = (77, 159, 219)
 
 # hero (shared)
-CYAN = (3, 169, 214)
+CYAN = (5, 198, 224)  # landscape band, measured from article 1 reference
+CYAN_P = (8, 183, 225)  # portrait banner
+CYAN_BOX_P = (4, 170, 212)  # portrait highlight boxes
 HERO_BLACK = (11, 15, 20)
 HERO_WHITE = (255, 255, 255)
 
@@ -162,44 +164,14 @@ def cover_photo(photo_path, width, height, darken=0.18):
     return img
 
 
-def cyan_banner(d, width, text, y=40, h=72):
-    fnt = font(30)
-    tw = spaced_width(d, text, fnt, 4)
-    bw = max(int(width * 0.56), int(tw) + 36 + 70)
-    d.rectangle([(0, y), (min(bw, width), y + h)], fill=CYAN)
-    spaced_text(d, (36, y + (h - 30) // 2 - 4), text, fnt, HERO_BLACK, 4)
-    # two diagonal slashes at the banner's right edge
-    sx = bw + 14
-    for i in range(2):
-        x = sx + i * 22
-        d.line([(x + 16, y + 8), (x, y + h - 8)], fill=CYAN, width=7)
+def ink_top_y(fnt, ink_top, bold=True):
+    """PIL draws at the em-box top; caps start ~0.203em (bold) or
+    ~0.208em (regular) lower in DejaVu. Returns the draw y for a
+    desired ink (cap) top."""
+    k = 0.203 if bold else 0.208
+    return ink_top - int(fnt.size * k)
 
 
-def fit_font(d, lines, start, minimum, max_w):
-    size = start
-    while size > minimum:
-        f = font(size)
-        if all(d.textlength(ln, font=f) <= max_w for ln in lines):
-            return size
-        size -= 2
-    return minimum
-
-
-def headline_block(d, x, y, lines, fnt, line_h, highlight_idx):
-    """lines: list of strings; highlight_idx: set of line numbers to box in cyan."""
-    hl = set(highlight_idx or ())
-    for i, line in enumerate(lines):
-        if i in hl:
-            tw = d.textlength(line, font=fnt)
-            d.rectangle([(x - 28, y - 10), (x + tw + 34, y + line_h + 14)], fill=CYAN)
-            d.text((x, y), line, font=fnt, fill=HERO_BLACK)
-        else:
-            d.text((x, y), line, font=fnt, fill=HERO_WHITE)
-        y += line_h + 6
-    return y
-
-
-# ---------------------------------------------------------------- light system
 def render_save_card(cfg):
     c = cfg["save_card"]
     W, H = 1080, 1350
@@ -246,58 +218,84 @@ def render_save_card(cfg):
 
 
 def render_hero_portrait(cfg):
+    """Portrait hero 1122x1402, measured pixel-perfect from the published
+    article 1 visual: banner polygon y 68-140 (right edge slants 586 to 534),
+    white headline lines x 57 with ink tops 215/334/445, cyan boxes from
+    x 46 (text x 69, top pad 27, box h 126, boxes touching), sub lines x 65
+    with 60px ink-top pitch starting 51px below the last box."""
     c = cfg["hero_portrait"]
-    W, H = 1080, 1350
+    W, H = 1122, 1402
     img = cover_photo(c["photo"], W, H)
     d = ImageDraw.Draw(img)
-    cyan_banner(d, W, f"{SERIES} \u00b7 ARTICLE {cfg['num']} IS LIVE")
-    y = 190
-    hs = fit_font(d, c["headline_lines"], 96, 56, W - 140)
-    fnt = font(hs)
-    y = headline_block(d, 64, y, c["headline_lines"], fnt, int(hs * 1.1), c["highlight_idx"])
-    y += 26
-    sf = font(38, bold=False)
-    if c.get("sub_white"):
-        for ln in wrap(d, c["sub_white"], sf, W - 128):
-            d.text((64, y), ln, font=sf, fill=HERO_WHITE)
-            y += 52
-    if c.get("sub_cyan"):
-        for ln in wrap(d, c["sub_cyan"], sf, W - 128):
-            d.text((64, y), ln, font=sf, fill=CYAN)
-            y += 52
-    save(img, cfg["cards_dir"], f"art{cfg['num']}_hero_portrait_1080x1350.png")
+        # banner
+    d.polygon([(0, 68), (586, 68), (534, 140), (0, 140)], fill=CYAN_P)
+    bt = f"{SERIES} \u00b7 ARTICLE {cfg['num']} IS LIVE"
+    bs = 30
+    while spaced_width(d, bt, font(bs), 4) > 460 and bs > 16:
+        bs -= 1
+    f_b = font(bs)
+    spaced_text(d, (40, 68 + (73 - bs) // 2 - int(bs * 0.203)), bt, f_b, HERO_BLACK, 4)
+    for x in (600, 618):
+        d.line([(x, 68), (x - 52, 140)], fill=CYAN_P, width=9)
+    # headline
+    f_head = font(108)
+    y_tops = [215, 334, 445]
+    for i, line in enumerate(c["white_lines"][:3]):
+        d.text((57, ink_top_y(f_head, y_tops[i])), line, font=f_head, fill=HERO_WHITE)
+    box_top = 573
+    for line in c["box_lines"][:2]:
+        tw = d.textlength(line, font=f_head)
+        d.rectangle([(46, box_top), (46 + int(tw) + 46, box_top + 126)], fill=CYAN_BOX_P)
+        d.text((69, box_top + 27 - int(108 * 0.203)), line, font=f_head, fill=HERO_BLACK)
+        box_top += 127
+    # sub lines
+    f_sub = font(45, bold=False)
+    y = box_top + 51
+    for ln in c["sub_lines"]:
+        d.text((65, ink_top_y(f_sub, y, bold=False)), ln, font=f_sub, fill=HERO_WHITE)
+        y += 60
+    save(img, cfg["cards_dir"], f"art{cfg['num']}_hero_portrait_1122x1402.png")
 
 
 def render_hero_landscape(cfg):
+    """Landscape hero 1586x992, measured pixel-perfect from the published
+    article 1 visual: white name tag box (55,192,510,281), top-right label
+    (ink top 49, right margin 60), headline line 1 x 57 ink top 352, cyan
+    band (54,447,1272,562) with text ink top 475, sub rule x 54-60 and text
+    x 84 with 73px ink-top pitch from 626. Headline font 74 for both lines
+    (fits the reference line widths exactly in DejaVu)."""
     c = cfg["hero_landscape"]
-    W, H = 1600, 900
+    W, H = 1586, 992
     img = cover_photo(c["photo"], W, H)
     d = ImageDraw.Draw(img)
+    f_head = font(74)
+    f_tag = font(41)
+    f_sub = font(53, bold=False)
+    f_lab = font(32)
     # name tag
-    nf = font(42)
-    nw = d.textlength(AUTHOR, font=nf)
-    d.rectangle([(56, 92), (56 + nw + 56, 92 + 86)], fill=(254, 254, 254))
-    d.text((84, 108), AUTHOR, font=nf, fill=HERO_BLACK)
-    # top right label
-    lf = font(32)
+    d.rectangle([(55, 192), (510, 281)], fill=(254, 254, 254))
+    d.text((76, ink_top_y(f_tag, 219)), AUTHOR, font=f_tag, fill=HERO_BLACK)
+    # top-right label
     label = f"{SERIES} \u00b7 #{cfg['num']:02d}/{cfg['total']}"
-    lw = spaced_width(d, label, lf, 4)
-    spaced_text(d, (W - 64 - lw, 64), label, lf, HERO_WHITE, 4)
-    # headline
-    hs = fit_font(d, c["headline_lines"], 96, 56, W - 180)
-    fnt = font(hs)
-    y = 250
-    y = headline_block(d, 64, y, c["headline_lines"], fnt, int(hs * 1.1), c["highlight_idx"])
-    # sub with left rule
-    sf = font(36, bold=False)
-    lines = []
+    lw = spaced_width(d, label, f_lab, 1)
+    spaced_text(d, (W - 60 - lw, ink_top_y(f_lab, 49)), label, f_lab, HERO_WHITE, 1)
+    # headline line 1
+    lines = c["headline_lines"]
+    d.text((57, ink_top_y(f_head, 352)), lines[0], font=f_head, fill=HERO_WHITE)
+    # band + line 2
+    d.rectangle([(54, 447), (1272, 562)], fill=CYAN)
+    d.text((74, ink_top_y(f_head, 475)), lines[1], font=f_head, fill=HERO_BLACK)
+    # sub block with left rule
+    subs = []
     for s in c["sub_lines"]:
-        lines.extend(wrap(d, s, sf, W - 160))
-    x0, y0 = 64, y + 24
-    d.rectangle([(x0, y0), (x0 + 4, y0 + len(lines) * 48)], fill=HERO_WHITE)
-    for i, ln in enumerate(lines):
-        d.text((x0 + 28, y0 + i * 48), ln, font=sf, fill=HERO_WHITE)
-    save(img, cfg["cards_dir"], f"art{cfg['num']}_hero_landscape_1600x900.png")
+        subs.extend(wrap(d, s, f_sub, W - 84 - 60))
+    subs = subs[:3]
+    rule_top = 618
+    rule_bot = 626 + (len(subs) - 1) * 73 + 50
+    d.rectangle([(54, rule_top), (60, rule_bot)], fill=HERO_WHITE)
+    for i, ln in enumerate(subs):
+        d.text((84, ink_top_y(f_sub, 626 + i * 73, bold=False)), ln, font=f_sub, fill=HERO_WHITE)
+    save(img, cfg["cards_dir"], f"art{cfg['num']}_hero_landscape_1586x992.png")
 
 
 # ---------------------------------------------------------------- dark system
@@ -507,18 +505,17 @@ ARTICLE_2 = {
     },
     "hero_portrait": {
         "photo": _art2_cards_dir() + "/photos/art2_hero_portrait.jpg",
-        "headline_lines": ["Five Boring Failures", "Ship With Your AI Feature"],
-        "highlight_idx": {1},
-        "sub_white": "Tested on my own support bot. Nothing smoothed.",
-        "sub_cyan": "The five failure modes, live now.",
+        "white_lines": ["Five Boring", "Failures", "Ship With Your"],
+        "box_lines": ["AI Feature"],
+        "sub_lines": ["Tested on my own support bot.", "The five failure modes, live now."],
     },
     "hero_landscape": {
         "photo": _art2_cards_dir() + "/photos/art2_hero_landscape.jpg",
         "headline_lines": ["Your AI Feature Will Not Die", "In a Movie-Style Hack"],
-        "highlight_idx": {1},
         "sub_lines": [
             "It will die on a boring Tuesday.",
-            "The five boring failure modes. Article 2 of 21. Live today.",
+            "The five boring failure modes.",
+            "Article 2 of 21. Live today.",
         ],
     },
     "dark_cover": {
