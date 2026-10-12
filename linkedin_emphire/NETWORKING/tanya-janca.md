@@ -1,7 +1,7 @@
 # Tanya Janca (SheHacksPurple), relationship record
 
 - Date opened: 2026-10-12
-- Status: 1st-degree connection (she sent the request, we accepted). Two public exchanges. DM 1 sent 2026-10-12. No chasing for a month; any reply or engagement from her is the trigger for the next step.
+- Status: 1st-degree connection (she sent the request, we accepted). Two public exchanges. DM 1 sent 2026-10-12 1:53 AM. She replied the same morning at 4:46 AM: warm, fast, explicit interest ("I look forward to seeing what you come up with!"). Trigger fired: engagement received. Next touch is DM 2 (the article link), 2026-10-13, ONLY after Article 2 is confirmed published. No acknowledgment DM in between (decision 2026-10-12: the article itself is the reply to her closing line).
 - Do not treat this as a sales channel. This is an authority relationship to build over 90 days. See the don'ts.
 
 ## Who
@@ -23,7 +23,8 @@
 - ~5 days ago: Timothy commented on a thread (original post title/link not recorded [PLACEHOLDER: log the post when seen]). His point: an agent does not get its own permissions, it inherits service accounts; if the credential can reach the table, the agent can act on it; that inheritance is almost never written down. He closed by quoting her line "telling your agent to behave itself is not a security boundary" as the cleanest version of the point. Her reply: "Oh do I ever agree with you. Thank you for pointing this out!"
 - ~3 days ago: Timothy commented with two field extensions. (1) Egress restriction misses the quietest exfil because it rides the approved channels: if the agent can fetch URLs, the fetch is the egress pipe; if it can render a markdown image, post a comment, or open a ticket, data leaves through doors opened on purpose. (2) "Did we do a good job" has answer decay: one new tool, one widened service account, one prompt change, and the threat model approved in September is a history document by October; the only durable answer is a logged escape attempt in a sandbox, rerun after every meaningful change; findings become permanent tests, not closed tickets. Her reply: "This was a very thoughtful response. I never thought about how 'Did we do a good job' could decay over time. Now I need to watch out for that... Thank you for this."
 - 2026-10-12: she sent a connection request; accepted.
-- 2026-10-12 (evening): DM 1 sent (the draft above, as written).
+- 2026-10-12 1:53 AM: DM 1 sent (the draft above, as written, verbatim).
+- 2026-10-12 4:46 AM: she replied (verbatim): "Thank you for your thoughtful comments on my posts. :-D" / "And for connecting." / [claps, thumbs up, smiley] / "I look forward to seeing what you come up with!" Fast reply (~3 hours), warm register, no business angle from her side. The thread rests on her closing line; the promised article is the natural answer to it.
 
 ## The pattern that is working (keep doing exactly this)
 
@@ -34,8 +35,8 @@
 
 ## 30-day plan
 
-- Day 0 (2026-10-12): send DM 1 (draft below). Nothing else today.
-- Day 1 (2026-10-13): only if article 2 actually publishes: send DM 2 with the link (draft below). This is a promise kept, and it is the second touchpoint.
+- Day 0 (2026-10-12, done): DM 1 sent 1:53 AM. Her reply arrived 4:46 AM. Decision: no acknowledgment DM today; two touches in under 24 hours would read eager, and her closing line ("looking forward to seeing what you come up with") is best answered with the thing itself.
+- Day 1 (2026-10-13): only if article 2 actually publishes: send DM 2 with the link (draft below), after confirming publication at 10:00 WAT. This is a promise kept, and it is the second touchpoint. If the article does not publish, no DM 2; the thread simply rests on her warm close, which is a fine place to be.
 - Week 1: one substantive comment on one of her posts. Skip the petition-related posts (let her own that space).
 - Week 2: one substantive comment; start collecting two or three field-note angles that map to her AI security training direction.
 - Week 3: DM 2 or 3: one field note plus one genuine question for her (how she thinks about inherited service accounts in agents, or how DevSlop treats a specific class of AI-generated bug). A real question to a leader earns a real answer and shows you read her work.
