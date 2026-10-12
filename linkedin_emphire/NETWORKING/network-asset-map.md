@@ -44,7 +44,7 @@ Priority six (check first):
 - Jason Liu (following). "Developer Experience Engineer at OpenAI | Codex | AI educator | Creator of Instructor."
 
 Rotation:
-Hamel Husain (ML engineer), swyx (ai.engineer), Jerry Liu (LlamaIndex), Bob van Luijt (Weaviate), Alex Albert (Anthropic research), Sayak Paul (Hugging Face ML), Luca Pozzi (Netflix ML), Shreya Shankar (CMU), Brian Benz (Microsoft AI advocate, Cloud Native DevRel), Renuka M. (AI product and DevRel, Latency & Latte podcast), Basia Kubicka ("AI Product Manager | Agentic AI | Vibe Coding | I build with Claude & teach 70K+ to do the same | ex-Techstars founder"), Dexter Esto (custom RAG, full-stack), Ado Kukic (Community, Claude, Code).
+Hamel Husain (ML engineer), swyx (ai.engineer), Jerry Liu (LlamaIndex), Bob van Luijt (Weaviate), Alex Albert (Anthropic research), Sayak Paul (Hugging Face ML), Luca Pozzi (Netflix ML), Shreya Shankar (CMU), Brian Benz (Microsoft AI advocate, Cloud Native DevRel), Renuka M. (AI product and DevRel, Latency & Latte podcast), Basia Kubicka ("AI Product Manager | Agentic AI | Vibe Coding | I build with Claude & teach 70K+ to do the same | ex-Techstars founder"), Dexter Esto (custom RAG, full-stack), Ado Kukic (Community, Claude, Code), Angela Xu (atypica.AI, "Building AI that simulates human decisions | Fractional CPO | ex-Hubspot, ex-DataRobot, MIT Alum"; substantive reply in the Lenny simulation thread 2026-10-09; 3rd degree, comment-first).
 
 Mutuals in this tier (already in their feed):
 Murat Sari (CodeRabbit founder, AI code review product), Christopher Story (Applied AI @ Certify), Hamza Qureshi (Production Agentic AI, LangGraph), Saiful Islam Adar (Dev Monks CTO), Abhishek Katiyar (Amazon PM, AI and Platform), Dominic Kennedy (Seldon, simulating human behavior).
@@ -120,3 +120,4 @@ Exception rule: if an ambient account posts something that maps to a frame-libra
 ## Snapshot log
 
 - 2026-10-12: following 398, followers 485. Partial exports (both tabs cut at "and others"). Map created; superseded a same-day draft that split the tiers differently.
+- 2026-10-12: Julia Kingsley (Twinning Labs, mutual follower) converted from the Lenny simulation thread into an inbound email conversation; call pending, availability due today. Record: NETWORKING/julia-kingsley-twinning-labs.md. Angela Xu (atypica.AI) added to Tier 2 rotation from the same thread.
