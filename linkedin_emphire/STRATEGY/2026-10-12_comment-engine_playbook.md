@@ -39,6 +39,8 @@ Reads:
 
 ## 3. Target list (four tiers, comment within 2 hours of post for the big ones)
 
+Named accounts for every tier come from the 2026-10-12 network snapshot: NETWORKING/network-asset-map.md (Tier A = 20 named AI-security accounts, Tier B rotation, Tier C Nigeria nodes, Tier D ambient, plus a follow-back shortlist).
+
 1. AI security leaders: Tanya Janca and her orbit (OWASP, appsec, secure coding). Max 1 to 2 per week per person, substantive only.
 2. Agentic-AI founders and launches: YC launches, product announcements in fintech, healthcare, government-adjacent. 2 to 3 per week. Format: one pre-scale risk, specific, plus implied offer. This tier closes pre-launch reviews.
 3. Evals, LLM ops, and AI infrastructure people: the people discussing harnesses, MCP, A2A, guardrails. Rotate.
@@ -86,3 +88,4 @@ KPI ranking: conversations started, then inbound DMs, then impressions. Impressi
 ## Weekly log
 
 - 2026-10-06 to 2026-10-12: baseline export analyzed. ~30 external comments, 1 in 3 started a conversation. Tanya Janca replied twice. No inbound DMs logged yet.
+- 2026-10-12: network snapshot (398 following / 485 followers, partial export) mapped into NETWORKING/network-asset-map.md. Tier A now has 20 named accounts; follow-back shortlist of 4. Tanya confirmed as follower (mutual); Sudhir confirmed as follower (no public engagement mention).
