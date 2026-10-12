@@ -10,3 +10,6 @@ build/
 venv/
 __pycache__/
 .env
+
+# personal face assets, never commit (repo was public)
+uploads/
