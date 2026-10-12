@@ -105,6 +105,7 @@ Chinasa, your work on Nigeria's AI strategy is why I believe serious AI engineer
 # TIER B — REFERRAL NODES (highest value per connection)
 
 ### 9. Hamel Husain — Independent ML consultant, Parlance Labs
+**STATUS (2026-10-13):** evals-FAQ post is comment 1 candidate (draft in playbook log, held until a cap slot opens). Two comments then connect; connect stays bare (notes blocked until 1k followers), banked note becomes first DM on accept.
 **URL:** https://www.linkedin.com/in/hamelhusain
 **Why:** Advises 35+ AI products on evals. When a client of his needs security testing, you want to be the name he says.
 **Note:**
