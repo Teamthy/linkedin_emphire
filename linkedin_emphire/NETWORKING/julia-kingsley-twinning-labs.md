@@ -1,6 +1,6 @@
 # Julia Kingsley (Twinning Labs): inbound conversation, call pending
 
-Status (2026-10-12): she is waiting on the owner's availability. On Oct 9, 1:17 PM she wrote: "Please provide your availability on Monday-Wednesday in EST." The availability email must go out today (Monday, Oct 12). Paste-ready draft below.
+Status (2026-10-12, updated evening): owner sent the availability email today with three slots (Tue Oct 13, 12:00-2:00 PM ET; Wed Oct 14, 11:00 AM-1:00 PM ET and 1:00-3:00 PM ET). Waiting on her pick. When she picks: lock the calendar immediately, send the video link, 45-60 min, no pitch.
 
 ## Who
 
@@ -19,6 +19,7 @@ Status (2026-10-12): she is waiting on the owner's availability. On Oct 9, 1:17 
 - Oct 8, 7:30 PM: owner: no rush; first piece of the series publishes tomorrow morning, will send the link.
 - Oct 9, 8:35 AM: owner sent Article 1 link (https://www.linkedin.com/pulse/ai-red-teaming-why-every-team-shipping-needs-someone-whose-timothy-xqu8e), pointing at the "demo is not the product" chapter. "No agenda attached, I just said I'd send it."
 - Oct 9, 1:17 PM: Julia: "Please provide your availability on Monday-Wednesday in EST."
+- Oct 12 (Mon), evening: owner sent the availability email with the three slots above. Awaiting her pick; she asked Mon-Wed, so expect the answer today or tomorrow.
 
 ## Calendar constraints for the reply
 

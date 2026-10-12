@@ -109,7 +109,7 @@ Exception rule: if an ambient account posts something that maps to a frame-libra
 
 ## Actions this week (2026-10-12 to 2026-10-16)
 
-1. Today: Tanya DM 1 (draft in NETWORKING/tanya-janca.md). No other cold DMs from this map.
+1. Done 2026-10-12: Tanya DM 1 sent (record in NETWORKING/tanya-janca.md); Julia availability email sent (record in NETWORKING/julia-kingsley-twinning-labs.md); connect list v2 Band A (18 names) sent. No other cold DMs from this map this week.
 2. Monday/Thursday ritual: scan the Tier 1 list; comment on 2 to 3 posts under 6 hours old per the spec; answer OP questions same-day (the St Louis thread is live).
 3. Tier 2 rotation: one or two comments per week from the priority six, not all at once.
 4. Tier 4 this week: Aboyeji (one comment, proofread twice), Grace Egbukuyomi only if a community post is live.

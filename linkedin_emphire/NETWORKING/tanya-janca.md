@@ -1,7 +1,7 @@
 # Tanya Janca (SheHacksPurple), relationship record
 
 - Date opened: 2026-10-12
-- Status: 1st-degree connection (she sent the request, we accepted). Two public exchanges. First DM not yet sent.
+- Status: 1st-degree connection (she sent the request, we accepted). Two public exchanges. DM 1 sent 2026-10-12. No chasing for a month; any reply or engagement from her is the trigger for the next step.
 - Do not treat this as a sales channel. This is an authority relationship to build over 90 days. See the don'ts.
 
 ## Who
@@ -23,6 +23,7 @@
 - ~5 days ago: Timothy commented on a thread (original post title/link not recorded [PLACEHOLDER: log the post when seen]). His point: an agent does not get its own permissions, it inherits service accounts; if the credential can reach the table, the agent can act on it; that inheritance is almost never written down. He closed by quoting her line "telling your agent to behave itself is not a security boundary" as the cleanest version of the point. Her reply: "Oh do I ever agree with you. Thank you for pointing this out!"
 - ~3 days ago: Timothy commented with two field extensions. (1) Egress restriction misses the quietest exfil because it rides the approved channels: if the agent can fetch URLs, the fetch is the egress pipe; if it can render a markdown image, post a comment, or open a ticket, data leaves through doors opened on purpose. (2) "Did we do a good job" has answer decay: one new tool, one widened service account, one prompt change, and the threat model approved in September is a history document by October; the only durable answer is a logged escape attempt in a sandbox, rerun after every meaningful change; findings become permanent tests, not closed tickets. Her reply: "This was a very thoughtful response. I never thought about how 'Did we do a good job' could decay over time. Now I need to watch out for that... Thank you for this."
 - 2026-10-12: she sent a connection request; accepted.
+- 2026-10-12 (evening): DM 1 sent (the draft above, as written).
 
 ## The pattern that is working (keep doing exactly this)
 
