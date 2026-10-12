@@ -1,0 +1,32 @@
+# Job Applications Tracker, October 2026
+
+Workflow: owner pastes best-match job postings (Upwork and LinkedIn) with full details; agent verifies (a) real or bait, (b) relevant to the named company via keyword search, (c) worth applying against the two listing shapes and the AI red-teaming / RAG security niche. One verdict per posting: APPLY (with proposal angle), ADJUST, or SKIP.
+
+## Rules
+
+- Cap: 3 applications per day, batched into one sitting; never on a morning with a pending article publish.
+- Every application is custom: first two lines specific to the posting, proof from real deliverables only (the 21-part series, the live break-and-fix record, the portfolio pipeline). No template proposals.
+- Owner's paste is the source of truth for Upwork client-card data (agent sandbox cannot open upwork.com or linkedin.com). Unverifiable claims are marked unverified, never assumed.
+- Standing Upwork policy rule: all communication and payment on-platform. Any off-platform contact request is an automatic red flag.
+- Log outcomes (viewed / interview / offer / no response) so the posting type that converts can be read after two weeks.
+
+## Red flag quick list
+
+Upwork: payment verification missing; new client account with large budget and urgency; budget below market for the stated scope; off-platform contact request; free "test task" gate; client name inconsistent with posting content; hourly range and fixed budget contradict each other.
+LinkedIn: company with no public product matching the role; Easy Apply funnel from a recruiting agency for a "direct" role; stale repost (months old); salary band incompatible with the stated level; role keywords do not appear anywhere in the company's public work.
+
+## Verdict schema
+
+- Verdict: APPLY / ADJUST / SKIP
+- Real: yes / no / unverified (with the evidence used)
+- Company relevance: what the keyword search found, one line
+- Fit: match to which listing shape and which skills
+- Angle: first two proposal lines, paste-ready (APPLY/ADJUST only)
+- Effort: low / med / high (proposal length, revisions likely)
+- Risks: named red flags, if any
+
+## Log
+
+| Date | Source | Title | Company / client | Budget | Verdict | Why (one line) | Angle | Status |
+|---|---|---|---|---|---|---|---|---|
+| (none yet) | | | | | | | | |
