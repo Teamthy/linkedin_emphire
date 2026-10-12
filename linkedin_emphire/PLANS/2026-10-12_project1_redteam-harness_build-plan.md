@@ -1,6 +1,6 @@
 # Project 1 Build Plan: the Red-Team Harness ("breaklab")
 
-- Status: BUILT (skeleton). Repo exists (github.com/Teamthy/Red-Team-Harness-My-Breaking-AI-lab-, package breaklab, CI green at HEAD, 28 cases, golden pair passing). Audited 2026-10-12: verdict engine is keyword matching on prompt vocabulary, real-target validation missing, client references leaked in a public repo. See PLANS/2026-10-12_breaklab-audit.md for the full gap list and fix order.
+- Status: v1.0 completion pack delivered 2026-10-12 (PLANS/2026-10-12_breaklab_v1_completion_pack.md): complete evidence-driven v1.0 built and verified in a private clone (62 tests, ruff, mypy, golden pair 27/28 broken vs 28/28 fixed), all 43 file sections byte-identical to the tested state. Application to the public repo is pending owner Phase 0 actions (flip private, rename to breaklab, history rewrite) plus the two real-run slots (SLOT-1 doubles as Article 2's lab tests). Prior state: BUILT (skeleton), audited 2026-10-12 (PLANS/2026-10-12_breaklab-audit.md).
 - Owner: Timothy (solo, part-time while running the empire).
 - Estimate: 6 weeks part-time (about 12 focused hours per week) to public v1.0. If real bandwidth is 6 hours per week, the same phases stretch to 8 to 10 weeks. Phase boundaries are the flexibility point, not the case count.
 - What it is: one command, a reproducible red-team battery against a running LLM app, with deterministic verdicts, a client-ready report, and a regression mode that plugs into CI.

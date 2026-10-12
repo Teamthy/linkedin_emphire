@@ -1,5 +1,6 @@
 # breaklab audit, 2026-10-12
 
+> Follow-up 2026-10-12: v1.0 completion pack delivered: `PLANS/2026-10-12_breaklab_v1_completion_pack.md` (complete build, verified in a private clone; apply after the Phase 0 private scrub).
 Repo audited: github.com/Teamthy/Red-Team-Harness-My-Breaking-AI-lab- (the package inside is `breaklab`). Audit method: full clone, line-by-line read against the build plan, local test run, CLI run with exit-code checks, GitHub API checks, secret scan.
 
 ## Verdict
