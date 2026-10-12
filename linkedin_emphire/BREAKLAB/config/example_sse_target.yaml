@@ -1,0 +1,32 @@
+target:
+  name: my-http-chat-stream
+  attestation: "I own this system or have written permission to test it."
+  type: http
+  base_url: https://api.example.com
+  path: /api/chat/stream
+  method: POST
+  stream: true
+  response_mode: sse
+  body_template: '{"question": "{prompt}", "history": []}'
+  headers:
+    Authorization: "Bearer {API_KEY}"
+    Content-Type: application/json
+  timeout: 60.0
+  sse:
+    event_field: data
+    status_field: done
+    text_field: content
+evidence:
+  system_prompt: ""
+  canaries: []
+  corpus_snippets: []
+  sensitive_patterns: []
+  policy_flags: []
+  retrieved_ids: []
+options:
+  k: 1
+  judge_enabled: false
+  layers:
+    - injection
+    - exfiltration
+    - citation

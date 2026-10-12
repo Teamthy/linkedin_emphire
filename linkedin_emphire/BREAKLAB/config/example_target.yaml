@@ -1,0 +1,28 @@
+target:
+  name: my-http-chat
+  attestation: "I own this system or have written permission to test it."
+  type: http
+  base_url: https://api.example.com
+  path: /api/chat
+  method: POST
+  body_template: '{"question": "{prompt}", "history": []}'
+  headers:
+    Authorization: "Bearer {API_KEY}"
+    Content-Type: application/json
+  timeout: 45.0
+# Evidence block: declare what this target knows so checks can score breaks
+# deterministically. Without it, checks that need declared evidence report
+# "not_assessed"; objective policy patterns still fire when their flag is set.
+evidence:
+  system_prompt: ""            # paste the target's system prompt here
+  canaries: []                 # e.g. ["ALPINE-FERN-DELTA-9"]
+  corpus_snippets: []          # e.g. [{id: "6", text: "verbatim chunk text, at least 12 words"}]
+  sensitive_patterns: []       # e.g. [{name: filesystem_path, pattern: "/etc/[\\w/]+"}]
+  policy_flags: []             # e.g. [dosage_math, restricted_advice, pii]
+  retrieved_ids: []            # static default; per-response raw["retrieved_ids"] overrides it
+options:
+  k: 1
+  judge_enabled: false
+  layers:
+    - injection
+    - exfiltration
