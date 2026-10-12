@@ -4,7 +4,7 @@ Job: Senior AI Application Developer, AI Native Construction Estimating (MCP ins
 Client: USA, Mountain View, real estate, 5.0/2, $4,000 fixed, 4 weeks, contract-to-hire potential
 Connects: 26 (owner has 85)
 Date: 2026-10-12
-Status: FINAL DRAFT. Owner inputs still needed: (1) real MCP server work to name, or delete that line; (2) availability window and weekly hours; (3) confirm $4,000 quote at the client's own 20/30/25/25 split.
+Status: READY TO SEND (all owner inputs resolved 2026-10-12). (1) No MCP server work on record: the line now names the gap in advance and anchors to the client's own Day 2 gate (owner answer: "i dont have mc server work"). (2) Availability: full four-week contract, guaranteed 2-3h daily overlap, async outside it (owner answer: "alwaya availble"). (3) $4,000 at the client's 20/30/25/25 split stands as the agent's recommendation; owner may still change the number before sending. breaklab is referenced as an influence on the AT12 threat-model approach only; no code from that repo is copied into this build until the round-2 history cleanup (D2) is done.
 
 ## Verification notes (agent)
 - PRD v1.0 (18 pages) read in full from owner paste on 2026-10-12. Previously marked unverified; now verified.
@@ -18,7 +18,7 @@ Status: FINAL DRAFT. Owner inputs still needed: (1) real MCP server work to name
 - Real assets referenced (verified in workspace): Nigeria LandSecure (portfolio item 5, Go/Next.js/Postgres, RBAC, row-level locking), RAG support chatbot (Article 1, built then broken: 6 attempts, 4 worked), breaklab (62 pinned tests, CI gate). No invented metrics or projects.
 - Market context (web, 2026): MCP-in-LLM-host estimating is a live category (Exayard, JobTread AI Connector, conmcp). General models fail the measurement core (CLE benchmark: 2-34% on plan reading); deterministic math with model-assisted judgment is the holding pattern. Both the PRD and the market agree.
 
-## Proposal text (send after filling the two brackets)
+## Proposal text (paste-ready; owner to review and send)
 
 Your section 3 and I arrive at the same division of labor: the host AI interprets, proposes, and explains; a deterministic service validates, calculates, and enforces; only approved expressions compute committed costs. That split is the whole game in this product, because the difference between a demo and a tool an estimator trusts is that the arithmetic and the record outlive the conversation.
 
@@ -29,7 +29,7 @@ I build LLM tooling the deterministic way. My red-team harness runs 62 pinned te
 - Nigeria LandSecure: full-stack document platform (Go, Next.js, Postgres). Role-based permissions, optimistic concurrency with row-level locking, revision-correct state under simultaneous writers. Closest analog to your FR19/FR20 concurrency and revision requirements.
 - RAG support chatbot: retrieval over a real corpus, structured extraction, tool calls, built and then red-teamed by me. The retrieval, extraction, and untrusted-content handling behind your source and history workflows.
 - Breaklab: config-driven LLM test harness. 62 deterministic checks, stable IDs, structured evidence, CI gating. The template for your AT01-AT13 suite.
-- [REAL MCP SERVER WORK if it exists: name it, one line of evidence. If not, delete this line entirely.]
+- MCP servers: the one gap I name in advance. I have not shipped a production MCP server, so days one and two are spent verifying real capability in both hosts before any UI work, per your Day 2 gate. If the intersection misses a required workflow, the gap report is written before I build around it, and your text-tool fallback carries the session.
 
 **2. Proposed approach and stack**
 
@@ -57,7 +57,7 @@ The pilot is what I quote; your later-expansion column stays out of the four wee
 
 **4. Availability, dependencies, and scope concerns**
 
-- Availability: [REAL WINDOW]. I am UTC+1 against Mountain View, so a two-to-three hour daily overlap exists; outside it I work async-first, and the one-business-day estimator answer window is respected.
+- Availability: available for the full four-week contract, with a guaranteed two-to-three hour daily overlap against Mountain View (I am UTC+1, you are Pacific). Outside the overlap I work async-first, and the one-business-day estimator answer window is respected.
 - Dependencies, per your preconditions: both host accounts with connector permissions, an approved Drive test folder, hosting credentials, example assemblies and rates, three representative projects, and an available estimator. RSMeans or retailer credentials by Day 3; otherwise the functioning adapter with labeled fixtures and the manual import path, exactly as you specify.
 - Scope concerns, three honest flags:
   1. R2 is the heaviest week: takeoff, three profiles, the cost engine, history import, and comparison in seven days. If Day 2 forces a cut, the cited explanation layer of FR14 is what I narrow first; the cohort rules and normalization stay intact.
