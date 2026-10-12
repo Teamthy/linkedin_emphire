@@ -29,4 +29,4 @@ LinkedIn: company with no public product matching the role; Easy Apply funnel fr
 
 | Date | Source | Title | Company / client | Budget | Verdict | Why (one line) | Angle | Status |
 |---|---|---|---|---|---|---|---|---|
-| (none yet) | | | | | | | | |
+| 2026-10-12 | LinkedIn (aggregator post) + official page fetched | Associate, Full Stack Developer (Req R260054, posted 2026-10-07) | BlackRock, Mumbai (Nesco IT Park Tower 4) | Not disclosed; third-party estimate 11-18 LPA (unverified) | SKIP | Real and active, but Mumbai hybrid with at least 4 office days/week (relocation from Lagos required), junior level, Angular-first generalist frontend for the Global Marketing digital team, pay far below the consulting trajectory | n/a (skip) | Verified against careers.blackrock.com, no application |
