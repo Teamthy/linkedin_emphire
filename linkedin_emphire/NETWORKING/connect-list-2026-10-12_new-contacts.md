@@ -55,7 +55,7 @@ Band A (1 to 18): AI security and red-teaming. Band B (19 to 30): builders shipp
    https://www.linkedin.com/in/mattbit/
    Note: "Your talk on what actually breaks in LLM agents is the frame I use on my own assessments. I red-team RAG and agent systems for teams shipping them. Would be good to have you in my network."
 
-10. Nanna Inie. NVIDIA; co-author of the LLM red-teaming definition study (AI2, with Leon Derczynski and Jonathan Stray).
+10. Nanna Inie. NVIDIA; co-author of the LLM red-teaming definition study (AI2, with Leon Derczynski and Jonathan Stray). STATUS: connect ACCEPTED 2026-10-12 evening; first DM drafted in playbook log (thanks + one real line about her plain 3000 DKK pricing), send when owner gets to it, not tonight.
     https://www.linkedin.com/in/nannainie/
     Note: "The LLM red-teaming definition study you co-authored is the paper I keep coming back to. I do the application-level version of it, breaking systems before users do. Would be honored to connect."
 
