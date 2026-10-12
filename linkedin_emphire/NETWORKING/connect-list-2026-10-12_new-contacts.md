@@ -163,3 +163,6 @@ Band A (1 to 18): AI security and red-teaming. Band B (19 to 30): builders shipp
 ## Log
 
 - 2026-10-12: list v2 created. 30 new names, 18 security + 12 builders. All URLs sourced from live search results this session; no profile opened directly (sandbox cannot reach linkedin.com). Batching: 15 today, 15 tomorrow.
+- 2026-10-12: owner sent items 1-18 (all of Band A) with per-person notes.
+- 2026-10-13: items 19-30 (Band B) scheduled for send.
+- After accepts: light engagement within 48h (view profile, comment on one post, no pitch, no ask). Log accepts here.
