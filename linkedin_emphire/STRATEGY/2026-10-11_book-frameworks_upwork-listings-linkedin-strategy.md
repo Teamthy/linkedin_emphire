@@ -259,6 +259,8 @@ The book lists the required elements of an opt-in page: a headline, a subheadlin
 
 The owner asked for the open items in section 7 to be decided and applied to the workspace. Live Upwork listings and LinkedIn posts are not changed here. Each item below is marked **applied** (workspace only) or **awaiting go** (needs your approval before it goes live).
 
+**2026-10-11 live update (owner confirmation):** the owner applied the approved live Upwork changes on the live screens 2026-10-11: Listing 2 company-size pricing, the "ai integration" tag swap, and the 14-day re-test guarantee line on the Standard and Advanced tiers of both listings. Recorded on the owner's word; there is no Upwork access in this session, so it was not re-verified from here. See `UPWORK/PENDING_LIVE_CHANGES_2026-10-11.md`.
+
 | # | Item (section 7) | Decision | Why | Status |
 |---|---|---|---|---|
 | 1 | Quick Scan price | Launch at **$150 Small / $200 Medium / $300 Large** (catalog). Keep these until 5 Upwork reviews, then raise per the catalog's "After 5 reviews" note to $200 to $300. Proposals lead with Quick Scan for the first 5 reviews, then lead with Standard. | The catalog's own note says the $150 is a launch price. The 10-10 plan misreads that and leads at $200 now. Reviews are the goal of the first phase, so the entry price stays low. Never below $150. | Applied in this file. Live price unchanged. |

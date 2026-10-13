@@ -1,0 +1,27 @@
+{
+  "post_number": 12,
+  "date": "2026-10-12",
+  "posted_time_WAT": "morning, exact time not captured (paste showed T+31m)",
+  "slug": "pre-publish-boring-failures",
+  "pillar": "AI Red Teaming",
+  "style": "Pre-show teaser for Article 2 (five boring failure modes)",
+  "char_count_approx": 1450,
+  "structure": "real-talk hook, five boring-path arrows, owned-first-person story (6 attempts, 4 broke), tomorrow promise with four-deliverable list, rule line, series line, PS question",
+  "activity_urn": "urn:li:activity:7515291298543583232",
+  "media_recommended": "EP 002 card (ARTICLES/2026-10-13_article-2_five-boring-failure-modes/cards/art2_card1_modes_1080x1350.png)",
+  "banned_words_check": "PASS",
+  "em_dash_count": 1,
+  "em_dash_note": "PS line shipped with an em dash instead of the approved 'PS:'; flagged in publish_log, one-word live edit available",
+  "voice_check": [
+    "Real talk opener",
+    "arrow lists kept short",
+    "owned story, specific numbers (6 attempts, 4 broke)",
+    "PS question CTA"
+  ],
+  "early_metrics_T31m": {
+    "impressions": 159,
+    "reactions": 2,
+    "comments": 2
+  },
+  "status": "POSTED, pre-show for Article 2 (publishes 2026-10-13 ~10:00 WAT)"
+}

@@ -18,3 +18,4 @@
 | 10 | 2026-10-07 | pineapple-confession | AI Red Teaming | Story teaser (476 chars) | ✅ VERIFIED — post Wed Oct 7, test log card attached |
 | 11 | 2026-10-11 | messy-backstage | Personal / Reflection | Micro — Sunday week recap (540 chars) | ❌ SUPERSEDED — don't post, reveals new client/job, not ready to share |
 | 11 | 2026-10-11 | checking-not-breakthrough | Personal / Reflection | Micro — Sunday week recap (513 chars) | 🟡 READY — scheduled 10am WAT, awaiting posting confirmation |
+| 12 | 2026-10-12 | pre-publish-boring-failures | AI Red Teaming | Pre-show teaser for Article 2 (~1450 chars) | ✅ POSTED. 159 imp at T+31m, first comment at T+23m. PS line shipped with an em dash (flagged) |
