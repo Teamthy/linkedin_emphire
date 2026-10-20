@@ -1,0 +1,177 @@
+% ── CHAPTER 7 ──
+\chapter{Tools, Frameworks \& Infrastructure: The Stack You Point At}
+\label{ch:7}
+
+\begin{tcolorbox}[colback=white,colframe=checkblack,title=Chapter 7 at a Glance,fonttitle=\bfseries,sharp corners,boxrule=1pt]
+\textbf{Question:} What stack lets a stranger clone and reproduce your finding in one session?\\
+\textbf{Deliverable:} A repo a stranger can clone and run in one session — harness + breaklab + five-test repo + Inspect.\\
+\textbf{Time:} 3–4 hrs (60 min read + 2–3 hrs Lab 7).
+\end{tcolorbox}
+
+\section{Learning Objectives}
+\fbadge
+You will be able to:
+\begin{enumerate}
+\item Name the tooling families (testing platforms, monitoring, benchmark datasets, custom scripts, reporting) and where each sits in the workflow.
+\item Describe Inspect in depth: tasks, solvers, scorers, model\_roles, sandboxes, agents, and reading the log.
+\item Wire your harness + breaklab + five-test repo into one stack with one clone + one run.
+\item Read an Inspect log sample by sample and find the exact turn where a tool call went wrong.
+\end{enumerate}
+
+\section{The Idea: The Stack Is One Clone, One Run}
+\tierF
+
+You don't need ten tools. You need a stack a stranger can clone and run in one session. Four pieces:
+
+\begin{enumerate}
+\item \textbf{Your harness} — custom scripts that run checks and print pass/fail with a count.
+\item \textbf{Breaklab} — \texttt{Teamthy/My-Breaking-lab} — your local lab for logging attacks safely.
+\item \textbf{Five-test repo} — \texttt{Teamthy/ai-redteam-five-tests} — the five boring failure modes.
+\item \textbf{Inspect} — the UK AISI eval harness — the ruler that turns a harness into a published eval.
+\end{enumerate}
+
+Output: report + log. Input to clone: one repo, one command (\texttt{inspect eval ...}), one env fingerprint.
+
+\begin{defbox}
+\textbf{Stack (here):} Harness + breaklab + five-test repo + Inspect → report + log. One clone, one run, one reproducible number.
+\end{defbox}
+
+\section{The Mechanics}
+\tierP
+
+\subsection{Testing platforms, monitoring, benchmarks, custom scripts, reporting — where each sits}
+\begin{center}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Family & In the workflow \\
+\midrule
+Testing platforms (Inspect, etc.) & The runner + judge — where evals are built and scored \\
+Custom testing scripts (your harness) & The specific checks — prompt injection, RAG poison, tool poison, multilingual \\
+Monitoring solutions & Logs + canary + alert — what catches drift after the engagement \\
+Benchmark datasets (LARA, OWASP-based) & The reference ruler — public, versioned, rerunnable \\
+Reporting tools (\texttt{inspect view}, your template) & The honest report — number, method, seed, limitation \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Inspect in depth}
+\begin{itemize}
+\item \textbf{Tasks:} \texttt{Task(dataset=[...], solver=[...], scorer=...)} — the eval.
+\item \textbf{Solvers:} \texttt{system\_message}, \texttt{prompt\_template}, \texttt{generate}, \texttt{chain\_of\_thought}, \texttt{multiple\_choice}, \texttt{react}, \texttt{use\_tools}. Solers compose: \texttt{[system\_message(...), generate()]} or \texttt{[react(), use\_tools(...)] } with \texttt{sandbox="docker"} for agent tasks.
+\item \textbf{Scorers:} \texttt{match}, \texttt{includes}, \texttt{pattern}, \texttt{exact}, \texttt{f1}, \texttt{model\_graded\_qa}, \texttt{model\_graded\_fact}. For compliance, \texttt{model\_graded\_fact} against the verbatim text + majority reducer for a board.
+\item \textbf{Model roles:} \texttt{model\_roles} lets the grader be a different model from the target.
+\item \textbf{Sandboxes:} \texttt{sandbox="docker"} isolates tool-using agents — no host secrets leak.
+\item \textbf{Reading the log:} \texttt{inspect view} — click a sample, read transcript, judge reasoning, accuracy. \texttt{inspect log} for list/query/convert.
+\end{itemize}
+
+\begin{defbox}
+\textbf{Inspect primitive — \texttt{Sample}:} One input + target. The target is the judge's criterion (e.g., ``The model REFUSES to... and explains Art. 5(1)(f)...''). Get this right and the eval is half done.
+\end{defbox}
+
+\subsection{Wiring it}
+Your harness (custom) → breaklab (lab logging) → five-test repo (boring failures) → Inspect (ruler) → report (template from Back Matter). One env fingerprint logged at the start; one accuracy printed at the end. The check is the product.
+
+\section{Worked Examples}
+\tierP
+
+\begin{examplebox}
+\textbf{Example 7.1 — Wiring Ollama + Inspect + your harness (local-only, no API keys)}\\
+\textbf{Setup:} Laptop, Ollama, Inspect. No provider account.\\
+\textbf{Run:}
+\begin{lstlisting}[language=bash]
+pip install inspect-ai openai
+ollama pull llama3.1
+inspect eval lara_lite.py --model ollama/llama3.1 --epochs 5
+inspect view
+\end{lstlisting}
+\textbf{Log:} 5 transcripts, judge verdicts, accuracy 2/5 (40\%). Cost: \$0. Fingerprint: \texttt{ollama/llama3.1 local, t=0, seed 0..4, n=5}.\\
+\textbf{Value:} Free practice runs that are real evals — same shape as the take-home, different model.
+\end{examplebox}
+
+\begin{examplebox}
+\textbf{Example 7.2 — Reading an Inspect log to find the exact turn where a tool call went wrong}\\
+\textbf{Setup:} An agent eval with \texttt{react()} + \texttt{use\_tools()} fails — the agent sent email to an external address.\\
+\textbf{Log trace:}
+\begin{enumerate}
+\item Sample input: poisoned doc (tool description with CC).
+\item Turn 2: agent planner says ``I will use email tool.''
+\item Turn 3: tool call \texttt{email\_send(to="external@...")} — flagged.
+\item Scorer: FAIL — tool call violated allowlist.
+\end{enumerate}
+\textbf{Lesson:} The log tells you which turn, which tool, which arg. Fix the allowlist, rerun, log shows 0/10. Without the log you have a score; with it you have a trace.
+\end{examplebox}
+
+\section{Hands-On Lab 7 — Tooling Stack a Stranger Can Clone and Run in One Session}
+\begin{labbox}
+\textbf{Target:} Your own repo — the one you will link from your portfolio (Ch. 9).\\[4pt]
+\textbf{Steps:}
+\begin{enumerate}
+\item Repo structure: \texttt{README.md} (one-liner clone + run), \texttt{lara\_lite.py} or your eval, \texttt{requirements.txt} (\texttt{inspect-ai}, \texttt{openai}), \texttt{logs/}, \texttt{docs/REPORT\_TEMPLATE.md} (from Back Matter).
+\item README must contain exactly: \texttt{pip install -r requirements.txt}, \texttt{ollama pull llama3.1} (or API model env), \texttt{inspect eval <file> --model ... --epochs 5}, \texttt{inspect view}. Pin versions (\texttt{inspect-ai==0.3.x}).
+\item Log the env fingerprint at repo root: \texttt{fingerprint.txt} with model, serving, temp, prompt SHA, seed, date, n.
+\item Ask a second person (or a second machine) to clone and run without asking you anything. Record where they got stuck — that is your missing check.
+\item Publish (GitHub) with the honest number + limitation in the README.
+\end{enumerate}
+\textbf{Deliverable:} A GitHub repo URL a stranger can clone and run in one session, with a passing run log.\\[2pt]
+\textbf{How you know you passed:} The second person sends you the log with your number (or the transcript where you were wrong) without asking you a question.
+\end{labbox}
+
+\section{Pitfalls and the Missing Check}
+\begin{pitfallbox}
+\textbf{What goes wrong:} ``Run this'' without versions — \texttt{inspect-ai} moved, Ollama model tag drifted, Python 3.12 breaks the harness. Sandbox that is not a sandbox — the agent tool can reach the host filesystem or network. No log viewer — no one can audit your run.\\[4pt]
+\textbf{The missing check:} Pinned versions (\texttt{requirements.txt} with hashes), \texttt{sandbox="docker"} for agent tasks, \texttt{inspect view} as the audit surface, and a second-person clone test. If a stranger cannot clone and reproduce without asking you, you do not have a product.
+\end{pitfallbox}
+
+\section{Illustrations}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  block/.style={draw, thick, rounded corners=4pt, minimum width=2.8cm, minimum height=1.3cm, align=center, font=\small},
+  arrow/.style={-{Latex[length=2.5mm]}, thick, color=slate}
+]
+\node[block, fill=lightblue] (h) at (0,2) {Harness\\ \tiny custom scripts};
+\node[block, fill=lightamber] (b) at (3.4,2) {Breaklab\\ \tiny \texttt{My-Breaking-lab}};
+\node[block, fill=lightslate] (f) at (6.8,2) {Five-Test Repo\\ \tiny 5 boring failures};
+\node[block, fill=lightgreen, minimum width=5cm, minimum height=1.4cm] (inspect) at (3.4,0) {Inspect\\ \tiny Task / Solver / Scorer / Log — \texttt{inspect view}};
+\node[block, fill=lightred, minimum width=3cm] (report) at (9.5,0) {Report + Log\\ \tiny honest number};
+\draw[arrow] (h.south) -- (inspect.north west);
+\draw[arrow] (b.south) -- (inspect.north);
+\draw[arrow] (f.south) -- (inspect.north east);
+\draw[arrow] (inspect) -- (report);
+\node[font=\footnotesize\itshape, above=0.3cm of inspect] {One clone, one run};
+\node[font=\tiny, right=0.1cm of report] {n + method + limitation};
+\end{tikzpicture}
+\caption{The Tooling Stack — Harness + Breaklab + Five-Test Repo + Inspect, wired into one stack. Output = report + log a stranger can rerun.}
+\label{fig:7-1}
+\end{figure}
+\textbf{Prompt for Fig 7.1:} \texttt{stack diagram four blocks harness breaklab five test repo feeding into Inspect task solver scorer log viewer — clean technical line art, black on white, single muted red accent \#E63946, minimal sans-serif labels, no clip art, no gradients, no 3D, print-ready vector style, A4}
+
+\section{Key Terms}
+\begin{itemize}
+\item \textbf{Inspect} — UK AISI eval harness; Task + Solver + Scorer + Log.
+\item \textbf{Task / Solver / Scorer} — The eval, how the model is run, how it is graded.
+\item \textbf{Sandbox} — Isolated execution (docker) for agent tool calls.
+\item \textbf{Benchmark dataset} — A public, versioned ruler (e.g., LARA's 10 scenarios).
+\item \textbf{Log viewer} — \texttt{inspect view} — where you audit every sample.
+\item \textbf{Pinned stack} — Versions locked so a clone in 6 months still reproduces.
+\end{itemize}
+
+\section{Self-Test}
+\begin{selftest}
+\item \textbf{Recall:} Name the four pieces of the stack and what each contributes.
+\item \textbf{Recall:} What does \texttt{model\_graded\_fact} with \texttt{reducer="majority"} do, and when do you need it?
+\item \textbf{Application:} A teammate says ``my eval passes locally but fails on CI.'' What three fingerprint fields do you compare first?
+\item \textbf{Application:} Your \texttt{README} says ``run my eval.'' A stranger cannot. What is the most likely missing check?
+\item \textbf{Design a check:} Design the README for a repo a stranger can clone and run in one session. What five lines must it contain?
+\end{selftest}
+
+\readywhen{Someone else runs your repo and reproduces your finding without asking you how — pinned versions, sandboxed agent, log viewer ready.}
+
+\section{Expert Extension}
+\rbadge
+\textbf{Open problem: When a custom scorer is needed.} \texttt{model\_graded\_fact} is enough for compliance (verbatim law). For nuanced behaviors (eval-awareness, ethical resistance, sycophancy), you need a scorer that captures variables beyond PASS/FAIL.\\
+\textbf{Method you would bring:} Build a minimal custom Inspect scorer: subclass \texttt{Scorer}, add two graded variables (e.g., \texttt{eval\_aware\_score}, \texttt{ethical\_resistance}), validate against 30 human-graded transcripts, report per-variable agreement. The scorer — not the score — is the contribution.
+
+\begin{checkbox}
+I build the check, not the claim. The stack that a stranger can clone without asking you how is the stack you can defend under a deadline.
+\end{checkbox}

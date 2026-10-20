@@ -1,0 +1,164 @@
+% Breaking AI: The Complete Guide to AI Red Teaming, AI Safety, and AI Research
+% Print-ready study manual — LaTeX source (A4, 2cm margins)
+% Compile with XeLaTeX or pdfLaTeX: xelatex main.tex (2 passes for TOC)
+% Requires: tcolorbox, fancyhdr, geometry, hyperref, enumitem, marginnote, graphicx, xcolor, tikz, caption, booktabs, listings, fontspec (for XeLaTeX) or lmodern
+\documentclass[11pt,a4paper,oneside,openany]{book}
+
+% ── Page geometry ──
+\usepackage[margin=2cm]{geometry}
+
+% ── Fonts ──
+% Use lmodern for pdfLaTeX compatibility (falls back if XeLaTeX not available)
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+% ── Colors ──
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{E63946}
+\definecolor{defblue}{HTML}{2563EB}
+\definecolor{labgreen}{HTML}{059669}
+\definecolor{pitamber}{HTML}{D97706}
+\definecolor{slate}{HTML}{334155}
+\definecolor{checkblack}{HTML}{111827}
+\definecolor{lightbg}{HTML}{F8FAFC}
+\definecolor{lightblue}{HTML}{EFF6FF}
+\definecolor{lightgreen}{HTML}{F0FDF4}
+\definecolor{lightamber}{HTML}{FFFBEB}
+\definecolor{lightslate}{HTML}{F1F5F9}
+\definecolor{lightred}{HTML}{FEF2F2}
+
+% ── Headers / Footers ──
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Breaking AI — Study Manual}
+\fancyhead[R]{\small\nouppercase\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% ── Captions ──
+\usepackage{caption}
+\captionsetup{labelfont=bf, font=small, justification=centering, margin=1cm}
+\captionsetup[figure]{name=Fig, labelsep=period}
+\captionsetup[table]{name=Table, labelsep=period}
+
+% ── Lists ──
+\usepackage{enumitem}
+\setlist[itemize]{topsep=3pt, itemsep=2pt, parsep=0pt}
+\setlist[enumerate]{topsep=3pt, itemsep=2pt, parsep=0pt}
+
+% ── Callout boxes ──
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\newtcolorbox{defbox}{colback=lightblue, colframe=defblue, fonttitle=\bfseries, title=Definition, sharp corners, boxrule=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt, breakable}
+\newtcolorbox{examplebox}{colback=lightslate, colframe=slate, fonttitle=\bfseries, title=Worked Example, sharp corners, boxrule=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt, breakable}
+\newtcolorbox{labbox}{colback=lightgreen, colframe=labgreen, fonttitle=\bfseries, title=Lab, sharp corners, boxrule=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt, breakable}
+\newtcolorbox{pitfallbox}{colback=lightamber, colframe=pitamber, fonttitle=\bfseries, title=Pitfall — The Missing Check, sharp corners, boxrule=1pt, left=6pt, right=6pt, top=4pt, bottom=4pt, breakable}
+\newtcolorbox{checkbox}{colback=lightred, colframe=checkblack, fonttitle=\bfseries, title=The Check Is the Product, sharp corners, boxrule=1.2pt, left=6pt, right=6pt, top=4pt, bottom=4pt, breakable, coltitle=accent}
+
+% ── Graphics / TikZ ──
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes, calc, shadows, fit, backgrounds}
+\graphicspath{{figures/}}
+
+% ── Tables ──
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+% ── Code ──
+\usepackage{listings}
+\lstdefinestyle{manualcode}{
+  backgroundcolor=\color{lightbg},
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{defblue}\bfseries,
+  commentstyle=\color{slate}\itshape,
+  stringstyle=\color{labgreen},
+  numbers=left,
+  numberstyle=\tiny\color{slate},
+  stepnumber=1,
+  numbersep=6pt,
+  breaklines=true,
+  breakatwhitespace=false,
+  frame=single,
+  rulecolor=\color{slate!30},
+  xleftmargin=12pt,
+  xrightmargin=6pt,
+  aboveskip=8pt,
+  belowskip=8pt,
+  showstringspaces=false,
+  upquote=true
+}
+\lstset{style=manualcode}
+
+% ── Hyperref ──
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=defblue, citecolor=defblue, urlcolor=defblue, pdfborder={0 0 0}}
+
+% ── Margin notes for tier badges ──
+\usepackage{marginnote}
+\newcommand{\fbadge}{\marginnote{\footnotesize\colorbox{labgreen!15}{\textbf{\color{labgreen}F — Foundation}}} }
+\newcommand{\pbadge}{\marginnote{\footnotesize\colorbox{pitamber!15}{\textbf{\color{pitamber}P — Practitioner}}} }
+\newcommand{\rbadge}{\marginnote{\footnotesize\colorbox{accent!15}{\textbf{\color{accent}R — Researcher}}} }
+
+% ── Numbering ──
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+
+% ── Tier label inline ──
+\newcommand{\tierF}{\textcolor{labgreen}{\textbf{[F]}}}
+\newcommand{\tierP}{\textcolor{pitamber}{\textbf{[P]}}}
+\newcommand{\tierR}{\textcolor{accent}{\textbf{[R]}}}
+
+% ── Ready-when command ──
+\newcommand{\readywhen}[1]{%
+  \begin{tcolorbox}[colback=checkblack!5, colframe=checkblack, title=Ready-When Checkpoint, fonttitle=\bfseries, sharp corners, boxrule=1pt]
+  #1
+  \end{tcolorbox}
+}
+
+% ── Self-test command ──
+\newenvironment{selftest}{%
+  \begin{tcolorbox}[colback=white, colframe=defblue, title=Self-Test — 5 Questions, fonttitle=\bfseries, sharp corners, boxrule=1pt, breakable]
+  \begin{enumerate}[leftmargin=1.2cm]
+}{%
+  \end{enumerate}
+  \end{tcolorbox}
+}
+
+% ─────────────────────────────────────────
+\begin{document}
+
+% ── FRONT MATTER ──
+\frontmatter
+\input{chapters/frontmatter}
+
+% ── MAIN MATTER ──
+\mainmatter
+
+\input{chapters/ch0}
+\input{chapters/ch1}
+\input{chapters/ch2}
+\input{chapters/ch3}
+\input{chapters/ch4}
+\input{chapters/ch5}
+\input{chapters/ch6}
+\input{chapters/ch7}
+\input{chapters/ch8}
+\input{chapters/ch9}
+\input{chapters/ch10}
+
+% ── BACK MATTER ──
+\appendix
+\input{chapters/backmatter}
+
+\end{document}

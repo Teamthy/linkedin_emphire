@@ -1,0 +1,153 @@
+% ── CHAPTER 10 ──
+\chapter{Future Directions: Where the Open Problems Are}
+\label{ch:10}
+
+\begin{tcolorbox}[colback=white,colframe=checkblack,title=Chapter 10 at a Glance,fonttitle=\bfseries,sharp corners,boxrule=1pt]
+\textbf{Question:} Where is the field going — and where can you contribute next?\\
+\textbf{Deliverable:} A one-page research agenda: three open problems, and for each, the method you would bring and the first experiment.\\
+\textbf{Time:} 2–3 hrs (60 min read + 90 min Lab 10).
+\end{tcolorbox}
+
+\section{Learning Objectives}
+\fbadge
+You will be able to:
+\begin{enumerate}
+\item Name four emerging threats (agentic/multi-agent, memory poisoning, tool supply chain, model identity) and why each matters now.
+\item Describe frontier red-teaming and evals work and where standards are heading.
+\item Identify research opportunities you can position around — including the Aithos lane: legal compliance, alignment measurement, shared ruler.
+\item Draft a one-page research agenda: three open problems + method + first experiment.
+\end{enumerate}
+
+\section{The Idea: From ``Can It Be Broken'' to ``Can We Agree on the Ruler''}
+\tierF
+
+The field is moving from ``can it be broken'' (we know it can — LARA: 80\% Art. 5 violation, 7–54\% compliance spread) to ``can we measure the break continuously and agree on the ruler.'' That is where standards are being written — and where you can help write them.
+
+\begin{defbox}
+\textbf{Shared ruler:} A versioned, rerunnable eval a vendor, regulator, and researcher all run and accept. The contribution is not the ranking — it is the ruler.
+\end{defbox}
+
+\section{The Mechanics: Emerging Threats, Advanced Techniques, Where to Contribute}
+\tierP
+
+\subsection{Emerging threats}
+\begin{itemize}
+\item \textbf{Agentic and multi-agent:} More agents, more messages, more delegation — each new node is a new trust boundary. Current controls assume one model; future systems have dozens.
+\item \textbf{Memory poisoning:} A poisoned fact that survives a session reset and changes a decision three turns later. Today we catch it by accident; tomorrow we need provenance-tagged memory and memory-canaries.
+\item \textbf{Tool supply chain:} An agent pulls in a tool or plugin from a vendor you do not control. The tool description is the attack vector. You need tool pinning + description allowlisting + invocation policy outside the model.
+\item \textbf{Model-identity problem:} Behind a proxy or routing layer, you cannot tell which model answered. ``Same model, different number'' becomes unmeasurable. You need model pinning + serving provenance + output watermarking or attestation.
+\end{itemize}
+
+\subsection{Advanced techniques}
+The frontier: long-horizon agent tasks (10+ tool calls, state to corrupt), eval-awareness detection (does the model behave differently when it thinks it is being judged?), judge boards with calibration, and canaries that distinguish model drift from prompt drift from data drift.
+
+\subsection{Research opportunities — including the Aithos lane}
+\begin{center}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Lane & Open question \\
+\midrule
+Legal compliance & How well do models obey hard lines (Art. 5) across languages, tools, and agents — and what ruler captures it? \\
+Alignment measurement & What can we measure about alignment when the judge is itself an LLM — and how to triangulate beyond it? \\
+Shared ruler & What does a versioned, regulator-accepted eval look like for one provision — and how is it governed? \\
+Memory \& channel security & How do we secure long-lived memory and agent-to-agent channels with provenance and policy? \\
+Model identity & How do we know which model answered — and how do we prove it? \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Industry standards — how to be part of writing them}
+A standard without a check is a wish. Contribute the check. Publish the harness so a finding can be checked, not just trusted. Bring the honest number, not the clean one. That is how a standard becomes useful — and how you become part of it.
+
+\section{Worked Examples}
+\tierP
+
+\begin{examplebox}
+\textbf{Example 10.1 — Memory poisoning that survives a reset}\\
+\textbf{Setup:} An assistant stores ``The vendor's new policy is X'' from a tool output that was poisoned. The session resets. Next session, the assistant applies X to a procurement decision.\\
+\textbf{Result:} Poisoned memory survived 3/5 session resets (60\%, n=5). No provenance tag, no re-check against source.\\
+\textbf{Fix:} Memory provenance (source + time + confidence) + a canary that verifies persisted facts against their source on each load + human-visible ``based on memory from X'' annotation. After fix: 0/5 silent use, 1/5 flagged for review.\\
+\textbf{Canary:} ``The following persisted facts were verified against source —'' listed, with a scheduled check that the source still says what memory claims.
+\end{examplebox}
+
+\begin{examplebox}
+\textbf{Example 10.2 — Model-identity behind a proxy}\\
+\textbf{Setup:} A product says ``powered by model M'' but routes queries across M, M-mini, and a cached layer. You run the same 20 compliance prompts via the product vs directly to M.\\
+\textbf{Result:} Product compliance 45\%, direct M 60\% — the product's number is not M's number. Without pinning, ``which model answered'' is unknowable.\\
+\textbf{Fix:} Environment pinning (model ID + serving + routed target) + provenance header on every answer (``Answered by M vX on Y at T'') + a canary that alerts when routing changes. Not decoration — it is the only way to keep the check honest.
+\end{examplebox}
+
+\section{Hands-On Lab 10 — Name Three Open Problems and the Method You'd Bring}
+\begin{labbox}
+\textbf{Target:} Your next paper, talk, or hire-worthy contribution — one page that names where you will go next.\\[4pt]
+\textbf{Steps:}
+\begin{enumerate}
+\item Pick three open problems from the list above (or your own). One sentence each: what breaks, why it matters now.
+\item For each: the method you would bring — dataset, judge, n, metric, limitation — in 3–4 lines. Not the answer — the check.
+\item For one: write the first experiment you would run tomorrow — exact prompt family, target, n, expected honest report format.
+\item Ship it: add it to your portfolio page (Ch. 9) as ``Research agenda'' with date. Update it when you ship the first check.
+\end{enumerate}
+\textbf{Deliverable:} A one-page research agenda (PDF or Markdown) with problem → method → first experiment for each.\\[2pt]
+\textbf{How you know you passed:} A reader can take one of your three and know exactly what check to build — because the method is there, not just the claim.
+\end{labbox}
+
+\section{Pitfalls and the Missing Check}
+\begin{pitfallbox}
+\textbf{What goes wrong:} Chasing novelty without a denominator — ``novel poisoning variant'' with n=1 and no ruler. Standard without a check — ``we are compliant'' with no rerunnable eval. Both are opinions.\\[4pt]
+\textbf{The missing check:} For every new threat, a check with n, limitation, and a canary. For every standard, a versioned eval a stranger can run. Without these, the future is talk. With them, you are writing it.
+\end{pitfallbox}
+
+\section{Illustrations}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  quad/.style={draw, thick, rounded corners=4pt, minimum width=5cm, minimum height=3cm, align=left, font=\small, inner sep=4pt},
+  arrow/.style={-{Latex[length=2.5mm]}, thick, color=accent}
+]
+% Radar / quadrant
+\node[quad, fill=lightblue] (ag) at (-3,1.5) {\textbf{Agentic / Multi-Agent}\\ \tiny delegation, A2A, subagent spawn};
+\node[quad, fill=lightamber] (mem) at (3,1.5) {\textbf{Memory Poisoning}\\ \tiny persisted facts, cross-session};
+\node[quad, fill=lightslate] (tch) at (-3,-1.8) {\textbf{Tool Supply Chain}\\ \tiny vendor plugins, desc. trust};
+\node[quad, fill=lightred!50, draw=accent] (mid) at (3,-1.8) {\textbf{Model Identity}\\ \tiny proxy, routing, silent swap};
+
+% trajectory arrows outward
+\foreach \n in {ag,mem,tch,mid} {\draw[arrow] (\n.north east) -- ++(0.8,0.6);}
+
+\node[draw, thick, fill=checkblack, text=white, rounded corners=4pt, minimum width=3.5cm, minimum height=0.8cm, align=center, font=\footnotesize\bfseries] (center) at (0,-0.15) {What we can measure today};
+
+\node[font=\footnotesize\itshape, below=1.2cm of center] {Each quadrant → a check with n. The center → your current ruler.};
+\end{tikzpicture}
+\caption{The Emerging-Threat Landscape — Agentic, Memory Poisoning, Tool Supply Chain, Model Identity. Each arrow is a trajectory: how fast this threat is growing and what check it needs.}
+\label{fig:10-1}
+\end{figure}
+\textbf{Prompt for Fig 10.1:} \texttt{radar quadrant diagram four emerging AI threats agentic memory poisoning tool supply chain model identity with trajectory arrows — clean technical line art, black on white, single muted red accent \#E63946, minimal sans-serif labels, no clip art, no gradients, no 3D, print-ready vector style, A4}
+
+\section{Key Terms}
+\begin{itemize}
+\item \textbf{Emerging threat} — Agentic, memory poisoning, tool supply chain, model identity — where the field is moving next.
+\item \textbf{Eval awareness} — Model behaves differently when it detects it is being tested.
+\item \textbf{Memory poisoning} — Poisoned persisted fact that changes future decisions.
+\item \textbf{Tool supply chain} — Vendor tools/plugins whose descriptions are an attack surface.
+\item \textbf{Model identity} — Which model answered — may be unknowable behind a proxy without pinning.
+\item \textbf{Shared ruler / Standard} — A versioned, rerunnable eval accepted by vendor, regulator, and researcher.
+\end{itemize}
+
+\section{Self-Test}
+\begin{selftest}
+\item \textbf{Recall:} Name the four emerging threats and, for each, one sentence about why it matters now.
+\item \textbf{Recall:} What is the move from ``can it be broken'' to ``can we agree on the ruler'' — and what artifact makes the second possible?
+\item \textbf{Application:} A poisoned memory survives 3/5 session resets. What two controls (one on memory, one on the channel) would you add, and how would you count their effect?
+\item \textbf{Application:} A product routes queries across 3 models but says ``powered by M.'' Why is this a measurement problem, and what provenance would fix it?
+\item \textbf{Design a check:} For one of the four threats, design a check: dataset, judge, n, metric, and the honest limitation line. One paragraph.
+\end{selftest}
+
+\readywhen{You can name three open problems and, for each, the method you would bring — and the first experiment you would run tomorrow.}
+
+\section{Expert Extension}
+\rbadge
+\textbf{Open problem: Your next paper.} The field needs versioned rulers for each hard line (Art. 5(a)–(f)), long-horizon agent evals, and provenance for memory and model identity. Any of these is the next paper — if the method is fully there.\\
+\textbf{Method you would bring:} Frame the contribution as the check, not the claim: ``We publish the harness for X, versioned rubric for Y, judge board calibrated to Z\% agreement, canary for W.'' A reviewer can rerun it, question it, improve it. That is a standard in pre-print form. Break before users do.
+
+\begin{checkbox}
+The check is the product. If you cannot rerun the failure, you have not found it — you have had an opinion. I would not report a number I could not reproduce. Secure the channel, not just the node. Break before users do. I build the check, not the claim.
+\end{checkbox}
