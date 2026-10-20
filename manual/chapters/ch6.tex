@@ -1,0 +1,180 @@
+% ── CHAPTER 6 ──
+\chapter{AI Safety \& Alignment Research: The Deep Research Half}
+\label{ch:6}
+
+\begin{tcolorbox}[colback=white,colframe=checkblack,title=Chapter 6 at a Glance,fonttitle=\bfseries,sharp corners,boxrule=1pt]
+\textbf{Question:} How do red team, eval, and alignment fit together — and how do you publish so a skeptic can disagree with you using your own method?\\
+\textbf{Deliverable:} A research-grade write-up: method, results, limitations, rerun instructions, no smoothing.\\
+\textbf{Time:} 4 hrs (90 min read + 2–3 hrs Lab 6).
+\end{tcolorbox}
+
+\section{Learning Objectives}
+\fbadge
+You will be able to:
+\begin{enumerate}
+\item Distinguish two alignment framings (contain-the-danger vs pluralism/procedural legitimacy) and say why ``how it's made matters.''
+\item Describe interpretability basics (probing, features, circuits) and what they do and don't prove.
+\item Distinguish red team vs eval vs alignment and name where each is the right tool.
+\item Explain responsible disclosure and the scientific method for research (hypothesis, controls, negative results, ethics of publishing).
+\item Write a research-grade finding that a skeptic can rerun and disagree with using your own method.
+\end{enumerate}
+
+\section{The Idea: What Alignment Means and Where Each Tool Fits}
+\tierF
+
+\subsection{Two framings}
+\textbf{Contain-the-danger:} AI will be powerful; contain it so it does not harm — misuse, loss of control, concentrated power. Frame: boundaries, refusals, hard lines (Art. 5 prohibitions).\\
+\textbf{Pluralism and procedural legitimacy:} AI will shape society; ensure it is made and governed legitimately — who decides what is allowed, how values are included, what process makes the answer trustworthy.
+
+Both matter. ``How it's made matters'' — an answer is not just about what it says but what ledger produced it (which law, whose values, what check).
+
+\subsection{Interpretability basics — and what it doesn't buy you}
+\begin{itemize}
+\item \textbf{Probing:} Train a small classifier on a model's internal states to see if a concept is represented. Finds correlation, not causation.
+\item \textbf{Features and circuits:} Which directions in activation space correspond to concepts; which subgraphs compute a behavior. Insightful, not proof of behavior out of distribution.
+\end{itemize}
+Interpretability can say ``the feature exists in here.'' It cannot yet say ``the model will not use that feature to harm you next week.'' Pair it with evals.
+
+\begin{defbox}
+\textbf{Interpretability:} Methods (probing, features, circuits) that try to explain what a model represents or computes. Valuable, not sufficient — pair with evals that measure behavior.
+\end{defbox}
+
+\subsection{Red team vs eval vs alignment}
+Three circles, one center:
+
+\begin{itemize}
+\item \textbf{Red team:} Find the failure (the creative break). Best when you don't know what to measure yet.
+\item \textbf{Eval:} Measure the rate (the honest number). Best when you know what failure to count.
+\item \textbf{Alignment:} Steer the system (how it's made, what process makes it trustworthy). Best when the question is about ongoing governance.
+\end{itemize}
+Center: a shared reproducible ruler. All three need it. Without a ruler, red team is anecdote, eval is cargo cult, alignment is sermon.
+
+\section{The Mechanics: Method, Disclosure, Ethics}
+\tierP
+
+\subsection{Red team vs eval vs alignment — where each is the right tool}
+\begin{center}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Use this & When \\
+\midrule
+Red team & You suspect a failure but have no rate. Go find it. \\
+Eval & You know the failure (e.g., Art. 5(1)(f) compliance) and need the rate with a denominator. \\
+Alignment frame & The question is about governance: who decides, what process, how legitimacy is earned. \\
+All three & When the finding becomes a standard: red team finds it, eval measures it, alignment tells you how to govern by it. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Responsible disclosure — and the scientific method}
+\textbf{Disclosure timeline (real, used in Ch. 8 Example 8.2):}
+\begin{enumerate}
+\item Find + measure (with denominator) → log fingerprint + transcripts.
+\item Tell the owner: scope, method, number, limitation, transcripts, fix suggestion. Give 90 days (or what the bounty policy says).
+\item Share the check so they can verify the fix themselves.
+\item Publish the method after fix or after window — the check, not the weaponized variant. Redact PII/secrets.
+\end{enumerate}
+
+\textbf{Scientific method for research (no smoothing):}
+\begin{itemize}
+\item \textbf{Hypothesis:} ``Model X resists prohibited emotion inference at $<$50\% under condition C.''
+\item \textbf{Controls:} Same scenario, lawful alternative (performance ranking) must still be allowed — test both sides of the boundary.
+\item \textbf{Negative results:} Report where the model did resist. The non-failure is data.
+\item \textbf{Honesty:} Report the limitation that hurts your story. ``One provision, one model, n=5'' if that is what you ran. The honest number, not the clean one.
+\end{itemize}
+
+\section{Worked Examples}
+\tierP
+
+\begin{examplebox}
+\textbf{Example 6.1 — A probing experiment that finds a feature but fails out of distribution}\\
+\textbf{Setup:} A probe finds a ``deception'' direction in a model's activations with 85\% accuracy on training probes.\\
+\textbf{Next test:} Ask the model to deceive in a novel multi-turn negotiation the probe never saw. The feature fires but the behavior does not — the probe does not predict action.\\
+\textbf{Lesson:} The feature is there; the circuit is not yet understood. Interpretability gave a clue, not a guarantee. The eval (n=40 negotiation episodes, 12/40 deceptive = 30\%) is what measures the behavior. Both are needed. Claims about alignment need both the inside (feature) and the outside (rate).
+\end{examplebox}
+
+\begin{examplebox}
+\textbf{Example 6.2 — Responsible disclosure timeline for an emotion-inference finding}\\
+\textbf{Day 0:} Lab 5 LARA-lite shows 3/5 compliance failures on vendor Y's assistant (n=5). You expand to n=40, three scenarios: 38\% $\pm$ 7\% compliance.\\
+\textbf{Day 1:} Email vendor security: method, provision text, scenarios, n, fingerprints, 5 example transcripts (PII redacted), fix suggestion (channel policy + refusal with alternative).\\
+\textbf{Day 30:} Vendor confirms, shares patch plan, asks for check to verify. You share the harness.\\
+\textbf{Day 60:} Rerun: 85\% $\pm$ 5\% compliance (fix worked for tested scenarios).\\
+\textbf{Day 90:} Publish: ``Before/after: 38\% → 85\% compliance, n=40 each, 3 scenarios, Art. 5(1)(f), limitation: 3 scenarios, one vendor.'' No weaponized payloads, no user data. That is the scientific method with disclosure.
+\end{examplebox}
+
+\section{Hands-On Lab 6 — Research-Grade Write-Up}
+\begin{labbox}
+\textbf{Target:} Your LARA-lite finding (or Ch. 2 lab finding) — now as a write-up, not just a harness.\\[4pt]
+\textbf{Steps:}
+\begin{enumerate}
+\item Hypothesis (1 sentence), method (dataset, solver, judge, metric, pass definition), environment fingerprint, results (number + denominator + stderr), controls (lawful alternative), limitation (what you did not test), rerun instructions (exact command a stranger runs), ethics (disclosure, no PII, no weapon).
+\item No smoothing: keep the bad number, the limitation, the transcript where the judge disagreed. If you tested 5 and 2 resisted, say 2/5.
+\item Length: 2–3 pages. No filler. A skeptic must be able to disagree with you using your own method — because the method is fully there.
+\end{enumerate}
+\textbf{Deliverable:} A 2–3 page PDF or Markdown research note.\\[2pt]
+\textbf{How you know you passed:} A second person, without asking you, reruns the command, gets your number (within sampling), and can point at the exact transcript where a different interpretation would change the conclusion. That is research-grade.
+\end{labbox}
+
+\section{Pitfalls and the Missing Check}
+\begin{pitfallbox}
+\textbf{What goes wrong:}
+\begin{itemize}
+\item Publishing the claim without the check — ``we found bias'' with no ruler anyone can run.
+\item Hiding negative results — where the model did the right thing is data.
+\item Conflating red-team anecdote with eval rate — ``it jailbroke once'' is not a prevalence claim.
+\item Interpreting probing as proof of behavior.
+\end{itemize}
+\textbf{The missing check:} Hypothesis + controls + negative results + limitation + rerun instructions + ethics note. Without those, a skeptic cannot engage with your work. With them, a skeptic can disagree with you using your own method — and that is the point. The method is the contribution.
+\end{pitfallbox}
+
+\section{Illustrations}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  circ/.style={draw, thick, circle, minimum size=3.5cm, align=center, font=\small, opacity=0.85},
+  center/.style={fill=lightgreen, draw=checkblack, thick, rounded corners=3pt, minimum width=2.6cm, minimum height=0.8cm, align=center, font=\footnotesize\bfseries}
+]
+\begin{scope}[blend group=screen]
+\node[circ, fill=lightblue] (rt) at (-1.5,0) {\textbf{Red team}\\ \tiny find the\\ \tiny failure};
+\node[circ, fill=lightamber] (ev) at (1.5,0) {\textbf{Eval}\\ \tiny measure\\ \tiny the rate};
+\node[circ, fill=lightred!60] (al) at (0,2) {\textbf{Alignment}\\ \tiny steer \&\\ \tiny govern};
+\end{scope}
+\node[center] (mid) at (0,0.6) {Shared\\ ruler};
+\node[font=\footnotesize, below=1.5cm of rt, align=center] {\textbf{Right tool:}\\ unknown failure};
+\node[font=\footnotesize, below=1.5cm of ev, align=center] {\textbf{Right tool:}\\ known failure,\\ need the rate};
+\node[font=\footnotesize, above=0.8cm of al, align=center] {\textbf{Right tool:}\\ governance \&\\ legitimacy};
+\end{tikzpicture}
+\caption{Red Team vs Eval vs Alignment — Three overlapping circles. Center = shared reproducible ruler. Each lobe = where it is the right tool.}
+\label{fig:6-1}
+\end{figure}
+\textbf{Prompt for Fig 6.1:} \texttt{venn diagram three overlapping circles labeled red team eval alignment, center shared ruler — clean technical line art, black on white, single muted red accent \#E63946, minimal sans-serif labels, no clip art, no gradients, no 3D, print-ready vector style, A4}
+
+\section{Key Terms}
+\begin{itemize}
+\item \textbf{Alignment} — Steering a model/system to act as intended under conflict, including governance legitimacy.
+\item \textbf{Probing / Features / Circuits} — Interpretability methods; correlation, not yet behavioral guarantee.
+\item \textbf{Red team vs eval vs alignment} — Find / measure / govern — each has a different right-tool moment.
+\item \textbf{Responsible disclosure} — Owner first, time to fix, check shared, then publish the method (not the weapon).
+\item \textbf{Negative results} — Reports of where the system did pass — still data, still published.
+\item \textbf{Eval awareness} — Model behaves differently when it detects it is being tested.
+\end{itemize}
+
+\section{Self-Test}
+\begin{selftest}
+\item \textbf{Recall:} What are the two alignment framings, and what question does each ask?
+\item \textbf{Recall:} What does a probe finding a ``deception direction'' prove — and what does it not yet prove?
+\item \textbf{Application:} You found a 38\% compliance rate. What is hypothesis, control, and negative result in the write-up?
+\item \textbf{Application:} A vendor asks you to delay disclosure past 90 days. What is the responsible path, and what do you share so they can verify the fix?
+\item \textbf{Design a check:} Design a study that pairs probing with an eval to test whether a feature predicts behavior out of distribution. Define the eval, n, and what ``probing predicts behavior'' would mean as a checkable claim.
+\end{selftest}
+
+\readywhen{A skeptical reader can disagree with you using your own method — because the method, limitation, and rerun are fully there.}
+
+\section{Expert Extension}
+\rbadge
+\textbf{Open problem: What ``alignment measurement'' could mean when the ruler is an LLM.} If the judge is itself an LLM, its alignment shapes your measurement of alignment — circularity.\\
+\textbf{Method you would bring:} Triangulate: one provision, three measurement paths — (a) judge board, (b) human expert review (n=50), (c) behavioral proxy (e.g., refusal latency, alternative offered). Report all three + agreement + where they diverge. The divergence is the open problem. Publish the harness so the next researcher can add a fourth path.
+
+\begin{checkbox}
+The check is the product. In research, the check that survives a skeptic is the check that becomes infrastructure.
+\end{checkbox}

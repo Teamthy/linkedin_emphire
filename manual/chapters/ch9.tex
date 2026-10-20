@@ -1,0 +1,182 @@
+% ── CHAPTER 9 ──
+\chapter{Professional Development, Positioning \& Standing Out}
+\label{ch:9}
+
+\begin{tcolorbox}[colback=white,colframe=checkblack,title=Chapter 9 at a Glance,fonttitle=\bfseries,sharp corners,boxrule=1pt]
+\textbf{Question:} What makes the resume optional — and how does a portfolio of checks do it?\\
+\textbf{Deliverable:} A personal red-team + research portfolio, ready to put in front of a hiring team: harness + write-ups + one published finding.\\
+\textbf{Time:} 3 hrs (60 min read + 2 hrs Lab 9).
+\end{tcolorbox}
+
+\section{Learning Objectives}
+\fbadge
+You will be able to:
+\begin{enumerate}
+\item Name where community, practical experience, and certifications add signal — and where the portfolio matters more.
+\item Describe the portfolio that stands you out: harness + write-ups + one published finding — and the roles it opens.
+\item Explain the standout edges (the check, the denominator, the honest number, the canary, the two-sided boundary, the published method) as signature, not just skills.
+\item Plan a public record (series, posts, open-source harness) that compounds into the next engagement.
+\end{enumerate}
+
+\section{The Idea: Community, Practice, Credentials — But the Portfolio Is What Gets You Hired}
+\tierF
+
+You can get a certificate. Many do. You can do a CTF. Many do. What most do not have is a portfolio where a hiring manager can click once and reproduce a finding. That is the scarce one. That is the edge.
+
+\begin{itemize}
+\item \textbf{Community:} Conferences, research groups, forums — go where the people who write the checks (or the papers) are. Don't just attend. Publish the check.
+\item \textbf{Practical experience:} Lab environments, CTF challenges, red-team simulations — use them to generate artifacts (harness + trace + rate), not just points on a scoreboard.
+\item \textbf{Certifications:} Specialized courses and credentials — they signal breadth. The portfolio signals you can do the job tomorrow.
+\item \textbf{Positioning:} The portfolio is harness (runnable) + write-ups (honest numbers) + one published finding (method a skeptic reran). The roles it opens: evals researcher, AI security engineer, red teamer. One portfolio, three paths.
+\end{itemize}
+
+\begin{defbox}
+\textbf{Portfolio (here):} Harness (repo, runnable) + write-ups (2 articles, honest numbers) + one published finding (eval + log). That is the unit. The resume becomes optional.
+\end{defbox}
+
+\subsection{The standout edges — the thing that is you}
+These are not skills. They are signatures — the moves a reader recognizes as you:
+
+\begin{center}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Edge & What it means \\
+\midrule
+The check is the product & You ship the rerunnable check, not the claim \\
+The number with a denominator & Every rate carries n \\
+The honest number & You name the limitation that hurts your story \\
+The reproducible canary & Your checks catch drift on a schedule \\
+The two-sided boundary & You test both over- and under-escalation \\
+The published method & A skeptic can rerun, not just trust \\
+\bottomrule
+\end{tabularx}
+\end{center}
+Everything else is a skill. These are the signature.
+
+\section{The Mechanics: How the Portfolio Compounds}
+\tierP
+
+\subsection{Community engagement}
+\begin{itemize}
+\item \textbf{Conferences:} Submit the check, not the deck. ``We made the Art. 5(1)(f) check rerunnable; here's the repo and the before/after.'' That talk gets cited.
+\item \textbf{Research groups:} Join one, bring the harness. The group that has the ruler is the group that sets the question.
+\item \textbf{Forums:} Answer with numbers. ``I ran this in 2/5 at t=0, n=5 — here's the transcript where the judge disagreed.'' That answer is trusted.
+\end{itemize}
+
+\subsection{Practical experience}
+Labs and CTFs are generators, not just practice. Every challenge you finish, publish the check (sanitized). One CTF write-up with a rerunnable harness is worth more than ten certificates.
+
+\subsection{Certifications vs portfolio}
+A certificate says ``I passed a test someone else wrote.'' A portfolio says ``I wrote the test someone else can now pass.'' Get the certificate if it opens a door. Build the portfolio so you own the room after.
+
+\subsection{Positioning — the three roles one portfolio opens}
+\begin{center}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Role & What they hire for — and what your portfolio shows \\
+\midrule
+Evals researcher & Published eval + honest report + judge calibration — you make the ruler \\
+AI security engineer & Attack-surface map + canary + gated fix — you make production safe \\
+Red teamer & Full engagement (target → published method) — you find it and make it defensible \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Worked Examples}
+\tierP
+
+\begin{examplebox}
+\textbf{Example 9.1 — A portfolio that got a screen}\\
+\textbf{Who:} A Research Engineer candidate (engineer, not formal ML researcher).\\
+\textbf{What it contained:}
+\begin{enumerate}
+\item Harness repo: \texttt{Teamthy/ai-redteam-five-tests} fork with 5 checks + LARA-lite eval, pinned versions, one-liner run, logs.
+\item Two write-ups: ``The Five Boring Failure Modes'' + ``We Made the Art. 5 Check Rerunnable'' — each with honest numbers + limitations.
+\item One published finding: LARA-lite on 2 models, 3 scenarios, n=20, 40\% → 85\% after fix, honest report with canary.
+\end{enumerate}
+\textbf{The email that followed:} ``We read your harness. We reran your eval. Walk us through your disagreement with your own judge.'' That is the screen. The portfolio made it happen — not the resume. Break before users do.
+\end{examplebox}
+
+\begin{examplebox}
+\textbf{Example 9.2 — A post that compounds}\\
+\textbf{Step 1:} Publish one honest eval write-up (2/5, t=0, n=5, limitation stated).\\
+\textbf{Step 2:} A reader reproduces it, comments ``I got 3/5 with t=0.5,'' and shares their fingerprint. You update the post with their number.\\
+\textbf{Step 3:} A meetup organizer invites you to talk about ``how to make compliance checks rerunnable.'' You bring the harness.\\
+\textbf{Step 4:} A vendor invites you to red-team their staging assistant — using your check. That is the next engagement.\\
+\textbf{Lesson:} One honest post compounds into talks into engagements. The clean post does not — it has nothing to compound.
+\end{examplebox}
+
+\section{Hands-On Lab 9 — Ship Your Portfolio}
+\begin{labbox}
+\textbf{Target:} A public portfolio page (GitHub README, personal site, or LinkedIn post — one place a hiring team can find all three).\\[4pt]
+\textbf{Steps:}
+\begin{enumerate}
+\item Repo: harness + eval + pinned versions + one-liner run + log + honest report (Ch. 7 Lab + Ch. 8 Lab artifacts). Public.
+\item Two write-ups: (a) the five boring failure modes as you saw them (one paragraph each with a check), (b) your LARA-lite honest report — what broke, how often, which judge, what it means (sanitized, no PII).
+\item One published finding: the full engagement (Ch. 8) in its own repo or tagged release, with before/after numbers, fingerprints, limitation, and ``how to rerun.''
+\item Ask one second person to clone and reproduce. Fix where they got stuck. Link all three from one page.
+\item Write your positioning paragraph: ``I build the check, not the claim. My work is the number with a denominator — the honest number — and the canary that keeps it honest.'' Keep it short. No buzzwords.
+\end{enumerate}
+\textbf{Deliverable:} A single page (URL) with harness repo + 2 write-ups + 1 published finding, each with rerun instructions.\\[2pt]
+\textbf{How you know you passed:} A hiring manager can, in 10 minutes, run your eval and read your two write-ups and know you are the person who makes the fix reproducible. That is the bar: the portfolio makes the resume optional.
+\end{labbox}
+
+\section{Pitfalls and the Missing Check}
+\begin{pitfallbox}
+\textbf{What goes wrong:} Portfolio of claims without checks — ``I found bias'' with no ruler. Hiding limitations — the reader notices and stops trusting you. Optimizing for certificates over checks — you can pass a test but cannot write one.\\[4pt]
+\textbf{The missing check:} Every portfolio item has a rerunnable check. Every number carries a denominator. Every report names its limitation. Without those, the portfolio is a claim. With them, it is proof a stranger already verified.
+\end{pitfallbox}
+
+\section{Illustrations}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  pillar/.style={draw, thick, rounded corners=4pt, minimum width=3.2cm, minimum height=2cm, align=center, font=\small, fill=lightblue},
+  banner/.style={draw, thick, fill=checkblack, text=white, rounded corners=4pt, minimum width=11cm, minimum height=0.9cm, align=center, font=\small\bfseries},
+  arrow/.style={-{Latex[length=2.5mm]}, thick, color=slate}
+]
+\node[pillar, fill=lightblue] (h) at (-3.5,1) {Harness\\ \tiny repo, runnable\\ \tiny pinned versions};
+\node[pillar, fill=lightamber] (w) at (0,1) {Write-Ups\\ \tiny 2 articles\\ \tiny honest numbers};
+\node[pillar, fill=lightgreen] (f) at (3.5,1) {One Published\\ Finding\\ \tiny eval + log};
+\node[banner] (banner) at (0,3.2) {The resume becomes optional.};
+\draw[arrow] (h.north) -- (banner.south west);
+\draw[arrow] (w.north) -- (banner.south);
+\draw[arrow] (f.north) -- (banner.south east);
+\node[below=0.3cm of h, font=\footnotesize] {Evals researcher};
+\node[below=0.3cm of w, font=\footnotesize] {AI security};
+\node[below=0.3cm of f, font=\footnotesize] {Red teamer};
+\node[font=\footnotesize\itshape, below=0.6cm of w] {One portfolio opens three roles.};
+\end{tikzpicture}
+\caption{The Portfolio That Stands You Out — Harness + Write-Ups + One Published Finding. Three pillars, one banner: the check is the product that gets you hired.}
+\label{fig:9-1}
+\end{figure}
+\textbf{Prompt for Fig 9.1:} \texttt{three pillars diagram labeled harness writeups published finding supporting banner hired — clean technical line art, black on white, single muted red accent \#E63946, minimal sans-serif labels, no clip art, no gradients, no 3D, print-ready vector style, A4}
+
+\section{Key Terms}
+\begin{itemize}
+\item \textbf{Portfolio (here)} — Harness + write-ups + published finding — the hireable unit.
+\item \textbf{Public record} — Series, posts, open-source harness that compounds over time.
+\item \textbf{Signal} — What a credential or portfolio tells a hiring team — portfolio signal is rerunnable proof.
+\item \textbf{Positioning} — Choosing which role (evals, security, red team) your portfolio points at — one portfolio can point at all three.
+\item \textbf{Signature} — The moves a reader recognizes as you (denominator, honest number, canary, two-sided boundary).
+\end{itemize}
+
+\section{Self-Test}
+\begin{selftest}
+\item \textbf{Recall:} What three things make the portfolio that stands you out? Why does each matter?
+\item \textbf{Recall:} Name two standout edges and what ``the honest number'' requires you to do that the clean number does not.
+\item \textbf{Application:} A certificate says ``I passed a test.'' Your portfolio says ``I wrote the test.'' Give one concrete portfolio item that proves the second claim.
+\item \textbf{Application:} You have one honest eval write-up. Map how it compounds into the next engagement in three steps.
+\item \textbf{Design a check:} Design a 10-minute test a hiring manager can run during a screen to verify your portfolio claim. What do they clone, run, and see?
+\end{selftest}
+
+\readywhen{The portfolio makes the resume optional — harness + write-ups + one published finding, each rerunnable by a stranger in one session.}
+
+\section{Expert Extension}
+\rbadge
+\textbf{Open problem: The portfolio as research program.} A single finding hires you once. A program hires you forever.\\
+\textbf{Method you would bring:} Name three open problems you will publish on next (e.g., multilingual compliance gap, judge calibration, memory poisoning) and, for each, the first check you will ship — dataset, judge, n, limitation. Ship the first one. The program is the portfolio that keeps standing you out after you are hired.
+
+\begin{checkbox}
+I build the check, not the claim. I would not report a number I could not reproduce. The honest number, not the clean one — that is the signature that compounds.
+\end{checkbox}
