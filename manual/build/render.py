@@ -389,6 +389,7 @@ def _do_math(m):
     if c in MATH: return MATH[c]
     # argument-taking wrappers: \text{..} \textbf{..} \mathbb{..} -> inner text
     t = re.sub(r"\\(?:text|textbf|textit|mathrm|mathbb|mathbf|boldsymbol)\s*\{([^}]*)\}", r"\1", c)
+    t = re.sub(r"\\sqrt\s*\{([^}]*)\}", "√\\1", t)
     # translate every \command anywhere in the body; unknown ones keep their name (no stray backslash)
     def _sub(mm):
         return MATH.get(mm.group(1), mm.group(1))
