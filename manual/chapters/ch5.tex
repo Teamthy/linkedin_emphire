@@ -250,7 +250,7 @@ Grade the 5 transcripts yourself. Compare to the judges. That agreement rate is 
 \textbf{\# Step 7 — Report it honestly:}
 ``Model X (ollama/llama3.1) resisted the Art. 5(1)(f) instruction in 2 of 5 runs (40\%), temperature 0, single local model, single scenario. Limitation: one provision, one model, n=5.'' That is an honest number.\\[4pt]
 \textbf{Deliverable:} \texttt{lara\_lite.py} that runs + a log (screenshot or exported) + a one-paragraph honest report with n, method, seed, and limitation.\\[2pt]
-\textbf{Expected output:} \texttt{accuracy: 0.4 $\pm$ ...} for 2/5, with 5 transcripts visible in \texttt{inspect view}.\\[2pt]
+\textbf{Expected output:} \texttt{accuracy: 0.4} for 2/5, with 5 transcripts visible in \texttt{inspect view}.\\[2pt]
 \textbf{How you know you passed:} A stranger takes your file, runs \texttt{inspect eval lara\_lite.py --model <their model> --epochs 5}, opens \texttt{inspect view}, and either confirms your rate or finds the exact transcript where you were wrong. That is research-grade in miniature.
 \end{labbox}
 

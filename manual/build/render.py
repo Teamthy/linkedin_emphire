@@ -273,11 +273,27 @@ def parse_blocks(text, state):
     return blocks
 
 # ─────────────────────────  inline markup  ─────────────────────────
-MATH = {"sim":"~","approx":"\u2248","pm":"\u00b1","times":"\u00d7","pi":"\u03c0",
-        "rightarrow":"\u2192","to":"\u2192","leq":"\u2264","geq":"\u2265","le":"\u2264",
-        "ge":"\u2265","neq":"\u2260","infty":"\u221e","cdot":"\u00b7","dots":"\u2026",
-        "alpha":"\u03b1","beta":"\u03b2","lambda":"\u03bb","sigma":"\u03c3","mu":"\u03bc",
-        "Delta":"\u0394","delta":"\u03b4","emptyset":"\u2205","Rightarrow":"\u21d2"}
+MATH = {"sim":"\u2248","approx":"\u2248","pm":"\u00b1","times":"\u00d7","div":"\u00f7",
+        "cdot":"\u00b7","bullet":"\u2022","circ":"\u2218","star":"\u2605",
+        "pi":"\u03c0","alpha":"\u03b1","beta":"\u03b2","gamma":"\u03b3","delta":"\u03b4",
+        "epsilon":"\u03b5","zeta":"\u03b6","eta":"\u03b7","theta":"\u03b8","iota":"\u03b9",
+        "kappa":"\u03ba","lambda":"\u03bb","mu":"\u03bc","nu":"\u03bd","xi":"\u03be",
+        "rho":"\u03c1","sigma":"\u03c3","tau":"\u03c4","phi":"\u03c6","chi":"\u03c7",
+        "psi":"\u03c8","omega":"\u03c9","Gamma":"\u0393","Delta":"\u0394","Theta":"\u0398",
+        "Lambda":"\u039b","Xi":"\u039e","Pi":"\u03a0","Sigma":"\u03a3","Phi":"\u03a6",
+        "Psi":"\u03a8","Omega":"\u03a9",
+        "rightarrow":"\u2192","to":"\u2192","leftarrow":"\u2190","gets":"\u2190",
+        "mapsto":"\u21a6","implies":"\u21d2","Rightarrow":"\u21d2","iff":"\u21d4",
+        "Leftrightarrow":"\u21d4","leq":"\u2264","le":"\u2264","leqslant":"\u2264",
+        "geq":"\u2265","ge":"\u2265","geqslant":"\u2265","neq":"\u2260","ne":"\u2260",
+        "infty":"\u221e","emptyset":"\u2205","varnothing":"\u2205","in":"\u2208",
+        "notin":"\u2209","subset":"\u2282","supset":"\u2283","subseteq":"\u2286",
+        "cup":"\u222a","cap":"\u2229","setminus":"\u2216","forall":"\u2200","exists":"\u2203",
+        "partial":"\u2202","nabla":"\u2207","angle":"\u2220","perp":"\u22a5","parallel":"\u2225",
+        "propto":"\u221d","simeq":"\u2243","equiv":"\u2261","cdots":"\u2026","ldots":"\u2026",
+        "dots":"\u2026","square":"\u25a1","checkmark":"\u2713","ell":"\u2113","hbar":"\u210f",
+        "prime":"\u2032","langle":"\u27e8","rangle":"\u27e9","wedge":"\u2227","vee":"\u2228",
+        "neg":"\u00ac","lnot":"\u00ac","oplus":"\u2295","otimes":"\u2297","Re":"\u211c","Im":"\u2111"}
 P_AMB, P_PCT, P_UND, P_HAS, P_TIL, P_DOL, P_DQT, P_NBSP = ("\x01","\x02","\x03","\x04","\x05","\x06","\x07","\x08")
 P_BR, P_DASH3 = "\x12","\x0b"
 P_LQ, P_RQ = "\x13","\x14"
@@ -369,10 +385,16 @@ def _clean(c):
 
 def _do_math(m):
     c = m.group(1).strip()
+    if not c: return ""
     if c in MATH: return MATH[c]
-    cm = re.match(r"\\([a-zA-Z]+)", c)
-    if cm and cm.group(1) in MATH: return MATH[cm.group(1)]
-    return c
+    # argument-taking wrappers: \text{..} \textbf{..} \mathbb{..} -> inner text
+    t = re.sub(r"\\(?:text|textbf|textit|mathrm|mathbb|mathbf|boldsymbol)\s*\{([^}]*)\}", r"\1", c)
+    # translate every \command anywhere in the body; unknown ones keep their name (no stray backslash)
+    def _sub(mm):
+        return MATH.get(mm.group(1), mm.group(1))
+    t = re.sub(r"\\([a-zA-Z]+)", _sub, t)
+    t = t.replace("\\%", "%").replace("\\", "")
+    return re.sub(r"\s+", " ", t).strip()
 
 def inline_markup(text):
     text = clean_latex(text)
@@ -397,6 +419,10 @@ def inline_markup(text):
     text = _rc2(text, "colorbox", lambda a, b: b)
     for t in ("F", "P", "R"):
         text = text.replace("\\tier%s" % t,
+            '<font color="%s"><b>[%s]</b></font>\u00a0' % (hexstr(TIER_COLOR[t]), t))
+    # standalone per-section tier markers (\fbadge \pbadge \rbadge) -> same colored badge
+    for t in ("F", "P", "R"):
+        text = text.replace("\\%sbadge" % t.lower(),
             '<font color="%s"><b>[%s]</b></font>\u00a0' % (hexstr(TIER_COLOR[t]), t))
     text = re.sub(r"\$([^$]*)\$", _do_math, text)
     text = text.replace("---", P_DASH3).replace("--", "\u2013").replace(P_DASH3, "\u2014")
