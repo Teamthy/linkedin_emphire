@@ -27,6 +27,8 @@ The field is moving from ``can it be broken'' (we know it can — LARA: 80\% Art
 \textbf{Shared ruler:} A versioned, rerunnable eval a vendor, regulator, and researcher all run and accept. The contribution is not the ranking — it is the ruler.
 \end{defbox}
 
+A single lab's number is not a fact. ``Model X complied in 40\% of runs'' means nothing to a second lab unless they run the same ruler — the same scenarios, the same pass definition, the same judge. That is why the field is moving from isolated findings to shared rulers: a finding only you can rerun does not compound, cannot be compared across models or years, and cannot be cited by a regulator. The ruler is the unit that lets independent measurements add up into evidence.
+
 \section{The Mechanics: Emerging Threats, Advanced Techniques, Where to Contribute}
 \tierP
 
@@ -37,6 +39,8 @@ The field is moving from ``can it be broken'' (we know it can — LARA: 80\% Art
 \item \textbf{Tool supply chain:} An agent pulls in a tool or plugin from a vendor you do not control. The tool description is the attack vector. You need tool pinning + description allowlisting + invocation policy outside the model.
 \item \textbf{Model-identity problem:} Behind a proxy or routing layer, you cannot tell which model answered. ``Same model, different number'' becomes unmeasurable. You need model pinning + serving provenance + output watermarking or attestation.
 \end{itemize}
+
+Notice the common thread: each one breaks an assumption every current check quietly makes. Today's checks assume one model, one session, and a visible, stable serving path. Agents add hidden nodes; memory outlives the session; the tool supply chain adds uncontrolled surfaces; and routing hides which model even answered. The check that survives the next two years is the one built to fail loudly when any of those assumptions is violated — not the one that assumes they hold.
 
 \subsection{Advanced techniques}
 The frontier: long-horizon agent tasks (10+ tool calls, state to corrupt), eval-awareness detection (does the model behave differently when it thinks it is being judged?), judge boards with calibration, and canaries that distinguish model drift from prompt drift from data drift.
