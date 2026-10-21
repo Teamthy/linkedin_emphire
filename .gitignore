@@ -13,3 +13,6 @@ __pycache__/
 
 # personal face assets, never commit (repo was public)
 uploads/
+
+# keep the Breaking-AI PDF build pipeline (render.py + DejaVu fonts)
+!manual/build/
