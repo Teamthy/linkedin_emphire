@@ -26,14 +26,14 @@ You will be able to:
 \textbf{Contain-the-danger:} AI will be powerful; contain it so it does not harm — misuse, loss of control, concentrated power. Frame: boundaries, refusals, hard lines (Art. 5 prohibitions).\\
 \textbf{Pluralism and procedural legitimacy:} AI will shape society; ensure it is made and governed legitimately — who decides what is allowed, how values are included, what process makes the answer trustworthy.
 
-Both matter. ``How it's made matters'' — an answer is not just about what it says but what ledger produced it (which law, whose values, what check).
+Both matter. ``How it's made matters'' — an answer is not just about what it says but what ledger produced it (which law, whose values, what check). And ``fair'' is not one number: a promotion ranking that weights ambition heavily fits one workplace culture and disadvantages another, and the same weights applied in a different society encode a different value. The procedural question — who set those weights, who was consulted, can they be changed — is part of the safety answer, not a footnote.
 
 \subsection{Interpretability basics — and what it doesn't buy you}
 \begin{itemize}
 \item \textbf{Probing:} Train a small classifier on a model's internal states to see if a concept is represented. Finds correlation, not causation.
 \item \textbf{Features and circuits:} Which directions in activation space correspond to concepts; which subgraphs compute a behavior. Insightful, not proof of behavior out of distribution.
 \end{itemize}
-Interpretability can say ``the feature exists in here.'' It cannot yet say ``the model will not use that feature to harm you next week.'' Pair it with evals.
+Interpretability can say ``the feature exists in here.'' It cannot yet say ``the model will not use that feature to harm you next week.'' In current practice, features are usually decoded with sparse autoencoders (small interpretable directions read out of activations), and circuits are tested with activation patching and ablations — swap one part of the activations and watch whether the behavior changes, which is the closest you get to a causal claim. The honest limit stands: a feature you can patch is not a guarantee you can ship. Pair it with evals.
 
 \begin{defbox}
 \textbf{Interpretability:} Methods (probing, features, circuits) that try to explain what a model represents or computes. Valuable, not sufficient — pair with evals that measure behavior.

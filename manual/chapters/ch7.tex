@@ -54,6 +54,8 @@ Reporting tools (\texttt{inspect view}, your template) & The honest report — n
 \end{tabularx}
 \end{center}
 
+Inspect is not the only tool, and knowing the field helps you place a finding. Academic benchmark harnesses (\texttt{lm-evaluation-harness}, HELM) score models against public suites; red-team fuzzers (Garak) generate thousands of attack prompts at scale; app-level eval frameworks (DeepEval, promptfoo) grade a specific application. Inspect is the choice here because it pairs the task/solver/scorer model with a judge board, a real log a skeptic can open, and a sandbox for agents — the full shape of a published check, not just a score. Name which tool you used; the tool is part of the method.
+
 \subsection{Inspect in depth}
 \begin{itemize}
 \item \textbf{Tasks:} \texttt{Task(dataset=[...], solver=[...], scorer=...)} — the eval.
@@ -70,6 +72,10 @@ Reporting tools (\texttt{inspect view}, your template) & The honest report — n
 
 \subsection{Wiring it}
 Your harness (custom) → breaklab (lab logging) → five-test repo (boring failures) → Inspect (ruler) → report (template from Back Matter). One env fingerprint logged at the start; one accuracy printed at the end. The check is the product.
+
+\begin{defbox}
+\textbf{The reproducibility contract:} a finding is reproducible only if every moving part is pinned. Pin the Python version, the library versions and their hashes, the model by tag AND date (a model name is a moving target — the same tag can point at different weights tomorrow), the seed, and the prompt by SHA. A lockfile or a container image is what makes ``one clone, one run'' true months later. The number one reproducibility killer is not your code; it is a model that quietly updated under you. Log the date the weights were pulled.
+\end{defbox}
 
 \section{Worked Examples}
 \tierP
