@@ -33,12 +33,18 @@ A model answers. An agent acts. It plans steps, remembers across turns, calls to
 
 The whole sentence that matters: \textbf{Secure the channel, not just the node.} An honest node can be fed a dishonest message by another honest node. If you secure only the model, you still have an A2A injection path.
 
+Single-agent means one model with tools and memory; the surface is its prompt and its tool calls. Multi-agent means several agents that message each other — a planner, a researcher, a writer — and now the surface is the channel between them. Every extra agent adds a node and a set of channels, and the channels are where the new risk lives. The single-model checklist does not transfer; that is why this chapter exists.
+
 \begin{defbox}
 \textbf{Agent:} A model wrapped with planning, memory, tools, and subagents that acts over multiple turns. The attack surface is where these four meet.
 \end{defbox}
 
 \begin{defbox}
 \textbf{A2A injection:} An injection that travels inside agent-to-agent messages. The fix is channel security — provenance, authentication, and policy that lives outside any single agent.
+\end{defbox}
+
+\begin{defbox}
+\textbf{Compositional trust:} the security of an agent system is not the security of its parts but the security of the channels between them. Ten perfectly safe models joined by unguarded message paths behave as one unsafe system. You increase trust by controlling the join, not by making each node safer.
 \end{defbox}
 
 \section{The Mechanics: Where Agentic Systems Break}
@@ -53,6 +59,10 @@ Controls that live outside the model:
 \item \textbf{Channel policy:} The channel — not the node — enforces ``a researcher agent may not instruct the writer agent to send email'' or ``no agent may add external recipients.''
 \item \textbf{Inventory:} Know every agent, every capability, every delegation path. You cannot secure what you do not inventory.
 \end{itemize}
+
+\begin{defbox}
+\textbf{Confused deputy:} a component that holds privileges on behalf of another — the subagent acting for the user, the writer acting for the planner — is persuaded to use them toward an attacker's goal. The subagent that emails evil.example (Example 4.1) is a confused deputy. The fix is the same as for every confused deputy: take the privilege away from the component that holds it, and enforce the boundary outside the component where it cannot be talked into using it.
+\end{defbox}
 
 \subsection{Kill switches that survive subagent spawning}
 Most kill switches fail because they live in user-writable state or in the agent's memory. A delegated subagent is not born with them.
