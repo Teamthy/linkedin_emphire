@@ -1,6 +1,12 @@
 # PROJECT CATALOG — one listing, 3 built-in pricing tiers (SEO-checked against Upwork's own docs)
 The catalog is the client ladder from `STRATEGY/2026-10-02_90-day-10k-client-positioning.md` productized for search. Same three-tier logic, Upwork-priced to win the first reviews before raising toward the LinkedIn-side $1.5k-$3.5k engagement pricing.
 
+## IN-DEMAND GIGS ADDED 2026-10-22 (from RESEARCH_TRACKER findings 13-19)
+Two in-demand gigs are now named in this listing so buyers who search for them find it:
+- **LLM/agent evaluation + eval-environment authoring** (the "model evaluation" term over-indexes 3.0x in remote postings): the Advanced tier now builds an owned LLM/agent eval, not just a regression suite, and the "llm evaluation" search tag is added.
+- **Agentic AI security / MCP** (the fastest-growing red-team slice): Step 2 now names the agentic and MCP checks (excessive permissions, insecure tool use, tool descriptions, multi-agent trust boundary), and the "ai agent security" search tag is added.
+Char-limited fields to update at the live screen (confirm fit there, not here): the Project summary's "a regression suite" becomes "an owned LLM/agent eval and regression suite"; the Advanced tier custom description becomes "Full red team test, code fixes, an owned LLM/agent eval, 2 wks support" (70/80 chars).
+
 ## HOW THIS ACTUALLY WORKS ON UPWORK (confirmed live, 2026-10-11)
 Upwork's Project Catalog does not create three separate listings for a three-tier ladder. One project supports **1 or 3 pricing tiers (Starter / Standard / Advanced) inside a single listing**, each with its own custom title (30 chars), custom description (80 chars), delivery days, and its own price per buyer company size (Small / Medium / Large). There's also an optional add-ons section. This is the structure to use, it gives one SEO'd title and URL instead of splitting search juice across three listings, and it puts the upsell path (Starter to Advanced) in front of every buyer automatically.
 
@@ -10,7 +16,7 @@ Upwork's Project Catalog does not create three separate listings for a three-tie
 You will get an AI red team test and prompt injection audit
 ```
 **Category:** Development & IT > Cybersecurity & Data Protection > Other Cybersecurity & Data Protection (confirmed live suggestion; check "Not seeing the right fit?" for "Assessments & Penetration Testing" first, use it instead if it appears)
-**Search tags (5, lowercase, same pattern confirmed working live):** ai security, prompt injection, red teaming, penetration testing, llm security
+**Search tags (5, lowercase, same pattern confirmed working live):** ai security, prompt injection, red teaming, llm evaluation, ai agent security (2026-10-22: swapped out penetration testing and llm security for the two in-demand terms; confirm each autocompletes before saving)
 **Project attributes:**
 - Cybersecurity Expertise (up to 3): Risk Assessment, Audit, AI Governance
 - Technology Type (pick a few, not all 13): Web Application, SaaS, Database
@@ -56,10 +62,10 @@ Upwork's own gallery guidelines explicitly list "text-heavy images" as something
 
 **Steps (your delivery process, add all 5, title then optional description):**
 1. **Confirm scope and access** — I review your answers, confirm the right tier for your system, and confirm access or credentials before any testing starts.
-2. **Run the red team testing** — I run the testing scoped to your tier: a 15-point scan, the full 4-layer test, or the full test plus fix scoping, each attempt logged exactly as run.
+2. **Run the red team testing** — I run the testing scoped to your tier: a 15-point scan, the full 4-layer test, or the full test plus fix scoping, each attempt logged exactly as run. For agents I test beyond the single call: forged tool calls, excessive permissions, insecure tool use, MCP tool descriptions, and the multi-agent trust boundary.
 3. **Deliver the findings report** — You get a report in the same four-part format every time: exact repro, which layer failed, the fix, and how it was verified.
 4. **Debrief call for Standard and Advanced** — We get on a short call to walk through the findings together and answer your team's questions live.
-5. **Fix, verify, and support on Advanced** — I scope and help implement code-level fixes, build a regression suite your team owns, then do a final pass confirming each fix holds, with 2 weeks of async support.
+5. **Fix, verify, and support on Advanced** — I scope and help implement code-level fixes, and build an LLM/agent eval plus regression suite your team owns: a fixed prompt set with a written pass definition, run on every model or prompt change so a closed hole cannot come back, then do a final pass confirming each fix holds, with 2 weeks of async support.
 
 ### Description step (confirmed live field names: "Project summary" = the main pitch, max 1,200 chars min 120, plus up to 5 FAQ)
 

@@ -39,7 +39,11 @@ Software Engineer | Full-Stack Dev + AI Red Teaming Specialist
 ```
 Full-Stack Developer | AI Red Teaming | Prompt Injection Testing
 ```
-Upwork lets you change the title any time at no cost — start with the Primary, check profile impressions/views after ~2 weeks (Upwork stats tab), and switch to an alternate if impressions are flat. Note the earlier v2 title ("AI Red Teaming | Prompt Injection, RAG & Agent Security Testing") is now retired — it read as a security specialist, not you.
+**Alternate C (2026-10-22, A/B test, 62 chars): surfaces the in-demand "LLM Evals" gap:**
+```
+Full-Stack Engineer | AI Red Teaming & LLM Evals (RAG, Agents)
+```
+Upwork lets you change the title any time at no cost — start with the Primary, check profile impressions/views after ~2 weeks (Upwork stats tab), and switch to an alternate if impressions are flat. Alternate C leads with the "llm evaluation" search term (over-indexed 3.0x in remote postings); test it for two weeks and keep it only if impressions hold. Note the earlier v2 title ("AI Red Teaming | Prompt Injection, RAG & Agent Security Testing") is now retired — it read as a security specialist, not you.
 
 ## 2. RATE
 ```
@@ -101,6 +105,8 @@ Each of these 20 was seen as an actual selected tag on a live freelancer profile
 - **Before you finalize:** type "Prompt Injection" and "AI Red Teaming" into the live Skills editor yourself — if Upwork's autocomplete surprises me and actually offers them, use them and bump "AI Consulting" or "Deep Learning" out of the 20. I'm flagging my check as thorough but not infallible; the editor's live autocomplete is the only 100% authoritative source.
 
 Current live skills to remove entirely: Shopify, WordPress, Website Redesign, Web Development, Sales Funnel, Graphic Design, Shopify Templates, Shopify SEO, Shopify Theme, Payment Gateway Integration, TikTok, TikTok Marketing, Virtual Assistance.
+
+**2026-10-22 in-demand additions (verify before pasting):** the live Skills editor is the only authoritative source for whether a tag exists. Type each candidate in; if Upwork's autocomplete offers it, add it and drop the lowest-intent generic slot to stay at 20 (drop "AI Consulting" first, then "Deep Learning"). Candidates in priority order, matching the two in-demand gigs in `2026-10-22_in-demand-gigs_additions.md`: **Model Evaluation** (or the label "LLM Evaluation"), **Model Context Protocol** (MCP), **Adversarial Testing**, **AI Safety**. If none verify, keep the current 20 unchanged; the keywords still land in the free-text Title and Overview.
 
 
 ## 5. CATEGORIES (swapped primary/secondary from v2 to match the new identity order)

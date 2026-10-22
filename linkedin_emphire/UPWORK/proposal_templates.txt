@@ -51,11 +51,22 @@ Given what you've described, the $600 Red Team Review (4-layer testing, prioriti
 TEMPLATE C — AI agent / tool-calling job posts
 ═══════════════════════════════════════════════════
 ```
-Agents that can call tools (send emails, hit APIs, move money, modify records) carry a risk class most teams haven't pressure-tested: forged tool calls, tampered arguments, or a user talking the agent into skipping a confirmation step. That's the layer I'd focus on for [their agent].
+Agents that can call tools (send emails, hit APIs, move money, modify records) carry a risk class most teams haven't pressure-tested: forged tool calls, tampered arguments, excessive permissions, insecure tool use, or a user talking the agent into skipping a confirmation step. For MCP-connected agents I also audit the tool descriptions and the multi-agent trust boundary, not just the single call. That's the layer I'd focus on for [their agent].
 
 My baseline: six injection attempts against my own chatbot, four succeeded, every fix became a permanent regression test. I'd run the same discipline against your tool-calling flow specifically.
 
 The $600 Red Team Review covers this (4-layer testing including agent/tool-call abuse, prioritized findings, debrief call, 1 week). If budget is tighter, the $150 Quick Scan is a focused first pass on just the highest-risk flow.
+```
+
+═══════════════════════════════════════════════════
+TEMPLATE D — "build our eval / test suite" job posts (added 2026-10-22)
+═══════════════════════════════════════════════════
+For posts that ask to build evaluation environments, deterministic
+verifiers, or a test harness that checks whether an LLM or agent
+behaves safely (the "Agentic RLE Authors" pattern). This is the
+highest-fit, lowest-competition gig in the field right now.
+```
+You don't need another demo that looks right; you need a check that can fail. I build and run the eval your team can rerun: a fixed prompt set with a written pass definition, scored by a judge (a board or a calibrated single), wired to run on every model or prompt change so a closed hole can't come back. I red team the feature while I build it, so the eval is trained on the failures you actually have, not the ones a generic suite assumes. I ran six injection attempts against my own chatbot, four worked, and every fix became a permanent test in the suite I ship. If you want the eval built and the red team pass that keeps it honest, the $600 Red Team Review is the right starting scope; the $1,500 Pre-Launch Hardening hands you the owned regression suite plus 2 weeks of support.
 ```
 
 ═══════════════════════════════════════════════════
@@ -66,6 +77,13 @@ SAVED SEARCHES (set these up once, check daily)
 "GPT" + "security" filter
 "LLM app" + "testing" filter
 "AI agent" + "security" filter
+
+In-demand term searches (added 2026-10-22, no filter):
+"LLM evaluation"
+"model evaluation"
+"AI red team"
+"AI agent security"
+"MCP security"
 
 ═══════════════════════════════════════════════════
 DAILY OPERATING RULE

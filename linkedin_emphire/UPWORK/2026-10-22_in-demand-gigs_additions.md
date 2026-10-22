@@ -1,8 +1,15 @@
 # In-demand gig additions to the Upwork empire
 Date: 2026-10-22
-Status: research done, additions drafted. Nothing live changes until you approve each item.
+Status: APPLIED to the paste-files 2026-10-22 (gigs 1 and 2 added). Nothing live has been changed (no Upwork access, no live edit).
 Companion to `RESEARCH_TRACKER.md` (findings 13-19). Respects the standing 2 listings x 3 tiers cap.
 Checked against `banned_words.txt` (no banned words) and the no-em-dash house rule.
+
+### Applied 2026-10-22, where each item landed
+- **Item 1 (Listing 1 copy):** `project_catalog.md` Project 1 search tags (llm evaluation, ai agent security), Step 2 (agentic/MCP checks), Step 5 (owned LLM/agent eval). The two char-limited fields (Project summary, Advanced tier description) are documented at the top of Project 1 for the live screen.
+- **Item 3 (saved searches):** `content_strategy.txt` Part 3 and `proposal_templates.txt` (5 new in-demand terms).
+- **Item 5 (proposal angle):** `proposal_templates.txt` Template D ("build the check" / eval-environment gig); Template C extended with agentic/MCP vocabulary.
+- **Item 2 (skills):** `profile_copy_READY.md` section 4 addendum (4 candidate tags to verify in the live editor; do not swap the 20 verified until each is confirmed in the autocomplete).
+- **Item 4 (title A/B):** `profile_copy_READY.md` section 1, Alternate C ("LLM Evals").
 
 ---
 
