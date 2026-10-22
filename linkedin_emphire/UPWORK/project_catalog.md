@@ -116,13 +116,19 @@ Raise Starter to $200-300 across sizes, Standard to $800-1,200, Advanced to $2,0
 # PROJECT 2 — AI chatbot / agent / full-stack development (one listing, 3 built-in tiers)
 Project 1 covers the "breaker" half of the identity (testing AI that already exists). Project 2 covers the "builder" half: building the chatbot, agent, or full-stack feature in the first place, using Nigeria LandSecure as the full-stack proof point. Same single-listing, 3-tier mechanic as Project 1.
 
+### IN-DEMAND GIGS ADDED 2026-10-22 (to the builder listing)
+The same two in-demand gigs from Listing 1 are folded in here as the build's verification layer, not a separate red-team service:
+- **LLM/agent evaluation (gig #1):** the Advanced tier hands off an owned LLM/agent eval (fixed prompt + tool-call set, written pass definition, re-runnable on any model or prompt change), in Step 4, the description, and the Advanced tier line.
+- **Agentic AI security / MCP (gig #2):** the Standard and Advanced tiers name the agentic/MCP hardening (tool-call abuse, excessive permissions, insecure tool use, MCP tool descriptions, multi-agent trust boundaries), in the tier lines, Step 3, and the description.
+Char-limited fields (paste at the live screen, confirm fit there): Standard tier description = 74/80; Advanced tier description = 77/80; Project summary now ~1,170/1,200. Live drift to fix: the $1 "14-day re-test guarantee" add-on reads like a placeholder, reprice it (e.g. +$150) and rename it to tie to the eval ("Re-run the red team pass + eval after a model or prompt change") or remove it.
+
 ### Overview step
 **Catalog title (exact, 63/75 chars incl. "You will get…"):**
 ```
 You will get an AI chatbot or agent built, tested, and hardened
 ```
 **Category:** Development & IT > AI & Machine Learning > Chatbots (confirmed live, this was the top suggestion for this exact title)
-**Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, ai integration (approved 2026-10-11, replaces llm integration)
+**Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, ai integration (approved 2026-10-11, replaces llm integration). 2026-10-22 in-demand test: at the live screen, try swapping the generic 'ai integration' for 'mcp' (or 'model context protocol') if it autocompletes in the Chatbots category, that captures the agentic/MCP gig; if it doesn't autocomplete, keep the 5 unchanged.
 **Project attributes (confirmed against live wizard, 2026-10-11):**
 - Chatbot Type (up to 3): Customer Service Chatbot, Lead Generation Chatbot, Productivity Chatbot (maps to Starter/support, a common commercial use case, and the Standard/Advanced agent-and-internal-tooling work; skip the narrow ones like Finance & Banking, Resume Screening, Transport, Trivia)
 - Development Technology (up to 3): ChatGPT, Python, Node.js (ChatGPT is the highest-search term buyers type, Python/Node.js reflect the actual stack; skip niche platforms not actually used, like Botkit or Acquire.io)
@@ -134,8 +140,8 @@ The Chatbots category pricing screen has extra bot-specific fields beyond Projec
 | Tier | Custom title (≤30 chars) | Custom description (≤80 chars) | Delivery days | Revisions | Conversation Steps | Messaging Platforms |
 |---|---|---|---|---|---|---|
 | Starter | `Chatbot MVP` | `A working prompt-based chatbot for FAQs or support, deployed and ready to use` | 5 | 1 | 10 | 1 |
-| Standard | `RAG / Agent Build` | `A chatbot or agent connected to your data via RAG, plus tool/API integrations` | 10 | 2 | 25 | 2 |
-| Advanced | `Full-Stack AI Feature` | `A complete full-stack AI feature, backend, frontend, database, red-team pass` | 21 | 3 | 50 | 3 |
+| Standard | `RAG / Agent Build` | `A RAG agent with real tool calls, hardened against tool-call and MCP abuse` | 10 | 2 | 25 | 2 |
+| Advanced | `Full-Stack AI Feature` | `Full-stack AI feature with a red-team pass and an owned eval you keep running` | 21 | 3 | 50 | 3 |
 
 **Service Tier Options (checkboxes per tier):**
 | Option | Starter | Standard | Advanced |
@@ -171,8 +177,8 @@ The Chatbots category pricing screen has extra bot-specific fields beyond Projec
 **Steps (add all 4, title then description):**
 1. **Scope the build** — I confirm what you need, which tier fits, and the exact features, integrations, and data sources involved before any code is written.
 2. **Build the feature** — I build the chatbot, agent, or full-stack feature against the agreed scope, with regular check-ins so there are no surprises at delivery.
-3. **Red team it (Advanced tier)** — Before handoff, I run the same red team testing I sell as a standalone service against your new feature and fix anything it finds.
-4. **Deploy and hand off** — I deploy the feature, hand off the code and documentation, and you own everything outright with no ongoing license.
+3. **Red team it (Advanced tier)** — Before handoff, I run the same red team testing I sell as a standalone service against your new feature, including tool-call abuse, excessive permissions, and MCP checks for agents, and fix anything it finds.
+4. **Deploy and hand off** — I deploy the feature, hand off the code, documentation, and (on Advanced) the owned eval with its written pass definition, and you own everything outright with no ongoing license.
 
 ### Description step
 **Project summary (939/1,200 chars):**
@@ -181,7 +187,7 @@ I build the AI features other developers are afraid to ship, and I'm also the en
 
 Pick the depth you need. A straightforward chatbot for FAQs or support, live in days. A chatbot or agent connected to your real data through RAG, plus the tool calls and integrations that make it actually useful, not just a demo. Or a complete full-stack AI feature, backend, frontend, and database, built the same way I built Nigeria LandSecure: with the real engineering problems (concurrency, permissions, data integrity) solved, not glossed over.
 
-Every build on the top tier ships with a red team pass before handoff, the same testing I sell as a standalone service, so you're not finding your chatbot's first prompt injection hole in production.
+Every build on the top tier ships with a red team pass before handoff, the same testing I sell as a standalone service, so you're not finding your chatbot's first prompt injection hole in production. For agents I test past the single call: tool-call abuse, excessive permissions, insecure tool use, and MCP tool descriptions. I also hand off an owned eval with a written pass definition, re-runnable on any model or prompt change.
 
 Clear scope, a fixed price, and code you own outright when the project closes.
 ```
@@ -194,7 +200,7 @@ Clear scope, a fixed price, and code you own outright when the project closes.
 3. **Q: Can you work with my existing codebase instead of starting from scratch?**
    A: Yes, share your repo and current stack during scoping and I'll confirm whether the integration fits the Starter, Standard, or Advanced tier.
 4. **Q: What makes this different from a typical chatbot developer?**
-   A: The Advanced tier includes a red team pass before handoff, the same testing I sell as a standalone service, so security isn't an afterthought bolted on later.
+   A: The Advanced tier includes a red team pass before handoff (for agents, including tool-call, permission, and MCP checks) plus an owned eval you keep, the same testing I sell as a standalone service, so security isn't an afterthought bolted on later.
 5. **Q: What do you need from me to start?**
    A: Access to any existing systems or data you want connected, your preferred AI provider if you have one, and a clear description of what the feature should do for your users.
 
