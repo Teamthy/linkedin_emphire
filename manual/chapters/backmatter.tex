@@ -10,6 +10,7 @@
 Term & Definition (one line) \\
 \midrule
 A2A injection & Injection that travels inside agent-to-agent messages. \\
+Activation patching & Interpretability method — swap an activation to test whether a neuron or circuit is causally responsible for a behavior. \\
 Adversarial example & Input crafted to make a model err while looking normal. \\
 Adversarial training & Training on adversarial inputs to resist them — a defense, not a guarantee. \\
 Agent & Model + planning + memory + tools + subagents acting over multiple turns. \\
@@ -23,10 +24,13 @@ AuthZ & Authorization — what they may do; agent may not rewrite it. \\
 Black box & Testing with no internals; learn by observing inputs/outputs. \\
 Breaklab & Your local lab (\texttt{Teamthy/My-Breaking-lab}) for safe logging of attacks. \\
 Canary & Small, fixed, scheduled check with logged fingerprint to catch drift. \\
+CFO line & The finding as business risk in one sentence — what can go wrong, how often, and what it costs (number + provision + exposure). \\
 Check & A rerunnable test that prints pass/fail with a denominator — the product. \\
 CIA triad & Confidentiality, Integrity, Availability — with model as first-class asset. \\
 Clean number & Number after smoothing away limitations — not the one you publish. \\
 Compliance rate & How often a model resisted a prohibited instruction, as a fraction (e.g., 2/5). \\
+Compositional trust & Trust in an agent equals the minimum trust across every capability it can invoke; one weak capability caps the whole system. \\
+Confused deputy & A trusted agent (the deputy) is co-opted by a less-trusted caller to reach a resource it should not — secure the boundary, not the agent's intentions. \\
 Contain-the-danger & Alignment framing: contain powerful AI so it does not harm. \\
 Continuous monitoring & Logging every prompt/tool/output + alerting on drift. \\
 Continuous testing & Canary + fingerprint + rerun on schedule — what makes a number stay honest. \\
@@ -37,6 +41,7 @@ Environment fingerprint & Model ID + serving + temperature + prompt version + se
 Ethical resistance & A model's ability to refuse a prohibited instruction and offer an alternative. \\
 Eval & Task + input + judge + metric + crisp pass definition, built to be rerun. \\
 Eval awareness & Model behaves differently when it detects it is being tested. \\
+Excessive agency & The model can do more than the task needs — more tools, data, or reach (OWASP LLM08). Narrow the scope of every grant. \\
 Exfiltration & Sending data to a recipient outside scope — must be blocked by allowlisting. \\
 Fail-closed & Deny by default; agent cannot override. \\
 Five boring failure modes & Prompt injection, retrieval poisoning, tool poisoning, multilingual refusals, missing check. \\
@@ -78,12 +83,14 @@ Pluralism / Legitimacy & Alignment framing: how AI is made/governed legitimately
 Practitioner & Tier P — how to do it with tooling, steps, failure modes. \\
 Prompt engineering & Control via prompt — a system, not a trick; version it. \\
 Prompt injection (direct) & User-written injected instruction. \\
+Propagation test & If a bad input enters at one point, how many outputs and tool calls does it reach — the test that traces how far one bad input travels. \\
 Probing / Features / Circuits & Interpretability methods — correlation, not yet behavioral guarantee. \\
 Provenance & Where a message/fact/doc came from, when, via whom. \\
 RAG & Retrieval-Augmented Generation — retriever + store + generator; store is untrusted input. \\
 RCE & Remote code execution — agent must be sandboxed. \\
 Reducer & Function combining multiple judge scores into one verdict. \\
 Red team & Scoped authorized test by motivated stranger returning a rerunnable check. \\
+Reproducibility contract & The pinned facts that let a stranger rerun a finding — model ID + date, seed, prompt hash, environment, $n$ — or the number is an opinion. \\
 Researcher & Tier R — method, measurement, open problems, contribution. \\
 Responsible disclosure & Owner first, time to fix, check shared, then publish method (not weapon). \\
 Risk management & How likely, how bad, what fix and its cost. \\
@@ -96,6 +103,7 @@ Seed & Randomness pin — must be logged. \\
 Serving & How model is hosted (local Ollama, API, proxied) — part of fingerprint. \\
 Shared ruler & Versioned rerunnable eval vendor, regulator, researcher all accept. \\
 Solver (Inspect) & How model is run (\texttt{system\_message}, \texttt{generate}, \texttt{react}…). \\
+Sparse autoencoder & Interpretability method that surfaces named ``features'' a model uses — correlation, not a shippable guarantee. \\
 Supply-chain pinning & Inventory + fingerprint that alerts on silent vendor/model swap. \\
 Task (Inspect) & The eval: dataset + solver + scorer. \\
 Temperature & Sampling parameter; higher = more variation. \\
@@ -312,6 +320,15 @@ Two-sided boundary & Ch. 5, Fig 5.3 &  \\
 \subsection*{Red teaming}
 \begin{itemize}
 \item OWASP LLM Top 10 — \texttt{owasp.org} (\texttt{LLM01}–\texttt{LLM10}, mapped in Ch. 3). OWASP Agentic Security.
+\end{itemize}
+
+\subsection*{Eval and red-team tooling (the landscape, Ch. 7)}
+\begin{itemize}
+\item Inspect (UK AISI) — \texttt{pip install inspect-ai}; task/solver/scorer, judge boards, sandboxed agents, the log.
+\item lm-evaluation-harness (EleutherAI) — scores models against public benchmark suites.
+\item HELM (Stanford) — holistic evaluation across many metrics at once.
+\item Garak (NVIDIA) — LLM vulnerability scanner; generates attack prompts at scale.
+\item DeepEval, promptfoo — app-level eval frameworks that grade a specific application.
 \end{itemize}
 
 \subsection*{Your stack}

@@ -48,6 +48,10 @@ An eval is a ruler. You decide what counts as pass, then you measure how often t
 \subsection{Clean number vs honest number — with an example}
 Clean: ``The model mostly resists.'' Honest: ``Resisted in 2/5 (40\%), t=0, seed 0..4, single scenario (emotion-inference for promotion, Art. 5(1)(f)), 2026-10-20. Limitation: one provision, one model, n=5.'' The honest number is smaller, less impressive, and true. Publish it. I would not report a number I could not reproduce.
 
+\begin{defbox}
+\textbf{Why the pass definition is the whole eval:} the number is only as valid as the line it is measured against. When the judge is a model, it does what your rubric tells it to do — so an ambiguous pass definition makes the number a measurement of the judge's reading of your ambiguity, not of the system. The pass definition is also where you choose what counts: refusing with an explanation, refusing silently, refusing half-way — you decide which of those is pass before you run. Move the line and the same transcripts give a different number. Decide the line first; that decision is the experiment.
+\end{defbox}
+
 \subsection{Why a shared reproducible ruler matters}
 A ruler others can run and question is infrastructure, not just a score. LARA is that: 10 scenarios, verbatim law, 3 judges, majority vote, 3000+ runs, 96.7\% judge-human agreement, 50+ hours of human review, public transcripts at \texttt{lara.aithos.org}. The contribution is not ``which model won'' — it is the ruler anyone can rerun.
 
@@ -115,6 +119,10 @@ Human review & 50+ hours, 96.7\% judge-human agreement \\
 \subsection{Reporting — and the canary}
 Report: rate + n + seed + epochs + temperature + prompt version + model ID + serving + date + limitation. The number with a denominator and its whole-environment fingerprint. Nothing less is publishable.
 
+\begin{defbox}
+\textbf{What $n$ is worth:} a rate is a binomial proportion, and its standard error is $\sqrt{p(1-p)/n}$. At $p=0.4$ and $n=5$, the SE is $\approx 0.22$, so 40\% carries a 95\% interval of roughly 0–80\% — you cannot tell it from a coin flip. At $n=50$ the SE is $\approx 0.07$, so 40\% narrows to about 27–53\%. Rule of thumb: for a stable rate, $n \ge 50$ per condition, and report the interval, not just the point. A 2/5 that reads ``40\%'' is really ``somewhere in 0–80\%.''
+\end{defbox}
+
 The canary (Ch. 3) lives here too: a small fixed eval you rerun on schedule to catch drift. Log the fingerprint. Compare to baseline. Pin the environment when it moves.
 
 \begin{center}
@@ -157,6 +165,10 @@ Limitation & one provision, one model, n=5 \\
 \textbf{Under-escalate (confident-wrong ships):} It complies with the prohibited ranking and delivers a fluent, cited-looking answer that is law-breaking. Worse — it ships.\\
 \textbf{Honest boundary:} Refuse the prohibited (with explanation + alternative), comply with the lawful, and report the rate for both. ``Prohibited: 2/5 resisted (40\%); lawful: 5/5 complied (100\%).'' That is the honest number, not the clean one. Both sides matter — this is the two-sided boundary.
 \end{examplebox}
+
+\begin{defbox}
+\textbf{The two-sided boundary, in metric terms:} over-escalate — refusing a lawful request — is the false positive; under-escalate — complying with a prohibited one — is the false negative. A single ``refusal rate'' hides both, so report them separately. And name the error you will not trade away: for a prohibited practice, the false negative is the one that ships — a fluent, confident answer that breaks the law.
+\end{defbox}
 
 \section{Hands-On Lab 5 — Build a LARA-lite Compliance Eval in Inspect}
 \begin{labbox}
@@ -250,7 +262,7 @@ Grade the 5 transcripts yourself. Compare to the judges. That agreement rate is 
 \textbf{\# Step 7 — Report it honestly:}
 ``Model X (ollama/llama3.1) resisted the Art. 5(1)(f) instruction in 2 of 5 runs (40\%), temperature 0, single local model, single scenario. Limitation: one provision, one model, n=5.'' That is an honest number.\\[4pt]
 \textbf{Deliverable:} \texttt{lara\_lite.py} that runs + a log (screenshot or exported) + a one-paragraph honest report with n, method, seed, and limitation.\\[2pt]
-\textbf{Expected output:} \texttt{accuracy: 0.4 $\pm$ ...} for 2/5, with 5 transcripts visible in \texttt{inspect view}.\\[2pt]
+\textbf{Expected output:} \texttt{accuracy: 0.4} for 2/5, with 5 transcripts visible in \texttt{inspect view}.\\[2pt]
 \textbf{How you know you passed:} A stranger takes your file, runs \texttt{inspect eval lara\_lite.py --model <their model> --epochs 5}, opens \texttt{inspect view}, and either confirms your rate or finds the exact transcript where you were wrong. That is research-grade in miniature.
 \end{labbox}
 

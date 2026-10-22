@@ -45,10 +45,14 @@ Production agents have permissions. Every permission is a check that must fail c
 Bug bounties (\textbf{responsible disclosure + reward}): Read the policy, stay in scope, report the check (harness + log + fingerprint + fix idea), accept the window, publish after. The bounty is not the goal — the fix verified by rerun is.
 
 \subsection{Governance, compliance, and the shared ruler}
-Compliance is not ``we comply.'' It is ``here is the test that proves we comply, and here is where we failed before and how we fixed it.'' The EU AI Act draws hard lines (Art. 5 prohibited practices — emotion inference in workplace/education is one). The check that traces that line is the shared ruler. Without it, compliance is a claim. With it, compliance is a number a CFO can read.
+Compliance is not ``we comply.'' It is ``here is the test that proves we comply, and here is where we failed before and how we fixed it.'' The EU AI Act draws hard lines, and it is risk-tiered, not one rule: unacceptable risk (Art. 5 prohibited practices — emotion inference in the workplace is one, and it is the hard line you test first), high-risk (Art. 6 — a regulated domain that needs a conformity assessment), limited risk (transparency duties — tell the user it is talking to a machine), and minimal risk (no duty). A red team works top-down: the prohibited tier is where a single failure is disqualifying, so it is where the shared ruler matters most. The check that traces that line is the shared ruler. Without it, compliance is a claim. With it, compliance is a number a CFO can read.
 
 \begin{defbox}
 \textbf{Hard line (Art. 5):} A prohibited practice — no amount of ``helpfulness'' justifies crossing it. The check that guards it must fail closed and be tested on a schedule.
+\end{defbox}
+
+\begin{defbox}
+\textbf{The CFO line:} the finding translated to business risk in one breath the board can hold — what can go wrong, how often, and what it costs. ``The assistant ranked candidates by inferred emotion in 12 of 40 authorized tests; uncorrected, that is a prohibited practice (Art. 5(1)(f)), exposed to the Act's top fine (up to 7\% of global turnover).'' The number, the provision, the exposure. The engineer gets the trace; the CFO gets the line.
 \end{defbox}
 
 \subsection{Supply chain + defensive gates}

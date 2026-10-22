@@ -51,7 +51,8 @@ One bad input, how far does it travel — that is the propagation test you will 
 \end{itemize}
 
 \begin{defbox}
-\textbf{Direct vs indirect prompt injection:} Direct = attacker writes the prompt. Indirect = attacker plants text in data the system will retrieve or receive. Fix indirect by marking untrusted boundaries, not by wishing data were safe.
+\textbf{Direct vs indirect prompt injection:} Direct = attacker writes the prompt. Indirect = attacker plants text in data the system will retrieve or receive. Fix indirect by marking untrusted boundaries, not by wishing data were safe.\\
+\textbf{Why it is hard:} to the model, instruction and data are the same thing — tokens — so it has no reliable line between ``what I was told to do'' and ``what I was shown.'' That is why prompting it to be careful only partly helps. The real fix is structural: mark the boundary, and enforce the constraint outside the model where a filter or allowlist cannot be talked past.
 \end{defbox}
 
 \subsection{Data layer: theft, poisoning, extraction, inversion, manipulation}
@@ -74,6 +75,7 @@ Insecure deserialization and RCE live where LLMs meet code: plugins, custom tool
 \begin{itemize}
 \item \textbf{API protection:} Rate limiting, auth, audit logging. Without it, extraction is trivial.
 \item \textbf{Authentication / Authorization:} Who called the model, and what were they allowed to do? Every tool call needs an authz check the model cannot rewrite.
+\item \textbf{Excessive agency:} The agent holds more tools or privileges than the task needs. Least privilege for agents: each tool does the least it can, scoped to the task, deny-by-default. A model that can both read files and send email is a model that can be talked into emailing the files.
 \end{itemize}
 
 \subsection{Defenses — so you can fix, not just break}
@@ -82,6 +84,9 @@ Insecure deserialization and RCE live where LLMs meet code: plugins, custom tool
 \item \textbf{Robust model design:} Input validation, instruction hierarchy, tool allowlisting.
 \item \textbf{Continuous monitoring:} Log every prompt, every tool call, every output. Alert on drift. The canary from Ch. 3 lives here.
 \end{itemize}
+
+\subsection{The industry vocabulary: OWASP's LLM Top 10}
+The field already has a shared list. OWASP's LLM Top 10 names the recurring threats: Prompt Injection, Sensitive Information Disclosure, Supply Chain Vulnerability, Data and Model Poisoning, Improper Output Handling, Excessive Agency, System Prompt Leakage, Vector and Embedding Weaknesses, Misinformation, and Unbounded Consumption. Your four layers map onto it: model vulnerabilities are Prompt Injection and System Prompt Leakage; the data layer is Poisoning and Vector/Embedding Weaknesses; code is Improper Output Handling and Excessive Agency; infrastructure is Supply Chain and Unbounded Consumption. Learn the list so a finding you write already speaks the language a reviewer will recognize — and so you do not report a novel threat that has a name you did not use.
 
 \section{Worked Examples}
 \tierP

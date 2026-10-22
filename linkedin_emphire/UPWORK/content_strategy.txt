@@ -55,6 +55,9 @@ DAILY:
 - Check the 5 saved searches: "chatbot"+security,
   "RAG"+testing, "GPT"+security, "LLM app"+testing,
   "AI agent"+security
+- Plus 5 in-demand term searches (added 2026-10-22):
+  "LLM evaluation", "model evaluation", "AI red team",
+  "AI agent security", "MCP security"
 
 PER COMPLETED JOB:
 - Ask for a review within 24 hours of delivery

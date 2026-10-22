@@ -36,6 +36,12 @@ You will be able to:
 
 \textbf{LLMs:} Trained on vast text to predict the next token. That is it. From next-token prediction comes surprising capability — translation, summarization, reasoning-like behavior — because language contains reasoning traces. But the mechanism remains: given context, predict the most likely next token, then the next, until done.
 
+\subsection{Tokens and the context window}
+Text does not enter the model as words. A tokenizer splits it into subword units called tokens — a common English word is one token, a rare or non-English one several. You are billed, rate-limited, and truncated in tokens, so a ``500-word prompt'' is really a token count, and two prompts that look the same length can cost very differently. The context window is how many tokens the model can attend to at once — prompt plus its own output. It is a hard budget: ask for more than it holds and the beginning is dropped, which is both a capability limit and an attack surface. Long-context injection hides an instruction deep in retrieved text, past the part you read. So log the window you are working in, and treat ``it fit on one page'' as a question, not a fact.
+
+\subsection{From base model to chat model}
+Pretraining teaches prediction; it does not teach obedience. A base model, given a prompt, tends to complete it — finish the sentence, ramble — rather than answer it. To get a chat model you post-train it: supervised fine-tuning (SFT) shows it thousands of (instruction, good answer) pairs, and RLHF then steers it toward answers humans prefer and away from harmful ones. The consequence for you is practical: an instruct/chat model follows instructions and can be prompted to refuse, while a base model mostly just completes. Same weights family, different behavior — so ``the model'' is not one thing, and your threat model must name which stage you are testing.
+
 \subsection{Prompt engineering — and why non-determinism matters}
 A prompt is control, not a trick. It is the instruction, context, and constraint you give the model. The same model with two prompts is two different systems. Version your prompts like code.
 
@@ -188,7 +194,8 @@ Local first. Free. Private. No data leaves your machine.
 
 \section{Expert Extension}
 \rbadge
-\textbf{Open problem: What ``same model'' means.} A model ID like \texttt{gpt-4o-2024-08-06} can hide serving differences (batching, quantization, routing). Two calls with the same ID can give different numbers. LARA's answer: log the whole fingerprint and treat serving as part of the model. Your next step: run the same 20 prompts against the same advertised ID via two serving paths (API vs proxied) with n=20 each and compare compliance deltas. The method is the contribution — naming ``same model'' precisely enough to measure drift.
+\textbf{Open problem: What ``same model'' means.} A model ID like \texttt{gpt-4o-2024-08-06} can hide serving differences (batching, quantization, routing). Two calls with the same ID can give different numbers. LARA's answer: log the whole fingerprint and treat serving as part of the model. Your next step: run the same 20 prompts against the same advertised ID via two serving paths (API vs proxied) with n=20 each and compare compliance deltas. The method is the contribution — naming ``same model'' precisely enough to measure drift.\\
+\textbf{On the sampling:} temperature rescales the token logits before the softmax; at $0$ you take the argmax (greedy) and are deterministic up to floating-point and serving, at $0.7$ you sample from a flatter distribution, and top-p (nucleus) restricts each step to the smallest set of tokens whose probabilities sum to $p$. Log temperature, top-p, and seed together, or a ``different number'' is unexplained.
 
 \begin{checkbox}
 The check is the product. The discipline is the harness, the seed, the denominator — before the clever prompt.

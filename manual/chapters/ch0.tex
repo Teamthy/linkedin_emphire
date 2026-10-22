@@ -34,6 +34,8 @@ Short sentences. The failure is not theoretical. A hiring assistant ranks people
 
 The cost of not finding it is not paid by the builder. It is paid by the user who was misranked, the employee whose chat was read, the regulator who must act after harm. Break before users do. That is the job.
 
+Reproducibility is the standard because the target is not software. A neural model is stochastic: the same input can return a different output run to run, depending on temperature and seed. So one refusal proves nothing, and one leak proves nothing. The only honest unit is a rate — how often, under which setup, logged and rerunnable. That is why the deliverable is the harness, not the screenshot: the check is the smallest thing that separates signal from noise, lets a skeptic falsify you, and lets the owner verify the fix.
+
 \begin{defbox}
 \textbf{Red team:} A scoped, authorized test by a motivated stranger to find the failure a builder missed — and to hand back a rerunnable check, not just a story.
 \end{defbox}
@@ -165,6 +167,9 @@ Use this every time, before any test:
 \item \textbf{The check} — A rerunnable test that prints pass/fail with a denominator — the product, not the opinion.
 \item \textbf{Reproducibility} — The ability for a stranger to rerun your steps and get your number (or find the exact line where you were wrong).
 \item \textbf{Responsible disclosure} — Tell the owner first, give time to fix, share the check, then publish the method.
+\item \textbf{Temperature} — How much randomness the model adds. $0$ is near-deterministic; higher is more varied. It changes your number, so you log it.
+\item \textbf{Seed} — The value that pins the randomness so the same input gives the same output. Log it or a rerun may not match yours.
+\item \textbf{Denominator ($n$)} — How many times you ran the check. A number without it is an opinion: ``3 of 10 leaked,'' not ``it sometimes leaks.''
 \end{itemize}
 
 \section{Self-Test}
@@ -181,7 +186,8 @@ Use this every time, before any test:
 \section{Expert Extension}
 \rbadge
 \textbf{Open problem: The check as infrastructure.} When does a single-team check become a shared ruler that a regulator, a vendor, and a researcher all accept? LARA points at the shape: verbatim law as rubric, multi-judge board, 96.7\% human agreement, 50+ hours of expert review, 3000+ runs, public transcripts. That cost is the price of trust.\\
-\textbf{Method you would bring:} Define the minimal viable shared ruler for one provision (Art. 5(1)(f)): one scenario family, three judges, n=50, published agreement rate, versioned rubric, and a canary that runs weekly. Ship it. Invite reproduction. The contribution is not the model ranking — it is the ruler anyone can question. That is how you become part of writing the standard.
+\textbf{Method you would bring:} Define the minimal viable shared ruler for one provision (Art. 5(1)(f)): one scenario family, three judges, n=50, published agreement rate, versioned rubric, and a canary that runs weekly. Ship it. Invite reproduction. The contribution is not the model ranking — it is the ruler anyone can question. That is how you become part of writing the standard.\\
+\textbf{On the number:} $n$ is what separates a claim from a vibe. A 15\% leak rate at $n=20$ carries a 95\% confidence interval of roughly 0–31\%; at $n=200$ it tightens to about 10–20\%. Report the interval, not just the point, and never let a small $n$ carry a big claim. Anchor the method to what the field already accepts — OWASP's LLM Top 10 for the threat taxonomy, NIST's AI RMF for the risk framing — so your check plugs into a standard instead of competing with one.
 
 \begin{checkbox}
 The check is the product. A break that cannot be rerun is a story. A check that can be rerun is infrastructure.

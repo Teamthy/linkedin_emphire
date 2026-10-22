@@ -1,6 +1,12 @@
 # PROJECT CATALOG — one listing, 3 built-in pricing tiers (SEO-checked against Upwork's own docs)
 The catalog is the client ladder from `STRATEGY/2026-10-02_90-day-10k-client-positioning.md` productized for search. Same three-tier logic, Upwork-priced to win the first reviews before raising toward the LinkedIn-side $1.5k-$3.5k engagement pricing.
 
+## IN-DEMAND GIGS ADDED 2026-10-22 (from RESEARCH_TRACKER findings 13-19)
+Two in-demand gigs are now named in this listing so buyers who search for them find it:
+- **LLM/agent evaluation + eval-environment authoring** (the "model evaluation" term over-indexes 3.0x in remote postings): the Advanced tier now builds an owned LLM/agent eval, not just a regression suite, and the "llm evaluation" search tag is added.
+- **Agentic AI security / MCP** (the fastest-growing red-team slice): Step 2 now names the agentic and MCP checks (excessive permissions, insecure tool use, tool descriptions, multi-agent trust boundary), and the "ai agent security" search tag is added.
+Char-limited fields to update at the live screen (confirm fit there, not here): the Project summary's "a regression suite" becomes "an owned LLM/agent eval and regression suite"; the Advanced tier custom description becomes "Full red team test, code fixes, an owned LLM/agent eval, 2 wks support" (70/80 chars).
+
 ## HOW THIS ACTUALLY WORKS ON UPWORK (confirmed live, 2026-10-11)
 Upwork's Project Catalog does not create three separate listings for a three-tier ladder. One project supports **1 or 3 pricing tiers (Starter / Standard / Advanced) inside a single listing**, each with its own custom title (30 chars), custom description (80 chars), delivery days, and its own price per buyer company size (Small / Medium / Large). There's also an optional add-ons section. This is the structure to use, it gives one SEO'd title and URL instead of splitting search juice across three listings, and it puts the upsell path (Starter to Advanced) in front of every buyer automatically.
 
@@ -10,7 +16,7 @@ Upwork's Project Catalog does not create three separate listings for a three-tie
 You will get an AI red team test and prompt injection audit
 ```
 **Category:** Development & IT > Cybersecurity & Data Protection > Other Cybersecurity & Data Protection (confirmed live suggestion; check "Not seeing the right fit?" for "Assessments & Penetration Testing" first, use it instead if it appears)
-**Search tags (5, lowercase, same pattern confirmed working live):** ai security, prompt injection, red teaming, penetration testing, llm security
+**Search tags (5, lowercase, same pattern confirmed working live):** ai security, prompt injection, red teaming, llm evaluation, ai agent security (2026-10-22: swapped out penetration testing and llm security for the two in-demand terms; confirm each autocompletes before saving)
 **Project attributes:**
 - Cybersecurity Expertise (up to 3): Risk Assessment, Audit, AI Governance
 - Technology Type (pick a few, not all 13): Web Application, SaaS, Database
@@ -56,10 +62,10 @@ Upwork's own gallery guidelines explicitly list "text-heavy images" as something
 
 **Steps (your delivery process, add all 5, title then optional description):**
 1. **Confirm scope and access** — I review your answers, confirm the right tier for your system, and confirm access or credentials before any testing starts.
-2. **Run the red team testing** — I run the testing scoped to your tier: a 15-point scan, the full 4-layer test, or the full test plus fix scoping, each attempt logged exactly as run.
+2. **Run the red team testing** — I run the testing scoped to your tier: a 15-point scan, the full 4-layer test, or the full test plus fix scoping, each attempt logged exactly as run. For agents I test beyond the single call: forged tool calls, excessive permissions, insecure tool use, MCP tool descriptions, and the multi-agent trust boundary.
 3. **Deliver the findings report** — You get a report in the same four-part format every time: exact repro, which layer failed, the fix, and how it was verified.
 4. **Debrief call for Standard and Advanced** — We get on a short call to walk through the findings together and answer your team's questions live.
-5. **Fix, verify, and support on Advanced** — I scope and help implement code-level fixes, build a regression suite your team owns, then do a final pass confirming each fix holds, with 2 weeks of async support.
+5. **Fix, verify, and support on Advanced** — I scope and help implement code-level fixes, and build an LLM/agent eval plus regression suite your team owns: a fixed prompt set with a written pass definition, run on every model or prompt change so a closed hole cannot come back, then do a final pass confirming each fix holds, with 2 weeks of async support.
 
 ### Description step (confirmed live field names: "Project summary" = the main pitch, max 1,200 chars min 120, plus up to 5 FAQ)
 
@@ -110,13 +116,19 @@ Raise Starter to $200-300 across sizes, Standard to $800-1,200, Advanced to $2,0
 # PROJECT 2 — AI chatbot / agent / full-stack development (one listing, 3 built-in tiers)
 Project 1 covers the "breaker" half of the identity (testing AI that already exists). Project 2 covers the "builder" half: building the chatbot, agent, or full-stack feature in the first place, using Nigeria LandSecure as the full-stack proof point. Same single-listing, 3-tier mechanic as Project 1.
 
+### IN-DEMAND GIGS ADDED 2026-10-22 (to the builder listing)
+The same two in-demand gigs from Listing 1 are folded in here as the build's verification layer, not a separate red-team service:
+- **LLM/agent evaluation (gig #1):** the Advanced tier hands off an owned LLM/agent eval (fixed prompt + tool-call set, written pass definition, re-runnable on any model or prompt change), in Step 4, the description, and the Advanced tier line.
+- **Agentic AI security / MCP (gig #2):** the Standard and Advanced tiers name the agentic/MCP hardening (tool-call abuse, excessive permissions, insecure tool use, MCP tool descriptions, multi-agent trust boundaries), in the tier lines, Step 3, and the description.
+Char-limited fields (paste at the live screen, confirm fit there): Standard tier description = 74/80; Advanced tier description = 77/80; Project summary now ~1,170/1,200. Live drift to fix: the $1 "14-day re-test guarantee" add-on reads like a placeholder, reprice it (e.g. +$150) and rename it to tie to the eval ("Re-run the red team pass + eval after a model or prompt change") or remove it.
+
 ### Overview step
 **Catalog title (exact, 63/75 chars incl. "You will get…"):**
 ```
 You will get an AI chatbot or agent built, tested, and hardened
 ```
 **Category:** Development & IT > AI & Machine Learning > Chatbots (confirmed live, this was the top suggestion for this exact title)
-**Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, ai integration (approved 2026-10-11, replaces llm integration)
+**Search tags (5, lowercase):** ai chatbot development, ai agent development, rag development, full stack development, ai integration (approved 2026-10-11, replaces llm integration). 2026-10-22 in-demand test: at the live screen, try swapping the generic 'ai integration' for 'mcp' (or 'model context protocol') if it autocompletes in the Chatbots category, that captures the agentic/MCP gig; if it doesn't autocomplete, keep the 5 unchanged.
 **Project attributes (confirmed against live wizard, 2026-10-11):**
 - Chatbot Type (up to 3): Customer Service Chatbot, Lead Generation Chatbot, Productivity Chatbot (maps to Starter/support, a common commercial use case, and the Standard/Advanced agent-and-internal-tooling work; skip the narrow ones like Finance & Banking, Resume Screening, Transport, Trivia)
 - Development Technology (up to 3): ChatGPT, Python, Node.js (ChatGPT is the highest-search term buyers type, Python/Node.js reflect the actual stack; skip niche platforms not actually used, like Botkit or Acquire.io)
@@ -128,8 +140,8 @@ The Chatbots category pricing screen has extra bot-specific fields beyond Projec
 | Tier | Custom title (≤30 chars) | Custom description (≤80 chars) | Delivery days | Revisions | Conversation Steps | Messaging Platforms |
 |---|---|---|---|---|---|---|
 | Starter | `Chatbot MVP` | `A working prompt-based chatbot for FAQs or support, deployed and ready to use` | 5 | 1 | 10 | 1 |
-| Standard | `RAG / Agent Build` | `A chatbot or agent connected to your data via RAG, plus tool/API integrations` | 10 | 2 | 25 | 2 |
-| Advanced | `Full-Stack AI Feature` | `A complete full-stack AI feature, backend, frontend, database, red-team pass` | 21 | 3 | 50 | 3 |
+| Standard | `RAG / Agent Build` | `A RAG agent with real tool calls, hardened against tool-call and MCP abuse` | 10 | 2 | 25 | 2 |
+| Advanced | `Full-Stack AI Feature` | `Full-stack AI feature with a red-team pass and an owned eval you keep running` | 21 | 3 | 50 | 3 |
 
 **Service Tier Options (checkboxes per tier):**
 | Option | Starter | Standard | Advanced |
@@ -165,8 +177,8 @@ The Chatbots category pricing screen has extra bot-specific fields beyond Projec
 **Steps (add all 4, title then description):**
 1. **Scope the build** — I confirm what you need, which tier fits, and the exact features, integrations, and data sources involved before any code is written.
 2. **Build the feature** — I build the chatbot, agent, or full-stack feature against the agreed scope, with regular check-ins so there are no surprises at delivery.
-3. **Red team it (Advanced tier)** — Before handoff, I run the same red team testing I sell as a standalone service against your new feature and fix anything it finds.
-4. **Deploy and hand off** — I deploy the feature, hand off the code and documentation, and you own everything outright with no ongoing license.
+3. **Red team it (Advanced tier)** — Before handoff, I run the same red team testing I sell as a standalone service against your new feature, including tool-call abuse, excessive permissions, and MCP checks for agents, and fix anything it finds.
+4. **Deploy and hand off** — I deploy the feature, hand off the code, documentation, and (on Advanced) the owned eval with its written pass definition, and you own everything outright with no ongoing license.
 
 ### Description step
 **Project summary (939/1,200 chars):**
@@ -175,7 +187,7 @@ I build the AI features other developers are afraid to ship, and I'm also the en
 
 Pick the depth you need. A straightforward chatbot for FAQs or support, live in days. A chatbot or agent connected to your real data through RAG, plus the tool calls and integrations that make it actually useful, not just a demo. Or a complete full-stack AI feature, backend, frontend, and database, built the same way I built Nigeria LandSecure: with the real engineering problems (concurrency, permissions, data integrity) solved, not glossed over.
 
-Every build on the top tier ships with a red team pass before handoff, the same testing I sell as a standalone service, so you're not finding your chatbot's first prompt injection hole in production.
+Every build on the top tier ships with a red team pass before handoff, the same testing I sell as a standalone service, so you're not finding your chatbot's first prompt injection hole in production. For agents I test past the single call: tool-call abuse, excessive permissions, insecure tool use, and MCP tool descriptions. I also hand off an owned eval with a written pass definition, re-runnable on any model or prompt change.
 
 Clear scope, a fixed price, and code you own outright when the project closes.
 ```
@@ -188,7 +200,7 @@ Clear scope, a fixed price, and code you own outright when the project closes.
 3. **Q: Can you work with my existing codebase instead of starting from scratch?**
    A: Yes, share your repo and current stack during scoping and I'll confirm whether the integration fits the Starter, Standard, or Advanced tier.
 4. **Q: What makes this different from a typical chatbot developer?**
-   A: The Advanced tier includes a red team pass before handoff, the same testing I sell as a standalone service, so security isn't an afterthought bolted on later.
+   A: The Advanced tier includes a red team pass before handoff (for agents, including tool-call, permission, and MCP checks) plus an owned eval you keep, the same testing I sell as a standalone service, so security isn't an afterthought bolted on later.
 5. **Q: What do you need from me to start?**
    A: Access to any existing systems or data you want connected, your preferred AI provider if you have one, and a clear description of what the feature should do for your users.
 

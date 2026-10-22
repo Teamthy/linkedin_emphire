@@ -47,6 +47,8 @@ Models change. Prompts change. RAG stores change. Serving changes. The same chec
 
 A canary is a small, fixed set of prompts you rerun on a schedule (daily, on deploy, on model update) and compare to baseline. The whole-environment fingerprint makes the comparison honest: model ID, serving, temperature, prompt version, seed, date. If the canary fails, you know drift happened. If you did not log the fingerprint, you cannot tell whether the model drifted, the prompt drifted, or your harness did.
 
+Run the scheduled canary at temperature 0 so a change is drift, not sampling noise. You can add a small $n$ at higher temperature later to catch setting-specific behavior, but the baseline line stays deterministic — otherwise you will be chasing variance you cannot attribute.
+
 \begin{defbox}
 \textbf{Canary:} A small, fixed, scheduled check with a logged fingerprint. Its job is to catch drift — not to be clever.
 \end{defbox}
@@ -64,6 +66,13 @@ These break systems more often than novel attacks. Test them first:
 \item \textbf{Multilingual refusals} — the model correctly refuses in English but complies in a low-resource language.
 \item \textbf{The missing check} — no test for the prohibited behavior, so no one knows it fails until a user finds it.
 \end{enumerate}
+
+\subsection{The propagation test: one bad input, how far does it travel}
+\begin{defbox}
+\textbf{Propagation test:} Plant one bad input at a single untrusted boundary (a poisoned doc, a malicious tool description, one injected prompt). Then trace it forward through every hop — retrieval, planner, each tool call, memory — and log which outputs it reached. The finding is the maximum distance and the set of reachable outputs: ``the poisoned doc reached the answer and the email tool (two hops), not the payment tool.'' A check that only says ``it leaked,'' with no trace, has not been measured.
+\end{defbox}
+
+Coverage is the product of the two axes you cannot skip: every untrusted-input boundary (the user prompt, each retrievable source, each tool description, each other agent) times every output channel (the answer, each tool call, memory, the logs). A surface is tested when every boundary-to-channel pair has at least one check with a pass definition and an $n$. That grid — not a list of clever prompts — is what ``done'' means.
 
 \subsection{OWASP LLM Top 10 + Agentic, mapped to components}
 Map, don't memorize:
