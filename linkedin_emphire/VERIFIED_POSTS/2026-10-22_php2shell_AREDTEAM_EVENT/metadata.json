@@ -1,28 +1,34 @@
 {
   "post_number": 13,
   "date": "2026-10-22",
-  "posted_time_WAT": "not captured (owner published)",
+  "reposted_date": "2026-10-23",
+  "posted_time_WAT": "not captured",
   "slug": "php2shell",
   "pillar": "AI Red Teaming",
   "style": "Current-events explainer / standalone, companion diagram",
-  "word_count": 263,
-  "char_count": 1484,
-  "text_status": "draft-of-record from the 2026-10-22 delivery; owner's live version may differ slightly. Replace post.md with verbatim live text when pasted.",
-  "structure": "current-events hook, two CVEs in the runtime, pre-app-code exploit path, patch-only-in-runtime versions, AI-assisted discovery, honest hedges (attempts vs confirmed), check thesis, relatives closer",
+  "word_count": 254,
+  "char_count": 1489,
+  "text_status": "verbatim from the owner's published post, captured from the activity feed 2026-10-23 (the owner's rewritten re-post). The 2026-10-22 agent draft-of-record is preserved as draft_2026-10-22.md.",
+  "version_history": [
+    "2026-10-22: first post from the agent draft (see draft_2026-10-22.md)",
+    "2026-10-23: owner re-posted a rewritten version (post.md is this version)"
+  ],
+  "structure": "emergency-patch hook, pre-app-code line, patch-only-in-runtime versions incl. no 8.1-or-older release, AI-assisted discovery, honest hedges, patch-now window line, red team lesson + relatives closer",
   "media": "php2shell_post.png — layered diagram: INCOMING REQUEST -> PHP RUNTIME [EXPLOIT LIVES HERE] -> YOUR APP CODE [TOO LATE TO DEFEND]; 3168x1980, dark navy + cyan brand palette, no face, no fabricated detail",
   "media_source": "post.svg + render.mjs in this folder (re-render: node render.mjs; requires npm i @resvg/resvg-js and explicit DejaVu fontFiles, fc-list is empty in the sandbox)",
-  "fact_verification": "verified 2026-10-22 via web research: CVE-2026-109618 (OOM corruption) + CVE-2026-109619 (stale global state), both CVSS v4.0 9.2, pre-auth RCE reached while PHP parses the request before app code; fixed 2026-10-21 in 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12, no official release for 8.1 and below; discovered by Calif with GPT-5.6 Sol assistance, independently by Wiz; PHP on ~70% of the web; Amazon attempt logged ~Oct 17 (4 days pre-patch); Cloudflare counting millions of attempts; exploit tooling public (SOCRadar/watchTowr); no confirmed breach; CISA not KEV-listed as of 10-23; Sansec: public exploit fails on stock install",
-  "banned_words_check": "PASS (0 hits against banned_words.txt list)",
-  "em_dash_count": 0,
-  "contraction_count": 0,
+  "fact_verification": "verified 2026-10-22 via web research: CVE-2026-109618 (OOM corruption) + CVE-2026-109619 (stale global state), both CVSS v4.0 9.2, pre-auth RCE reached while PHP parses the request before app code; fixed 2026-10-21 in 8.2.35 / 8.3.36 / 8.4.27 / 8.5.12, no official release for 8.1 and below; discovered with AI assistance, independently by Wiz; PHP on ~70% of the web; Amazon attempt logged ~Oct 17 pre-patch; Cloudflare counting millions of attempts; exploit tooling public; no confirmed breach; CISA not KEV-listed as of 10-23; public exploit fails on stock install. Live version keeps the hedging.",
+  "banned_words_check": "PASS (0 em dashes, 0 contractions)",
   "voice_check": [
     "plain connectives, no guru posture",
     "one on-brand point: the check has to reach the layer you do not own",
-    "honest hedging kept (attempts vs confirmed, stock install fails) — no breach claims",
-    "memorable line: the one check that has never failed",
-    "flat thesis + 'relatives' closer, no question ending"
+    "honest hedging kept (attempts vs confirmed, default install fails) — no breach claims",
+    "flat thesis + relatives closer, no question ending"
   ],
   "hashtags": ["#PHP2Shell", "#cybersecurity", "#AIsecurity", "#redteaming"],
-  "early_metrics": { "impressions": "~95 as of 2026-10-23 (from owner's feed paste)" },
-  "status": "LIVE (published 2026-10-22)"
+  "early_metrics": {
+    "impressions": 28,
+    "as_of": "2026-10-23, ~5h after the 10-23 re-post",
+    "correction": "the ~95 imp figure in the original archive entry referred to the separate 2026-10-21 'check that has never failed' post (101 imp at capture); the first PHP2Shell post's count was not captured before the re-post"
+  },
+  "status": "LIVE (re-posted 2026-10-23, owner's rewritten version)"
 }

@@ -1,0 +1,23 @@
+{
+  "post_number": 14,
+  "date": "2026-10-23",
+  "posted_time_WAT": "not captured (live at capture, ~21m elapsed)",
+  "slug": "aithos-answer-key",
+  "pillar": "AI Red Teaming",
+  "secondary_pillars": ["AI Safety / Alignment"],
+  "style": "Research engagement / thesis (answer key, floor not target, competence not conformity)",
+  "word_count": 269,
+  "char_count": 1513,
+  "text_status": "verbatim from the owner's published post, captured from the activity feed 2026-10-23 (the 2026-10-23 main draft with the Aithos Research Foundation company mention)",
+  "structure": "answer-key hook, hidden-value-system line, Aithos concrete work (nine models / three deployments / none consistent; LARA twelve models, 7-54 percent compliance), floor-not-target pivot, red teaming pass-definition failure, competence-not-conformity tricolon, private-lab close",
+  "engagement_target": "Aithos Research Foundation (company page, tagged in post). Deliberately no affiliation or application claim in the text; the owner's Aithos review window is early November.",
+  "fact_verification": "verified against aithos.org material fetched earlier in this session: Paris Journal on AI & Digital Ethics No. 2 (Sep 2026) papers — 'Moral Competence Before Moral Content' (four structural prerequisites, nine frontier models, three simulated deployments, none consistently coherent) and 'Measuring AI Accountability Through Argumentation Analysis' (quality of moral reasoning under critical questioning without assuming a single correct answer); LARA (three AI judges score model outputs against verbatim legal text, twelve models, 3000+ runs, compliance 7-54 percent, judge-human agreement 96.7 percent).",
+  "banned_words_check": "PASS (0 em dashes, 0 contractions)",
+  "hashtags": [],
+  "hashtags_note": "published without hashtags",
+  "early_metrics": { "impressions": 31, "reactions": 1, "as_of": "2026-10-23 (~21m)" },
+  "engagements": [
+    "RedLens AI (red teaming company account, 22 followers) replied substantively within minutes: evidence bundle (prompt, tool calls, model version, evidence together) + auditor angle; 'Reproducibility is what turns a red team result into a control.' Reply drafted 2026-10-23 (the bundle becomes a control only with the written pass) — owner to post."
+  ],
+  "status": "LIVE (published 2026-10-23)"
+}

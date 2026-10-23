@@ -1,0 +1,21 @@
+{
+  "post_number": "13b",
+  "date": "2026-10-21",
+  "posted_time_WAT": "not captured (recovered from activity feed 2026-10-23)",
+  "slug": "check-never-failed",
+  "pillar": "AI Red Teaming",
+  "style": "Standalone thesis (the silent check / green dashboard)",
+  "word_count": 259,
+  "char_count": 1305,
+  "text_status": "verbatim from the owner's published post, captured from the activity feed 2026-10-23",
+  "structure": "quiet-check hook, green-dashboard trap (three causes that all read green from the dashboard), known-bad-case method (throw a case that must fail at the check), demo vs check, flat proof line",
+  "memorable_lines": [
+    "A security check that has never failed has not caught anything. It has only been quiet.",
+    "the green I was looking at was not safety, it was silence",
+    "A demo is a check that was built to pass."
+  ],
+  "banned_words_check": "PASS (0 em dashes, 0 contractions)",
+  "hashtags": ["#AISecurity", "#AIRedTeam", "#AIEvals", "#BreakingAI"],
+  "early_metrics": { "impressions": 101, "reactions": 1, "comments": 1, "as_of": "2026-10-23" },
+  "status": "LIVE (published 2026-10-21; recovered into the archive 2026-10-23)"
+}
