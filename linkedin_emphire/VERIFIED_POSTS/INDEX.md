@@ -4,7 +4,7 @@
 | # | Date | Slug | Pillar | Style | Status |
 |---|---|---|---|---|---|
 | 1 | 2026-08-19 | first-post (debut) | Career Transitions | Personal Story | ✅ Posted |
-| 2 | 2026-08-21 | bug-not-in-code | Software Engineering (SE) | Observational Insights | ✅ Posted (686 imp — top performer) |
+| 2 | 2026-08-21 | bug-not-in-code | Software Engineering (SE) | Observational Insights | ✅ Posted (688 imp at 10-23, 90-day top-3) |
 | 3 | 2026-08-24 | messy-middle | Career Transitions | Opinion Piece | ✅ Posted |
 | — | 2026-09-16 | boring-ratio | AI Ethics | Personal Story (Bolaji-short) | ✅ Posted (status unclear, repo shows DRAFT but feed shows published) |
 | 4 | 2026-09-18 | friday-cutoff | SE | Observational (Bolaji-short) | ✅ Posted — 12pm WAT |
@@ -18,5 +18,8 @@
 | 10 | 2026-10-07 | pineapple-confession | AI Red Teaming | Story teaser (476 chars) | ✅ VERIFIED — post Wed Oct 7, test log card attached |
 | 11 | 2026-10-11 | messy-backstage | Personal / Reflection | Micro — Sunday week recap (540 chars) | ❌ SUPERSEDED — don't post, reveals new client/job, not ready to share |
 | 11 | 2026-10-11 | checking-not-breakthrough | Personal / Reflection | Micro — Sunday week recap (513 chars) | 🟡 READY — scheduled 10am WAT, awaiting posting confirmation |
-| 12 | 2026-10-12 | pre-publish-boring-failures | AI Red Teaming | Pre-show teaser for Article 2 (~1450 chars) | ✅ POSTED. 159 imp at T+31m, first comment at T+23m. PS line shipped with an em dash (flagged) |
-| 13 | 2026-10-22 | php2shell | AI Red Teaming | Current-events explainer, standalone + diagram (263w / 1,484 chars) | ✅ LIVE (published 2026-10-22, owner). ~95 imp as of 10-23. post.md = 10-22 draft-of-record; swap verbatim live text when pasted. Facts verified pre-publish; hedging kept (no confirmed breach, not KEV) |
+| 12 | 2026-10-12 | pre-publish-boring-failures | AI Red Teaming | Pre-show teaser for Article 2 (~1450 chars) | ✅ POSTED. 159 imp at T+31m, first comment at T+23m. 753 imp at 10-23 (90-day top-2). PS line shipped with an em dash (flagged, re-confirmed in analytics export) |
+| 13 | 2026-10-22 | php2shell | AI Red Teaming | Current-events explainer, standalone + diagram (254w live version) | ✅ LIVE — re-posted 2026-10-23 with the owner's rewritten version (verbatim in post.md; 10-22 draft preserved as draft_2026-10-22.md). 28 imp ~5h after repost. Facts verified; hedging kept (no confirmed breach, not KEV) |
+| 13b | 2026-10-21 | check-never-failed | AI Red Teaming | Standalone thesis, silent check (259w) | ✅ LIVE — 101 imp as of 10-23. Verbatim recovered from activity feed 10-23 |
+| 14 | 2026-10-23 | aithos-answer-key | AI Red Teaming | Research engagement / thesis (269w) | ✅ LIVE — 31 imp at ~21m. Aithos Research Foundation tagged, no affiliation claim. RedLens AI company account replied; owner reply LIVE 10-23 |
+| 15 | ≈2026-10-08 (est.) | group-log-own-product | AI Red Teaming | Group post (6773411) / proof-of-work story promoting article-1 public log (125w) | ✅ LIVE — 1,053 imp at 10-23, TOP performer 90-day window. Verbatim recovered from analytics export 10-23; date estimated (window 10-06 to 10-12), owner to confirm |

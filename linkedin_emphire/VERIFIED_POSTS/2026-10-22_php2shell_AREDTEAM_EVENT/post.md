@@ -1,21 +1,11 @@
-PHP just gave the whole industry a lesson.
+PHP just shipped an emergency patch for two 9.2 remote code execution bugs it calls PHP2Shell (CVE-2026-109618 and CVE-2026-109619). The line that should unsettle anyone who runs PHP: the flaw is reached while PHP is parsing your request, before a line of your application code runs.
 
-Two critical, unauthenticated remote code execution bugs in the PHP core. CVE-2026-109618 and CVE-2026-109619, both CVSS 9.2. Not in a plugin, not in a framework. In the runtime. PHP runs on about 70 percent of the web.
+That is the hard part. Everything you spend your security budget on in your own layer, input validation, the framework, the auth, is not where this lives. You cannot patch it in your code. The only fix is the runtime: 8.2.35, 8.3.36, 8.4.27, 8.5.12. On 8.1 or older, there is no official release at all.
 
-The exploit is reached while PHP parses the request. Before any application code runs. Your input validation, your framework, your WAF rules: none of them get a turn. The layer that is supposed to defend you had not even started yet.
+Worth pausing on: a researcher used an AI model to help find it, and Wiz found it independently, in a language on roughly 70% of the web. The layer we least control is where the interesting bugs are, and a model helped find one there.
 
-So you cannot patch this in your code. The fix is in the runtime: 8.2.35, 8.3.36, 8.4.27, 8.5.12. And there is no official release for 8.1 and below. If you are on 8.1, the answer is a backport and a conversation with whoever owns the server.
+Keep it honest, though. Attempt signals are already out: Amazon logged one days before the patch, Cloudflare is counting millions of attempts, exploit tooling is public. But there is no confirmed breach, CISA has not listed it as known-exploited, and the public exploits reportedly do not work on a default install. Patch now, because the window between attempted and confirmed is the dangerous one.
 
-The discovery story is the other lesson. Calif found it with GPT-5.6 Sol. Wiz found it independently. Agents that read code this deep are now how these bugs get found.
-
-And the honest part:
-
-Amazon logged an attempt about four days before the patch. Cloudflare is counting millions of attempts. Exploit tooling is public. There is no confirmed breach, and CISA has not KEV-listed either CVE. On a stock install the public exploit does not work out of the box.
-
-That is what the check is for. The one check that has never failed is the one that runs before your users get to find it.
-
-Your check has to reach the layer you do not own.
-
-Break it before your users do, or their relatives do.
+The red team lesson: your check has to reach the layer you do not own. Know what runtime your stack runs, verify the patch held, do it before the scanners do. Break it before your users, or their relatives, do.
 
 #PHP2Shell #cybersecurity #AIsecurity #redteaming

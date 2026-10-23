@@ -129,6 +129,8 @@ PROMPT:
 For each post verify:
 □ Sounds like Timothy wrote it
 □ Zero banned words
+□ ZERO em dashes, ZERO contractions (search the text;
+  hard gate, see voice_dna.txt Part 10)
 □ Has strong hook
 □ Provides real value
 □ Natural CTA
@@ -189,18 +191,36 @@ OUTPUT → Newsletter topic for Wednesday drafting
 
 STEP 1.7: Engagement Target Planning (15 min)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-INPUT: CRM data + goals
+INPUT: comment_surfaces.md + CRM data + goals
 AGENT: Strategist
 
 PROMPT:
 "Plan this week's engagement targets:
 
 Provide:
-1. 10 creators to engage with daily (from CRM)
-2. 5 people to DM this week (warm leads)
-3. 3 dormant connections to revive
-4. 1 collaboration opportunity to pursue
-5. Connection request targets (by category)"
+1. Comment surface rotation for the week from
+   ENGAGEMENT/comment_surfaces.md (tier 1 for reach,
+   tier 2 for home turf, tier 3 as spice)
+2. 5-8 comment actions per day budget (hard cap,
+   spaced across the day, never a burst)
+3. Follow-up reply watchlist (open threads that need
+   a second move)
+4. 5 people to DM this week (warm leads)
+5. 1 collaboration opportunity to pursue
+6. Connection request targets (by category)
+7. Group decision: is this week's strongest
+   standalone a candidate for group 6773411
+   (top performer of the 90-day window is a post in
+   that group; add a group-specific question close)"
+
+PACING RULE (from 2026-10-23 analytics):
+- 5-8 comment actions per day, spaced, not batched.
+  A 14-16 action burst in one hour risks throttling
+  comment distribution.
+- A comment action = a comment OR a follow-up reply.
+  Replies are first-class: threads compound (the
+  Paolo Perrone thread: main comment + 2 replies,
+  the reply alone hit 3,722 impressions).
 
 OUTPUT → Engagement plan for daily execution
 
@@ -231,21 +251,33 @@ MORNING (7:00 AM — 20 min):
 
 STEP 2.1: Engagement Round
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-INPUT: Engagement plan from Sunday
+INPUT: comment_surfaces.md + reply watchlist
 AGENT: Engagement Specialist
 
 PROMPT:
-"Generate comments for these posts from my target 
-creators today:
+"Pick today's 5-8 comment actions from the surface
+list (fresh posts only: same day or yesterday).
 
-[PASTE 5-8 POSTS FROM TARGET CREATORS]
+[PASTE 5-8 FRESH POSTS FROM SURFACES]
 
 For each, provide:
-- 2 comment options (expertise + story angle)
+- 2 comment options (expertise + story angle),
+  one idea per breath, 90-140 words for a main
+  comment, ~60 for a reply
 - Recommended option with reason
-- Tone notes"
+- One memorable line called out
+- Tone notes
 
-HUMAN ACTION: Review, edit, post manually
+Also draft any follow-up replies due from the
+watchlist (hostile reply protocol: do not defend,
+serve the verifiable claim, invite the re-run)."
+
+GATE BEFORE POSTING (every single comment):
+□ 0 em dashes, 0 contractions (search the text)
+□ No two of today's comments reuse the same closer
+□ Sounds like the owner, not a template
+
+HUMAN ACTION: Review, edit, post manually, spaced
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -438,13 +470,13 @@ TIME: 1st of each month, 2 hours
 
 STEP 6.1: Data Compilation
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-INPUT: All monthly data from analytics tracker
+INPUT: All monthly data from LINKEDIN/performance_tracker.md
 AGENT: Strategist
 
 PROMPT:
 "Compile and analyze this month's full performance:
 
-LINKEDIN: [PASTE MONTHLY METRICS]
+LINKEDIN: [PASTE FROM performance_tracker.md]
 SUBSTACK: [PASTE NEWSLETTER METRICS]
 X: [PASTE TWITTER METRICS]
 OPPORTUNITIES: [PASTE OPPORTUNITY DATA]
@@ -457,7 +489,16 @@ Provide:
 5. Audience growth quality
 6. Revenue/opportunity pipeline
 7. Strategic recommendations for next month
-8. Goal trajectory check (90-day and 900-day)"
+8. Goal trajectory check (90-day and 900-day)
+9. Channel split: comment impressions vs feed post
+   impressions (2026-10-23 baseline: comments
+   massively out-pull posts; 60,500 vs 1,053)
+10. Profile view rate (views / members reached,
+    baseline ~7%) and what is under-converting
+11. Saves and reposts (baseline 0; the
+    shareability test)
+12. Out-of-network impression share (baseline 66%)
+13. Follower pace vs the 1,000 Premium threshold
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -546,6 +587,7 @@ SUNDAY (3 hours — Planning Day):
 8:15 PM → Visual design briefs
 8:30 PM → Newsletter topic selection
 8:45 PM → Engagement target planning
+8:50 PM → Group cross-post decision (group 6773411)
 9:00 PM → Schedule everything in Buffer
 
 MONDAY-FRIDAY (45 min/day — Execution):
