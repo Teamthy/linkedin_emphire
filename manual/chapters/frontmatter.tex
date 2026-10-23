@@ -112,6 +112,30 @@ Epochs / n & 5 \\
 \end{tabular}
 \end{center}
 
+\subsection*{The Aithos lens: what this edition assumes}
+This edition is aligned with the research of Aithos, a non-profit AI alignment, autonomy and pluralism foundation. Three commitments from its published statements shape the text:
+\begin{itemize}
+\item \textbf{Values are plural.} There is no single universal value set to optimise toward. An evaluation can check whether a system meets a \emph{floor} of competence and legal compliance; it should not claim to have picked the correct value profile. See Ch. 6.
+\item \textbf{Evaluations should be public.} Tools, transcripts and judge reasoning should be downloadable, so that a skeptic can rerun and question the result. See Ch. 5 and Ch. 10.
+\item \textbf{Humans stay in the loop.} Automated judges are checked against human review, and disagreement is treated as data, not noise.
+\end{itemize}
+
+\subsection*{Evidence labels used in this book}
+Every number and factual claim that depends on an outside source carries one of these labels. Check the label before you quote a figure.
+\begin{center}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Label & Meaning \\
+\midrule
+\textbf{[V]} & Verified against the primary or official source, on the date checked (\textbf{2026-10-23}). \\
+\textbf{[S]} & Reported by a source (Aithos publications, the curriculum, or a secondary article). Not independently verified in this edition. \\
+\textbf{[R]} & Recommendation or engineering interpretation by the author. Not a finding. \\
+\textbf{[X]} & Illustrative example, simulated scenario or hypothetical number. Not a measured result. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+Where a figure from the original curriculum could not be confirmed, the text says so. The full list of checks is in \texttt{manual/AITHOS-ALIGNMENT-REPORT.md}.
+
 \subsection*{A note on safe practice and ethics}
 What you may break: systems you own, local models, authorized targets, published sandboxes. What you must not: production data, real users, unauthorized infrastructure. The line between red team and attack is consent and scope. Ch. 0 §0.4 gives the full boundary. When in doubt, use Ollama locally.
 

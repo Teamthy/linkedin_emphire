@@ -24,7 +24,7 @@ You will be able to:
 
 \subsection{Two framings}
 \textbf{Contain-the-danger:} AI will be powerful; contain it so it does not harm — misuse, loss of control, concentrated power. Frame: boundaries, refusals, hard lines (Art. 5 prohibitions).\\
-\textbf{Pluralism and procedural legitimacy:} AI will shape society; ensure it is made and governed legitimately — who decides what is allowed, how values are included, what process makes the answer trustworthy.
+\textbf{Pluralism and procedural legitimacy:} AI will shape society; ensure it is made and governed legitimately — who decides what is allowed, how values are included, what process makes the answer trustworthy. Aithos's research adds a third framing, systemic alignment, which Section 6.2 develops.
 
 Both matter. ``How it's made matters'' — an answer is not just about what it says but what ledger produced it (which law, whose values, what check). And ``fair'' is not one number: a promotion ranking that weights ambition heavily fits one workplace culture and disadvantages another, and the same weights applied in a different society encode a different value. The procedural question — who set those weights, who was consulted, can they be changed — is part of the safety answer, not a footnote.
 
@@ -48,6 +48,53 @@ Three circles, one center:
 \item \textbf{Alignment:} Steer the system (how it's made, what process makes it trustworthy). Best when the question is about ongoing governance.
 \end{itemize}
 Center: a shared reproducible ruler. All three need it. Without a ruler, red team is anecdote, eval is cargo cult, alignment is sermon.
+
+\section{The Aithos Lens: Floors, Not Targets}
+\tierR
+\textbf{The simple version.} People disagree about what matters. Cultures, communities and individuals weigh values differently, and that disagreement is not a reasoning failure. An evaluator therefore cannot grade a system against one ``correct'' answer without quietly choosing whose answer counts. What can be checked is more modest and more defensible: whether the system is competent enough to be trusted with a decision, whether it keeps to hard legal lines, and whether its reasoning holds together under pressure.
+
+\subsection{Aithos's framing, in its own terms}
+Aithos describes itself as a non-profit foundation working on AI alignment, autonomy and pluralism. Its research statements [S: aithos.org research page] make four claims that shape this chapter:
+\begin{itemize}
+\item \textbf{Alignment is a state to maintain, not a goal to finish.} ``Systemic alignment'' means technical and social systems mediate between interests while keeping human autonomy and diversity intact. It is not convergence on one value set.
+\item \textbf{Floors, not targets.} Evaluations should define adequacy for moral decision-making, ``rather than optimizable targets to maximize indefinitely.'' Whatever you maximise, a system will learn to game.
+\item \textbf{Open tools, stakeholder criteria.} Where needs diverge, stakeholders should be able to define their own criteria and test against them.
+\item \textbf{Who sets the targets is part of the safety question.} Targeting any particular value profile embeds partisan interests. So does choosing which behaviours count as failure.
+\end{itemize}
+
+\subsection{Target versus floor}
+\begin{center}
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Question & Target-based (optimise) & Floor-based (Aithos framing) \\
+\midrule
+What it asks & Is the system as good as possible on value X? & Is the system competent enough to pass checks that stakeholders can accept? \\
+Pass line & A score to maximise & A threshold that must not be crossed \\
+Fails when & It scores below a rival & It breaks a hard line or shows incoherent judgment \\
+Pluralism & Embeds one value profile & Leaves the profile open; stakeholders add criteria \\
+Gaming risk & High: the target is what gets optimised & Lower, not zero: a floor can be met by surface behaviour [R] \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Two published methods from the Aithos research group}
+\begin{itemize}
+\item \textbf{Argumentation analysis} [V: abstract, \emph{The Paris Journal on AI \& Digital Ethics}, No. 2, September 2026, pp. 148--167, DOI 10.65701/kl7do0n9re]. Asks whether a model can defend its verdicts under critical questioning, using Walton's argumentation schemes and Govier's criteria for argument cogency. As reported in the abstract: nine frontier models, 200 high-ambiguity MoralChoice items, 6,778 judge-scored cells, and 89.6\% inter-judge agreement on the binary failure judgment. Failure concentrates on grounds and sufficiency and correlates with epistemic hedging rather than argument length. The justification often uses a different argument scheme from the reasoning that produced the verdict (at least 20\% of dilemmas per model).
+\item \textbf{Moral competence before moral content} [V: abstract, pp. 168--187, DOI 10.65701/1zidk02aqx]. Proposes four structural conditions for a coherent policy, namely verdict stability, monotonicity, decisiveness and Pareto viability, that can be tested from behaviour alone, without a reference moral standard. As reported in the abstract: nine frontier models, a factorial design of five paraphrases, five escalation levels and three dominance conditions, across three simulated deployments. Surface-form perturbation alone shifted verdict rates by up to 99 percentage points at a single escalation level. The authors conclude that LLM-based agents are not currently the kind of object to which alignment can meaningfully apply.
+\end{itemize}
+
+\begin{defbox}
+\textbf{What this edition checked.} The two abstracts were read on 2026-10-23. The full definitions of the four conditions, the statistics, and the experimental design were not checked against the full papers. Read them before reusing any condition, and do not quote the abstract numbers as if they were your own results.
+\end{defbox}
+
+\subsection{Worked example (illustrative)}
+\begin{examplebox}
+\textbf{[X] A promotion-ranking assistant.} The same request arrives in five forms: a direct request, a paraphrase, a version with an added legitimate performance factor, a version framed as a ``safety review,'' and a version where the manager escalates after a refusal. A floor check asks three questions. Does the verdict stay the same when only the wording changes? Does a legitimate added factor move the output in the right direction and no further? Does the system commit to a verdict when the rule is clear? Separately, the report names which stakeholder criteria were applied, and who chose them. The mapping of these questions to the formal conditions is [R]; use the Libert et al. definitions.
+\end{examplebox}
+
+\begin{pitfallbox}
+\textbf{The lens has its own pitfalls.} Passing a floor is not alignment. A floor says the system is not obviously incompetent, not that it acts in your stakeholders' interests. Choosing which floor to test is itself a value choice, so write it into the report. A system that refuses everything also passes some floors; pair floor checks with a usefulness measure.
+\end{pitfallbox}
 
 \section{The Mechanics: Method, Disclosure, Ethics}
 \tierP

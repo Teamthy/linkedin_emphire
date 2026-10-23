@@ -308,12 +308,15 @@ Two-sided boundary & Ch. 5, Fig 5.3 &  \\
 \subsection*{Frameworks}
 \begin{itemize}
 \item Inspect — \texttt{inspect.aisi.org.uk} (tutorial, tasks, solvers, scorers, sandboxing, agents, log viewer). Source: \texttt{github.com/UKGovernmentBEIS/inspect\_ai} (MIT). Install: \texttt{pip install inspect-ai}.
-\item LARA (Legal Assessment for Real-world Agents) — \texttt{aithos.org/article/Aithos-LARA/} ; leaderboard \texttt{lara.aithos.org} ; ``Introducing Aithos LARA'' Substack. Method: 10 scenarios, verbatim law, 3 judges (GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro Preview), majority vote, 3000+ runs, 96.7\% human agreement.
+\item LARA (Legal Assessment for Real-world Agents) — \texttt{aithos.org/article/Aithos-LARA/} (article dated 27 May 2026) [V]; leaderboard and scenario log at \texttt{lara.aithos.org} (checked 2026-10-23) [V]; ``Introducing Aithos LARA'' (13 May 2026) [S]. Method: 10 provisions with one scenario each, verbatim law, three judges from three labs, majority vote, 3000+ runs across 12 models, and human overrides shown beside the judge's verdict. The 96.7\% judge--human agreement figure is [S] and unverified here.
 \end{itemize}
 
 \subsection*{Law}
 \begin{itemize}
-\item EU AI Act — EUR-Lex; Article 5 (prohibited practices), Art. 5(1)(f) emotion inference in workplace/education.
+\item EU AI Act — Regulation (EU) 2024/1689, \texttt{eur-lex.europa.eu/eli/reg/2024/1689/oj/eng} [V: page reachable 2026-10-23]. Article 5 (prohibited practices); Art. 5(1)(f) text is quoted in Lab 5 and should be confirmed on EUR-Lex before publication. Article 5 explainer: \texttt{artificialintelligenceact.eu/article/5/} [V, secondary]; EU AI Act Service Desk: \texttt{ai-act-service-desk.ec.europa.eu/en/ai-act/article-5} [V].
+\item Commission Guidelines on prohibited AI practices, C(2025) 5052 final (29 July 2025), as cited by secondary commentary [S]. Read the Commission's own copy before relying on the scope points in Ch. 5.
+\item GDPR — Regulation (EU) 2016/679, \texttt{eur-lex.europa.eu/eli/reg/2016/679/oj} [link from the Aithos page; S]. Transparency, data minimisation, purpose limitation, lawful processing.
+\item Universal Declaration of Human Rights — \texttt{un.org/en/about-us/universal-declaration-of-human-rights} [link from the Aithos page; S]. Aithos's separate Human Rights scenario set is not covered in detail here.
 \item GDPR — transparency, data minimisation, purpose limitation, lawful processing (indicators).
 \end{itemize}
 
@@ -340,7 +343,16 @@ Two-sided boundary & Ch. 5, Fig 5.3 &  \\
 
 \subsection*{Judge reliability}
 \begin{itemize}
-\item LLM-as-judge guidance: position, verbosity, self-preferential, sycophancy bias — LARA's 96.7\% as reference point.
+\item Four bias types to test for: position, verbosity, self-preferential, sycophancy. The primary guidance document is not yet named in this edition; add it once checked.
+\item Henselmans et al. (2026): 89.6\% inter-judge agreement on a binary failure judgment [V: abstract]. This is agreement between judges, not between judges and humans.
+\item LARA: judge--human agreement 96.7\% [S, unverified].
+\end{itemize}
+
+\subsection*{Aithos research and publications}
+\begin{itemize}
+\item Henselmans, Prinzhorn, Libert (2026). \emph{Measuring AI Accountability Through Argumentation Analysis: Can Model Reasoning Withstand Scrutiny?} The Paris Journal on AI \& Digital Ethics, No. 2, pp. 148--167. DOI \texttt{10.65701/kl7do0n9re} [V: abstract].
+\item Libert, Prinzhorn, Henselmans (2026). \emph{Moral Competence Before Moral Content: Why LLM Agents Lack the Prerequisites for Coherent Alignment.} The Paris Journal on AI \& Digital Ethics, No. 2, pp. 168--187. DOI \texttt{10.65701/1zidk02aqx} [V: abstract].
+\item Aithos research and mission pages — \texttt{aithos.org} [S: text supplied with this request; check the live pages before citing].
 \end{itemize}
 
 \subsection*{How the image roadmap folds in}

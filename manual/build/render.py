@@ -57,6 +57,10 @@ COLMAP = {"defblue": DBLUE, "labgreen": LGREEN, "pitamber": PAMB, "accent": RED,
 BGMAP  = {"white": WHITE, "lightblue": LBLUE, "lightgreen": LGREENBG, "lightamber": LAMBBG,
           "lightred": LRED, "lightslate": LSLATE, "lightbg": LGRAY, "checkblack!5": INKBG}
 
+def plain_title(title):
+    import html as _h
+    return _h.unescape(re.sub(r"<[^>]+>", "", inline_markup(title))).strip()
+
 def hexstr(c):
     return "#" + c.hexval()[-6:]
 
@@ -567,12 +571,17 @@ def render_titlepage(content):
     return flows
 
 class Marker(Flowable):
-    def __init__(self, kind, idx, title):
-        Flowable.__init__(self); self.kind = kind; self.idx = idx; self.title = title
+    def __init__(self, kind, idx, title, level=0):
+        Flowable.__init__(self); self.kind = kind; self.idx = idx; self.title = title; self.level = level
         self.width = 0; self.height = 0
     def wrap(self, aw, ah): return (0, 0)
     def draw(self):
         state_ref.setdefault("_entries", []).append((self.kind, self.idx, self.title, self.canv.getPageNumber()))
+        # PDF bookmarks (outline) and named destinations for clickable TOC entries
+        key = "%s%d" % (self.kind, self.idx)
+        self.canv.bookmarkPage(key)
+        if self.kind == "toc":
+            self.canv.addOutlineEntry(plain_title(self.title), key, level=self.level)
 
 class HeaderSet(Flowable):
     def __init__(self, value):
@@ -595,14 +604,15 @@ class TOC(Flowable):
         self._t.drawOn(self.canv, 0, 0)
     def _build(self):
         data = []
-        for r in self.rows:
+        for ri, r in enumerate(self.rows):
             if self.kind == "toc":
                 level, title, page = r
+                link = '<a href="#toc%d" color="#111827">%%s</a>' % ri
                 if level == 0:
-                    data.append([Paragraph('<font name="DVSans-Bold">%s</font>' % inline_markup(title), ST["tocC"]),
+                    data.append([Paragraph(link % ('<font name="DVSans-Bold">%s</font>' % inline_markup(title)), ST["tocC"]),
                                  Paragraph(str(page), ST["tocC"])])
                 else:
-                    data.append([Paragraph(inline_markup(title), ST["tocS"]), Paragraph(str(page), ST["tocS"])])
+                    data.append([Paragraph(link % inline_markup(title), ST["tocS"]), Paragraph(str(page), ST["tocS"])])
             else:
                 title, page = r
                 data.append([Paragraph(inline_markup(title), ST["tocF"]), Paragraph(str(page), ST["tocF"])])
@@ -700,7 +710,7 @@ def render(outpath, toc_rows, lof_rows):
                         chnum = num; label = "Chapter %s" % num; kicker = "CHAPTER %s" % chnum
                     story.append(PageBreak())
                     story.append(HeaderSet(label))
-                    story.append(Marker("toc", ti, title)); ti += 1
+                    story.append(Marker("toc", ti, title, level=0)); ti += 1
                     story.append(Spacer(1, 200))
                     story.append(Paragraph(kicker, ST["chapkick"]))
                     story.append(HRFlowable(width=54, thickness=2.4, color=RED, spaceAfter=10, hAlign="LEFT"))
@@ -710,7 +720,7 @@ def render(outpath, toc_rows, lof_rows):
                     story.append(HeaderSet(b[1]))
                 elif kind == "section":
                     title = b[1]
-                    story.append(Marker("toc", ti, title)); ti += 1
+                    story.append(Marker("toc", ti, title, level=1)); ti += 1
                     story.append(Paragraph(inline_markup(title), ST["h1"]))
                     story.append(HRFlowable(width=CW, thickness=0.6, color=LINE, spaceAfter=6))
                 elif kind == "subsection":
