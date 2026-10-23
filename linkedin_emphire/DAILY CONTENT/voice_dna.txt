@@ -275,16 +275,29 @@ BISHOP OYEDEPO: Faith-inspired leadership, wisdom
 ║      PART 10: VOICE CHECK QUESTIONS            ║
 ╚═══════════════════════════════════════════════╝
 
-Before publishing any post, ask:
+Before publishing any post or comment, run the hard
+gate first (data: an em dash and a contraction have
+both already shipped live and cost voice
+consistency, so the gate is now mechanical):
 
+HARD GATE (fail any = do not publish, search the
+text for each):
+□ 0 em dashes in the text
+□ 0 contractions (it's, don't, isn't, I'd, we're,
+  you're, that's, ...)
+□ Straight quotes only, no curly quotes
+□ No dense single block: one idea per breath
+
+VOICE QUESTIONS (all must be yes):
 □ Does this sound like Timothy wrote it?
 □ Would I actually say these words out loud?
-□ Are contractions used naturally?
-□ Is there at least one em dash or rhetorical question?
 □ Does it include vulnerability or honesty?
 □ Does cultural voice feel authentic, not forced?
 □ Does this add value to my audience?
 □ Would my mentees recognize this as me?
+□ If it is a comment: does the ending differ from
+  the last three comments (not every comment is a
+  question, and one line must be memorable)?
 
 If any answer is "no" — revise before publishing.
 

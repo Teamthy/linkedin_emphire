@@ -47,6 +47,12 @@ UTC by LinkedIn. Deltas as shown by LinkedIn.
 - Follower pace: ~+21%/week (~+120/week). At that pace the 1,000-follower Premium threshold lands mid-to-late November, just after the Aithos review window (Nov 2-8).
 - Verbatim recoveries from this export: group-log-own-product added as INDEX row 15 (first clean verbatim); row 2 and row 12 confirmed at 688 and 753; row 12's live PS line em dash re-confirmed (known issue, flagged at archive time).
 
+### Tweaks applied from this snapshot (2026-10-23)
+- ENGAGEMENT/comment_surfaces.md (NEW): tiered surface list + 5-8 actions/day protocol, follow-back audit, group 6773411 decision slot
+- ENGAGEMENT/empire_pipeline.txt: Step 1.7 + Step 2.1 re-pointed at the surface list with pacing cap and replies as first-class actions; Step 1.4 gains the 0 em dash / 0 contraction hard gate; Stage 6.1 gains KPIs 9-13 (channel split, profile view rate, saves/reposts, out-of-network share, Premium threshold pace); Sunday rhythm gains the 8:50 group cross-post decision
+- DAILY CONTENT/content_strategy.txt: PART 4 data update (channel hierarchy, works / does-not, pacing, KPIs, next experiment)
+- voice_dna.txt (both copies, kept identical): PART 10 rewritten as a mechanical hard gate (0 em dashes, 0 contractions, straight quotes, one idea per breath) + comment-ending variety question. This removes the old checklist lines that instructed the opposite ("at least one em dash", "contractions used naturally")
+
 ### Next snapshots
 - Weekly: 2026-10-30
 - 90-day: 2026-11-23
