@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="990" viewBox="0 0 1584 990">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0C1424"/>
+      <stop offset="1" stop-color="#070C16"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="0.22" cy="0.30" r="0.55">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="heroGlow" cx="0.5" cy="0.5" r="0.62">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1584" height="990" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1584" height="990" fill="url(#bgGlow)"/>
+
+  <!-- top tag + cves -->
+  <text x="90" y="112" font-family="DejaVu Sans" font-size="34" font-weight="700" fill="#22D3EE" letter-spacing="5">PHP2SHELL</text>
+  <text x="90" y="156" font-family="DejaVu Sans Mono" font-size="26" fill="#64748B">CVE-2026-109618  ·  CVE-2026-109619  ·  CVSS 9.2</text>
+
+  <!-- nameplate top-right -->
+  <text x="1494" y="108" text-anchor="end" font-family="DejaVu Sans" font-size="30" font-weight="700" fill="#F8FAFC">Olusanya Timothy</text>
+  <text x="1494" y="145" text-anchor="end" font-family="DejaVu Sans" font-size="23" fill="#64748B">AI red teaming</text>
+
+  <!-- headline -->
+  <text x="90" y="256" font-family="DejaVu Sans" font-size="100" font-weight="700" fill="#F8FAFC">It hits the runtime</text>
+  <text x="90" y="366" font-family="DejaVu Sans" font-size="100" font-weight="700" fill="#22D3EE">before your code runs</text>
+
+  <!-- subline -->
+  <text x="90" y="440" font-family="DejaVu Sans" font-size="31" fill="#94A3B8">Two critical RCEs in the PHP core, no login required.</text>
+
+  <!-- hero glow behind band 2 -->
+  <ellipse cx="792" cy="695" rx="760" ry="185" fill="url(#heroGlow)"/>
+
+  <!-- BAND 1: incoming request -->
+  <rect x="90" y="480" width="1404" height="90" rx="14" fill="#111A2C" stroke="#334155" stroke-width="1.5"/>
+  <text x="130" y="537" font-family="DejaVu Sans" font-size="34" font-weight="700" fill="#E2E8F0" letter-spacing="2">INCOMING REQUEST</text>
+
+  <!-- arrow 1 to 2 (red, the threat) -->
+  <line x1="792" y1="572" x2="792" y2="600" stroke="#EF4444" stroke-width="6"/>
+  <polygon points="792,614 779,598 805,598" fill="#EF4444"/>
+  <text x="772" y="600" text-anchor="end" font-family="DejaVu Sans" font-size="22" fill="#F87171">no login</text>
+
+  <!-- BAND 2: PHP runtime (hero) -->
+  <rect x="90" y="620" width="1404" height="150" rx="16" fill="#0E2A33" stroke="#22D3EE" stroke-width="3"/>
+  <text x="130" y="690" font-family="DejaVu Sans" font-size="46" font-weight="700" fill="#F8FAFC">PHP RUNTIME</text>
+  <text x="130" y="738" font-family="DejaVu Sans" font-size="27" fill="#67E8F9">use-after-free and OOM-corruption RCE in the parser</text>
+  <rect x="1010" y="660" width="440" height="70" rx="12" fill="#EF4444" fill-opacity="0.16" stroke="#EF4444" stroke-width="2"/>
+  <text x="1230" y="706" text-anchor="middle" font-family="DejaVu Sans" font-size="32" font-weight="700" fill="#F87171" letter-spacing="1">EXPLOIT LIVES HERE</text>
+
+  <!-- arrow 2 to 3 (muted, dashed, too late) -->
+  <line x1="792" y1="772" x2="792" y2="800" stroke="#475569" stroke-width="3" stroke-dasharray="7 6"/>
+  <polygon points="792,814 783,799 801,799" fill="#475569"/>
+
+  <!-- BAND 3: your app code (dimmed) -->
+  <rect x="90" y="820" width="1404" height="120" rx="14" fill="#0B1220" stroke="#334155" stroke-width="1.5"/>
+  <text x="130" y="874" font-family="DejaVu Sans" font-size="40" font-weight="700" fill="#64748B">YOUR APP CODE</text>
+  <text x="130" y="912" font-family="DejaVu Sans" font-size="25" fill="#475569">input validation · auth · framework</text>
+  <rect x="1120" y="852" width="320" height="56" rx="12" fill="#64748B" fill-opacity="0.12" stroke="#475569" stroke-width="1.5"/>
+  <text x="1280" y="888" text-anchor="middle" font-family="DejaVu Sans" font-size="26" font-weight="700" fill="#94A3B8" letter-spacing="1">TOO LATE TO DEFEND</text>
+</svg>
