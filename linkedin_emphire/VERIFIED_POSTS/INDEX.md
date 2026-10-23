@@ -19,3 +19,4 @@
 | 11 | 2026-10-11 | messy-backstage | Personal / Reflection | Micro — Sunday week recap (540 chars) | ❌ SUPERSEDED — don't post, reveals new client/job, not ready to share |
 | 11 | 2026-10-11 | checking-not-breakthrough | Personal / Reflection | Micro — Sunday week recap (513 chars) | 🟡 READY — scheduled 10am WAT, awaiting posting confirmation |
 | 12 | 2026-10-12 | pre-publish-boring-failures | AI Red Teaming | Pre-show teaser for Article 2 (~1450 chars) | ✅ POSTED. 159 imp at T+31m, first comment at T+23m. PS line shipped with an em dash (flagged) |
+| 13 | 2026-10-22 | php2shell | AI Red Teaming | Current-events explainer, standalone + diagram (263w / 1,484 chars) | ✅ LIVE (published 2026-10-22, owner). ~95 imp as of 10-23. post.md = 10-22 draft-of-record; swap verbatim live text when pasted. Facts verified pre-publish; hedging kept (no confirmed breach, not KEV) |
