@@ -15,9 +15,10 @@
   "banned_words_check": "PASS (0 em dashes, 0 contractions)",
   "hashtags": [],
   "hashtags_note": "published without hashtags",
-  "early_metrics": { "impressions": 31, "reactions": 1, "as_of": "2026-10-23 (~21m)" },
+  "early_metrics": { "impressions": 31, "reactions": 2, "as_of": "2026-10-23 (~26m, second activity capture)" },
   "engagements": [
-    "RedLens AI (red teaming company account, 22 followers) replied substantively within minutes: evidence bundle (prompt, tool calls, model version, evidence together) + auditor angle; 'Reproducibility is what turns a red team result into a control.' Reply drafted 2026-10-23 (the bundle becomes a control only with the written pass) — owner to post."
+    "RedLens AI (red teaming company account, 22 followers) replied substantively within minutes: evidence bundle (prompt, tool calls, model version, evidence together) + auditor angle; 'Reproducibility is what turns a red team result into a control.'",
+    "Owner reply to RedLens AI POSTED 2026-10-23 (~8m after capture, live in second activity feed): 'Your list is the bundle. The part that makes it a check rather than an archive is the pass: a written criterion the re-run compares against. Without it, the re-run reproduces the attack and then shrugs. The auditor's question months later is the one only the written pass can answer, and it is the question a score cannot answer.' Full verbatim record: ENGAGEMENT/published_comments/2026-10-20_to_2026-10-23_verbatim.md item 1."
   ],
   "status": "LIVE (published 2026-10-23)"
 }
