@@ -310,6 +310,11 @@ search the text for each):
   the post's length
 □ Argument test: at least one line a hostile
   reader could argue with
+□ Compliment check: at most one, specific
+  (the author must be able to point at the
+  line), never the first line; required as the
+  payload in HUMAN mode (COMPLIMENT RULE,
+  voice_dna.txt PART 10)
 □ No CATEGORY 7 openers or closers
   (banned_words.txt)
 □ Uneven paragraph lengths, no bullets

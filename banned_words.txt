@@ -366,6 +366,17 @@ template. The argument test (voice_dna.txt
 PART 10) is the fix: at least one line the
 author could argue with, and a flat ending.
 
+SPECIFIC COMPLIMENTS ARE ALLOWED (10-24b):
+The ban is on generic praise, not on
+appreciation. One specific, earned compliment
+per comment is allowed anywhere after the
+first line, and in HUMAN mode it is the
+payload. Test: the author must be able to
+point at the exact line, number, or choice
+you are praising. "The middle manager line
+is the one doing the work here" passes.
+"Great post" does not.
+
 ═══════════════════════════════════════════════════
 QUICK REFERENCE: NEVER USE
 ═══════════════════════════════════════════════════

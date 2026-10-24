@@ -37,6 +37,10 @@ ENGAGEMENT/voice_dna.txt PART 10 + COMMENT MODES):
   published_comments, or the tracker). No
   invented incidents
 - Direct but warm
+- One specific compliment allowed after line
+  one (the author must be able to point at the
+  line); in HUMAN mode the specific compliment
+  is the payload. Never more than one.
 - No "great post!" or "resonates!" (CATEGORY 7
   openers/closers, banned_words.txt)
 - No corporate speak

@@ -33,8 +33,11 @@ posts across tiers per day.
    THE HUMAN GATE): 0 em dashes, 1-4 natural contractions (never
    in the first line), inside the mode budget and under the post's
    length, argument test passed (one line a hostile reader could
-   argue with), no CATEGORY 7 openers or closers, uneven
-   paragraphs, no bullets, flat ending. 10-24 context: Jada
+   argue with), no CATEGORY 7 openers or closers, at most one
+   specific earned compliment after the first line (the author
+   must be able to point at the line; in HUMAN mode it is the
+   payload), uneven paragraphs, no bullets, flat ending. 10-24
+   context: Jada
    Balster's post shows the market now complains out loud about
    the exact shape this gate removes.
 

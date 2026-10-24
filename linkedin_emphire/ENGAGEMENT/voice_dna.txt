@@ -315,8 +315,10 @@ search the text for each):
   belong to posts)
 □ First line under 12 words, starts from a
   specific point in the post (a quoted phrase or
-  a number), never a compliment; no CATEGORY 7
-  openers or closers (banned_words.txt)
+  a number), never a generic compliment (one
+  specific, earned compliment allowed anywhere
+  after line one, see COMPLIMENT RULE); no
+  CATEGORY 7 openers or closers (banned_words.txt)
 □ Ends on a flat statement or a concrete image;
   a question mark only in INTERACTIVE mode; no
   hashtags inside a comment
@@ -341,6 +343,32 @@ self-reference that traces to the archive
 performance_tracker). No invented incidents. If
 there is no traceable fact, use a generic craft
 line, not a made-up story.
+
+COMPLIMENT RULE (10-24b, owner direction: some
+comments should carry the compliment that best
+fits):
+- A specific, earned compliment is allowed in
+  one place in a comment, never as the first
+  line. It points at a particular line, number,
+  or choice in the post, and says why it works
+  (patterns: "the [line] is the one doing the
+  work here", "the [number] is the part I'd
+  take from this"). The author must be able to
+  point at the exact line you mean.
+- If the compliment could sit on top of any
+  post, it is generic, and CATEGORY 7 applies:
+  cut it.
+- By mode: OUTSTANDING allowed (position two,
+  right after the hook) when the post has a
+  line worth naming. INTERACTIVE allowed and
+  usually right: acknowledge what they said
+  before adding. HUMAN required: the specific
+  compliment is the payload, name the moment
+  and why it matters. QUESTIONING optional:
+  at most one short acknowledgment, dropped
+  entirely if the challenge needs the words.
+- One compliment per comment. A second one
+  turns the comment into a tribute.
 
 No two comments in the same 24h reuse the same
 closing line (kept from 10-23).
@@ -370,15 +398,19 @@ OUTSTANDING (tier 1-2 surface, main comment):
 line quotable on its own, that would survive
 being posted standalone. Full risk: the
 argument test passes with a claim or a
-concession, not with a question.
+concession, not with a question. One specific
+compliment allowed in position two (the line
+worth naming), never more.
 
 INTERACTIVE (reply to an author, a thread
 partner, or a commenter on the owner's post):
 15-60 words. Direct address. Answer what was
-said before adding anything. A question mark
-is allowed here, and only here, and only when
-the thread needs the next move. Same day,
-first-class: a reply is not an afterthought.
+said before adding anything. A specific
+compliment to their point is allowed and
+usually right here. A question mark is allowed
+here, and only here, and only when the thread
+needs the next move. Same day, first-class: a
+reply is not an afterthought.
 
 QUESTIONING (post contains a checkable claim,
 number, or prediction):
@@ -388,16 +420,20 @@ or name the missing check. If the macro claim
 cannot be verified from here, do not argue the
 macro claim, argue the checkable part. No
 snark, no "I disagree" opener, one concrete
-example.
+example. Compliment optional: at most one
+short acknowledgment, dropped if the challenge
+needs the words.
 
 HUMAN (small, personal, community, celebration
 posts):
 20-80 words. Warm and specific to the moment
 (name the person's moment, never a generic
-"great journey"). Frame invisible: do not drop
-the check theorem unless the post is literally
-about it. No attempt at a memorable line. End
-flat.
+"great journey"). The specific compliment is
+the payload here: name the moment and why it
+matters, per the COMPLIMENT RULE. Frame
+invisible: do not drop the check theorem
+unless the post is literally about it. No
+attempt at a memorable line. End flat.
 
 MODE BALANCE (per day):
 - Max 2 OUTSTANDING per day.
