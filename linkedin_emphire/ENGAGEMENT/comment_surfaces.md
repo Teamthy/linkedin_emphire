@@ -176,6 +176,17 @@ Sudarshan Thorat
   weak fit), Endrit Warhound dogs (bio/military),
   Iyinoluwa Aboyeji repost (founder philosophy), job alert
   + event-hosted notifications (not surfaces).
+- Exabeam (company page, reposted by Steve Wilson, 1d at
+  paste): "Agentic SOC / machine speed" product marketing,
+  ow.ly tracked link, hashtag wall, solution-brief CTA.
+  Skipped per protocol 10 rung 6 + company-page rule:
+  vendor marketing, not a security publication (no
+  research, advisory, or technical disclosure to engage),
+  no relationship to the company or the reposting author,
+  not followed, 1d old. The "keep humans in control" line
+  is a vendor claim, not a check; answering a claim with
+  positioning on a marketing post is the slop pattern the
+  engine avoids. Skipped on quality, not the cap.
 
 ## Refresh rules
 - On any network or feed paste: add new qualifying surfaces (reach,
