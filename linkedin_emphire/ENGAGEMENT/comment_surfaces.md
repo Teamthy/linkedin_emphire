@@ -122,6 +122,16 @@ Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
   group-native post with a group-specific question close (the
   "Question for this group" pattern worked).
 
+## Skip log (10-24)
+- GenAI Works (company page, 11m at paste): Jensen Huang
+  Vera Rubin tray, assembly 2h to 5min. Skipped per protocol
+  10 rung 6: company/marketing surface (contact-us + UTM
+  link), no relationship, not followed, not in tier list,
+  out of core lane (infra manufacturing, not the check
+  frame), and the day was at the 8/8 action cap. The
+  in-lane angle (the constraint is tray-to-serving time,
+  not assembly time) is noted in case the owner overrides.
+
 ## Refresh rules
 - On any network or feed paste: add new qualifying surfaces (reach,
   home turf, or active thread partner) with their tier.
