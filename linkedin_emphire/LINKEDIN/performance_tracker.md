@@ -53,6 +53,16 @@ UTC by LinkedIn. Deltas as shown by LinkedIn.
 - DAILY CONTENT/content_strategy.txt: PART 4 data update (channel hierarchy, works / does-not, pacing, KPIs, next experiment)
 - voice_dna.txt (both copies, kept identical): PART 10 rewritten as a mechanical hard gate (0 em dashes, 0 contractions, straight quotes, one idea per breath) + comment-ending variety question. This removes the old checklist lines that instructed the opposite ("at least one em dash", "contractions used naturally")
 
+### Addendum 2026-10-23 (evening): profile viewer list read
+- List shows 150+ viewers in window; only 3 named (free tier). Named: Salman Arain (2nd degree, 1 mutual, Board Advisor / AI revenue, Saudi/Canada, viewed 5h ago), Sree Harsha Perla (3rd, Senior PLM Cloud Consultant), Bryan Eaton (3rd, Data Engineer).
+- Anonymized composition: security/research tier present (Research Analyst at NIST, Business Strategist at FS-ISAC and Palo Alto Networks, QA Tester at Moody's, Compliance Specialist at Deutsche Bank, Program Manager at Microsoft, Business Developer at Meta, CTO in Software Development, 2 Research Fellows University of Helsinki). Journalists at GitHub and Debian in same window.
+- Small-EU IT cluster: Katowice x2 titles, Rzeszow, Lisburn, Sofia, Udine, Ostend. Reads as one thread pulling a small-EU contractor audience, not organic regional interest.
+- Nigeria cluster (~8): Bells, OAU Teaching Hospital, Kwara State hospital, LASU, OAU, Anchor University Lagos, UNN, RSUST, plus an Author in the Technology industry from Lagos State.
+- Founders: stealth AI startup, NYC consumer services, Taipei, SF Bay fintech, Bengaluru data infra, Berlin/Glasgow/Hamburg IT services, Pensacola/DC, Pune, LA wellness.
+- Heavy student band: ICFO, EPFL, IST, Howard, Bishop's, Greenwich, Loughborough, UC Davis, Swinburne, Minnesota, Lehigh, U. of Sulaimani, MIT Ghaziabad, VNTU, IIT Bombay SINE.
+- Read: the profile is being read by the ICP layer (security/research + big tech), so the ~7% view-rate weakness is now a conversion problem on a surface that is already receiving the right traffic. Profile headline/About work stays the next lever.
+- Actions (proposed, owner approval pending, none executed): follow-back Salman Arain (named, ICP, thread partner from the morning Sweden reply; the thread is the bridge). No DMs (thread is doing the work, day cap 8/8 hit). Sree Harsha and Bryan Eaton: 3rd degree, weak ICP fit, skip.
+
 ### Next snapshots
 - Weekly: 2026-10-30
 - 90-day: 2026-11-23
