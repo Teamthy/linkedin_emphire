@@ -22,6 +22,21 @@ posts across tiers per day.
    scheduled action the same day. Hostile reply protocol: do not
    defend, serve the verifiable claim, invite the re-run (reference:
    the 10-23 Filip R. exchange on the Endrit banks thread).
+7. Pick the mode before drafting (ENGAGEMENT/voice_dna.txt
+   COMMENT MODES, 10-24 fine-tune): OUTSTANDING for tier 1-2 main
+   comments (90-120w, one memorable line), QUESTIONING when the
+   post has a checkable claim or number (90-120w, lead with the
+   line that does not hold), HUMAN for personal and community
+   posts (20-80w, frame invisible), INTERACTIVE for replies
+   (15-60w, question allowed there only). Max 2 OUTSTANDING a day.
+8. Run the slop detector before every post (voice_dna.txt PART 10,
+   THE HUMAN GATE): 0 em dashes, 1-4 natural contractions (never
+   in the first line), inside the mode budget and under the post's
+   length, argument test passed (one line a hostile reader could
+   argue with), no CATEGORY 7 openers or closers, uneven
+   paragraphs, no bullets, flat ending. 10-24 context: Jada
+   Balster's post shows the market now complains out loud about
+   the exact shape this gate removes.
 
 ## Tier 1 — big reach (your comment rides into the author's audience)
 Chip Huyen, Ethan Mollick, Sebastian Raschka, Eugene Yan, Hamel Husain,
@@ -62,4 +77,5 @@ Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
 - Rebuild the whole list from the network read every 90 days,
   aligned with the 90-day tracker snapshot.
 
-Last refreshed: 2026-10-23
+Last refreshed: 2026-10-24 (protocol 7-8 added: comment
+modes + slop detector, 10-24 humanization fine-tune)

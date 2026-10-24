@@ -222,6 +222,14 @@ PACING RULE (from 2026-10-23 analytics):
   Paolo Perrone thread: main comment + 2 replies,
   the reply alone hit 3,722 impressions).
 
+MODE BALANCE (10-24, voice_dna.txt COMMENT MODES):
+- Plan the week so no day carries more than 2
+  OUTSTANDING comments.
+- If a planned surface has a checkable claim or
+  number, mark it QUESTIONING in the plan.
+- Personal, community, and celebration posts get
+  HUMAN mode, never a check-theorem drop.
+
 OUTPUT → Engagement plan for daily execution
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -260,22 +268,57 @@ list (fresh posts only: same day or yesterday).
 
 [PASTE 5-8 FRESH POSTS FROM SURFACES]
 
+Pick the mode first (ENGAGEMENT/voice_dna.txt
+COMMENT MODES, 10-24 fine-tune):
+- tier 1-2 surface, no checkable claim
+  → OUTSTANDING (expertise + risk angle,
+    90-120 words, one memorable line allowed)
+- post contains a checkable claim or number
+  → QUESTIONING (90-120 words, lead with the
+    line that does not hold, one re-runnable
+    counter, argue the checkable part only)
+- personal, community, or celebration post
+  → HUMAN (20-80 words, warm, specific, frame
+    invisible, no memorable-line attempt)
+- a reply is due on any thread → INTERACTIVE
+  (15-60 words, question allowed there only)
+
 For each, provide:
-- 2 comment options (expertise + story angle),
-  one idea per breath, 90-140 words for a main
-  comment, ~60 for a reply
+- 2 options inside the picked mode (different
+  angles, same risk level), one idea per breath
 - Recommended option with reason
-- One memorable line called out
+- One memorable line called out (OUTSTANDING
+  only; HUMAN mode gets none)
 - Tone notes
+- SLOP DETECTOR result (voice_dna.txt PART 10):
+  0 em dashes, 1-4 contractions (none in the
+  first line), word count inside budget and
+  under the post's length, argument test passed,
+  no CATEGORY 7 openers or closers, uneven
+  paragraphs, no bullets, flat ending
 
 Also draft any follow-up replies due from the
-watchlist (hostile reply protocol: do not defend,
-serve the verifiable claim, invite the re-run)."
+watchlist, INTERACTIVE mode (hostile reply
+protocol: do not defend, serve the verifiable
+claim, invite the re-run)."
 
-GATE BEFORE POSTING (every single comment):
-□ 0 em dashes, 0 contractions (search the text)
-□ No two of today's comments reuse the same closer
-□ Sounds like the owner, not a template
+GATE BEFORE POSTING (every single comment,
+search the text for each):
+□ 0 em dashes. Contractions 1-4, none in the
+  first line, none doubled in one clause
+□ Word count inside the mode budget and under
+  the post's length
+□ Argument test: at least one line a hostile
+  reader could argue with
+□ No CATEGORY 7 openers or closers
+  (banned_words.txt)
+□ Uneven paragraph lengths, no bullets
+□ Flat ending (question mark only in
+  INTERACTIVE mode), no hashtags
+□ No two of today's comments reuse the same
+  closer
+□ Read it aloud once: any sentence that sounds
+  like a caption gets rewritten
 
 HUMAN ACTION: Review, edit, post manually, spaced
 
@@ -302,8 +345,19 @@ PROMPT:
 
 [PASTE COMMENTS RECEIVED]
 
-Use response templates from response_templates.txt.
-Each reply must add value or continue conversation."
+Mode INTERACTIVE (voice_dna.txt COMMENT MODES):
+15-60 words, direct address, answer what was
+said before adding anything, a question mark
+only when the thread needs the next move.
+Same day: a reply is first-class, not an
+afterthought (the Paolo Perrone thread reply
+alone hit 3,722 impressions).
+
+Use response templates from response_templates.txt
+as a floor, not a shape. Each reply must add
+value or continue the conversation. Hostile
+reply protocol: do not defend, serve the
+verifiable claim, invite the re-run."
 
 HUMAN ACTION: Review, edit, post replies
 

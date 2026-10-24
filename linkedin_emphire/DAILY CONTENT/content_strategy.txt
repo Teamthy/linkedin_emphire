@@ -388,6 +388,21 @@ WHAT THE DATA CHANGES
 5. Surface discipline: daily picks come from
    ENGAGEMENT/comment_surfaces.md, not the raw
    feed. Demote and log surfaces that stop paying.
+6. Comment voice is now a product surface
+   (10-24, market signal: Jada Balster post
+   complaining that AI comments are "longer than
+   the original post but say absolutely nothing").
+   The comment channel is the #1 distribution
+   engine, so a slop-shaped comment does
+   double damage: it does not land, and it
+   brands the account. Engine response: THE
+   HUMAN GATE (voice_dna.txt PART 10) + four
+   comment modes + CATEGORY 7 in
+   banned_words.txt. The 10-23 "0 contractions"
+   gate is retired: uniform formality was
+   itself the tell. Calibration anchor: the
+   Paolo Perrone comment (60,772 imp, author
+   replied, peer celebrated).
 
 ═══════════════════════════════════════════════════
 END OF CONTENT STRATEGY
