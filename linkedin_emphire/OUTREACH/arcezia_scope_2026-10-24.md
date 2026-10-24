@@ -6,7 +6,7 @@ Date: 2026-10-24 · Written record agreed in DM before keys
 Tester: Olusanya Timothy · Target owner: Arcezia (Praveen Babu)
 
 ## Window
-Testing: [day] to [day], week of 2026-10-26 · Private report out: [day]
+Testing: Tuesday 2026-10-27 and Thursday 2026-10-29 · Private report out: Friday 2026-10-30
 
 ## Target
 A fresh test account on Arcezia's live service, provided by the target owner. The key covers that account and nothing else. All testing runs from that account's surface only.
@@ -22,14 +22,25 @@ A fresh test account on Arcezia's live service, provided by the target owner. Th
 - Anything that touches data or resources outside the test account
 
 ## Process
-1. Keys delivered after this scope is marked up by both sides
+1. Keys delivered after both sides mark up this scope; one-time delivery by email, deleted after receipt
 2. Testing in the window; every finding kept with its minimal repro
 3. Private report to the target owner first: findings, severity, repro, before anything is public
 4. Target owner fixes; both sides confirm the fix
 5. Joint write-up: target owner reads for accuracy and for anything not yet public. The findings and the repro stay the tester's
 
+## Report
+- Covers holds as well as hits: what was tried, what went through, what stopped it
+- Severity ranked by impact: unauthorized action, data exposure, privilege escalation
+- The test ends when the window closes or the gate holds against the agreed chains, whichever first
+- Emergency stop: if testing surfaces access to data or accounts outside the test account, testing pauses and the target owner is notified immediately; no further action until both sides agree
+
+## Publication
+- The write-up ships only after the fix is confirmed, with both sides' sign-off
+- Co-authored, bylines both; runs on both channels
+
 ## Key and data handling
 Key used only for this engagement, not shared, returned or destroyed at close. No attempts on data or resources outside the test account.
 
 ## Terms
-[owner's line: compensation terms here, or the credit line: joint publication with bylines, findings ownership per Process 5]
+Fee: $2,000 flat, the standard rate for a scoped gate-bypass with disclosure and co-publication. Invoiced on delivery of the private report.
+[owner: confirm this line before sending; if credit-only, replace with: joint publication, bylines per Publication, findings ownership per Process 5]
