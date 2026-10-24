@@ -80,10 +80,11 @@ posts across tiers per day.
       → repost with thought (40-60w, one bankable line, one
       specific compliment). A repost REPLACES the comment on
       the same surface, it never stacks with it
-   5. 2nd degree, ICP-adjacent, fresh → comment (HUMAN or
-      OUTSTANDING) or follow-back alone
-   6. Weak fit, 3rd+, out of lane, or stale → skip, log the
-      skip and the reason in this file's refresh notes
+   5. 2nd or 3rd degree, in lane or ICP-adjacent, fresh
+      → comment (HUMAN or OUTSTANDING) or follow-back alone
+   6. Weak fit, out of lane, or stale (any degree) → skip,
+      log the skip and the reason in this file's refresh
+      notes
    POSITIONING FROM THE PROFILE (how the same frame bends):
    - Peer in the same niche: comment is a positioning statement
      for the third party reading the thread, not a message to
