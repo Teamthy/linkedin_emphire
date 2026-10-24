@@ -157,7 +157,22 @@ Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
   day cap. Topic is on-lane (authorization when the user
   is the credential); held for a person's surface (Endrit
   banks thread territory) or a standalone with the Axios
-  source fetched under the source rule.
+  source fetched under the source rule. Resolved 10-24
+  evening: shipped as a comment on Endrit Restelica's own
+  Axios post (published_comments item 7), the
+  authenticity-vs-authorization split.
+- 10-24 evening feed batch (all rung 6, weak fit or out of
+  lane, logged so headroom never fills with them): Tiago
+  Forte (annual review / book promo), Patrick Bet-David
+  (motivation video, no substance), Blossom Affia (two
+  self-reposts, personal brand), Harrison Chase reposting
+  Tom Loverro (founder durability, VC), Michael Bargury
+  repost (speaker thanks, thin; same event covered by the
+  Rock Lambros recap, one surface per event), Kieran Drew
+  (mindset), Ruben Hassid (Claude productivity promo,
+  weak fit), Endrit Warhound dogs (bio/military),
+  Iyinoluwa Aboyeji repost (founder philosophy), job alert
+  + event-hosted notifications (not surfaces).
 
 ## Refresh rules
 - On any network or feed paste: add new qualifying surfaces (reach,
