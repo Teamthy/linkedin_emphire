@@ -42,9 +42,6 @@ A fresh test account on Arcezia's live service, provided by the target owner. Th
 Key used only for this engagement, not shared, returned or destroyed at close. No attempts on data or resources outside the test account.
 
 ## Terms
-[open: to be settled in the payment discussion before this
-doc is sent. Fee shape: $2,000 flat, invoiced on report
-delivery. Credit shape: joint publication, bylines per
-Publication, findings ownership per Process 5. Owner
-decides with Praveen, then this section is filled and the
-doc sends.]
+Fee: $1,000 flat, deferred. Invoiced at the earlier of (a) publication of the joint write-up, or (b) Arcezia's next funding round closing.
+Interim credit: the tester's name on every finding; a written reference from the target owner for the tester's next client, delivered at report handoff.
+[awaiting Praveen's markup; if he prefers round-close only, the deferral trigger changes, everything else stands]
