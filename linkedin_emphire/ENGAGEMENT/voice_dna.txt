@@ -441,9 +441,9 @@ MODE BALANCE (per day):
   claim, at least one goes QUESTIONING.
 - Personal and community posts get HUMAN, not
   HUMAN-shaped OUTSTANDING.
-- INTERACTIVE replies count against the 5-8
-  daily action cap, not against the OUTSTANDING
-  cap.
+- INTERACTIVE replies count against the daily
+  action cap (8 base, 12 max), not against the
+  OUTSTANDING cap.
 
 ╔═══════════════════════════════════════════════╗
 ║      PART 11: VOICE IN DIFFERENT CONTEXTS      ║

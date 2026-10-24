@@ -2,13 +2,32 @@
 
 Source of picks for the daily comment round (empire_pipeline Stage 2,
 Step 2.1). Built from the owner's network read 2026-10-23 (684
-followers, 468 following). This is a menu, not a quota: pick 5-8 fresh
+followers, 468 following). This is a menu, not a quota: pick
+8 fresh (up to 12 under the extension guardrails, protocol 1)
 posts across tiers per day.
 
 ## Protocol (per 2026-10-23 analytics + feed data)
-1. 5-8 comment actions per day, spaced across the day, never a burst.
-   The 10-23 burst (14-16 actions in about an hour) is the throttling
-   risk this cap exists to remove.
+1. 8 comment actions per day base, extendable to 12, hard
+   ceiling 12. Spaced across the day, never a burst. The
+   10-23 event (14-16 actions in about an hour) was a
+   clustering risk, not a count risk, and no throttling was
+   observed, so the 10-24 expansion raises the ceiling and
+   keeps the anti-clustering guardrails. Extension guardrails
+   (ALL must hold on a 9-12 day):
+   a. Max 2 actions per hour, 60+ minutes between new
+      comments (replies exempt on an active thread)
+   b. At least 4 actions on tier 1-2 surfaces or
+      thread-partner replies (quality floor)
+   c. At least 2 actions are INTERACTIVE replies
+   d. Never more than 3 actions in any 2-hour window
+   The cap counts SHIPPED actions on real surfaces. Weak,
+   out-of-lane, and company-page surfaces are skipped
+   regardless of headroom; headroom is not a license to fill.
+   REVIEW TRIGGER (10-30 weekly snapshot): if a 10-12 day is
+   followed by a comment-impression drop against the
+   reply-tier baseline (Paolo reply 3,722 class), log a
+   throttling signal and revert to the base 8 until the next
+   90-day check.
 2. A comment action = a comment OR a follow-up reply. Follow-up replies
    are first-class: threads compound (Paolo Perrone thread: main + 2
    replies; the reply alone hit 3,722 impressions).
@@ -155,4 +174,5 @@ Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
 Last refreshed: 2026-10-24 (protocols 7-10 added:
 comment modes + slop detector + source rule +
 profile read and method ladder, 10-24 humanization
-fine-tune)
+fine-tune; daily cap expanded 8 base / 12 max with
+anti-clustering guardrails + 10-30 review trigger)

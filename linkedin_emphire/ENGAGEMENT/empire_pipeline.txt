@@ -201,8 +201,9 @@ Provide:
 1. Comment surface rotation for the week from
    ENGAGEMENT/comment_surfaces.md (tier 1 for reach,
    tier 2 for home turf, tier 3 as spice)
-2. 5-8 comment actions per day budget (hard cap,
-   spaced across the day, never a burst)
+2. Comment actions per day budget: 8 base, up to 12
+   under the extension guardrails (protocol 1), hard
+   ceiling 12, spaced across the day, never a burst
 3. Follow-up reply watchlist (open threads that need
    a second move)
 4. 5 people to DM this week (warm leads)
@@ -213,10 +214,17 @@ Provide:
    (top performer of the 90-day window is a post in
    that group; add a group-specific question close)"
 
-PACING RULE (from 2026-10-23 analytics):
-- 5-8 comment actions per day, spaced, not batched.
-  A 14-16 action burst in one hour risks throttling
-  comment distribution.
+PACING RULE (from 2026-10-23 analytics, expanded 10-24):
+- 8 comment actions per day base, extendable to 12, hard
+  ceiling 12. The 10-23 event (14-16 in an hour) was a
+  clustering risk with no observed throttling, so the
+  ceiling rises and the anti-clustering rules stay:
+  max 2 per hour, 60+ min between new comments (replies
+  exempt on an active thread), 4+ actions on tier 1-2 or
+  thread-partner replies, 2+ INTERACTIVE replies, never
+  3+ actions in any 2-hour window. Extension is only for
+  fresh in-lane surfaces; weak surfaces are skipped
+  regardless of headroom.
 - A comment action = a comment OR a follow-up reply.
   Replies are first-class: threads compound (the
   Paolo Perrone thread: main comment + 2 replies,
@@ -263,10 +271,12 @@ INPUT: comment_surfaces.md + reply watchlist
 AGENT: Engagement Specialist
 
 PROMPT:
-"Pick today's 5-8 comment actions from the surface
-list (fresh posts only: same day or yesterday).
+"Pick today's comment actions from the surface list
+(8 base, up to 12 if the extension guardrails in
+comment_surfaces protocol 1 can hold; fresh posts
+only: same day or yesterday).
 
-[PASTE 5-8 FRESH POSTS FROM SURFACES]
+[PASTE FRESH POSTS FROM SURFACES]
 
 SOURCE RULE first (comment_surfaces protocol 9, 10-24 owner
 standing instruction): if a post carries a read-more, article,
