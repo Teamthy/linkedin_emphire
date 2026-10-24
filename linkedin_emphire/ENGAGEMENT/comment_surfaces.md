@@ -130,9 +130,12 @@ Rock Lambros (Zenity), Tarique Smith (Zero Day Agent)
 ## Tier 3 — builder / adjacent layer + active thread partners
 Ado Kukic (Claude Code community), Jason Liu (OpenAI DevEx),
 Ife Abimbola-Olulesi (Proof), Shehbaz Pathan (RAG / agent memory),
-Alex Banks, Sam Illingworth (Slow AI), al neitsch, Endrit Restelica,
-Helen Oakley (Zenity), Robinson Miranda, Tanay Kothari, Salman
-Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
+Alex Banks, Sam Illingworth (Slow AI), al neitsch, Endrit
+Restelica, Helen Oakley (Zenity), Robinson Miranda, Tanay
+Kothari, Salman Lakhani (SIGNAL/NOISE corroboration board;
+10-24 confirmed author of the Sweden post, thread partner,
+follow-back pending), Chris H., Madhan Vadlamudi, Ned Lowe,
+Sudarshan Thorat
 
 ## Groups (free distribution; separate from the comment round)
 - Group 6773411: the 90-day top performer is a post in this group
