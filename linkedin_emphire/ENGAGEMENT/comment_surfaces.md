@@ -49,6 +49,50 @@ posts across tiers per day.
    added value is often the one finding the post omitted. If the
    source cannot be fetched, say so in the tone notes and draft
    from the post body only, marked UNVERIFIED-SOURCE.
+10. PROFILE READ + METHOD LADDER (10-24, owner direction: read
+   the author's profile before choosing the move). For every
+   pasted surface, read the author's block BEFORE drafting
+   anything:
+   - Relationship: Following / followed back? degree (1st, 2nd,
+     3rd+), mutuals shown in the paste
+   - Positioning: headline, what they post about, their tier in
+     this file
+   - Commercial signals: services page, newsletter, "book a
+     call", top-creator badges. Commercial author = value added
+     only, never a pitch
+   - History: is this a thread partner (see
+     published_comments archive)? If yes, replies outrank new
+     comments
+   - ICP fit: security, research, evals, red team, big tech,
+     journalism
+   Use only what the paste shows. Any field missing from the
+   paste is UNKNOWN, not a guess.
+   METHOD LADDER (first match wins):
+   1. Thread partner, or a reply is owed → INTERACTIVE reply,
+      same day, first-class
+   2. ICP profile (security, research, evals, big tech) →
+      follow-back if not followed; comment only if the post is
+      in lane, otherwise follow-back alone
+   3. Tier 1-2, Following, fresh, in lane → comment
+      (OUTSTANDING or QUESTIONING)
+   4. Tier 1-2, Following, fresh, strongly on brand, and the
+      post carries a line worth putting on the owner's own feed
+      → repost with thought (40-60w, one bankable line, one
+      specific compliment). A repost REPLACES the comment on
+      the same surface, it never stacks with it
+   5. 2nd degree, ICP-adjacent, fresh → comment (HUMAN or
+      OUTSTANDING) or follow-back alone
+   6. Weak fit, 3rd+, out of lane, or stale → skip, log the
+      skip and the reason in this file's refresh notes
+   POSITIONING FROM THE PROFILE (how the same frame bends):
+   - Peer in the same niche: comment is a positioning statement
+     for the third party reading the thread, not a message to
+     the author; equal footing, differentiate the framing, do
+     not mirror theirs
+   - Generalist or creator: bring the check as new information,
+     one concept they can reuse
+   - Commercial author: add value that stands without their
+     product; do not feed their CTA
 
 ## Tier 1 — big reach (your comment rides into the author's audience)
 Chip Huyen, Ethan Mollick, Sebastian Raschka, Eugene Yan, Hamel Husain,
@@ -89,6 +133,7 @@ Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
 - Rebuild the whole list from the network read every 90 days,
   aligned with the 90-day tracker snapshot.
 
-Last refreshed: 2026-10-24 (protocol 7-9 added: comment
-modes + slop detector + source rule, 10-24 humanization
+Last refreshed: 2026-10-24 (protocols 7-10 added:
+comment modes + slop detector + source rule +
+profile read and method ladder, 10-24 humanization
 fine-tune)

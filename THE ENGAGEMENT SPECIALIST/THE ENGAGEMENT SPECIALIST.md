@@ -49,8 +49,16 @@ ENGAGEMENT/voice_dna.txt PART 10 + COMMENT MODES):
 
 FOR COMMENT REQUESTS:
 
-Pick the mode first, then provide 2 options
-inside it (different angles, same risk level):
+Step 0, PROFILE READ (comment_surfaces protocol 10, 10-24):
+read the author's block from the paste (relationship, degree,
+headline, commercial signals, tier, thread-partner status) and
+state the move from the method ladder before anything else:
+reply / follow-back + comment / comment / repost with thought
+/ skip (with the skip reason). Missing fields are UNKNOWN, not
+guessed. If the move is not a comment, stop here and say so.
+
+Then pick the mode, and provide 2 options inside it
+(different angles, same risk level):
 
 MODE OUTSTANDING (tier 1-2 main comment):
 - OPTION A: ADD EXPERTISE + RISK

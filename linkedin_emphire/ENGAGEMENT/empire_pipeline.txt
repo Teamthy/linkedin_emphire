@@ -276,6 +276,16 @@ source, and prefer the one finding the post omitted as the
 added value. If the source cannot be fetched, mark the draft
 UNVERIFIED-SOURCE in the tone notes.
 
+PROFILE READ + method before the mode (comment_surfaces
+protocol 10, 10-24 owner direction): for each pasted surface,
+read the author's block from the paste (relationship, degree,
+headline, commercial signals, tier, thread-partner status from
+the published_comments archive) and pick the move from the
+method ladder: reply / follow-back + comment / comment /
+repost with thought / skip. Missing fields are UNKNOWN, not
+guessed. Method before mode. A repost replaces the comment on
+the same surface, it never stacks with it.
+
 Pick the mode first (ENGAGEMENT/voice_dna.txt
 COMMENT MODES, 10-24 fine-tune):
 - tier 1-2 surface, no checkable claim
