@@ -42,5 +42,9 @@ A fresh test account on Arcezia's live service, provided by the target owner. Th
 Key used only for this engagement, not shared, returned or destroyed at close. No attempts on data or resources outside the test account.
 
 ## Terms
-Fee: $2,000 flat, the standard rate for a scoped gate-bypass with disclosure and co-publication. Invoiced on delivery of the private report.
-[owner: confirm this line before sending; if credit-only, replace with: joint publication, bylines per Publication, findings ownership per Process 5]
+[open: to be settled in the payment discussion before this
+doc is sent. Fee shape: $2,000 flat, invoiced on report
+delivery. Credit shape: joint publication, bylines per
+Publication, findings ownership per Process 5. Owner
+decides with Praveen, then this section is filled and the
+doc sends.]
