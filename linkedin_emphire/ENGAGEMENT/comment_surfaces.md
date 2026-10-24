@@ -40,6 +40,15 @@ posts across tiers per day.
    context: Jada
    Balster's post shows the market now complains out loud about
    the exact shape this gate removes.
+9. SOURCE RULE (10-24, owner standing instruction: always read
+   the read-more link before commenting). If the post carries a
+   read-more, article, paper, or report link, fetch and read the
+   full source before drafting. Comment on what the source
+   actually says; cite specifics (numbers, conditions, p-values,
+   design details) to the source, not the post body; the comment's
+   added value is often the one finding the post omitted. If the
+   source cannot be fetched, say so in the tone notes and draft
+   from the post body only, marked UNVERIFIED-SOURCE.
 
 ## Tier 1 — big reach (your comment rides into the author's audience)
 Chip Huyen, Ethan Mollick, Sebastian Raschka, Eugene Yan, Hamel Husain,
@@ -80,5 +89,6 @@ Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
 - Rebuild the whole list from the network read every 90 days,
   aligned with the 90-day tracker snapshot.
 
-Last refreshed: 2026-10-24 (protocol 7-8 added: comment
-modes + slop detector, 10-24 humanization fine-tune)
+Last refreshed: 2026-10-24 (protocol 7-9 added: comment
+modes + slop detector + source rule, 10-24 humanization
+fine-tune)

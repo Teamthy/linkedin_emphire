@@ -268,6 +268,14 @@ list (fresh posts only: same day or yesterday).
 
 [PASTE 5-8 FRESH POSTS FROM SURFACES]
 
+SOURCE RULE first (comment_surfaces protocol 9, 10-24 owner
+standing instruction): if a post carries a read-more, article,
+paper, or report link, fetch and read the full source before
+drafting anything. Comment on the source, cite specifics to the
+source, and prefer the one finding the post omitted as the
+added value. If the source cannot be fetched, mark the draft
+UNVERIFIED-SOURCE in the tone notes.
+
 Pick the mode first (ENGAGEMENT/voice_dna.txt
 COMMENT MODES, 10-24 fine-tune):
 - tier 1-2 surface, no checkable claim
