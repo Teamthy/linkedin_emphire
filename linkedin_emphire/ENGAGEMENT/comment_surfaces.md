@@ -131,6 +131,14 @@ Lakhani, Chris H., Madhan Vadlamudi, Ned Lowe, Sudarshan Thorat
   frame), and the day was at the 8/8 action cap. The
   in-lane angle (the constraint is tray-to-serving time,
   not assembly time) is noted in case the owner overrides.
+- The AI Colony (company page, 25m at paste): US banks
+  blocking third-party AI agents (Axios report, Morgan
+  Stanley / BofA / JPM / Wells, credential-sharing gap,
+  move to read-only). Skipped per the company-page rule +
+  day cap. Topic is on-lane (authorization when the user
+  is the credential); held for a person's surface (Endrit
+  banks thread territory) or a standalone with the Axios
+  source fetched under the source rule.
 
 ## Refresh rules
 - On any network or feed paste: add new qualifying surfaces (reach,
